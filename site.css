@@ -291,6 +291,9 @@ body.neo-body,
   .rb-hero-scroll__frame:nth-child(3) img {
     object-position: 45% center;
   }
+  .rb-hero-scroll__frame:nth-child(5) img {
+    object-position: 45% center;
+  }
 }
 
 .rb-hero-scroll__content {
