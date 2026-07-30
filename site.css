@@ -251,15 +251,15 @@ body.neo-body,
   background:
     linear-gradient(
       105deg,
-      color-mix(in srgb, var(--rb-hero-scrim-ink) 70%, transparent) 0%,
-      color-mix(in srgb, var(--rb-hero-scrim-ink) 45%, transparent) 44%,
-      color-mix(in srgb, var(--rb-hero-scrim-ink) 15%, transparent) 80%,
-      transparent 100%
+      color-mix(in srgb, var(--rb-hero-scrim-ink) 95%, transparent) 0%,
+      color-mix(in srgb, var(--rb-hero-scrim-ink) 75%, transparent) 44%,
+      color-mix(in srgb, var(--rb-hero-scrim-ink) 40%, transparent) 80%,
+      color-mix(in srgb, var(--rb-hero-scrim-ink) 10%, transparent) 100%
     ),
     linear-gradient(
       to top,
-      color-mix(in srgb, var(--rb-hero-scrim-ink) 60%, transparent),
-      color-mix(in srgb, var(--rb-hero-scrim-ink) 10%, transparent) 50%,
+      color-mix(in srgb, var(--rb-hero-scrim-ink) 85%, transparent),
+      color-mix(in srgb, var(--rb-hero-scrim-ink) 30%, transparent) 50%,
       transparent 100%
     );
   pointer-events: none;
