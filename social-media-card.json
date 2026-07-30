@@ -1,0 +1,49 @@
+{
+  "businessName": "Radiance Glamour Lounge",
+  "title": "Stay in the glow with us online",
+  "handle": "@radiance_glamour",
+  "caption": "Transformations, behind-the-scenes and offers.",
+  "cta": "Tap an icon to follow, watch, or review us.",
+  "media": {
+    "background": "https://radianceglamourlounge.com/wp-content/uploads/2026/07/hero-2-1.jpg",
+    "backgroundPosition": "85% 50%",
+    "avatar": "https://radianceglamourlounge.com/wp-content/uploads/2026/07/hero-2-1.jpg",
+    "avatarPosition": "85% 50%"
+  },
+  "social": {
+    "tiktok": "https://www.tiktok.com/@nabilag84",
+    "instagram": "https://www.instagram.com/radiance_glamour_lounge/",
+    "facebook": "https://www.facebook.com/p/Radiance-glamour-loungeAesthetic-clinic-100083286131948/",
+    "linkedin": "https://www.linkedin.com/company/radiance-glamour-lounge",
+    "youtube": "https://www.youtube.com/results?search_query=Radiance+Glamour+Lounge+Stockport",
+    "googleReview": "https://www.google.com/maps/search/?api=1&query=Radiance+Glamour+Lounge,+12-16+Prince%27s+St,+Stockport+SK1+1SE"
+  },
+  "socialIconBase": "images/social",
+  "stats": {
+    "viewers": 248,
+    "hearts": 128,
+    "comments": 322,
+    "bookmarks": "1.2K",
+    "shares": 48
+  },
+  "reviewPlatforms": {
+    "treatwell": {
+      "score": 4.4,
+      "count": 322,
+      "href": "testimonials.html"
+    },
+    "google": {
+      "score": 4.6,
+      "count": 54
+    }
+  },
+  "reviewsUrl": "client-reviews.json",
+  "socialIcons": {
+    "instagram": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgcm9sZT0iaW1nIiBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImlnIiB4MT0iOCIgeTE9IjQwIiB4Mj0iNDAiIHkyPSI4IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNGRURBNzUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuMzUiIHN0b3AtY29sb3I9IiNGQTdFMUUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIuNjIiIHN0b3AtY29sb3I9IiNENjI5NzYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOTYyRkJGIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB4PSI2IiB5PSI2IiB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHJ4PSIxMCIgZmlsbD0idXJsKCNpZykiLz4KICA8cmVjdCB4PSIxMSIgeT0iMTEiIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgcng9IjciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyLjQiLz4KICA8Y2lyY2xlIGN4PSIyNCIgY3k9IjI0IiByPSI2LjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyLjQiLz4KICA8Y2lyY2xlIGN4PSIzMy4yIiBjeT0iMTQuOCIgcj0iMi4yIiBmaWxsPSIjZmZmIi8+Cjwvc3ZnPgo=",
+    "facebook": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgcm9sZT0iaW1nIiBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgPGNpcmNsZSBjeD0iMjQiIGN5PSIyNCIgcj0iMjAiIGZpbGw9IiMxODc3RjIiLz4KICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjcuOCAyNC44aC0yLjl2OS42aC00VjI0LjhoLTIuMXYtMy40aDIuMXYtMi4yYzAtMy41IDIuMS01LjQgNS4zLTUuNCAxLjUgMCAzLjEuMyAzLjEuM3YzLjRoLTEuN2MtMS43IDAtMi4yIDEtMi4yIDIuMXYxLjhoMy44bC0uNiAzLjR6Ii8+Cjwvc3ZnPgo=",
+    "google": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgcm9sZT0iaW1nIiBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgPHBhdGggZmlsbD0iI0ZGQzEwNyIgZD0iTTQzLjYgMjAuNUg0MlYyMEgyNHY4aDExLjNDMzMuOCAzMS44IDI5LjMgMzUgMjQgMzVjLTYuMSAwLTExLTQuOS0xMS0xMXM0LjktMTEgMTEtMTFjMi44IDAgNS4zIDEgNy4zIDIuN2w1LjctNS43QzMzLjUgNy41IDI5IDUuNSAyNCA1LjUgMTMuOCA1LjUgNS41IDEzLjggNS41IDI0UzEzLjggNDIuNSAyNCA0Mi41YzEwLjEgMCAxOC4zLTguMiAxOC4zLTE4LjMgMC0xLjItLjEtMi40LS40LTMuN3oiLz4KICA8cGF0aCBmaWxsPSIjRkYzRDAwIiBkPSJNOC44IDE0LjggMTQgMTljMS44LTMuNiA1LjUtNiA5LjktNiAyLjggMCA1LjMgMSA3LjMgMi43bDUuNy01LjdDMzMuNSA3LjUgMjkgNS41IDI0IDUuNSAxNiA1LjUgOS4zIDkuNiA4LjggMTQuOHoiLz4KICA8cGF0aCBmaWxsPSIjNENBRjUwIiBkPSJNMjQgNDIuNWM1LjEgMCA5LjYtMS45IDEyLjgtNS4xbC01LjktNC45QzI5LjMgMzUgMjQuOCAzNSAyNCAzNWMtNS4yIDAtOS42LTMuMS0xMS4yLTcuNmwtNS45IDQuNkM5LjkgMzguOCAxNi40IDQyLjUgMjQgNDIuNXoiLz4KICA8cGF0aCBmaWxsPSIjMTk3NkQyIiBkPSJNNDMuNiAyMC41SDQyVjIwSDI0djhoMTEuM2MtLjkgMi44LTIuOCA1LjEtNS4zIDYuNmwuMS4xIDUuOSA0LjZjLS40LjQgNy4xLTQuMSA3LjEtMTIuNyAwLTEuMi0uMS0yLjQtLjQtMy43eiIvPgo8L3N2Zz4K",
+    "youtube": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgcm9sZT0iaW1nIiBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgPHJlY3QgeD0iNCIgeT0iMTEiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyNiIgcng9IjgiIGZpbGw9IiNGRjAwMDAiLz4KICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMzIuMiAyNC4xIDIwLjUgMzEuNFYxNi44bDExLjcgNy4zeiIvPgo8L3N2Zz4K",
+    "linkedin": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgcm9sZT0iaW1nIiBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgPHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iOSIgZmlsbD0iIzBBNjZDMiIvPgogIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xNC41IDIwLjJoNS40djE1LjhoLTUuNFYyMC4yem0yLjctOC42YTMuMSAzLjEgMCAxMTAgNi4yIDMuMSAzLjEgMCAwMTAtNi4yek0yMi44IDIwLjJoNS4ydjIuMmguMWMuNy0xLjQgMi41LTIuOCA1LjEtMi44IDUuNSAwIDYuNSAzLjYgNi41IDguM3Y4LjFoLTUuNHYtNy42YzAtMS44IDAtNC4xLTIuNS00LjFzLTIuOSAyLTIuOSA0djcuN2gtNS40VjIwLjJ6Ii8+Cjwvc3ZnPgo=",
+    "tiktok": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgcm9sZT0iaW1nIiBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgPHBhdGggZmlsbD0iIzI1RjRFRSIgZD0iTTMwLjggMTEuMmMxLjUuOSAzLjIgMS40IDUgMS41djUuMmMtMS44LS4xLTMuNS0uNi01LTEuNXYxMS40YTcuOCA3LjggMCAxIDEtNi44LTcuN2MuMyAwIC43LjEgMSAuMXY1LjFhMi44IDIuOCAwIDEgMCAyIDIuN1YxMS4yaDMuOHoiLz4KICA8cGF0aCBmaWxsPSIjRkUyQzU1IiBkPSJNMjguNiAyNC4xYTUuNiA1LjYgMCAxIDEtMy40LTUuMSA1LjYgNS42IDAgMCAxIDMuNCA1LjF6Ii8+CiAgPHBhdGggZmlsbD0iIzAwMCIgZD0iTTM1LjggOS44YzEuNiAxLjEgMy41IDEuOCA1LjUgMnY1LjJjLTItLjItMy44LS45LTUuNS0yVjMwYTEwLjYgMTAuNiAwIDEgMS0xMC42LTEwLjZjLjUgMCAxIC4xIDEuNS4ydjUuNGE1LjIgNS4yIDAgMSAwIDQgNS4xVjkuOGg0LjZ6Ii8+Cjwvc3ZnPgo="
+  }
+}

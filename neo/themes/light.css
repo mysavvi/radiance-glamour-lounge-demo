@@ -1,0 +1,22 @@
+/**
+ * Neo Design — light theme structure (elevation only; colors in palettes.css)
+ */
+
+[data-neo-theme="light"] {
+  --neo-border-accent: var(--neo-accent-dark, var(--neo-accent));
+  --neo-link: var(--neo-accent-dark, var(--neo-accent));
+
+  --neo-control-highlight: rgba(255, 255, 255, 0.95);
+  --neo-control-shadow: rgba(163, 177, 198, 0.45);
+  --neo-surface-control-inset: inset -3px -3px 8px var(--neo-control-highlight), inset 3px 3px 8px var(--neo-control-shadow);
+
+  --neo-elv-0: none;
+  --neo-elv-1: -3px -3px 8px var(--neo-shadow-light), 3px 3px 8px var(--neo-shadow-dark);
+  --neo-elv-2: -6px -6px 16px var(--neo-shadow-light), 6px 6px 16px var(--neo-shadow-dark);
+  --neo-elv-3: -8px -8px 24px var(--neo-shadow-light), 8px 8px 24px var(--neo-shadow-dark);
+  --neo-elv-4: -12px -12px 40px var(--neo-shadow-light), 12px 12px 40px var(--neo-shadow-dark);
+
+  --neo-surface-raised: var(--neo-elv-2);
+  --neo-surface-inset: inset -4px -4px 10px var(--neo-shadow-light), inset 4px 4px 10px var(--neo-shadow-dark);
+  --neo-surface-pressed: inset -6px -6px 14px var(--neo-shadow-light), inset 6px 6px 14px var(--neo-shadow-dark);
+}

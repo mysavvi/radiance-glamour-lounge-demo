@@ -1,0 +1,50 @@
+/** Blog and article layouts for Neo rebuilds */
+
+.neo-article {
+  max-width: var(--neo-content-max, 42rem);
+  margin-inline: auto;
+}
+
+.neo-article__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin-block: 0 1.5rem;
+  font-size: var(--neo-text-sm);
+  color: var(--neo-text-muted);
+}
+
+.neo-article__tag {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--neo-radius-full, 999px);
+  background: var(--neo-bg-raised);
+  color: var(--neo-accent-text);
+  font-size: var(--neo-text-xs);
+}
+
+.neo-article__body > * + * {
+  margin-top: 1rem;
+}
+
+.neo-article-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.neo-article-card {
+  padding: 1.25rem;
+  border: 1px solid var(--neo-border-subtle);
+  border-radius: var(--neo-radius-lg);
+  background: var(--neo-bg-raised);
+}
+
+.neo-article-card__title {
+  margin: 0 0 0.35rem;
+  font-family: var(--neo-font-display);
+}
+
+.neo-article-card__excerpt {
+  margin: 0;
+  color: var(--neo-text-muted);
+}

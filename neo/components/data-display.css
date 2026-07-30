@@ -1,0 +1,607 @@
+/**
+ * Neo Design — data display
+ */
+
+/* Cards */
+.neo-card {
+  background: var(--neo-bg-raised);
+  border-radius: var(--neo-radius-lg);
+  padding: var(--neo-space-5);
+  box-shadow: var(--neo-surface-raised);
+}
+
+.neo-card__title {
+  font-family: var(--neo-font-ui);
+  font-size: var(--neo-text-xl);
+  font-weight: 600;
+  margin: 0 0 var(--neo-space-3);
+}
+
+.neo-card__image {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--neo-bg-inset);
+  border-radius: var(--neo-radius-md);
+  box-shadow: var(--neo-surface-control-inset);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--neo-text-muted);
+  margin-bottom: var(--neo-space-3);
+  overflow: hidden;
+}
+
+.neo-card__image img,
+.neo-card__image picture,
+.neo-card__image video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.neo-card__image--contain img,
+.neo-card__image--contain video {
+  object-fit: contain;
+}
+
+/* Recessed channel: directional inset (dark top, light bottom) so it reads as
+   a groove carved into the surface rather than a flat pill. */
+.neo-progress {
+  height: 12px;
+  background: var(--neo-bg-inset);
+  border-radius: var(--neo-radius-full);
+  box-shadow:
+    inset 2px 2px 4px var(--neo-shadow-dark),
+    inset -1px -1px 2px var(--neo-shadow-light);
+  overflow: hidden;
+  margin: var(--neo-space-3) 0;
+}
+
+/* Glossy cylindrical fill: light top → accent → darker bottom, with a top
+   highlight and bottom shade so it bulges out of the channel. */
+.neo-progress__bar {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    var(--neo-accent-light) 0%,
+    var(--neo-accent) 55%,
+    var(--neo-accent-dark) 100%
+  );
+  border-radius: var(--neo-radius-full);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.45),
+    inset 0 -2px 3px rgba(0, 0, 0, 0.25),
+    0 0 4px color-mix(in srgb, var(--neo-accent) 35%, transparent);
+  transition: width var(--neo-duration-normal);
+}
+
+.neo-progress__bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: var(--neo-radius-full);
+  background: color-mix(in srgb, white 35%, transparent);
+  filter: blur(1px);
+  opacity: 0.8;
+}
+
+.neo-progress__label {
+  font-size: var(--neo-text-xs);
+  color: var(--neo-text-muted);
+  margin-top: var(--neo-space-1);
+}
+
+/* List items */
+.neo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.neo-list-item {
+  display: flex;
+  align-items: center;
+  gap: var(--neo-space-4);
+  padding: var(--neo-space-4);
+  border-bottom: var(--neo-border-1) solid var(--neo-border-subtle);
+  transition: background var(--neo-duration-fast);
+}
+
+.neo-list-item:hover {
+  background: var(--neo-bg-inset);
+}
+
+.neo-list-item__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.neo-list-item__title {
+  font-weight: 600;
+  font-size: var(--neo-text-sm);
+  margin: 0 0 2px;
+}
+
+.neo-list-item__desc {
+  font-size: var(--neo-text-xs);
+  color: var(--neo-text-muted);
+  margin: 0;
+}
+
+.neo-list-item__trailing {
+  flex-shrink: 0;
+}
+
+/* Avatars */
+.neo-avatar {
+  position: relative;
+  border-radius: 50%;
+  background: var(--neo-bg-inset);
+  box-shadow: var(--neo-surface-control-inset);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.neo-avatar--sm { width: var(--neo-avatar-sm); height: var(--neo-avatar-sm); }
+.neo-avatar--md { width: var(--neo-avatar-md); height: var(--neo-avatar-md); }
+.neo-avatar--lg { width: var(--neo-avatar-lg); height: var(--neo-avatar-lg); }
+
+.neo-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.neo-avatar__status {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--neo-bg-raised);
+}
+
+.neo-avatar__status--online { background: var(--neo-success); }
+.neo-avatar__status--away { background: var(--neo-accent); }
+
+/* Badges */
+.neo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px var(--neo-space-2);
+  font-size: var(--neo-text-xs);
+  font-weight: 500;
+  border-radius: var(--neo-radius-full);
+  background: var(--neo-bg-inset);
+  color: var(--neo-text-muted);
+}
+
+.neo-badge--accent {
+  background: var(--neo-accent);
+  color: #fff;
+}
+
+.neo-badge--success { background: var(--neo-success); color: #fff; }
+.neo-badge--error { background: var(--neo-error); color: #fff; }
+
+.neo-badge--count {
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 50%;
+  background: var(--neo-accent);
+  color: #fff;
+  font-size: 11px;
+}
+
+/* Tooltips */
+.neo-tooltip-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.neo-tooltip {
+  position: absolute;
+  z-index: var(--neo-z-tooltip);
+  padding: var(--neo-space-2) var(--neo-space-3);
+  background: var(--neo-bg-raised);
+  color: var(--neo-text-primary);
+  font-size: var(--neo-text-xs);
+  border-radius: var(--neo-radius-sm);
+  box-shadow: var(--neo-elv-3);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.neo-tooltip--top {
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.neo-tooltip--top::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--neo-bg-raised);
+}
+
+/* Table */
+.neo-table-wrap {
+  overflow-x: auto;
+  border-radius: var(--neo-radius-md);
+}
+
+.neo-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--neo-text-sm);
+}
+
+.neo-table thead {
+  background: var(--neo-bg-inset);
+  box-shadow: var(--neo-surface-control-inset);
+}
+
+.neo-table th {
+  padding: var(--neo-space-3) var(--neo-space-4);
+  text-align: left;
+  font-weight: 600;
+  color: var(--neo-text-muted);
+  cursor: pointer;
+  user-select: none;
+}
+
+.neo-table th:hover {
+  color: var(--neo-text-primary);
+}
+
+.neo-table td {
+  padding: var(--neo-space-3) var(--neo-space-4);
+  border-bottom: var(--neo-border-1) solid var(--neo-border-subtle);
+}
+
+.neo-table tbody tr:hover {
+  background: var(--neo-bg-inset);
+}
+
+/* ── Pricing card ───────────────────────────────────────────── */
+.neo-pricing {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--neo-bg-raised);
+  border: var(--neo-border-1) solid transparent;
+  border-radius: var(--neo-radius-xl);
+  padding: var(--neo-space-6);
+  box-shadow: var(--neo-surface-raised);
+}
+
+.neo-pricing--featured {
+  border-color: var(--neo-accent);
+  box-shadow: var(--neo-elv-3);
+}
+
+.neo-pricing__badge {
+  position: absolute;
+  top: 0;
+  right: var(--neo-space-5);
+  transform: translateY(-50%);
+  padding: var(--neo-space-1) var(--neo-space-3);
+  font-size: var(--neo-text-xs);
+  font-weight: 600;
+  color: #fff;
+  background: var(--neo-accent);
+  border-radius: var(--neo-radius-full);
+}
+
+.neo-pricing__plan {
+  font-family: var(--neo-font-ui);
+  font-size: var(--neo-text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--neo-tracking-overline);
+  color: var(--neo-text-muted);
+  margin: 0 0 var(--neo-space-3);
+}
+
+.neo-pricing__price {
+  display: flex;
+  align-items: baseline;
+  gap: var(--neo-space-1);
+  margin-bottom: var(--neo-space-2);
+}
+
+.neo-pricing__currency {
+  font-size: var(--neo-text-2xl);
+  font-weight: 600;
+  color: var(--neo-text-primary);
+  align-self: baseline;
+}
+
+.neo-pricing__amount {
+  font-family: var(--neo-font-ui);
+  font-size: var(--neo-text-4xl);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  color: var(--neo-text-primary);
+}
+
+.neo-pricing__period {
+  font-size: var(--neo-text-sm);
+  color: var(--neo-text-muted);
+}
+
+.neo-pricing__desc {
+  font-size: var(--neo-text-sm);
+  color: var(--neo-text-muted);
+  margin: 0 0 var(--neo-space-4);
+}
+
+.neo-pricing__features {
+  list-style: none;
+  margin: 0 0 var(--neo-space-5);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--neo-space-2);
+  flex: 1;
+}
+
+.neo-pricing__features li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--neo-space-2);
+  font-size: var(--neo-text-sm);
+  color: var(--neo-text-primary);
+}
+
+.neo-pricing__features li::before {
+  content: "";
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  background: var(--neo-accent);
+  border-radius: 50%;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center / 12px no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center / 12px no-repeat;
+}
+
+.neo-pricing__feat--muted {
+  color: var(--neo-text-muted);
+}
+
+.neo-pricing__feat--muted::before {
+  background: var(--neo-text-muted);
+}
+
+/* ── Product card (savvi-stitch inspired: big curves, portrait media,
+   floating cart FAB, wishlist heart) ───────────────────────────── */
+.neo-product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--neo-bg-raised);
+  border-radius: var(--neo-radius-2xl);
+  padding: var(--neo-space-3);
+  padding-bottom: var(--neo-space-8);
+  box-shadow: var(--neo-elv-2);
+  transition: box-shadow var(--neo-duration-normal) var(--neo-ease-default);
+}
+
+.neo-product:hover {
+  box-shadow: var(--neo-elv-3);
+}
+
+.neo-product__media {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--neo-radius-xl);
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    var(--neo-bg-pressed) 0%,
+    var(--neo-bg-inset) 60%,
+    var(--neo-bg-base) 100%
+  );
+}
+
+.neo-product__media img,
+.neo-product__media picture,
+.neo-product__media video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform var(--neo-duration-slow, 500ms) var(--neo-ease-default);
+}
+
+.neo-product:hover .neo-product__media img {
+  transform: scale(1.05);
+}
+
+.neo-product__tag {
+  position: absolute;
+  top: var(--neo-space-3);
+  left: var(--neo-space-3);
+  padding: var(--neo-space-1) var(--neo-space-3);
+  font-size: var(--neo-text-xs);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #fff;
+  background: var(--neo-accent);
+  border-radius: var(--neo-radius-full);
+  box-shadow: var(--neo-elv-1);
+  z-index: 1;
+}
+
+.neo-product__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--neo-space-1);
+  padding: var(--neo-space-4) var(--neo-space-2) 0;
+}
+
+.neo-product__category {
+  font-size: var(--neo-text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--neo-tracking-overline);
+  color: var(--neo-text-muted);
+}
+
+.neo-product__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--neo-space-3);
+}
+
+.neo-product__title {
+  font-family: var(--neo-font-ui);
+  font-size: var(--neo-text-lg);
+  font-weight: 700;
+  line-height: var(--neo-leading-snug);
+  margin: 0;
+  color: var(--neo-text-primary);
+}
+
+/* Wishlist heart — round raised button */
+.neo-product__wishlist {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: var(--neo-bg-raised);
+  color: var(--neo-text-muted);
+  box-shadow: var(--neo-elv-1);
+  cursor: pointer;
+  transition: transform var(--neo-duration-fast) var(--neo-ease-default),
+    color var(--neo-duration-fast);
+}
+
+.neo-product__wishlist:hover {
+  transform: scale(1.08);
+}
+
+.neo-product__wishlist svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.neo-product__wishlist--active {
+  color: var(--neo-error);
+}
+
+.neo-product__wishlist--active svg {
+  fill: currentColor;
+}
+
+.neo-product__rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--neo-text-xs);
+  color: var(--neo-text-muted);
+}
+
+.neo-product__stars {
+  color: var(--neo-accent-text);
+  letter-spacing: 1px;
+}
+
+.neo-product__desc {
+  font-size: var(--neo-text-sm);
+  line-height: var(--neo-leading-relaxed);
+  color: var(--neo-text-muted);
+  margin: var(--neo-space-1) 0 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.neo-product__price-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--neo-space-2);
+  margin-top: var(--neo-space-3);
+}
+
+.neo-product__price {
+  font-size: var(--neo-text-xl);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--neo-text-primary);
+}
+
+.neo-product__price--old {
+  font-size: var(--neo-text-sm);
+  font-weight: 400;
+  color: var(--neo-text-muted);
+  text-decoration: line-through;
+}
+
+/* Floating circular cart FAB overlapping the bottom edge */
+.neo-product__cart {
+  position: absolute;
+  bottom: var(--neo-space-3);
+  right: var(--neo-space-3);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background: var(--neo-accent-gradient);
+  color: #fff;
+  box-shadow: var(--neo-elv-2), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: transform var(--neo-duration-fast) var(--neo-ease-default),
+    box-shadow var(--neo-duration-fast);
+}
+
+.neo-product__cart:hover {
+  transform: scale(1.06);
+  box-shadow: var(--neo-elv-3), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.neo-product__cart:active {
+  transform: scale(0.96);
+}
+
+.neo-product__cart svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+}

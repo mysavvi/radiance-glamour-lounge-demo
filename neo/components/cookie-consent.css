@@ -1,0 +1,46 @@
+/** Cookie consent banner (PECR/GDPR-friendly hook) */
+
+.neo-cookie-banner {
+  position: fixed;
+  inset-inline: 1rem;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  z-index: 9998;
+  display: none;
+  gap: 1rem;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--neo-border-subtle);
+  border-radius: var(--neo-radius-lg);
+  background: var(--neo-bg-raised);
+  box-shadow: var(--neo-shadow-lg, 0 12px 40px rgba(0, 0, 0, 0.25));
+}
+
+.neo-cookie-banner.is-visible {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.neo-cookie-banner__text {
+  margin: 0;
+  flex: 1 1 16rem;
+  font-size: var(--neo-text-sm);
+  color: var(--neo-text-muted);
+}
+
+.neo-cookie-banner__actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.neo-cookie-banner--with-bottom-nav {
+  bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+@media (min-width: 768px) {
+  .neo-cookie-banner {
+    inset-inline: auto 1.5rem;
+    max-width: 28rem;
+  }
+}

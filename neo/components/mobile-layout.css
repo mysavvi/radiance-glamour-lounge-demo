@@ -1,0 +1,516 @@
+/**
+ * Neo Design — mobile-first layout (page shell, header, drawer, bottom nav)
+ * Adapted from mobile-layout skill — uses Neo tokens, no Tailwind.
+ */
+
+/* --- Page shell --- */
+.neo-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--neo-bg-base);
+  color: var(--neo-text-primary);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.neo-page__main,
+#neo-main.neo-page__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding-top: 0;
+}
+
+@media (max-width: 767px) {
+  .neo-page__main,
+  #neo-main.neo-page__main {
+    padding-top: calc(var(--neo-mobile-header-height) + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(var(--neo-bottom-nav-height) + env(safe-area-inset-bottom, 0px));
+  }
+
+  .neo-footer--with-bottom-nav {
+    padding-bottom: calc(var(--neo-bottom-nav-height) + var(--neo-space-6) + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@media (min-width: 768px) {
+  .neo-page__main,
+  #neo-main.neo-page__main {
+    padding-top: 72px;
+  }
+}
+
+/* --- Mobile header --- */
+.neo-mobile-header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--neo-z-mobile-header);
+  background: var(--neo-bg-raised);
+  border-bottom: var(--neo-border-1) solid transparent;
+  padding-top: env(safe-area-inset-top, 0px);
+  transition: background var(--neo-duration-normal),
+    box-shadow var(--neo-duration-normal),
+    border-color var(--neo-duration-normal),
+    -webkit-backdrop-filter var(--neo-duration-normal),
+    backdrop-filter var(--neo-duration-normal);
+}
+
+/* Frosted glass once the page is scrolled */
+.neo-mobile-header--scrolled {
+  background: color-mix(in srgb, var(--neo-bg-raised) 72%, transparent);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+  border-bottom-color: var(--neo-border-subtle);
+  box-shadow: var(--neo-elv-2);
+}
+
+@media (min-width: 768px) {
+  .neo-mobile-header {
+    display: none;
+  }
+}
+
+.neo-mobile-header__inner {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 0;
+  padding: var(--neo-space-2) var(--neo-space-4);
+  min-height: var(--neo-mobile-header-height);
+}
+
+.neo-mobile-header__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--neo-space-3);
+  text-decoration: none;
+  color: var(--neo-text-primary);
+}
+
+/* Wordmark logos already include the brand name in the image — omit the text span */
+.neo-mobile-header__brand--wordmark .neo-mobile-header__name {
+  display: none;
+}
+
+.neo-mobile-header__logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.neo-mobile-header__name {
+  font-family: var(--neo-font-display);
+  font-weight: 600;
+  font-size: var(--neo-text-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--neo-tracking-overline);
+  line-height: 1.2;
+}
+
+@media (max-width: 380px) {
+  .neo-mobile-header__name {
+    display: none;
+  }
+}
+
+.neo-mobile-header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--neo-space-2);
+}
+
+.neo-mobile-header__actions .neo-btn {
+  min-height: var(--neo-touch-min);
+}
+
+.neo-mobile-header__menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--neo-touch-min);
+  min-height: var(--neo-touch-min);
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--neo-text-primary);
+  cursor: pointer;
+  border-radius: var(--neo-radius-md);
+}
+
+/* Animated hamburger that morphs into an X when the drawer is open.
+   Three bars stacked in a fixed box; open state is driven purely off
+   aria-expanded="true" (set by mobile-nav.js), no JS class needed. */
+.neo-burger {
+  position: relative;
+  display: block;
+  width: 26px;
+  height: 18px;
+  flex: none;
+}
+
+.neo-burger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  transform-origin: center;
+  transition: transform var(--neo-duration-normal) var(--neo-ease-default),
+    opacity var(--neo-duration-fast) var(--neo-ease-default);
+}
+
+.neo-burger span:nth-child(1) {
+  top: 0;
+}
+
+.neo-burger span:nth-child(2) {
+  top: 8px;
+}
+
+.neo-burger span:nth-child(3) {
+  top: 16px;
+}
+
+.neo-mobile-header__menu-btn[aria-expanded="true"] .neo-burger span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.neo-mobile-header__menu-btn[aria-expanded="true"] .neo-burger span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.neo-mobile-header__menu-btn[aria-expanded="true"] .neo-burger span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neo-burger span {
+    transition: none;
+  }
+}
+
+/* --- Desktop nav --- */
+.neo-desktop-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--neo-z-desktop-nav);
+  border-bottom: var(--neo-border-1) solid transparent;
+  transition: background var(--neo-duration-normal),
+    box-shadow var(--neo-duration-normal),
+    border-color var(--neo-duration-normal),
+    -webkit-backdrop-filter var(--neo-duration-normal),
+    backdrop-filter var(--neo-duration-normal);
+}
+
+/* Frosted glass once the page is scrolled */
+.neo-desktop-nav--scrolled {
+  background: color-mix(in srgb, var(--neo-bg-raised) 70%, transparent);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  backdrop-filter: blur(18px) saturate(180%);
+  border-bottom-color: var(--neo-border-subtle);
+  box-shadow: var(--neo-elv-2);
+}
+
+@media (min-width: 768px) {
+  .neo-desktop-nav {
+    display: block;
+  }
+}
+
+.neo-desktop-nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--neo-container-max);
+  margin-inline: auto;
+  padding: var(--neo-space-4) var(--neo-container-padding);
+}
+
+.neo-desktop-nav__links {
+  display: flex;
+  align-items: center;
+  gap: var(--neo-space-6);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--neo-font-ui);
+  font-size: var(--neo-text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.neo-desktop-nav__links a {
+  color: var(--neo-text-muted);
+  text-decoration: none;
+  transition: color var(--neo-duration-fast);
+  padding-bottom: var(--neo-space-1);
+  border-bottom: 2px solid transparent;
+}
+
+.neo-desktop-nav__links a:hover {
+  color: var(--neo-text-primary);
+}
+
+.neo-desktop-nav__links a.neo-nav-link--active {
+  color: var(--neo-text-primary);
+  border-bottom-color: var(--neo-accent);
+}
+
+/* --- Mobile menu drawer --- */
+/* The drawer is a side sheet: the container is a dimmed scrim (tap to close),
+   and __inner is the panel that slides in from the right covering part of the
+   screen so the page stays partly visible behind it. */
+.neo-mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: var(--neo-z-mobile-menu);
+  background: var(--neo-overlay);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--neo-duration-normal) var(--neo-ease-default), visibility var(--neo-duration-normal);
+}
+
+.neo-mobile-menu--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 768px) {
+  .neo-mobile-menu {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neo-mobile-menu,
+  .neo-mobile-menu__inner {
+    transition-duration: 0.01ms;
+  }
+}
+
+.neo-mobile-menu__inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: min(60vw, 22rem);
+  display: flex;
+  flex-direction: column;
+  padding: calc(env(safe-area-inset-top, 0px) + var(--neo-space-6)) var(--neo-space-6) calc(env(safe-area-inset-bottom, 0px) + var(--neo-space-6));
+  background: var(--neo-bg-raised);
+  box-shadow: -24px 0 60px -24px var(--neo-shadow-dark);
+  transform: translateX(100%);
+  transition: transform var(--neo-duration-slow) var(--neo-ease-default);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.neo-mobile-menu--open .neo-mobile-menu__inner {
+  transform: translateX(0);
+}
+
+.neo-mobile-menu__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--neo-space-8);
+}
+
+.neo-mobile-menu__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--neo-touch-min);
+  min-height: var(--neo-touch-min);
+  border: none;
+  border-radius: var(--neo-radius-full);
+  background: var(--neo-bg-inset);
+  color: var(--neo-text-primary);
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.neo-mobile-menu__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--neo-space-5);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--neo-font-display);
+  font-size: var(--neo-text-2xl);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.neo-mobile-menu__links a {
+  color: var(--neo-text-muted);
+  text-decoration: none;
+  transition: color var(--neo-duration-fast);
+}
+
+.neo-mobile-menu__links a:hover,
+.neo-mobile-menu__links a.neo-nav-link--active {
+  color: var(--neo-accent-text);
+}
+
+.neo-mobile-menu__cta {
+  margin-top: auto;
+  padding-top: var(--neo-space-6);
+  min-width: 0;
+}
+
+.neo-mobile-menu__cta .neo-btn {
+  width: 100%;
+}
+
+/* --- Bottom navigation --- */
+.neo-bottom-nav {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--neo-z-bottom-nav);
+  background: color-mix(in srgb, var(--neo-bg-raised) 95%, transparent);
+  backdrop-filter: blur(16px);
+  border-top: var(--neo-border-1) solid var(--neo-border-subtle);
+  box-shadow: 0 -8px 32px color-mix(in srgb, var(--neo-accent) 15%, transparent);
+  padding-bottom: max(var(--neo-space-3), env(safe-area-inset-bottom, 0px));
+}
+
+@media (min-width: 768px) {
+  .neo-bottom-nav {
+    display: none;
+  }
+}
+
+.neo-bottom-nav__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 480px;
+  margin-inline: auto;
+  padding: var(--neo-space-2) var(--neo-space-2);
+}
+
+.neo-bottom-nav__tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--neo-space-1);
+  min-width: 70px;
+  min-height: var(--neo-touch-min);
+  padding: var(--neo-space-2) var(--neo-space-3);
+  border-radius: var(--neo-radius-lg);
+  text-decoration: none;
+  color: var(--neo-text-muted);
+  font-size: 9px;
+  font-family: var(--neo-font-ui);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition: color var(--neo-duration-fast), background var(--neo-duration-fast), transform var(--neo-duration-fast);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.neo-bottom-nav__tab:active {
+  transform: scale(0.9);
+}
+
+.neo-bottom-nav__tab svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5;
+}
+
+.neo-bottom-nav__tab--active {
+  color: var(--neo-accent-text);
+  background: color-mix(in srgb, var(--neo-accent) 12%, transparent);
+  box-shadow: none;
+}
+
+.neo-bottom-nav__tab--active svg {
+  fill: currentColor;
+  stroke-width: 1.25;
+}
+
+/* Footer styling is owned entirely by components/footer.css (loaded after this file). */
+
+/* --- Mobile typography & forms --- */
+@media (max-width: 767px) {
+  .neo-h1 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+
+  .neo-h2 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+  }
+}
+
+.neo-input,
+.neo-textarea,
+.neo-select {
+  font-size: max(16px, var(--neo-text-base));
+}
+
+html,
+body.neo-body {
+  overscroll-behavior-y: none;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body.neo-body.neo-menu-open,
+html.neo-menu-open {
+  overflow: hidden;
+}
+
+/* A11y toolbar sits above the bottom nav. The rendered nav is taller than
+   --neo-bottom-nav-height (inner padding + safe area), so add space-8 of headroom. */
+#neo-a11y-root {
+  bottom: calc(var(--neo-bottom-nav-height) + var(--neo-space-8) + env(safe-area-inset-bottom, 0px));
+}
+
+@media (min-width: 768px) {
+  #neo-a11y-root {
+    bottom: max(var(--neo-space-5), env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* Mobile a11y panel: half-screen bottom sheet (reinforces a11y-toolbar.css). */
+@media (max-width: 767px) {
+  .neo-a11y-panel--open {
+    max-height: 50dvh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

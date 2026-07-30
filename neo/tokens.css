@@ -1,0 +1,122 @@
+/**
+ * Neo Design — shared tokens (theme-agnostic)
+ * Light source for all neumorphic shadows: top-left
+ */
+
+:root {
+  /* Spacing scale */
+  --neo-space-1: 6px;
+  --neo-space-2: 10px;
+  --neo-space-3: 14px;
+  --neo-space-4: 18px;
+  --neo-space-5: 20px;
+  --neo-space-6: 24px;
+  --neo-space-7: 28px;
+  --neo-space-8: 36px;
+
+  /* Border radius */
+  --neo-radius-sm: 4px;
+  --neo-radius-md: 8px;
+  --neo-radius-lg: 12px;
+  --neo-radius-xl: 16px;
+  --neo-radius-2xl: 24px;
+  --neo-radius-full: 9999px;
+
+  /* Border width */
+  --neo-border-1: 1px;
+  --neo-border-2: 2px;
+  --neo-border-4: 4px;
+  --neo-border-8: 8px;
+
+  /* Color tokens — set per palette in palettes.css */
+  --neo-text-xs: 0.75rem;
+  --neo-text-sm: 0.875rem;
+  --neo-text-base: 1rem;
+  --neo-text-lg: 1.125rem;
+  --neo-text-xl: 1.25rem;
+  --neo-text-2xl: 1.5rem;
+  --neo-text-3xl: 2rem;
+  --neo-text-4xl: clamp(2.25rem, 5vw, 3rem);
+
+  --neo-leading-tight: 1.1;
+  --neo-leading-snug: 1.25;
+  --neo-leading-normal: 1.5;
+  --neo-leading-relaxed: 1.45;
+
+  --neo-tracking-overline: 0.12em;
+
+  /* Font families */
+  --neo-font-display: "butik-display-normal", "Bodoni Moda", Georgia, serif;
+  --neo-font-ui: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Motion */
+  --neo-duration-fast: 150ms;
+  --neo-duration-normal: 250ms;
+  --neo-duration-slow: 400ms;
+  --neo-duration-spinner: 800ms;
+  --neo-ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+  /* Remotion-craft mapped easings (see .cursor/skills/motion-ui/references/remotion-craft.md) */
+  --neo-ease-enter: cubic-bezier(0.16, 1, 0.3, 1);
+  --neo-ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  --neo-ease-exit: cubic-bezier(0.333, 0, 0.667, 0);
+  --neo-ease-sharp: cubic-bezier(0.4, 0, 0.2, 1);
+  --neo-motion-fast: 180ms;
+  --neo-motion-normal: 350ms;
+  --neo-motion-slow: 600ms;
+  --neo-motion-distance-sm: 8px;
+  --neo-motion-distance-md: 16px;
+  --neo-motion-distance-lg: 24px;
+
+  /* Z-index */
+  --neo-z-tooltip: 100;
+  --neo-z-modal-overlay: 200;
+  --neo-z-modal: 210;
+  --neo-z-toast: 300;
+  --neo-z-a11y: 400;
+  --neo-z-bottom-nav: 80;
+  --neo-z-mobile-header: 90;
+  --neo-z-desktop-nav: 90;
+  --neo-z-mobile-menu: 350;
+
+  /* Mobile layout */
+  --neo-mobile-header-height: 64px;
+  --neo-bottom-nav-height: 72px;
+
+  /* Layout
+     Shell width is driven by one token (used by the desktop nav inner,
+     .neo-container, and the footer inner, so header/body/footer always align).
+     Fluid max: grows with the viewport up to --neo-container-cap, minus side
+     gutter, so laptops use nearly the full width and 1920px+ displays are not
+     stranded in a narrow column. Long-form prose stays readable via --neo-measure.
+     Do not revert to a fixed pixel cap (e.g. 1280px): that recreates the empty
+     side-margin bug on real desktop monitors. */
+  --neo-container-padding: clamp(24px, 3vw, 64px);
+  --neo-container-cap: 2200px;
+  --neo-container-max: min(var(--neo-container-cap), calc(100vw - 2 * var(--neo-container-padding)));
+  --neo-grid-columns: 12;
+  --neo-grid-gap: 24px;
+  /* Readable line length for long-form prose (keeps text legible in a wide shell) */
+  --neo-measure: 72ch;
+
+  /* Icon sizes */
+  --neo-icon-xs: 18px;
+  --neo-icon-sm: 20px;
+  --neo-icon-md: 22px;
+  --neo-icon-lg: 24px;
+  --neo-icon-xl: 26px;
+  --neo-icon-container: 32px;
+
+  /* Avatar sizes */
+  --neo-avatar-sm: 32px;
+  --neo-avatar-md: 40px;
+  --neo-avatar-lg: 56px;
+
+  /* Touch */
+  --neo-touch-min: 44px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --neo-container-padding: 16px;
+  }
+}

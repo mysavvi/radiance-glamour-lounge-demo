@@ -1,0 +1,50 @@
+/**
+ * Neo Design — surface utilities
+ * Light source: top-left
+ */
+
+.neo-surface-base {
+  background: var(--neo-bg-base);
+  border-radius: var(--neo-radius-md);
+}
+
+.neo-surface-raised {
+  background: var(--neo-bg-raised);
+  border-radius: var(--neo-radius-md);
+  box-shadow: var(--neo-surface-raised);
+}
+
+.neo-surface-inset {
+  background: var(--neo-bg-inset);
+  border-radius: var(--neo-radius-md);
+  box-shadow: var(--neo-surface-inset);
+}
+
+.neo-surface-control-inset {
+  background: var(--neo-bg-inset);
+  border-radius: var(--neo-radius-md);
+  box-shadow: var(--neo-surface-control-inset);
+}
+
+.neo-surface-pressed {
+  background: var(--neo-bg-pressed);
+  border-radius: var(--neo-radius-md);
+  box-shadow: var(--neo-surface-pressed);
+  transform: scale(0.98);
+}
+
+.neo-elv-0 { box-shadow: var(--neo-elv-0); }
+.neo-elv-1 { box-shadow: var(--neo-elv-1); }
+.neo-elv-2 { box-shadow: var(--neo-elv-2); }
+.neo-elv-3 { box-shadow: var(--neo-elv-3); }
+.neo-elv-4 { box-shadow: var(--neo-elv-4); }
+
+.neo-glow-accent {
+  box-shadow: var(--neo-accent-glow);
+}
+
+.neo-divider {
+  border: none;
+  border-top: var(--neo-border-1) solid var(--neo-border-subtle);
+  margin: var(--neo-space-3) 0;
+}
