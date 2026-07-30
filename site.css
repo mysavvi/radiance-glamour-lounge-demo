@@ -36,8 +36,24 @@ html[data-neo-theme="dark"] .rb-brand-mark,
 html[data-neo-theme="dark"] .neo-footer__logo img { filter: invert(1) brightness(1.7); }
 
 /* Neo's overflow-x: hidden forces overflow-y: auto and breaks sticky heroes. */
+html,
+body.neo-body,
+.neo-page,
+.wp-html-module,
+[data-neo-wp-embed] {
+  overflow-x: clip;
+}
+
 .neo-page {
   overflow-x: clip;
+  max-width: 100%;
+}
+
+.neo-page img,
+.neo-page video,
+.neo-page iframe,
+.neo-page table {
+  max-width: 100%;
 }
 
 /* Desktop nav: fully transparent over hero scroll (images 1–3), solid after release */
@@ -235,14 +251,16 @@ html[data-neo-theme="dark"] .neo-footer__logo img { filter: invert(1) brightness
   background:
     linear-gradient(
       105deg,
-      color-mix(in srgb, var(--rb-hero-scrim-ink) 36%, transparent) 0%,
-      color-mix(in srgb, var(--rb-hero-scrim-ink) 14%, transparent) 44%,
-      transparent 74%
+      color-mix(in srgb, var(--rb-hero-scrim-ink) 70%, transparent) 0%,
+      color-mix(in srgb, var(--rb-hero-scrim-ink) 45%, transparent) 44%,
+      color-mix(in srgb, var(--rb-hero-scrim-ink) 15%, transparent) 80%,
+      transparent 100%
     ),
     linear-gradient(
       to top,
-      color-mix(in srgb, var(--rb-hero-scrim-ink) 24%, transparent),
-      transparent 50%
+      color-mix(in srgb, var(--rb-hero-scrim-ink) 60%, transparent),
+      color-mix(in srgb, var(--rb-hero-scrim-ink) 10%, transparent) 50%,
+      transparent 100%
     );
   pointer-events: none;
 }
@@ -741,7 +759,44 @@ html.js .rb-acc__trigger[aria-expanded="false"] + .rb-acc__panel { grid-template
   gap: var(--neo-space-5);
   margin-top: var(--neo-space-8);
   align-items: stretch;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+@media (max-width: 767.98px) {
+  .neo-pricelist,
+  .neo-pricelist--menu,
+  .neo-pricelist__col,
+  .neo-price-card,
+  .neo-price-card-shell,
+  .neo-price-card__body {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .neo-pricelist--menu .neo-price-card--wide .neo-price-card__body,
+  .neo-pricelist--menu .neo-price-card-shell--wide .neo-price-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .neo-price-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--neo-space-2);
+  }
+
+  .neo-price-row__name,
+  .neo-price-row__desc {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .neo-price-row__book {
+    min-height: 44px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2545,7 +2600,9 @@ html.rb-gallery-open {
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-end;
-  overflow: visible;
+  /* Contain fan transforms so they never widen page scrollWidth */
+  overflow: hidden;
+  cursor: pointer;
 }
 .rb-folder-gallery.is-open .rb-folder-gallery__stage {
   position: fixed;
@@ -2610,7 +2667,6 @@ html.rb-gallery-open {
   width: min(100%, var(--fg-photo-w));
   height: var(--fg-photo-h);
   margin-inline: auto;
-  overflow: visible;
 }
 .rb-folder-gallery.is-open.is-mobile-open .rb-folder-gallery__photo.is-deck-hidden {
   opacity: 0;
@@ -2730,7 +2786,7 @@ html.rb-gallery-open {
   height: var(--fg-photo-h);
   z-index: 10;
   pointer-events: none;
-  overflow: visible;
+  max-width: 100%;
 }
 .rb-folder-gallery.is-open .rb-folder-gallery__photos {
   pointer-events: auto;
@@ -2770,6 +2826,7 @@ html.rb-gallery-open {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 20%;
   pointer-events: none;
 }
 .rb-folder-gallery__photo-cap {
