@@ -1,0 +1,35 @@
+/**
+ * Neo Design — skip to main content (WCAG 2.4.1)
+ */
+
+.neo-skip-link {
+  position: absolute;
+  top: var(--neo-space-2);
+  left: var(--neo-space-2);
+  z-index: calc(var(--neo-z-a11y) + 1);
+  padding: var(--neo-space-2) var(--neo-space-4);
+  background: var(--neo-accent);
+  color: #fff;
+  font-family: var(--neo-font-ui);
+  font-size: var(--neo-text-sm);
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: var(--neo-radius-md);
+  box-shadow: var(--neo-elv-2);
+  transform: translateY(-200%);
+  transition: transform var(--neo-duration-fast) var(--neo-ease-default);
+}
+
+.neo-skip-link:focus {
+  transform: translateY(0);
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+#neo-main {
+  outline: none;
+}
+
+#neo-main:focus {
+  outline: none;
+}

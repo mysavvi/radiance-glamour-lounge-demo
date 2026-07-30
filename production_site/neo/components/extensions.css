@@ -1,0 +1,66 @@
+/**
+ * Neo Design — extension controls (token-consistent stubs)
+ */
+
+.neo-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: var(--neo-space-3) var(--neo-space-4);
+  font-family: var(--neo-font-ui);
+  font-size: var(--neo-text-sm);
+  color: var(--neo-text-primary);
+  background: var(--neo-bg-inset);
+  border: var(--neo-border-1) solid transparent;
+  border-radius: var(--neo-radius-md);
+  box-shadow: var(--neo-surface-control-inset);
+  resize: vertical;
+  transition: box-shadow var(--neo-duration-fast);
+}
+
+.neo-textarea:focus {
+  outline: none;
+  border-color: color-mix(in srgb, var(--neo-accent) 45%, transparent);
+  box-shadow: var(--neo-surface-control-inset);
+}
+
+.neo-select {
+  appearance: none;
+  width: 100%;
+  padding: var(--neo-space-3) var(--neo-space-6) var(--neo-space-3) var(--neo-space-4);
+  font-family: var(--neo-font-ui);
+  font-size: var(--neo-text-sm);
+  color: var(--neo-text-primary);
+  background: var(--neo-bg-inset);
+  border: var(--neo-border-1) solid transparent;
+  border-radius: var(--neo-radius-md);
+  box-shadow: var(--neo-surface-control-inset);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239aa3b2' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  cursor: pointer;
+}
+
+.neo-select:focus {
+  outline: none;
+  border-color: color-mix(in srgb, var(--neo-accent) 45%, transparent);
+  box-shadow: var(--neo-surface-control-inset);
+}
+
+.neo-search {
+  position: relative;
+}
+
+.neo-search .neo-input {
+  padding-left: var(--neo-space-7);
+}
+
+.neo-search__icon {
+  position: absolute;
+  left: var(--neo-space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--neo-text-muted);
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+}

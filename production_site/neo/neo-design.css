@@ -1,0 +1,52 @@
+/**
+ * Neo Design — single entry point
+ * @import in rebuilt sites or link directly
+ */
+
+@import url("tokens.css");
+@import url("palettes.css");
+@import url("themes/dark.css");
+@import url("themes/light.css");
+@import url("typography.css");
+@import url("surfaces.css");
+@import url("motion.css");
+@import url("icons.css");
+@import url("a11y.css");
+@import url("components/skip-link.css");
+@import url("components/a11y-toolbar.css?v=20260627b");
+@import url("components/theme-toggle.css?v=20260629b");
+@import url("layout.css");
+@import url("components/mobile-layout.css?v=20260627b");
+@import url("components/buttons.css");
+@import url("components/forms.css");
+@import url("components/navigation.css");
+@import url("components/data-display.css");
+@import url("components/feedback.css");
+@import url("components/footer.css");
+@import url("components/extensions.css");
+@import url("components/blog.css");
+@import url("components/gallery.css");
+@import url("components/cookie-consent.css");
+@import url("components/social-media-card.css");
+@import url("components/wp-embed.css");
+
+/* Base reset for Neo pages */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+html[data-neo-theme="light"] {
+  color-scheme: light;
+}
+
+body.neo-body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--neo-bg-base);
+}

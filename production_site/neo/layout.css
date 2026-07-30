@@ -1,0 +1,95 @@
+/**
+ * Neo Design — layout grid & site chrome
+ */
+
+/* Page shell. Width and gutter come from --neo-container-max (fluid: viewport
+   minus gutter, capped at --neo-container-cap) and --neo-container-padding in
+   tokens.css. The desktop nav inner and footer inner use the same token so
+   header, body and footer align. Override --neo-container-cap per build. */
+.neo-container {
+  width: 100%;
+  max-width: var(--neo-container-max);
+  margin-inline: auto;
+  padding-inline: var(--neo-container-padding);
+}
+
+.neo-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--neo-grid-columns), 1fr);
+  gap: var(--neo-grid-gap);
+}
+
+.neo-col-6 { grid-column: span 6; }
+.neo-col-12 { grid-column: span 12; }
+
+@media (max-width: 1024px) {
+  .neo-grid { grid-template-columns: repeat(6, 1fr); }
+  .neo-col-6 { grid-column: span 6; }
+}
+
+@media (max-width: 768px) {
+  .neo-grid { grid-template-columns: 1fr; }
+  .neo-col-6,
+  .neo-col-12 { grid-column: span 1; }
+}
+
+#neo-main {
+  min-height: 50vh;
+}
+
+/* Long-form prose stays at a readable measure even when the shell is wide.
+   Headings, media, grids and cards still use the full container width. */
+.neo-section > .neo-body,
+.neo-section > .neo-lead {
+  max-width: var(--neo-measure);
+}
+
+/* Site header */
+.neo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--neo-space-4) var(--neo-container-padding);
+  background: var(--neo-bg-raised);
+  box-shadow: var(--neo-elv-1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.neo-header__logo {
+  font-family: var(--neo-font-display);
+  font-weight: 600;
+  font-size: var(--neo-text-xl);
+  color: var(--neo-text-primary);
+  text-decoration: none;
+}
+
+.neo-header__nav {
+  display: flex;
+  gap: var(--neo-space-5);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.neo-header__nav a {
+  color: var(--neo-text-muted);
+  text-decoration: none;
+  font-size: var(--neo-text-sm);
+  transition: color var(--neo-duration-fast);
+}
+
+.neo-header__nav a:hover {
+  color: var(--neo-accent-text);
+}
+
+/* Site footer */
+.neo-footer {
+  padding: var(--neo-space-6) var(--neo-container-padding);
+  background: var(--neo-bg-inset);
+  color: var(--neo-text-muted);
+  font-size: var(--neo-text-sm);
+  text-align: center;
+  margin-top: var(--neo-space-8);
+}

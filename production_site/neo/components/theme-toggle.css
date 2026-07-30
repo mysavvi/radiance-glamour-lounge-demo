@@ -1,0 +1,204 @@
+/**
+ * Neo Design — dark/light theme toggle button
+ * Injected by theme-toggle.js into the mobile drawer and the footer legal bar.
+ */
+
+.neo-theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  min-width: var(--neo-touch-min);
+  min-height: var(--neo-touch-min);
+  padding: 0;
+  border: none;
+  border-radius: var(--neo-radius-md);
+  background: var(--neo-bg-raised);
+  color: var(--neo-accent-text);
+  box-shadow: none;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform var(--neo-duration-fast),
+    background var(--neo-duration-fast);
+}
+
+.neo-theme-toggle:hover {
+  background: var(--neo-bg-inset);
+}
+
+.neo-theme-toggle:active {
+  background: var(--neo-bg-pressed);
+  transform: scale(0.96);
+}
+
+.neo-theme-toggle:focus-visible {
+  outline: var(--neo-focus-ring, 2px solid var(--neo-accent));
+  outline-offset: 2px;
+}
+
+.neo-theme-toggle svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.neo-theme-toggle svg circle {
+  fill: currentColor;
+  stroke: none;
+}
+
+/* --- Drawer placement: full-width labelled row above the mobile menu CTA --- */
+.neo-mobile-menu__theme {
+  margin-bottom: var(--neo-space-4);
+  min-width: 0;
+}
+
+.neo-theme-toggle.neo-theme-toggle--drawer {
+  width: 100%;
+  height: auto;
+  min-width: 0;
+}
+
+.neo-theme-toggle--drawer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--neo-space-3);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: auto;
+  min-height: var(--neo-touch-min);
+  padding: var(--neo-space-3) var(--neo-space-4);
+  border: var(--neo-border-1) solid var(--neo-border-subtle);
+  border-radius: var(--neo-radius-md);
+  background: transparent;
+  color: var(--neo-text-muted);
+  font-family: var(--neo-font-ui);
+  font-size: var(--neo-text-sm);
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.neo-theme-toggle--drawer:hover {
+  background: var(--neo-bg-raised);
+  border-color: var(--neo-accent);
+  color: var(--neo-accent-text);
+}
+
+.neo-theme-toggle--drawer:active {
+  background: var(--neo-bg-pressed);
+}
+
+.neo-theme-toggle--drawer .neo-theme-toggle__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--neo-accent-text);
+}
+
+.neo-theme-toggle__label {
+  white-space: nowrap;
+}
+
+.neo-theme-toggle--drawer .neo-theme-toggle__label {
+  flex: 0 1 auto;
+  min-width: 0;
+  margin-right: auto;
+  white-space: nowrap;
+  text-align: left;
+  line-height: var(--neo-leading-tight);
+}
+
+/* On/off switch on the right of the drawer toggle. State is driven by the
+   document theme so it always reflects what's actually active. */
+.neo-theme-toggle__switch {
+  flex-shrink: 0;
+  position: relative;
+  width: 44px;
+  height: 26px;
+  pointer-events: none;
+  border-radius: 999px;
+  background: var(--neo-bg-inset);
+  box-shadow: inset 0 1px 3px color-mix(in srgb, var(--neo-shadow-dark) 30%, transparent);
+  transition: background var(--neo-duration-normal) var(--neo-ease-default);
+}
+
+.neo-theme-toggle__switch-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 3px color-mix(in srgb, var(--neo-shadow-dark) 45%, transparent);
+  transition: transform var(--neo-duration-normal) var(--neo-ease-default);
+}
+
+html[data-neo-theme="dark"] .neo-theme-toggle__switch {
+  background: var(--neo-accent);
+}
+
+html[data-neo-theme="dark"] .neo-theme-toggle__switch-knob {
+  transform: translateX(18px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neo-theme-toggle__switch,
+  .neo-theme-toggle__switch-knob {
+    transition-duration: 0.01ms;
+  }
+}
+
+/* --- Footer placement: a labelled pill next to the accessibility button.
+   Desktop only; the drawer toggle covers mobile. --- */
+.neo-theme-toggle--footer {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: var(--neo-space-2);
+  width: auto;
+  height: auto;
+  min-height: var(--neo-touch-min);
+  padding: var(--neo-space-2) var(--neo-space-4);
+  border: var(--neo-border-1) solid var(--neo-border-subtle);
+  border-radius: var(--neo-radius-full);
+  background: transparent;
+  color: var(--neo-text-muted);
+  font-family: var(--neo-font-ui);
+  font-size: var(--neo-text-sm);
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .neo-theme-toggle--footer {
+    display: inline-flex;
+  }
+}
+
+.neo-theme-toggle--footer:hover {
+  background: transparent;
+  border-color: var(--neo-accent);
+  color: var(--neo-accent-text);
+}
+
+.neo-theme-toggle--footer:active {
+  background: transparent;
+  transform: scale(0.97);
+}
+
+.neo-theme-toggle--footer .neo-theme-toggle__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--neo-accent-text);
+}

@@ -1,0 +1,116 @@
+/**
+ * Neo Design — motion & animations
+ */
+
+@keyframes neo-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes neo-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes neo-toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes neo-modal-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes neo-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.neo-transition {
+  transition: all var(--neo-duration-normal) var(--neo-ease-default);
+}
+
+.neo-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: neo-spin var(--neo-duration-spinner) linear infinite;
+}
+
+.neo-spinner--dark {
+  border-color: rgba(0, 0, 0, 0.15);
+  border-top-color: var(--neo-accent);
+}
+
+.neo-skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--neo-skeleton) 0%,
+    color-mix(in srgb, var(--neo-skeleton) 70%, var(--neo-text-muted)) 50%,
+    var(--neo-skeleton) 100%
+  );
+  background-size: 200% 100%;
+  animation: neo-shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes neo-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/**
+ * Scroll-reveal — progressive enhancement.
+ * Mark a container with `data-neo-reveal`; scroll-reveal.js adds `.neo-js-reveal`
+ * to <html> and `.is-revealed` to each child as it enters the viewport, with a
+ * per-child stagger via `--neo-reveal-delay`. Without JS everything stays visible.
+ */
+.neo-js-reveal [data-neo-reveal] > *:not(.is-revealed) {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .neo-js-reveal [data-neo-reveal] > .is-revealed {
+    animation: neo-rise-in 0.45s cubic-bezier(0.22, 1, 0.36, 1)
+      var(--neo-reveal-delay, 0ms) backwards;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .neo-spinner {
+    animation: none;
+    border-top-color: transparent;
+    border-right-color: currentColor;
+  }
+
+  .neo-skeleton-shimmer {
+    animation: none;
+  }
+}
