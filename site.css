@@ -285,9 +285,11 @@ body.neo-body,
 }
 
 @media (max-width: 767px) {
-  .rb-hero-scroll__frame:nth-child(2) img,
-  .rb-hero-scroll__frame:nth-child(3) img {
+  .rb-hero-scroll__frame:nth-child(2) img {
     object-position: 35% center;
+  }
+  .rb-hero-scroll__frame:nth-child(3) img {
+    object-position: 40% center;
   }
 }
 
