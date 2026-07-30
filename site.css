@@ -284,6 +284,16 @@ body.neo-body,
   backface-visibility: hidden;
 }
 
+@media (max-width: 767px) {
+  .rb-hero-scroll__frame:nth-child(2) img,
+  .rb-hero-scroll__frame:nth-child(3) img {
+    object-position: 75% center;
+  }
+  .rb-hero-scroll__frame:nth-child(4) img {
+    object-position: 60% center;
+  }
+}
+
 .rb-hero-scroll__content {
   position: relative;
   z-index: 2;
