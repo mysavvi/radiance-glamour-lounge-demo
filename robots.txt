@@ -1,0 +1,48 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.radianceglamourlounge.co.uk/sitemap.xml
+
+# ═══ Traditional search engines ═══
+User-agent: Bingbot
+Allow: /
+User-agent: DuckDuckBot
+Allow: /
+User-agent: YandexBot
+Allow: /
+User-agent: Applebot
+Allow: /
+User-agent: Slurp
+Allow: /
+
+# ═══ AI search bots ═══
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Amazonbot
+Allow: /
+
+# ═══ AI user-triggered fetchers ═══
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# ═══ AI training bots ═══
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: GoogleOther
+Allow: /
+User-agent: Meta-ExternalAgent
+Allow: /
+User-agent: CCBot
+Allow: /

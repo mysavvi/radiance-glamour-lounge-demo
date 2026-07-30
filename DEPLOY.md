@@ -1,4 +1,4 @@
-# Radiance Glamour Lounge demo
+# radiance-glamour-lounge demo
 
 ## Share with a client (recommended)
 
@@ -13,7 +13,7 @@ Live URL: https://mysavvi.github.io/radiance-glamour-lounge-demo/
 ## Local preview
 
 ```bash
-python3 rebuilds/radiance-glamour-lounge/bundle_demo.py
+python3 rebuilds/_shared/bundle_demo.py rebuilds/radiance-glamour-lounge/
 cd rebuilds/radiance-glamour-lounge/demo
 python3 -m http.server 8765
 ```
