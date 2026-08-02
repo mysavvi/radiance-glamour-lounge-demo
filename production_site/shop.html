@@ -29,7 +29,7 @@
         <div class="neo-mobile-header__actions">
           <a href="cart.html" style="position: relative; color: var(--neo-text-primary); padding: 0.5rem; display: flex; align-items: center;" aria-label="Cart">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-            <span style="position: absolute; top: -4px; right: -4px; background: var(--neo-accent); color: white; border-radius: 9999px; font-size: 0.65rem; font-weight: 700; width: 1.25rem; height: 1.25rem; display: flex; align-items: center; justify-content: center; border: 2px solid var(--neo-bg-base);">2</span>
+            <span class="neo-cart-badge" style="position: absolute; top: -4px; right: -4px; background: var(--neo-accent); color: white; border-radius: 9999px; font-size: 0.65rem; font-weight: 700; width: 1.25rem; height: 1.25rem; display: flex; align-items: center; justify-content: center; border: 2px solid var(--neo-bg-base);">0</span>
           </a>
           <a href="book.html" class="neo-btn neo-btn--primary neo-btn--sm rb-mobile-header-cta">Book</a>
           <button type="button" class="neo-mobile-header__menu-btn" onclick="toggleNeoMobileMenu()" aria-label="Open menu" aria-haspopup="dialog" aria-expanded="false" aria-controls="neo-mobile-menu">
@@ -57,7 +57,7 @@
         <div style="display: flex; gap: 1rem; align-items: center;">
           <a href="cart.html" style="position: relative; color: var(--neo-text-primary); padding: 0.5rem; display: flex; align-items: center;" aria-label="Cart">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-            <span style="position: absolute; top: -4px; right: -4px; background: var(--neo-accent); color: white; border-radius: 9999px; font-size: 0.65rem; font-weight: 700; width: 1.25rem; height: 1.25rem; display: flex; align-items: center; justify-content: center; border: 2px solid var(--neo-bg-base);">2</span>
+            <span class="neo-cart-badge" style="position: absolute; top: -4px; right: -4px; background: var(--neo-accent); color: white; border-radius: 9999px; font-size: 0.65rem; font-weight: 700; width: 1.25rem; height: 1.25rem; display: flex; align-items: center; justify-content: center; border: 2px solid var(--neo-bg-base);">0</span>
           </a>
           <a href="book.html" class="neo-btn neo-btn--primary">Book now</a>
         </div>
@@ -209,7 +209,7 @@
                 <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Skincare &middot; 50ml</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                   <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;45.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Radiance Beauty Serum to cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                  <button type="button" class="neo-btn neo-btn--primary shop-add-to-cart" data-id="radiance-beauty-serum" data-title="Radiance Beauty Serum" data-price="45.0" data-image="images/logo1.png" data-category="Skincare" data-size="50ml" aria-label="Add Radiance Beauty Serum to cart">Add to cart</button>
                 </div>
               </div>
             </article>
@@ -229,7 +229,7 @@
                 <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Haircare &middot; 200ml</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                   <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;32.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Glamour Hair Mask to cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                  <button type="button" class="neo-btn neo-btn--primary shop-add-to-cart" data-id="glamour-hair-mask" data-title="Glamour Hair Mask" data-price="32.0" data-image="images/logo1.png" data-category="Haircare" data-size="200ml" aria-label="Add Glamour Hair Mask to cart">Add to cart</button>
                 </div>
               </div>
             </article>
@@ -249,7 +249,7 @@
                 <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Skincare &middot; 100ml</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                   <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;28.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Hydrating Mist to cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                  <button type="button" class="neo-btn neo-btn--primary shop-add-to-cart" data-id="hydrating-mist" data-title="Hydrating Mist" data-price="28.0" data-image="images/logo1.png" data-category="Skincare" data-size="100ml" aria-label="Add Hydrating Mist to cart">Add to cart</button>
                 </div>
               </div>
             </article>
@@ -269,7 +269,7 @@
                 <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Fragrance &middot; 50ml</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                   <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;65.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Lounge Signature Perfume to cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                  <button type="button" class="neo-btn neo-btn--primary shop-add-to-cart" data-id="lounge-signature-perfume" data-title="Lounge Signature Perfume" data-price="65.0" data-image="images/logo1.png" data-category="Fragrance" data-size="50ml" aria-label="Add Lounge Signature Perfume to cart">Add to cart</button>
                 </div>
               </div>
             </article>

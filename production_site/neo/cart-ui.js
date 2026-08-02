@@ -84,16 +84,25 @@
 
     let qty = 1;
 
+    function updatePrice() {
+      const priceDisplay = document.getElementById('product-price-display');
+      if (priceDisplay) {
+        priceDisplay.innerHTML = `&pound;${(45.00 * qty).toFixed(2)}`;
+      }
+    }
+
     minusBtn.addEventListener('click', () => {
       if (qty > 1) {
         qty--;
         qtyDisplay.textContent = qty;
+        updatePrice();
       }
     });
 
     plusBtn.addEventListener('click', () => {
       qty++;
       qtyDisplay.textContent = qty;
+      updatePrice();
     });
 
     addBtn.addEventListener('click', (e) => {
@@ -299,10 +308,43 @@
     });
   }
 
+  function initShopPage() {
+    const shopAddBtns = document.querySelectorAll('.shop-add-to-cart');
+    shopAddBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const product = {
+          id: btn.getAttribute('data-id'),
+          title: btn.getAttribute('data-title'),
+          price: parseFloat(btn.getAttribute('data-price')),
+          qty: 1,
+          image: btn.getAttribute('data-image'),
+          category: btn.getAttribute('data-category'),
+          size: btn.getAttribute('data-size')
+        };
+        
+        window.CartAPI.addItem(product);
+        
+        // Visual feedback
+        const originalText = btn.textContent;
+        btn.textContent = 'Added!';
+        btn.style.backgroundColor = 'var(--neo-accent)';
+        btn.style.color = '#fff';
+        
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.backgroundColor = '';
+          btn.style.color = '';
+        }, 2000);
+      });
+    });
+  }
+
   // Boot
   document.addEventListener("DOMContentLoaded", function() {
     updateBadges();
     initProductPage();
+    initShopPage();
     initCartPage();
     initCheckoutPage();
   });
