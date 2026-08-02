@@ -12,7 +12,8 @@
   background: var(--neo-bg-base);
   color: var(--neo-text-primary);
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  /* clip avoids overflow-y:auto side-effect of hidden (breaks sticky hero) */
+  overflow-x: clip;
 }
 
 .neo-page__main,
@@ -490,7 +491,9 @@ select {
 }
 
 body.neo-body.neo-menu-open,
-html.neo-menu-open {
+html.neo-menu-open,
+.wp-html-module.neo-menu-open,
+[data-neo-wp-embed].neo-menu-open {
   overflow: hidden;
 }
 

@@ -248,7 +248,7 @@ body.neo-body,
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -292,7 +292,7 @@ body.neo-body,
     object-position: 45% center;
   }
   .rb-hero-scroll__frame:nth-child(5) img {
-    object-position: 45% center;
+    object-position: 25% center;
   }
 }
 

@@ -1,34 +1,66 @@
 /**
  * Neo Salon — WordPress / Elementor HTML widget embed
  * Load from global-head on salon pages only.
- *
- * Full-width Elementor/theme padding is zeroed by the bundler's
- * WP_FULLWIDTH_RESET style (injected after external links on every fragment).
- * Do not use 100vw breakout here — it leaks backgrounds and glows.
  */
+
+html,
+body {
+  overflow-x: clip;
+}
 
 .wp-html-module,
 [data-neo-wp-embed] {
   width: 100%;
   max-width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  margin-left: 0;
+  margin-right: 0;
+  overflow-x: clip;
   position: relative;
   box-sizing: border-box;
+}
+
+/* Full-bleed inside theme/Elementor without 100vw (avoids scrollbar-width sideways scroll) */
+.elementor-section .wp-html-module,
+.elementor-widget-html .wp-html-module,
+.entry-content .wp-html-module,
+.wp-block-html .wp-html-module {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.elementor-section.elementor-section-boxed > .elementor-container .wp-html-module {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .wp-html-module .neo-page,
 [data-neo-wp-embed] .neo-page {
   width: 100%;
-  max-width: none;
+  max-width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
+  overflow-x: clip;
+}
+
+.wp-html-module img,
+.wp-html-module video,
+.wp-html-module iframe,
+.wp-html-module table,
+.wp-html-module pre,
+[data-neo-wp-embed] img,
+[data-neo-wp-embed] video,
+[data-neo-wp-embed] iframe,
+[data-neo-wp-embed] table,
+[data-neo-wp-embed] pre {
+  max-width: 100%;
 }
 
 .wp-html-module img,
 [data-neo-wp-embed] img {
-  max-width: 100%;
   height: auto;
 }
 
@@ -66,4 +98,9 @@
 .wp-html-module .neo-bottom-nav,
 [data-neo-wp-embed] .neo-bottom-nav {
   z-index: 99980;
+}
+
+.wp-html-module .neo-mobile-header,
+[data-neo-wp-embed] .neo-mobile-header {
+  z-index: 99990;
 }

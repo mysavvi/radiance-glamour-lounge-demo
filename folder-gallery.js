@@ -4,6 +4,7 @@
 (function () {
   "use strict";
 
+  function boot() {
   var root = document.querySelector("[data-rb-folder-gallery]");
   if (!root) return;
 
@@ -64,9 +65,10 @@
     var openSpread;
 
     if (mobileOpen) {
-      photoW = Math.min(300, Math.max(220, Math.round(stageW * 0.78)));
+      photoW = Math.min(280, Math.max(200, Math.round(stageW * 0.72)));
       photoH = Math.round(photoW * 1.2);
-      openSpread = 28;
+      /* Increase spread on mobile so adjacent cards are clearly visible */
+      openSpread = Math.min(80, Math.max(40, Math.round(stageW * 0.18)));
     } else if (open) {
       photoW = 224;
       photoH = 288;
@@ -164,14 +166,14 @@
         z = 50 + i;
       } else if (hover) {
         y = offset * -10 - 40;
-        x = offset * (m.mobileView ? 12 : m.narrow ? 18 : 30);
-        rot = offset * 8;
+        x = offset * (m.mobileView ? 8 : m.narrow ? 18 : 30);
+        rot = offset * (m.mobileView ? 5 : 8);
         scale = 1 - Math.abs(offset) * 0.03;
         z = i + 10;
       } else {
         y = offset * -8 - 28;
-        x = offset * (m.mobileView ? 9 : m.narrow ? 14 : 22);
-        rot = offset * (m.mobileView ? 4 : m.narrow ? 6 : 5);
+        x = offset * (m.mobileView ? 6 : m.narrow ? 14 : 22);
+        rot = offset * (m.mobileView ? 3 : m.narrow ? 6 : 5);
         scale = 1 - Math.abs(offset) * 0.03;
         z = i + 10;
       }
@@ -389,4 +391,12 @@
   });
 
   setLayout();
+
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
 })();

@@ -1,5 +1,5 @@
 /**
- * Neo Social Media Card — TikTok Live-style section.
+ * Neo Social Media Card \u2014 TikTok Live-style section.
  * Loads social-media-card.json (or data-neo-social-card-src) and hydrates links,
  * media, copy, reviews, and live motion.
  */
@@ -12,16 +12,16 @@
   var LIKE_COLORS = ["#fe2c55", "#ff5c7a", "#ff7eb3"];
 
   var GIFT_TYPES = [
-    { emoji: "❤️", label: "Heart", glow: "#fe2c55", large: false, weight: 5 },
-    { emoji: "💖", label: "Love", glow: "#ff4d8d", large: false, weight: 4 },
-    { emoji: "💋", label: "Kiss", glow: "#ff3d6e", large: false, weight: 4 },
-    { emoji: "🌹", label: "Rose", glow: "#e91e63", large: true, weight: 4 },
-    { emoji: "🌸", label: "Flowers", glow: "#f48fb1", large: true, weight: 3 },
-    { emoji: "✨", label: "Sparkle", glow: "#ffd54f", large: false, weight: 4 },
-    { emoji: "💐", label: "Bouquet", glow: "#ec407a", large: true, weight: 2 },
-    { emoji: "👑", label: "Crown", glow: "#ffb300", large: true, weight: 2 },
-    { emoji: "🎁", label: "Gift", glow: "#ab47bc", large: true, weight: 2 },
-    { emoji: "🔥", label: "Fire", glow: "#ff6d00", large: false, weight: 3 },
+    { emoji: "\u2764\uFE0F", label: "Heart", glow: "#fe2c55", large: false, weight: 5 },
+    { emoji: "\uD83D\uDC96", label: "Love", glow: "#ff4d8d", large: false, weight: 4 },
+    { emoji: "\uD83D\uDC8B", label: "Kiss", glow: "#ff3d6e", large: false, weight: 4 },
+    { emoji: "\uD83C\uDF39", label: "Rose", glow: "#e91e63", large: true, weight: 4 },
+    { emoji: "\uD83C\uDF38", label: "Flowers", glow: "#f48fb1", large: true, weight: 3 },
+    { emoji: "\u2728", label: "Sparkle", glow: "#ffd54f", large: false, weight: 4 },
+    { emoji: "\uD83D\uDC90", label: "Bouquet", glow: "#ec407a", large: true, weight: 2 },
+    { emoji: "\uD83D\uDC51", label: "Crown", glow: "#ffb300", large: true, weight: 2 },
+    { emoji: "\uD83C\uDF81", label: "Gift", glow: "#ab47bc", large: true, weight: 2 },
+    { emoji: "\uD83D\uDD25", label: "Fire", glow: "#ff6d00", large: false, weight: 3 },
   ];
 
   var SOCIAL_KEYS = ["tiktok", "instagram", "facebook", "linkedin", "youtube", "googleReview"];
@@ -133,6 +133,16 @@
     return base.replace(/\/$/, "") + "/" + file + ".svg";
   }
 
+  function socialIconSrc(config, key) {
+    var file = key === "googleReview" ? "google" : key;
+    // Prefer inline data URIs from config.socialIcons (avoids SVG upload restrictions)
+    if (config.socialIcons && config.socialIcons[file]) {
+      return config.socialIcons[file];
+    }
+    var base = config.socialIconBase || "neo/assets/social";
+    return socialIconPath(base, key);
+  }
+
   function renderReviewStars(container, score) {
     if (!container) return;
     var value = typeof score === "number" ? score : parseFloat(score);
@@ -197,7 +207,6 @@
     var media = config.media || {};
     var social = config.social || {};
     var stats = config.stats || {};
-    var iconBase = config.socialIconBase || "neo/assets/social";
 
     if (media.backgroundPosition) {
       card.style.setProperty("--neo-social-card-bg-pos", media.backgroundPosition);
@@ -241,7 +250,7 @@
 
     card.querySelectorAll("[data-neo-social-channel-icon]").forEach(function (img) {
       var key = img.getAttribute("data-neo-social-channel-icon");
-      if (key) img.src = socialIconPath(iconBase, key);
+      if (key) img.src = socialIconSrc(config, key);
     });
 
     if (typeof stats.viewers === "number") viewers = stats.viewers;

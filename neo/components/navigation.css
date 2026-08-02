@@ -34,7 +34,21 @@
   box-shadow: var(--neo-elv-1), var(--neo-accent-glow);
 }
 
-/* Breadcrumbs */
+/* Breadcrumbs — hidden from display on all pages (kept in markup for SEO/a11y) */
+.neo-breadcrumbs-wrap,
+.neo-breadcrumbs {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
 .neo-breadcrumbs {
   display: flex;
   flex-wrap: wrap;

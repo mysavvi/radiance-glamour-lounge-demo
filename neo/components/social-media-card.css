@@ -9,12 +9,10 @@
   overflow: hidden;
   padding-block: clamp(2.5rem, 7vw, 4.5rem);
   background:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       color-mix(in srgb, var(--neo-accent) 8%, var(--neo-bg-base)) 0%,
       var(--neo-bg-inset) 55%,
-      color-mix(in srgb, var(--neo-accent) 5%, var(--neo-bg-base)) 100%
-    );
+      color-mix(in srgb, var(--neo-accent) 5%, var(--neo-bg-base)) 100%);
   border-top: var(--neo-border-1) solid var(--neo-border-subtle);
 }
 
@@ -23,11 +21,13 @@
   justify-content: center;
 }
 
-.neo-social-card, .rb-social-live {
+.neo-social-card,
+.rb-social-live {
   width: min(100%, 26rem);
 }
 
-.neo-social-card__screen, .rb-social-live__screen {
+.neo-social-card__screen,
+.rb-social-live__screen {
   position: relative;
   aspect-ratio: 9 / 16;
   max-height: min(78vh, 42rem);
@@ -43,24 +43,27 @@
     0 0 0 var(--neo-border-1) color-mix(in srgb, var(--neo-accent) 18%, transparent);
 }
 
-.neo-social-card__media, .rb-social-live__media {
+.neo-social-card__media,
+.rb-social-live__media {
   position: absolute;
   inset: 0;
   overflow: hidden;
   background: #0a0a0f;
 }
 
-.neo-social-card__bg, .rb-social-live__bg {
+.neo-social-card__bg,
+.rb-social-live__bg {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   object-fit: cover;
-  object-position: var(--neo-social-card-bg-pos, 70% 40%);
+  object-position: var(--neo-social-card-bg-pos, 85% 50%);
   transform: scale(var(--neo-social-card-bg-scale, 1.14));
-  transform-origin: 70% 40%;
+  transform-origin: 85% 50%;
 }
 
-.neo-social-card__scrim, .rb-social-live__scrim {
+.neo-social-card__scrim,
+.rb-social-live__scrim {
   position: absolute;
   inset: 0;
   background:
@@ -68,14 +71,16 @@
   pointer-events: none;
 }
 
-.neo-social-card__vignette, .rb-social-live__vignette {
+.neo-social-card__vignette,
+.rb-social-live__vignette {
   position: absolute;
   inset: 0;
   pointer-events: none;
   box-shadow: inset 0 0 4.5rem color-mix(in srgb, #000 42%, transparent);
 }
 
-.neo-social-card__host, .rb-social-live__host {
+.neo-social-card__host,
+.rb-social-live__host {
   position: absolute;
   top: 0;
   left: 0;
@@ -84,7 +89,8 @@
   padding: clamp(0.7rem, 2.8vw, 0.95rem) clamp(0.7rem, 2.8vw, 0.95rem) 0;
 }
 
-.neo-social-card__host-link, .rb-social-live__host-link {
+.neo-social-card__host-link,
+.rb-social-live__host-link {
   display: flex;
   align-items: center;
   gap: 0.55rem;
@@ -92,7 +98,8 @@
   color: #fff;
 }
 
-.neo-social-card__host-avatar, .rb-social-live__host-avatar {
+.neo-social-card__host-avatar,
+.rb-social-live__host-avatar {
   width: 2.35rem;
   height: 2.35rem;
   border-radius: 50%;
@@ -102,21 +109,24 @@
   box-shadow: 0 4px 14px -6px color-mix(in srgb, #000 55%, transparent);
 }
 
-.neo-social-card__host-body, .rb-social-live__host-body {
+.neo-social-card__host-body,
+.rb-social-live__host-body {
   display: flex;
   flex-direction: column;
   gap: 0.15rem;
   min-width: 0;
 }
 
-.neo-social-card__host-row, .rb-social-live__host-row {
+.neo-social-card__host-row,
+.rb-social-live__host-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.4rem;
 }
 
-.neo-social-card__host-name, .rb-social-live__host-name {
+.neo-social-card__host-name,
+.rb-social-live__host-name {
   font-family: var(--neo-font-ui);
   font-size: 0.78rem;
   font-weight: 700;
@@ -128,7 +138,8 @@
   text-shadow: 0 1px 10px color-mix(in srgb, #000 55%, transparent);
 }
 
-.neo-social-card__viewers, .rb-social-live__viewers {
+.neo-social-card__viewers,
+.rb-social-live__viewers {
   font-family: var(--neo-font-ui);
   font-size: 0.66rem;
   font-weight: 600;
@@ -136,7 +147,8 @@
   text-shadow: 0 1px 8px color-mix(in srgb, #000 55%, transparent);
 }
 
-.neo-social-card__sr-title, .rb-social-live__sr-title {
+.neo-social-card__sr-title,
+.rb-social-live__sr-title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -148,7 +160,8 @@
   border: 0;
 }
 
-.neo-social-card__badge, .rb-social-live__badge {
+.neo-social-card__badge,
+.rb-social-live__badge {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -165,7 +178,8 @@
   box-shadow: 0 4px 14px -4px color-mix(in srgb, #fe2c55 65%, transparent);
 }
 
-.neo-social-card__badge-dot, .rb-social-live__badge-dot {
+.neo-social-card__badge-dot,
+.rb-social-live__badge-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -174,16 +188,28 @@
 }
 
 @keyframes neo-social-card-pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.55; transform: scale(0.82); }
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.55;
+    transform: scale(0.82);
+  }
 }
 
-.neo-social-card__title, .rb-social-live__title,
-.neo-social-card__lead, .rb-social-live__lead {
+.neo-social-card__title,
+.rb-social-live__title,
+.neo-social-card__lead,
+.rb-social-live__lead {
   display: none;
 }
 
-.neo-social-card__chat-wrap, .rb-social-live__chat-wrap {
+.neo-social-card__chat-wrap,
+.rb-social-live__chat-wrap {
   position: absolute;
   left: clamp(0.65rem, 2.5vw, 0.85rem);
   bottom: clamp(6.5rem, 19vw, 7.75rem);
@@ -196,7 +222,8 @@
   mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 100%);
 }
 
-.neo-social-card__chat, .rb-social-live__chat {
+.neo-social-card__chat,
+.rb-social-live__chat {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -207,7 +234,8 @@
   min-height: 100%;
 }
 
-.neo-social-card__chat-item, .rb-social-live__chat-item {
+.neo-social-card__chat-item,
+.rb-social-live__chat-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -236,13 +264,15 @@
   animation: rb-social-chat-out 0.42s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-.neo-social-card__chat-user, .rb-social-live__chat-user {
+.neo-social-card__chat-user,
+.rb-social-live__chat-user {
   font-weight: 700;
   color: color-mix(in srgb, #ffb8d0 88%, #fff 12%);
   flex-shrink: 0;
 }
 
-.neo-social-card__chat-text, .rb-social-live__chat-text {
+.neo-social-card__chat-text,
+.rb-social-live__chat-text {
   color: color-mix(in srgb, #fff 94%, transparent);
   text-wrap: pretty;
   display: -webkit-box;
@@ -256,6 +286,7 @@
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -267,13 +298,15 @@
     opacity: 1;
     transform: translateY(0);
   }
+
   to {
     opacity: 0;
     transform: translateY(-8px);
   }
 }
 
-.neo-social-card__rail, .rb-social-live__rail {
+.neo-social-card__rail,
+.rb-social-live__rail {
   position: absolute;
   right: clamp(0.35rem, 1.8vw, 0.55rem);
   bottom: clamp(6.25rem, 18vw, 7.5rem);
@@ -284,7 +317,8 @@
   gap: 0.42rem;
 }
 
-.neo-social-card__action, .rb-social-live__action {
+.neo-social-card__action,
+.rb-social-live__action {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -312,7 +346,8 @@
   border-radius: var(--neo-radius-md);
 }
 
-.neo-social-card__action--avatar, .rb-social-live__action--avatar {
+.neo-social-card__action--avatar,
+.rb-social-live__action--avatar {
   position: relative;
   width: 2.75rem;
 }
@@ -330,7 +365,8 @@
     0 6px 16px -8px color-mix(in srgb, #000 60%, transparent);
 }
 
-.neo-social-card__follow-plus, .rb-social-live__follow-plus {
+.neo-social-card__follow-plus,
+.rb-social-live__follow-plus {
   position: absolute;
   left: 50%;
   bottom: -0.35rem;
@@ -349,24 +385,30 @@
   border: 2px solid #0a0a0f;
 }
 
-.neo-social-card__action--tiktok, .rb-social-live__action--tiktok,
-.neo-social-card__action--heart, .rb-social-live__action--heart {
+.neo-social-card__action--tiktok,
+.rb-social-live__action--tiktok,
+.neo-social-card__action--heart,
+.rb-social-live__action--heart {
   --rb-rail-brand: #fe2c55;
 }
 
-.neo-social-card__action--instagram, .rb-social-live__action--instagram {
+.neo-social-card__action--instagram,
+.rb-social-live__action--instagram {
   --rb-rail-brand: #e4405f;
 }
 
-.neo-social-card__action--facebook, .rb-social-live__action--facebook {
+.neo-social-card__action--facebook,
+.rb-social-live__action--facebook {
   --rb-rail-brand: #1877f2;
 }
 
-.neo-social-card__action--youtube, .rb-social-live__action--youtube {
+.neo-social-card__action--youtube,
+.rb-social-live__action--youtube {
   --rb-rail-brand: #ff0000;
 }
 
-.neo-social-card__action--google, .rb-social-live__action--google {
+.neo-social-card__action--google,
+.rb-social-live__action--google {
   --rb-rail-brand: #fbbc04;
 }
 
@@ -402,7 +444,8 @@
     rb-social-disc-glow 0.9s cubic-bezier(0.33, 1, 0.45, 1);
 }
 
-.neo-social-card__rail-icon, .rb-social-live__rail-icon {
+.neo-social-card__rail-icon,
+.rb-social-live__rail-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -425,11 +468,13 @@
   animation: rb-social-rail-tap 0.7s cubic-bezier(0.33, 1, 0.45, 1), rb-social-rail-color 0.7s cubic-bezier(0.33, 1, 0.45, 1);
 }
 
-.neo-social-card__action--disc, .rb-social-live__action--disc {
+.neo-social-card__action--disc,
+.rb-social-live__action--disc {
   margin-top: 0.15rem;
 }
 
-.neo-social-card__disc, .rb-social-live__disc {
+.neo-social-card__disc,
+.rb-social-live__disc {
   display: block;
   width: 2.35rem;
   height: 2.35rem;
@@ -454,20 +499,35 @@
 }
 
 @keyframes rb-social-disc-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes rb-social-rail-tap {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.07); }
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.07);
+  }
 }
 
 @keyframes rb-social-rail-color {
-  0%, 100% {
+
+  0%,
+  100% {
     color: #fff;
     filter: drop-shadow(0 2px 6px color-mix(in srgb, #000 45%, transparent));
   }
+
   50% {
     color: color-mix(in srgb, var(--rb-rail-brand, #fe2c55) 78%, #fff);
     filter: drop-shadow(0 0 6px color-mix(in srgb, var(--rb-rail-brand, #fe2c55) 38%, transparent));
@@ -475,17 +535,27 @@
 }
 
 @keyframes rb-social-rail-count {
-  0%, 100% { color: #fff; }
-  50% { color: color-mix(in srgb, var(--rb-rail-brand, #fe2c55) 72%, #fff); }
+
+  0%,
+  100% {
+    color: #fff;
+  }
+
+  50% {
+    color: color-mix(in srgb, var(--rb-rail-brand, #fe2c55) 72%, #fff);
+  }
 }
 
 @keyframes rb-social-avatar-ring {
-  0%, 100% {
+
+  0%,
+  100% {
     border-color: #25f4ee;
     box-shadow:
       0 0 0 1px color-mix(in srgb, #fe2c55 55%, transparent),
       0 6px 16px -8px color-mix(in srgb, #000 60%, transparent);
   }
+
   50% {
     border-color: color-mix(in srgb, #fe2c55 82%, #25f4ee);
     box-shadow:
@@ -495,16 +565,26 @@
 }
 
 @keyframes rb-social-follow-pop {
-  0%, 100% { transform: translateX(-50%) scale(1); }
-  50% { transform: translateX(-50%) scale(1.1); }
+
+  0%,
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+
+  50% {
+    transform: translateX(-50%) scale(1.1);
+  }
 }
 
 @keyframes rb-social-disc-glow {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow:
       inset 0 0 0 1px color-mix(in srgb, #fff 18%, transparent),
       0 4px 12px -6px color-mix(in srgb, #000 70%, transparent);
   }
+
   50% {
     box-shadow:
       inset 0 0 0 1px color-mix(in srgb, var(--rb-rail-brand, #fbbc04) 35%, transparent),
@@ -513,13 +593,23 @@
 }
 
 @keyframes rb-social-heart-pop {
-  0% { transform: scale(1); }
-  45% { transform: scale(1.18); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1.18);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
-.neo-social-card__brand-icon, .rb-social-live__brand-icon,
-.neo-social-card__channel-icon, .rb-social-live__channel-icon {
+.neo-social-card__brand-icon,
+.rb-social-live__brand-icon,
+.neo-social-card__channel-icon,
+.rb-social-live__channel-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -540,8 +630,10 @@
   display: block;
 }
 
-.neo-social-card__action-count, .rb-social-live__action-count,
-.neo-social-card__action-label, .rb-social-live__action-label {
+.neo-social-card__action-count,
+.rb-social-live__action-count,
+.neo-social-card__action-label,
+.rb-social-live__action-label {
   font-family: var(--neo-font-ui);
   font-size: 0.56rem;
   font-weight: 600;
@@ -551,26 +643,24 @@
   letter-spacing: 0.01em;
 }
 
-.neo-social-card__footer, .rb-social-live__footer {
+.neo-social-card__footer,
+.rb-social-live__footer {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 4;
   padding:
-    clamp(0.55rem, 2.2vw, 0.75rem)
-    clamp(0.55rem, 2.2vw, 0.75rem)
-    clamp(0.5rem, 1.8vw, 0.65rem);
+    clamp(0.55rem, 2.2vw, 0.75rem) clamp(0.55rem, 2.2vw, 0.75rem) clamp(0.5rem, 1.8vw, 0.65rem);
   background:
-    linear-gradient(
-      180deg,
+    linear-gradient(180deg,
       transparent 0%,
       color-mix(in srgb, #1a1020 55%, transparent) 28%,
-      color-mix(in srgb, #1a1020 88%, transparent) 100%
-    );
+      color-mix(in srgb, #1a1020 88%, transparent) 100%);
 }
 
-.neo-social-card__caption, .rb-social-live__caption {
+.neo-social-card__caption,
+.rb-social-live__caption {
   margin: 0 0 0.35rem;
   padding-right: 3.25rem;
   font-family: var(--neo-font-ui);
@@ -581,7 +671,8 @@
   text-wrap: pretty;
 }
 
-.neo-social-card__channels, .rb-social-live__channels {
+.neo-social-card__channels,
+.rb-social-live__channels {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -590,7 +681,8 @@
   padding-right: 0.15rem;
 }
 
-.neo-social-card__channel, .rb-social-live__channel {
+.neo-social-card__channel,
+.rb-social-live__channel {
   display: flex;
   flex: 0 0 auto;
   align-items: center;
@@ -617,12 +709,14 @@
   border-radius: var(--neo-radius-md);
 }
 
-.neo-social-card__channel-icon, .rb-social-live__channel-icon {
+.neo-social-card__channel-icon,
+.rb-social-live__channel-icon {
   width: clamp(1.6rem, 5.2vw, 1.85rem);
   height: clamp(1.6rem, 5.2vw, 1.85rem);
 }
 
-.neo-social-card__channel-label, .rb-social-live__channel-label {
+.neo-social-card__channel-label,
+.rb-social-live__channel-label {
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -636,7 +730,8 @@
   text-shadow: 0 1px 8px color-mix(in srgb, #000 65%, transparent);
 }
 
-.neo-social-card__cta, .rb-social-live__cta {
+.neo-social-card__cta,
+.rb-social-live__cta {
   margin: 0;
   font-size: clamp(0.56rem, 1.7vw, 0.62rem);
   line-height: 1.35;
@@ -645,15 +740,19 @@
   text-shadow: 0 1px 8px color-mix(in srgb, #000 55%, transparent);
 }
 
-.neo-social-card__like-lane, .rb-social-live__like-lane,
-.neo-social-card__gift-lane, .rb-social-live__gift-lane,
-.neo-social-card__toast-stage, .rb-social-live__toast-stage {
+.neo-social-card__like-lane,
+.rb-social-live__like-lane,
+.neo-social-card__gift-lane,
+.rb-social-live__gift-lane,
+.neo-social-card__toast-stage,
+.rb-social-live__toast-stage {
   position: absolute;
   pointer-events: none;
   z-index: 3;
 }
 
-.neo-social-card__like-lane, .rb-social-live__like-lane {
+.neo-social-card__like-lane,
+.rb-social-live__like-lane {
   right: 3rem;
   bottom: 34%;
   width: 2rem;
@@ -661,7 +760,8 @@
   overflow: visible;
 }
 
-.neo-social-card__gift-lane, .rb-social-live__gift-lane {
+.neo-social-card__gift-lane,
+.rb-social-live__gift-lane {
   right: 2.65rem;
   bottom: 28%;
   width: 3.75rem;
@@ -669,7 +769,8 @@
   overflow: visible;
 }
 
-.neo-social-card__toast-stage, .rb-social-live__toast-stage {
+.neo-social-card__toast-stage,
+.rb-social-live__toast-stage {
   top: clamp(3.75rem, 12vw, 4.35rem);
   right: 3.35rem;
   left: clamp(0.65rem, 2.5vw, 0.85rem);
@@ -680,7 +781,8 @@
   z-index: 3;
 }
 
-.neo-social-card__like, .rb-social-live__like {
+.neo-social-card__like,
+.rb-social-live__like {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -704,7 +806,8 @@
   fill: var(--rb-like-color, #fe2c55);
 }
 
-.neo-social-card__gift-float, .rb-social-live__gift-float {
+.neo-social-card__gift-float,
+.rb-social-live__gift-float {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -729,11 +832,13 @@
   animation: rb-social-gift-rise var(--rb-gift-duration, 2.8s) cubic-bezier(0.22, 1, 0.36, 1) var(--rb-gift-delay, 0s) forwards;
 }
 
-.neo-social-card__gift-float--lg, .rb-social-live__gift-float--lg {
+.neo-social-card__gift-float--lg,
+.rb-social-live__gift-float--lg {
   --rb-gift-size: 3.1rem;
 }
 
-.neo-social-card__gift-emoji, .rb-social-live__gift-emoji {
+.neo-social-card__gift-emoji,
+.rb-social-live__gift-emoji {
   font-size: calc(1.28rem * var(--rb-gift-scale, 1));
   line-height: 1;
   transform: translateY(-1px);
@@ -750,10 +855,12 @@
     opacity: 0;
     transform: translate3d(0, 0, 0) scale(0.45);
   }
+
   15% {
     opacity: 0.95;
     transform: translate3d(calc(var(--rb-like-drift, 0px) * 0.2), -14px, 0) scale(1);
   }
+
   100% {
     opacity: 0;
     transform: translate3d(var(--rb-like-drift, 0px), -min(30vh, 9.5rem), 0) scale(0.82);
@@ -765,20 +872,24 @@
     opacity: 0;
     transform: translate3d(0, 0, 0) scale(0.15) rotate(-8deg);
   }
+
   12% {
     opacity: 1;
     transform: translate3d(calc(var(--rb-gift-drift, 0px) * 0.12), -10px, 0) scale(1.14) rotate(4deg);
   }
+
   24% {
     transform: translate3d(calc(var(--rb-gift-drift, 0px) * 0.28), -28px, 0) scale(1) rotate(0deg);
   }
+
   100% {
     opacity: 0;
     transform: translate3d(var(--rb-gift-drift, 0px), -min(40vh, 14rem), 0) scale(0.88) rotate(6deg);
   }
 }
 
-.neo-social-card__toast, .rb-social-live__toast {
+.neo-social-card__toast,
+.rb-social-live__toast {
   position: absolute;
   left: 0;
   top: 0;
@@ -797,17 +908,16 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  background: linear-gradient(
-    100deg,
-    color-mix(in srgb, #fe2c55 92%, #000 8%) 0%,
-    color-mix(in srgb, #fe2c55 72%, transparent) 100%
-  );
+  background: linear-gradient(100deg,
+      color-mix(in srgb, #fe2c55 92%, #000 8%) 0%,
+      color-mix(in srgb, #fe2c55 72%, transparent) 100%);
   border: 1px solid color-mix(in srgb, #fff 18%, transparent);
   box-shadow: 0 8px 22px -10px color-mix(in srgb, #fe2c55 65%, transparent);
   animation: rb-social-gift-toast var(--rb-toast-duration, 3.4s) cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-.neo-social-card__toast-icon, .rb-social-live__toast-icon {
+.neo-social-card__toast-icon,
+.rb-social-live__toast-icon {
   flex-shrink: 0;
   display: inline-flex;
   align-items: center;
@@ -826,7 +936,8 @@
   font-weight: 700;
 }
 
-.neo-social-card__toast-label, .rb-social-live__toast-label {
+.neo-social-card__toast-label,
+.rb-social-live__toast-label {
   opacity: 0.92;
 }
 
@@ -835,14 +946,17 @@
     opacity: 0;
     transform: translateX(1.1rem) scale(0.94);
   }
+
   10% {
     opacity: 1;
     transform: translateX(0) scale(1);
   }
+
   76% {
     opacity: 1;
     transform: translateX(0) scale(1);
   }
+
   100% {
     opacity: 0;
     transform: translateX(0.35rem) scale(0.97);
@@ -850,32 +964,40 @@
 }
 
 @media (min-width: 720px) {
-  .neo-social-card, .rb-social-live {
+
+  .neo-social-card,
+  .rb-social-live {
     width: min(100%, 22rem);
   }
 }
 
 /* Narrow phone-style card (sidebar slot, Glass preview, small columns) */
 @container neo-social-card (max-width: 16.5rem) {
-  .neo-social-card__host, .rb-social-live__host {
+
+  .neo-social-card__host,
+  .rb-social-live__host {
     right: 3.35rem;
     padding-top: 0.6rem;
   }
 
-  .neo-social-card__host-avatar, .rb-social-live__host-avatar {
+  .neo-social-card__host-avatar,
+  .rb-social-live__host-avatar {
     width: 2rem;
     height: 2rem;
   }
 
-  .neo-social-card__host-name, .rb-social-live__host-name {
+  .neo-social-card__host-name,
+  .rb-social-live__host-name {
     font-size: 0.68rem;
   }
 
-  .neo-social-card__viewers, .rb-social-live__viewers {
+  .neo-social-card__viewers,
+  .rb-social-live__viewers {
     font-size: 0.58rem;
   }
 
-  .neo-social-card__chat-wrap, .rb-social-live__chat-wrap {
+  .neo-social-card__chat-wrap,
+  .rb-social-live__chat-wrap {
     bottom: 8.25rem;
     width: min(calc(100% - 3.35rem), 12.5rem);
     height: auto;
@@ -884,21 +1006,25 @@
     mask-image: none;
   }
 
-  .neo-social-card__chat-item, .rb-social-live__chat-item {
+  .neo-social-card__chat-item,
+  .rb-social-live__chat-item {
     padding: 0.28rem 0.48rem;
     font-size: 0.64rem;
   }
 
-  .neo-social-card__rail, .rb-social-live__rail {
+  .neo-social-card__rail,
+  .rb-social-live__rail {
     bottom: 7.75rem;
     gap: 0.28rem;
   }
 
-  .neo-social-card__action, .rb-social-live__action {
+  .neo-social-card__action,
+  .rb-social-live__action {
     width: 2.45rem;
   }
 
-  .neo-social-card__action--avatar, .rb-social-live__action--avatar {
+  .neo-social-card__action--avatar,
+  .rb-social-live__action--avatar {
     width: 2.35rem;
   }
 
@@ -908,22 +1034,27 @@
     height: 2.15rem;
   }
 
-  .neo-social-card__rail-icon, .rb-social-live__rail-icon {
+  .neo-social-card__rail-icon,
+  .rb-social-live__rail-icon {
     width: 1.55rem;
     height: 1.55rem;
   }
 
-  .neo-social-card__action-count, .rb-social-live__action-count,
-  .neo-social-card__action-label, .rb-social-live__action-label {
+  .neo-social-card__action-count,
+  .rb-social-live__action-count,
+  .neo-social-card__action-label,
+  .rb-social-live__action-label {
     font-size: 0.5rem;
   }
 
-  .neo-social-card__footer, .rb-social-live__footer {
+  .neo-social-card__footer,
+  .rb-social-live__footer {
     padding:
       0.45rem 0.5rem 0.4rem;
   }
 
-  .neo-social-card__caption, .rb-social-live__caption {
+  .neo-social-card__caption,
+  .rb-social-live__caption {
     margin-bottom: 0.28rem;
     padding-right: 0;
     font-size: 0.62rem;
@@ -934,41 +1065,54 @@
     overflow: hidden;
   }
 
-  .neo-social-card__channels, .rb-social-live__channels {
+  .neo-social-card__channels,
+  .rb-social-live__channels {
     gap: 0.28rem;
     margin-bottom: 0.25rem;
   }
 
-  .neo-social-card__channel-icon, .rb-social-live__channel-icon {
+  .neo-social-card__channel-icon,
+  .rb-social-live__channel-icon {
     width: 1.45rem;
     height: 1.45rem;
   }
 
-  .neo-social-card__cta, .rb-social-live__cta {
+  .neo-social-card__cta,
+  .rb-social-live__cta {
     font-size: 0.52rem;
     line-height: 1.3;
   }
 
-  .neo-social-card__like-lane, .rb-social-live__like-lane {
+  .neo-social-card__like-lane,
+  .rb-social-live__like-lane {
     right: 2.65rem;
   }
 
-  .neo-social-card__gift-lane, .rb-social-live__gift-lane {
+  .neo-social-card__gift-lane,
+  .rb-social-live__gift-lane {
     right: 2.35rem;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .neo-social-card__badge-dot, .rb-social-live__badge-dot,
-  .neo-social-card__chat-item, .rb-social-live__chat-item,
-  .neo-social-card__like, .rb-social-live__like,
-  .neo-social-card__gift-float, .rb-social-live__gift-float,
-  .neo-social-card__toast, .rb-social-live__toast {
+
+  .neo-social-card__badge-dot,
+  .rb-social-live__badge-dot,
+  .neo-social-card__chat-item,
+  .rb-social-live__chat-item,
+  .neo-social-card__like,
+  .rb-social-live__like,
+  .neo-social-card__gift-float,
+  .rb-social-live__gift-float,
+  .neo-social-card__toast,
+  .rb-social-live__toast {
     animation: none;
   }
 
-  .neo-social-card__action, .rb-social-live__action,
-  .neo-social-card__channel, .rb-social-live__channel {
+  .neo-social-card__action,
+  .rb-social-live__action,
+  .neo-social-card__channel,
+  .rb-social-live__channel {
     transition: none;
   }
 
@@ -997,12 +1141,14 @@
     animation: none;
   }
 
-  .neo-social-card__like, .rb-social-live__like {
+  .neo-social-card__like,
+  .rb-social-live__like {
     opacity: 0.35;
     transform: translateY(-3rem) scale(1);
   }
 
-  .neo-social-card__gift-float, .rb-social-live__gift-float {
+  .neo-social-card__gift-float,
+  .rb-social-live__gift-float {
     opacity: 0.4;
     transform: translateY(-4rem) scale(1);
   }

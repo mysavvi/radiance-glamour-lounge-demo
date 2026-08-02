@@ -16,6 +16,10 @@
     return document.querySelector(".neo-mobile-header__menu-btn");
   }
 
+  function getEmbedRoot() {
+    return document.querySelector("[data-neo-wp-embed], .wp-html-module");
+  }
+
   function isOpen() {
     var menu = getMenu();
     return !!menu && menu.classList.contains("neo-mobile-menu--open");
@@ -37,6 +41,15 @@
       if (child === menu) return;
       if (inert) child.setAttribute("inert", "");
       else child.removeAttribute("inert");
+    });
+  }
+
+  function setMenuOpenClass(open) {
+    var targets = [document.body, document.documentElement, getEmbedRoot()];
+    targets.forEach(function (el) {
+      if (!el) return;
+      if (open) el.classList.add("neo-menu-open");
+      else el.classList.remove("neo-menu-open");
     });
   }
 
@@ -71,8 +84,7 @@
       lastTrigger = document.activeElement;
       menu.classList.add("neo-mobile-menu--open");
       menu.setAttribute("aria-hidden", "false");
-      document.body.classList.add("neo-menu-open");
-      document.documentElement.classList.add("neo-menu-open");
+      setMenuOpenClass(true);
       if (menuButton) {
         menuButton.setAttribute("aria-expanded", "true");
         menuButton.setAttribute("aria-label", "Close menu");
@@ -88,8 +100,7 @@
     } else {
       menu.classList.remove("neo-mobile-menu--open");
       menu.setAttribute("aria-hidden", "true");
-      document.body.classList.remove("neo-menu-open");
-      document.documentElement.classList.remove("neo-menu-open");
+      setMenuOpenClass(false);
       if (menuButton) {
         menuButton.setAttribute("aria-expanded", "false");
         menuButton.setAttribute("aria-label", "Open menu");
@@ -132,7 +143,7 @@
   }
 
   function initMenuA11y() {
-    var menu = document.getElementById("neo-mobile-menu");
+    var menu = getMenu();
     var menuButton = getMenuButton();
     if (menu && !menu.hasAttribute("aria-hidden")) {
       menu.setAttribute("aria-hidden", menu.classList.contains("neo-mobile-menu--open") ? "false" : "true");
@@ -142,11 +153,36 @@
     }
   }
 
+  /* Suppress conflicting WordPress / Elementor theme headers (mobile-layout skill §10). */
+  function hideThemeHeaders() {
+    var selectors = [
+      "header:not(#neo-mobile-header):not(.neo-mobile-header)",
+      "#masthead",
+      ".site-header",
+      ".elementor-location-header",
+      ".elementor-header",
+      ".et-l--header",
+      ".ast-site-header",
+      "#header",
+      ".header",
+      ".top-bar",
+      "[data-elementor-type=\"header\"]"
+    ];
+    selectors.forEach(function (s) {
+      document.querySelectorAll(s).forEach(function (el) {
+        if (el.id === "neo-mobile-header" || el.id === "neo-desktop-nav") return;
+        if (el.closest && el.closest(".neo-page, [data-neo-wp-embed], .wp-html-module")) return;
+        el.style.setProperty("display", "none", "important");
+      });
+    });
+  }
+
   window.toggleNeoMobileMenu = toggleMobileMenu;
 
-  document.addEventListener("DOMContentLoaded", function () {
+  function boot() {
     initScrollNav();
     initMenuA11y();
+    hideThemeHeaders();
 
     document.querySelectorAll("[data-neo-menu-toggle]").forEach(function (btn) {
       btn.addEventListener("click", function (e) {
@@ -155,9 +191,25 @@
       });
     });
 
+    /* Also wire onclick-less close buttons / hamburger without data attrs when present */
+    var menuBtn = getMenuButton();
+    if (menuBtn && !menuBtn.getAttribute("data-neo-menu-toggle") && !menuBtn.getAttribute("onclick")) {
+      menuBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        toggleMobileMenu();
+      });
+    }
+    var closeBtn = document.querySelector(".neo-mobile-menu__close");
+    if (closeBtn && !closeBtn.getAttribute("data-neo-menu-toggle") && !closeBtn.getAttribute("onclick")) {
+      closeBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        toggleMobileMenu();
+      });
+    }
+
     document.querySelectorAll("[data-neo-menu-close]").forEach(function (el) {
       el.addEventListener("click", function () {
-        var menu = document.getElementById("neo-mobile-menu");
+        var menu = getMenu();
         if (menu && menu.classList.contains("neo-mobile-menu--open")) {
           toggleMobileMenu();
         }
@@ -165,7 +217,7 @@
     });
 
     /* Tap the scrim (the drawer container itself, not the panel) to close. */
-    var menuEl = document.getElementById("neo-mobile-menu");
+    var menuEl = getMenu();
     if (menuEl) {
       menuEl.addEventListener("click", function (e) {
         if (e.target === menuEl && isOpen()) {
@@ -173,5 +225,12 @@
         }
       });
     }
-  });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+  window.addEventListener("load", hideThemeHeaders);
 })();

@@ -13,7 +13,7 @@
   font-size: var(--neo-text-sm);
   font-weight: 500;
   line-height: 1;
-  border-radius: var(--neo-radius-md);
+  border-radius: var(--neo-radius-full);
   border: none;
   cursor: pointer;
   text-decoration: none;

@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Shop | Radiance Glamour Lounge, Stockport</title>
-  <meta name="description" content="Buy salon-quality hair, skin and beauty products from Radiance Glamour Lounge, Stockport. Secure card payment, collect in salon or arrange delivery. Call 07857 579631.">
+  <title>Radiance Beauty Serum | Radiance Glamour Lounge, Stockport</title>
+  <meta name="description" content="Buy Radiance Beauty Serum from Radiance Glamour Lounge, Stockport. Secure card payment, collect in salon or arrange delivery.">
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,188 +94,150 @@
       <nav aria-label="Breadcrumb" class="neo-breadcrumbs-wrap">
         <ol class="neo-breadcrumbs">
           <li><a href="index.html">Home</a></li>
-          <li aria-current="page">Shop</li>
+          <li><a href="shop.html">Shop</a></li>
+          <li aria-current="page">Radiance Beauty Serum</li>
         </ol>
       </nav>
-      <div class="neo-container rb-page-hero">
-        <p class="rb-eyebrow">Shop</p>
-        <h1 class="neo-h1 rb-page-hero__title">Salon products, online</h1>
-        <p class="neo-body rb-muted rb-page-hero__lead">The hair, skin and beauty products we use and trust, ready to buy. Pay securely by card, then collect in salon or arrange delivery with us.</p>
-
-        <section aria-labelledby="rb-shop-title">
-          <div class="neo-shop-header" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
-            <div>
-              <h2 class="neo-h3" id="rb-shop-title" style="margin-bottom: 0;">Our products</h2>
-              <p class="neo-body rb-muted" style="margin-top: 0.5rem; max-width: 600px;">Explore our curated selection of premium hair, skin, and beauty products.</p>
-            </div>
-            <a href="cart.html" class="neo-btn neo-btn--secondary" style="border-radius: var(--neo-radius-full);">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-              <span>View Cart</span>
-            </a>
-          </div>
-          <style>
-            .neo-shop-layout {
-              display: grid;
-              grid-template-columns: 1fr;
-              gap: 2rem;
+      <div class="neo-container" style="padding-top: 2rem; padding-bottom: 4rem;">
+        <style>
+          .neo-product-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+          }
+          @media (min-width: 768px) {
+            .neo-product-layout {
+              grid-template-columns: 1fr 1fr;
+              gap: 4rem;
             }
-            @media (min-width: 900px) {
-              .neo-shop-layout {
-                grid-template-columns: 240px 1fr;
-                gap: 3rem;
-                align-items: start;
+          }
+          .neo-carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 1rem;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            border-radius: var(--neo-radius-2xl);
+          }
+          .neo-carousel::-webkit-scrollbar {
+            display: none;
+          }
+          .neo-carousel-item {
+            scroll-snap-align: center;
+            container-type: scroll-state;
+            flex: 0 0 100%;
+            height: auto;
+            position: relative;
+          }
+          .neo-carousel-card {
+            transition: scale 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            border-radius: var(--neo-radius-2xl);
+            aspect-ratio: 1/1;
+            padding: 2rem;
+          }
+          @media (prefers-reduced-motion: no-preference) {
+            @container scroll-state(snapped: x) {
+              .neo-carousel-card {
+                scale: 1.02;
               }
             }
-            .neo-sidebar {
-              position: sticky;
-              top: 100px;
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .neo-carousel-card {
+              transition: none !important;
+              scale: 1 !important;
             }
-            .neo-sidebar-list {
-              list-style: none;
-              padding: 0;
-              margin: 0;
-              display: flex;
-              flex-direction: column;
-              gap: 0.5rem;
-            }
-            .neo-sidebar-link {
-              text-decoration: none;
-              color: var(--neo-text-secondary);
-              padding: 0.75rem 1rem;
-              border-radius: var(--neo-radius-lg);
-              display: block;
-              transition: background 0.2s, color 0.2s;
-              font-weight: 500;
-            }
-            .neo-sidebar-link:hover {
-              background: var(--neo-bg-inset);
-              color: var(--neo-text-primary);
-            }
-            .neo-sidebar-link[aria-current="page"] {
-              background: var(--neo-accent);
-              color: #fff;
-            }
-            .rb-wishlist-btn {
-              position: absolute;
-              top: 1rem;
-              right: 1rem;
-              width: 2.5rem;
-              height: 2.5rem;
-              border-radius: 9999px;
-              background: var(--neo-bg-base);
-              border: none;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              color: var(--neo-text-primary);
-              cursor: pointer;
-              box-shadow: var(--neo-shadow-sm);
-              transition: transform 0.2s, color 0.2s;
-              z-index: 2;
-            }
-            .rb-wishlist-btn:hover {
-              transform: scale(1.1);
-            }
-            .rb-wishlist-btn svg {
-              transition: fill 0.2s;
-            }
-          </style>
-
-          <div class="neo-shop-layout">
-            <aside class="neo-sidebar" aria-label="Product Categories">
-              <h3 class="neo-body" style="font-weight: 600; font-size: var(--neo-text-sm); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; color: var(--neo-text-secondary);">Categories</h3>
-              <ul class="neo-sidebar-list">
-                <li><a href="#" class="neo-sidebar-link" aria-current="page">All Products</a></li>
-                <li><a href="#" class="neo-sidebar-link">Skincare</a></li>
-                <li><a href="#" class="neo-sidebar-link">Haircare</a></li>
-                <li><a href="#" class="neo-sidebar-link">Fragrance</a></li>
-                <li><a href="#" class="neo-sidebar-link">Accessories</a></li>
-                <li><a href="#" class="neo-sidebar-link">Gifts & Sets</a></li>
-              </ul>
-            </aside>
-            <div class="neo-shop-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;">
-            <!-- Product 1 -->
-            <article class="neo-card neo-surface-raised" style="padding: 0; overflow: hidden; border-radius: var(--neo-radius-2xl); position: relative;">
-              <button type="button" class="rb-wishlist-btn" aria-label="Add to Wishlist" onclick="this.style.color='var(--neo-accent)'; this.querySelector('svg').style.fill='var(--neo-accent)';">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-              </button>
-              <a href="product.html" class="neo-product-img-wrap" style="display: block; aspect-ratio: 1/1; background: var(--neo-bg-inset); padding: 1.5rem;">
-                <img src="images/logo1.png" alt="Radiance Beauty Serum" style="width: 100%; height: 100%; object-fit: contain;">
-              </a>
-              <div class="neo-product-info" style="padding: 1.5rem;">
-                <a href="product.html" style="text-decoration: none; color: inherit;">
-                  <h3 class="neo-body" style="font-weight: 600; margin: 0 0 0.25rem 0;">Radiance Beauty Serum</h3>
-                </a>
-                <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Skincare &middot; 50ml</p>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;45.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Radiance Beauty Serum to cart" onclick="window.location.href='cart.html'">Add to cart</button>
+          }
+        </style>
+        <div class="neo-product-layout" style="max-width: 1100px; margin: 0 auto;">
+          <!-- Image Gallery -->
+          <div style="position: relative;">
+            <div class="neo-carousel neo-surface-inset">
+              <div class="neo-carousel-item">
+                <div class="neo-carousel-card">
+                  <img src="images/logo1.png" alt="Radiance Beauty Serum Image 1" style="width: 100%; max-width: 100%; height: auto; object-fit: contain;">
                 </div>
               </div>
-            </article>
-
-            <!-- Product 2 -->
-            <article class="neo-card neo-surface-raised" style="padding: 0; overflow: hidden; border-radius: var(--neo-radius-2xl); position: relative;">
-              <button type="button" class="rb-wishlist-btn" aria-label="Add to Wishlist" onclick="this.style.color='var(--neo-accent)'; this.querySelector('svg').style.fill='var(--neo-accent)';">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-              </button>
-              <a href="product.html" class="neo-product-img-wrap" style="display: block; aspect-ratio: 1/1; background: var(--neo-bg-inset); padding: 1.5rem;">
-                <img src="images/logo1.png" alt="Glamour Hair Mask" style="width: 100%; height: 100%; object-fit: contain;">
-              </a>
-              <div class="neo-product-info" style="padding: 1.5rem;">
-                <a href="product.html" style="text-decoration: none; color: inherit;">
-                  <h3 class="neo-body" style="font-weight: 600; margin: 0 0 0.25rem 0;">Glamour Hair Mask</h3>
-                </a>
-                <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Haircare &middot; 200ml</p>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;32.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Glamour Hair Mask to cart" onclick="window.location.href='cart.html'">Add to cart</button>
+              <div class="neo-carousel-item">
+                <div class="neo-carousel-card">
+                  <img src="images/logo1.png" alt="Radiance Beauty Serum Image 2" style="width: 100%; max-width: 100%; height: auto; object-fit: contain; filter: grayscale(1);">
                 </div>
               </div>
-            </article>
-
-            <!-- Product 3 -->
-            <article class="neo-card neo-surface-raised" style="padding: 0; overflow: hidden; border-radius: var(--neo-radius-2xl); position: relative;">
-              <button type="button" class="rb-wishlist-btn" aria-label="Add to Wishlist" onclick="this.style.color='var(--neo-accent)'; this.querySelector('svg').style.fill='var(--neo-accent)';">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-              </button>
-              <a href="product.html" class="neo-product-img-wrap" style="display: block; aspect-ratio: 1/1; background: var(--neo-bg-inset); padding: 1.5rem;">
-                <img src="images/logo1.png" alt="Hydrating Mist" style="width: 100%; height: 100%; object-fit: contain;">
-              </a>
-              <div class="neo-product-info" style="padding: 1.5rem;">
-                <a href="product.html" style="text-decoration: none; color: inherit;">
-                  <h3 class="neo-body" style="font-weight: 600; margin: 0 0 0.25rem 0;">Hydrating Mist</h3>
-                </a>
-                <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Skincare &middot; 100ml</p>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;28.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Hydrating Mist to cart" onclick="window.location.href='cart.html'">Add to cart</button>
+              <div class="neo-carousel-item">
+                <div class="neo-carousel-card">
+                  <img src="images/logo1.png" alt="Radiance Beauty Serum Image 3" style="width: 100%; max-width: 100%; height: auto; object-fit: contain; filter: sepia(1);">
                 </div>
               </div>
-            </article>
-
-            <!-- Product 4 -->
-            <article class="neo-card neo-surface-raised" style="padding: 0; overflow: hidden; border-radius: var(--neo-radius-2xl); position: relative;">
-              <button type="button" class="rb-wishlist-btn" aria-label="Add to Wishlist" onclick="this.style.color='var(--neo-accent)'; this.querySelector('svg').style.fill='var(--neo-accent)';">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-              </button>
-              <a href="product.html" class="neo-product-img-wrap" style="display: block; aspect-ratio: 1/1; background: var(--neo-bg-inset); padding: 1.5rem;">
-                <img src="images/logo1.png" alt="Lounge Signature Perfume" style="width: 100%; height: 100%; object-fit: contain;">
-              </a>
-              <div class="neo-product-info" style="padding: 1.5rem;">
-                <a href="product.html" style="text-decoration: none; color: inherit;">
-                  <h3 class="neo-body" style="font-weight: 600; margin: 0 0 0.25rem 0;">Lounge Signature Perfume</h3>
-                </a>
-                <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Fragrance &middot; 50ml</p>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;65.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Lounge Signature Perfume to cart" onclick="window.location.href='cart.html'">Add to cart</button>
-                </div>
-              </div>
-            </article>
+            </div>
+            <!-- Snap Indicators / Instructions -->
+            <p class="neo-body rb-muted" style="text-align: center; font-size: 0.75rem; margin-top: 1rem;">Swipe or scroll to see more images</p>
           </div>
+
+          <!-- Product Details -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div>
+              <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">Skincare &middot; 50ml</p>
+              <h1 class="neo-h2" style="margin-top: 0; margin-bottom: 0.5rem;">Radiance Beauty Serum</h1>
+              <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                  <p class="neo-h3" style="font-weight: 500; margin: 0;">&pound;45.00</p>
+                  <span style="display: inline-flex; align-items: center; gap: 0.25rem; font-size: 0.75rem; font-weight: 600; background: var(--neo-bg-surface); padding: 0.25rem 0.5rem; border-radius: var(--neo-radius-full); color: var(--neo-text-secondary); border: 1px solid var(--neo-border-subtle);">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--neo-accent)" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--neo-accent);"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Earn 45 Glamour Points
+                  </span>
+                </div>
+                <p class="neo-body rb-muted" style="margin: 0; font-size: 0.75rem;">
+                  <a href="#" style="color: var(--neo-accent); text-decoration: underline;">Sign in</a> to earn and redeem Glamour Points.
+                </p>
+              </div>
+            </div>
+            
+            <p class="neo-body rb-muted" style="line-height: 1.6;">
+              A deeply hydrating, antioxidant-rich serum designed to restore your skin's natural glow. Formulated with our signature blend of botanical extracts, it penetrates quickly to smooth fine lines and improve elasticity.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
+              <label class="neo-body" style="font-weight: 600; font-size: var(--neo-text-sm);">Quantity</label>
+              <div style="display: inline-flex; align-items: center; border-radius: var(--neo-radius-full); border: var(--neo-border-1) solid var(--neo-border-subtle); background: var(--neo-bg-base); width: fit-content;">
+                <button type="button" id="product-qty-minus" style="padding: 0.75rem 1rem; background: transparent; border: none; color: var(--neo-text-primary); cursor: pointer; border-radius: 9999px 0 0 9999px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                <span id="product-qty-display" style="width: 3rem; text-align: center; font-size: var(--neo-text-base); font-weight: 600;">1</span>
+                <button type="button" id="product-qty-plus" style="padding: 0.75rem 1rem; background: transparent; border: none; color: var(--neo-text-primary); cursor: pointer; border-radius: 0 9999px 9999px 0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+              <button type="button" id="product-add-to-cart" class="neo-btn neo-btn--primary" style="flex: 1; justify-content: center; padding: 1.25rem; font-size: var(--neo-text-base); border-radius: var(--neo-radius-full); transition: all 0.3s ease;">Add to cart</button>
+              <button type="button" class="neo-btn neo-btn--secondary" aria-label="Add to Wishlist" style="padding: 1.25rem; border-radius: var(--neo-radius-full); aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; flex: 0 0 auto;" onclick="this.style.color='var(--neo-accent)'; this.querySelector('svg').style.fill='var(--neo-accent)';">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+            </div>
+
+            <!-- Accordion Details -->
+            <div style="margin-top: 2rem; border-top: var(--neo-border-1) solid var(--neo-border-subtle);">
+              <details class="neo-details" style="padding: 1rem 0; border-bottom: var(--neo-border-1) solid var(--neo-border-subtle);">
+                <summary style="font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                  Ingredients
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </summary>
+                <p class="neo-body rb-muted" style="margin-top: 1rem; font-size: var(--neo-text-sm);">Aqua, Glycerin, Niacinamide, Sodium Hyaluronate, Botanical Extracts.</p>
+              </details>
+              <details class="neo-details" style="padding: 1rem 0; border-bottom: var(--neo-border-1) solid var(--neo-border-subtle);">
+                <summary style="font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                  How to Use
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </summary>
+                <p class="neo-body rb-muted" style="margin-top: 1rem; font-size: var(--neo-text-sm);">Apply 2-3 drops to clean skin morning and night. Massage gently until fully absorbed.</p>
+              </details>
+            </div>
           </div>
-        </section>
+        </div>
       </div>
     </main>
 
@@ -382,6 +344,8 @@
 
   <script src="neo/mobile-nav.js" defer></script>
   <script src="neo/a11y-toolbar.js" defer></script>
+  <script src="neo/cookie-consent.js" defer></script>
+  <script src="neo/cart-ui.js" defer></script>
   <script src="neo/theme-toggle.js?v=3" defer></script>
   <script src="neo/cookie-consent.js" defer></script>
   <link rel="stylesheet" href="neo/savvi-shop.css">

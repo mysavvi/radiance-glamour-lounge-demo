@@ -90,7 +90,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .neo-js-reveal [data-neo-reveal] > .is-revealed {
-    animation: neo-rise-in 0.45s var(--neo-ease-enter, var(--neo-ease-smooth, cubic-bezier(0.22, 1, 0.36, 1)))
+    animation: neo-rise-in 0.45s cubic-bezier(0.22, 1, 0.36, 1)
       var(--neo-reveal-delay, 0ms) backwards;
   }
 }
