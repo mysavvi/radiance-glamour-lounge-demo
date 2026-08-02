@@ -36,6 +36,8 @@ PAGE_MAP = {
     "checkout.html": ("checkout.html", "checkout", ""),
     "privacy-policy.html": ("privacy-policy.html", "privacy-policy", ""),
     "terms.html": ("terms.html", "terms", ""),
+    "login.html": ("login.html", "login", ""),
+    "register.html": ("register.html", "register", ""),
 }
 
 HREF_MAP = [
@@ -49,8 +51,15 @@ HREF_MAP = [
     (r'href="shop\.html', 'href="/shop/'),
     (r'href="cart\.html', 'href="/cart/'),
     (r'href="product\.html', 'href="/product/'),
+    (r'href="checkout\.html', 'href="/checkout/'),
     (r'href="privacy-policy\.html', 'href="/privacy-policy/'),
     (r'href="terms\.html', 'href="/terms/'),
+    (r'href="login\.html', 'href="/login/'),
+    (r'href="register\.html', 'href="/register/'),
+    (r"window\.location\.href='cart\.html'", "window.location.href='/cart/'"),
+    (r"window\.location\.href='checkout\.html'", "window.location.href='/checkout/'"),
+    (r"window\.location\.href='product\.html'", "window.location.href='/product/'"),
+    (r"window\.location\.href='shop\.html'", "window.location.href='/shop/'"),
 ]
 
 IMPORT_RE = re.compile(
@@ -271,7 +280,13 @@ def bundle_one(src_name: str, dest_name: str, page_id: str, html_class: str) -> 
     neo_css = resolve_css(PROD / "neo" / "neo-design.css")
     # Prefer highest site.css version query stripped — file is site.css
     site_css = (PROD / "site.css").read_text(encoding="utf-8")
-    css = rewrite_css_for_wp(neo_css + "\n" + site_css)
+    
+    # Extract inline style blocks from the original HTML
+    inline_styles = []
+    for m in re.finditer(r"<style[^>]*>([\s\S]*?)</style>", raw, flags=re.I):
+        inline_styles.append(m.group(1))
+    
+    css = rewrite_css_for_wp(neo_css + "\n" + site_css + "\n" + "\n".join(inline_styles))
 
     font_links, body_inner, attrs, json_ld = strip_head_noise(raw)
 

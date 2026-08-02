@@ -203,43 +203,58 @@
   <div class="checkout-layout">
     <div class="checkout-left">
       <div class="checkout-form-container">
-        <header class="checkout-header">
-          <a href="cart.html">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        <header class="checkout-header" style="justify-content: space-between; width: 100%;">
+          <a href="index.html" class="neo-mobile-header__brand">
+            <img src="images/logo1.png" alt="Radiance Glamour Lounge" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">
+          </a>
+          <a href="cart.html" style="font-size: 0.875rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
             Back to Cart
           </a>
         </header>
+
+        <div style="background: var(--neo-bg-subtle); padding: 1rem 1.5rem; border-radius: var(--neo-radius-lg); margin-bottom: 2rem; display: flex; align-items: center; justify-content: space-between; border: 1px solid var(--neo-border-subtle);">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--neo-text-secondary);"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span class="neo-body" style="margin: 0; font-size: 0.875rem; color: var(--neo-text-primary);">Already a member?</span>
+          </div>
+          <a href="login.html?redirect=checkout.html" class="neo-btn neo-btn--secondary neo-btn--sm" style="border-radius: var(--neo-radius-full); padding: 0.5rem 1rem;">Sign in for faster checkout</a>
+        </div>
 
         <form action="book-success.html" method="GET">
           <h2 class="neo-h3" style="margin-top: 0; margin-bottom: 1.5rem;">Contact Information</h2>
           <div class="form-group">
             <label class="form-label" for="email">Email address</label>
-            <input type="email" id="email" class="form-input" placeholder="you@example.com" required>
+            <input type="email" id="email" class="form-input" placeholder="you@example.com" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone number</label>
+            <input type="tel" id="phone" class="form-input" placeholder="+44 7700 900000" autocomplete="tel" inputmode="tel" required>
           </div>
 
           <h2 class="neo-h3" style="margin-top: 2.5rem; margin-bottom: 1.5rem;">Shipping Address</h2>
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="fname">First name</label>
-              <input type="text" id="fname" class="form-input" required>
+              <input type="text" id="fname" class="form-input" autocomplete="given-name" required>
             </div>
             <div class="form-group">
               <label class="form-label" for="lname">Last name</label>
-              <input type="text" id="lname" class="form-input" required>
+              <input type="text" id="lname" class="form-input" autocomplete="family-name" required>
             </div>
           </div>
           <div class="form-group">
             <label class="form-label" for="address">Address</label>
-            <input type="text" id="address" class="form-input" placeholder="123 Main St" required>
+            <input type="text" id="address" class="form-input" placeholder="123 Main St" autocomplete="street-address" required>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="city">City</label>
-              <input type="text" id="city" class="form-input" required>
+              <input type="text" id="city" class="form-input" autocomplete="address-level2" required>
             </div>
             <div class="form-group">
               <label class="form-label" for="zip">Postal code</label>
-              <input type="text" id="zip" class="form-input" required>
+              <input type="text" id="zip" class="form-input" autocomplete="postal-code" required>
             </div>
           </div>
 
@@ -247,18 +262,18 @@
           <div class="form-group">
             <label class="form-label" for="card">Card number</label>
             <div style="position: relative;">
-              <input type="text" id="card" class="form-input" placeholder="0000 0000 0000 0000" style="padding-left: 3rem;" required>
+              <input type="tel" id="card" class="form-input" placeholder="0000 0000 0000 0000" autocomplete="cc-number" inputmode="numeric" pattern="[\d ]{10,30}" style="padding-left: 3rem;" required>
               <svg style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--neo-text-muted);" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="exp">Expiration (MM/YY)</label>
-              <input type="text" id="exp" class="form-input" placeholder="MM / YY" required>
+              <input type="text" id="exp" class="form-input" placeholder="MM / YY" autocomplete="cc-exp" pattern="\d\d\s*/\s*\d\d" required>
             </div>
             <div class="form-group">
               <label class="form-label" for="cvc">CVC</label>
-              <input type="text" id="cvc" class="form-input" placeholder="CVC" required>
+              <input type="tel" id="cvc" class="form-input" placeholder="CVC" autocomplete="cc-csc" inputmode="numeric" pattern="\d{3,4}" required>
             </div>
           </div>
 
@@ -274,11 +289,15 @@
         <div class="summary-item">
           <div class="summary-img-wrap">
             <img src="images/logo1.png" alt="Radiance Beauty Serum">
-            <span class="summary-qty">1</span>
           </div>
           <div class="summary-details">
             <p class="summary-title">Radiance Beauty Serum</p>
             <p class="neo-body rb-muted" style="margin: 0; font-size: 0.875rem;">Skincare &middot; 50ml</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
+              <button type="button" style="width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--neo-border-subtle); background: var(--neo-bg-base); display: flex; align-items: center; justify-content: center; cursor: pointer;">-</button>
+              <span style="font-size: 0.875rem; font-weight: 500;">1</span>
+              <button type="button" style="width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--neo-border-subtle); background: var(--neo-bg-base); display: flex; align-items: center; justify-content: center; cursor: pointer;">+</button>
+            </div>
           </div>
           <div class="summary-price">&pound;45.00</div>
         </div>
@@ -286,11 +305,15 @@
         <div class="summary-item">
           <div class="summary-img-wrap">
             <img src="images/logo1.png" alt="Lounge Signature Perfume">
-            <span class="summary-qty">1</span>
           </div>
           <div class="summary-details">
             <p class="summary-title">Lounge Signature Perfume</p>
             <p class="neo-body rb-muted" style="margin: 0; font-size: 0.875rem;">Fragrance &middot; 50ml</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
+              <button type="button" style="width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--neo-border-subtle); background: var(--neo-bg-base); display: flex; align-items: center; justify-content: center; cursor: pointer;">-</button>
+              <span style="font-size: 0.875rem; font-weight: 500;">1</span>
+              <button type="button" style="width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--neo-border-subtle); background: var(--neo-bg-base); display: flex; align-items: center; justify-content: center; cursor: pointer;">+</button>
+            </div>
           </div>
           <div class="summary-price">&pound;65.00</div>
         </div>

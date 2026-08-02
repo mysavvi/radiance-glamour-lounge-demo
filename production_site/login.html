@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-neo-palette="moon" data-neo-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Login | Radiance Glamour Lounge, Stockport</title>
+  <meta name="description" content="Sign in to your Radiance Glamour Lounge account.">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap">
+  <link rel="stylesheet" href="neo/neo-design.css">
+  <style>
+    body { background: var(--neo-bg-base); font-family: 'Inter', sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+    .login-box { max-width: 400px; width: 100%; padding: 2rem; border-radius: var(--neo-radius-lg); border: 1px solid var(--neo-border-subtle); background: white; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; }
+    .form-group { margin-bottom: 1.5rem; text-align: left; }
+    .form-label { display: block; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem; color: var(--neo-text-primary); }
+    .form-input { width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--neo-border-base); border-radius: var(--neo-radius-md); font-family: inherit; font-size: 1rem; transition: border-color 0.2s; outline: none; box-sizing: border-box; }
+    .form-input:focus { border-color: var(--neo-accent); }
+    .login-btn { width: 100%; padding: 0.875rem; background: var(--neo-accent); color: white; border: none; border-radius: var(--neo-radius-full); font-size: 1rem; font-weight: 600; cursor: pointer; transition: opacity 0.2s; }
+    .login-btn:hover { opacity: 0.9; }
+    .password-wrapper { position: relative; display: flex; align-items: center; }
+    .toggle-password { position: absolute; right: 1rem; background: none; border: none; padding: 0; cursor: pointer; color: var(--neo-text-secondary); display: flex; align-items: center; justify-content: center; }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <a href="index.html" style="display: inline-block; margin-bottom: 2rem;">
+      <img src="images/logo1.png" alt="Radiance Glamour Lounge" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">
+    </a>
+    <h1 class="neo-h3" style="margin-bottom: 0.5rem;">Welcome back</h1>
+    <p class="neo-body rb-muted" style="margin-bottom: 2rem; font-size: 0.875rem;">Sign in to your account</p>
+    
+    <form action="index.html" method="GET" id="loginForm">
+      <div class="form-group">
+        <label class="form-label" for="email">Email address</label>
+        <input type="email" id="email" class="form-input" placeholder="you@example.com" autocomplete="email" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="password">Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" class="form-input" placeholder="••••••••" autocomplete="current-password" required>
+          <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="eye-icon"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="eye-off-icon" style="display: none;"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
+          </button>
+        </div>
+      </div>
+      <button type="submit" class="login-btn">Sign in</button>
+    </form>
+    <div style="margin-top: 1.5rem; font-size: 0.875rem;">
+      <a href="#" style="color: var(--neo-accent); text-decoration: none;">Forgot password?</a> &middot; <a href="register.html" style="color: var(--neo-accent); text-decoration: none;" id="createAccountLink">Create account</a>
+    </div>
+  </div>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      const urlParams = new URLSearchParams(window.location.search);
+      const redirect = urlParams.get('redirect');
+      if (redirect) {
+        e.preventDefault();
+        window.location.href = redirect;
+      }
+    });
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const redirect = urlParams.get('redirect');
+    if (redirect) {
+        const createAccountLink = document.getElementById('createAccountLink');
+        createAccountLink.href = 'register.html?redirect=' + encodeURIComponent(redirect);
+    }
+
+    const togglePasswordBtn = document.querySelector('.toggle-password');
+    const passwordInput = document.getElementById('password');
+    const eyeIcon = document.querySelector('.eye-icon');
+    const eyeOffIcon = document.querySelector('.eye-off-icon');
+
+    togglePasswordBtn.addEventListener('click', function() {
+      const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordInput.setAttribute('type', type);
+      if (type === 'text') {
+        eyeIcon.style.display = 'none';
+        eyeOffIcon.style.display = 'block';
+      } else {
+        eyeIcon.style.display = 'block';
+        eyeOffIcon.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

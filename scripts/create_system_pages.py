@@ -19,24 +19,69 @@ pages_to_create = [
         "title": "POS Terminal",
         "slug": "pos",
         "content": "<!-- wp:shortcode -->\n[savvi_pos]\n<!-- /wp:shortcode -->",
-        "status": "publish"
+        "status": "publish",
+        "template": "blank-canvas"
+    },
+    {
+        "title": "Login",
+        "slug": "login",
+        "content": "<!-- wp:html -->\nLoading login...\n<!-- /wp:html -->",
+        "status": "publish",
+        "template": "blank-canvas"
+    },
+    {
+        "title": "Register",
+        "slug": "register",
+        "content": "<!-- wp:html -->\nLoading register...\n<!-- /wp:html -->",
+        "status": "publish",
+        "template": "blank-canvas"
     },
     {
         "title": "Wallet",
         "slug": "wallet",
         "content": "<!-- wp:shortcode -->\n[savvi_wallet]\n<!-- /wp:shortcode -->",
-        "status": "publish"
+        "status": "publish",
+        "template": "blank-canvas"
+    },
+    {
+        "title": "Cart",
+        "slug": "cart",
+        "content": "<!-- wp:html -->\n<!-- /wp:html -->",
+        "status": "publish",
+        "template": "blank-canvas"
+    },
+    {
+        "title": "Checkout",
+        "slug": "checkout",
+        "content": "<!-- wp:html -->\n<!-- /wp:html -->",
+        "status": "publish",
+        "template": "blank-canvas"
+    },
+    {
+        "title": "Product",
+        "slug": "product",
+        "content": "<!-- wp:html -->\n<!-- /wp:html -->",
+        "status": "publish",
+        "template": "blank-canvas"
     }
 ]
 
+print("Fetching existing pages...")
+resp = requests.get(f"{url_base}?per_page=100", auth=(username, password))
+if resp.status_code == 200:
+    existing_slugs = [p['slug'] for p in resp.json()]
+else:
+    print("Failed to fetch existing pages:", resp.text)
+    existing_slugs = []
+
 for p in pages_to_create:
+    if p['slug'] in existing_slugs:
+        print(f"Page /{p['slug']}/ already exists, skipping creation.")
+        continue
+
     print(f"Creating page: {p['title']}...")
     resp = requests.post(url_base, auth=(username, password), json=p)
     if resp.status_code == 201:
         print(f"Success! Created /{p['slug']}/")
     else:
-        # Check if it already exists
-        if "already exists" in resp.text:
-            print(f"Page /{p['slug']}/ already exists.")
-        else:
-            print(f"Failed. {resp.status_code}: {resp.text}")
+        print(f"Failed. {resp.status_code}: {resp.text}")

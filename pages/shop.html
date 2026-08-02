@@ -10464,6 +10464,73 @@ html[data-neo-theme="dark"] .rb-clinic-teaser__panel {
   }
 }
 
+
+            .neo-shop-layout {
+              display: grid;
+              grid-template-columns: 1fr;
+              gap: 2rem;
+            }
+            @media (min-width: 900px) {
+              .neo-shop-layout {
+                grid-template-columns: 240px 1fr;
+                gap: 3rem;
+                align-items: start;
+              }
+            }
+            .neo-sidebar {
+              position: sticky;
+              top: 100px;
+            }
+            .neo-sidebar-list {
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
+            }
+            .neo-sidebar-link {
+              text-decoration: none;
+              color: var(--neo-text-secondary);
+              padding: 0.75rem 1rem;
+              border-radius: var(--neo-radius-lg);
+              display: block;
+              transition: background 0.2s, color 0.2s;
+              font-weight: 500;
+            }
+            .neo-sidebar-link:hover {
+              background: var(--neo-bg-inset);
+              color: var(--neo-text-primary);
+            }
+            .neo-sidebar-link[aria-current="page"] {
+              background: var(--neo-accent);
+              color: #fff;
+            }
+            .rb-wishlist-btn {
+              position: absolute;
+              top: 1rem;
+              right: 1rem;
+              width: 2.5rem;
+              height: 2.5rem;
+              border-radius: 9999px;
+              background: var(--neo-bg-base);
+              border: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: var(--neo-text-primary);
+              cursor: pointer;
+              box-shadow: var(--neo-shadow-sm);
+              transition: transform 0.2s, color 0.2s;
+              z-index: 2;
+            }
+            .rb-wishlist-btn:hover {
+              transform: scale(1.1);
+            }
+            .rb-wishlist-btn svg {
+              transition: fill 0.2s;
+            }
+          
 </style>
 
 <script>
@@ -10478,7 +10545,7 @@ var s = document.createElement('script'); s.textContent = atob('CihmdW5jdGlvbigp
     <header class="neo-mobile-header" id="neo-mobile-header">
       <div class="neo-mobile-header__inner">
         <a href="/" class="neo-mobile-header__brand">
-          <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-header__logo-img" style="height: 48px; width: auto; transform: scale(2); transform-origin: left center;">
+          <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-header__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">
         </a>
         <div class="neo-mobile-header__actions">
           <a href="/cart/" style="position: relative; color: var(--neo-text-primary); padding: 0.5rem; display: flex; align-items: center;" aria-label="Cart">
@@ -10496,10 +10563,11 @@ var s = document.createElement('script'); s.textContent = atob('CihmdW5jdGlvbigp
     <nav class="neo-desktop-nav" id="neo-desktop-nav" aria-label="Main">
       <div class="neo-desktop-nav__inner">
         <a href="/" class="neo-mobile-header__brand">
-          <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-header__logo-img" style="height: 48px; width: auto; transform: scale(2); transform-origin: left center;">
+          <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-header__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">
         </a>
         <div class="neo-desktop-nav__actions">
         <ul class="neo-desktop-nav__links">
+          <li><a href="/login/">Sign in</a></li>
           <li><a href="/">Home</a></li>
           <li><a href="/treatments/">Treatments</a></li>
           <li><a href="/clinic/">Clinic</a></li>
@@ -10522,13 +10590,14 @@ var s = document.createElement('script'); s.textContent = atob('CihmdW5jdGlvbigp
       <div class="neo-mobile-menu__inner">
         <div class="neo-mobile-menu__head">
           <a href="/" class="neo-mobile-header__brand" data-neo-menu-close>
-            <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-header__logo-img" style="height: 48px; width: auto; transform: scale(2); transform-origin: left center;">
+            <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-header__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">
           </a>
           <button type="button" class="neo-mobile-menu__close" onclick="toggleNeoMobileMenu()" aria-label="Close menu">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
           </button>
         </div>
         <ul class="neo-mobile-menu__links">
+          <li><a href="/login/">Sign in</a></li>
           <li><a href="/" data-neo-menu-close>Home</a></li>
           <li><a href="/treatments/" data-neo-menu-close>Treatments</a></li>
           <li><a href="/clinic/" data-neo-menu-close>Clinic</a></li>
@@ -10661,7 +10730,7 @@ var s = document.createElement('script'); s.textContent = atob('CihmdW5jdGlvbigp
                 <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Skincare &middot; 50ml</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                   <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;45.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Radiance Beauty Serum to cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Radiance Beauty Serum to cart" onclick="window.location.href='/cart/'">Add to cart</button>
                 </div>
               </div>
             </article>
@@ -10681,7 +10750,7 @@ var s = document.createElement('script'); s.textContent = atob('CihmdW5jdGlvbigp
                 <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Haircare &middot; 200ml</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                   <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;32.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Glamour Hair Mask to cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Glamour Hair Mask to cart" onclick="window.location.href='/cart/'">Add to cart</button>
                 </div>
               </div>
             </article>
@@ -10701,7 +10770,7 @@ var s = document.createElement('script'); s.textContent = atob('CihmdW5jdGlvbigp
                 <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Skincare &middot; 100ml</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                   <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;28.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Hydrating Mist to cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Hydrating Mist to cart" onclick="window.location.href='/cart/'">Add to cart</button>
                 </div>
               </div>
             </article>
@@ -10721,7 +10790,7 @@ var s = document.createElement('script'); s.textContent = atob('CihmdW5jdGlvbigp
                 <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Fragrance &middot; 50ml</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                   <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;65.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Lounge Signature Perfume to cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Lounge Signature Perfume to cart" onclick="window.location.href='/cart/'">Add to cart</button>
                 </div>
               </div>
             </article>
@@ -10736,7 +10805,7 @@ var s = document.createElement('script'); s.textContent = atob('CihmdW5jdGlvbigp
         <div class="neo-footer__grid">
           <div class="neo-footer__brand">
             <a href="/" class="neo-footer__logo" aria-label="Radiance Glamour Lounge">
-              <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-footer__logo-img" style="height: 48px; width: auto; transform: scale(2); transform-origin: left center;">
+              <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-footer__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">
             </a>
             <div class="neo-footer__social" aria-label="Social media">
               <a href="https://www.facebook.com/p/Radiance-glamour-loungeAesthetic-clinic-100083286131948/" target="_blank" rel="noopener noreferrer" aria-label="Radiance Glamour Lounge on Facebook">

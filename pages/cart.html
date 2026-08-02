@@ -10464,6 +10464,11 @@ html[data-neo-theme="dark"] .rb-clinic-teaser__panel {
   }
 }
 
+
+            @media (min-width: 1024px) {
+              .neo-cart-layout { grid-template-columns: 2fr 1fr !important; }
+            }
+          
 </style>
 
 <script>
@@ -10478,7 +10483,7 @@ var s = document.createElement('script'); s.textContent = atob('CihmdW5jdGlvbigp
     <header class="neo-mobile-header" id="neo-mobile-header">
       <div class="neo-mobile-header__inner">
         <a href="/" class="neo-mobile-header__brand">
-          <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-header__logo-img" style="height: 48px; width: auto; transform: scale(2); transform-origin: left center;">
+          <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-header__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">
         </a>
         <div class="neo-mobile-header__actions">
           <a href="/cart/" style="position: relative; color: var(--neo-text-primary); padding: 0.5rem; display: flex; align-items: center;" aria-label="Cart">
@@ -10496,10 +10501,11 @@ var s = document.createElement('script'); s.textContent = atob('CihmdW5jdGlvbigp
     <nav class="neo-desktop-nav" id="neo-desktop-nav" aria-label="Main">
       <div class="neo-desktop-nav__inner">
         <a href="/" class="neo-mobile-header__brand">
-          <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-header__logo-img" style="height: 48px; width: auto; transform: scale(2); transform-origin: left center;">
+          <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-header__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">
         </a>
         <div class="neo-desktop-nav__actions">
         <ul class="neo-desktop-nav__links">
+          <li><a href="/login/">Sign in</a></li>
           <li><a href="/">Home</a></li>
           <li><a href="/treatments/">Treatments</a></li>
           <li><a href="/clinic/">Clinic</a></li>
@@ -10522,13 +10528,14 @@ var s = document.createElement('script'); s.textContent = atob('CihmdW5jdGlvbigp
       <div class="neo-mobile-menu__inner">
         <div class="neo-mobile-menu__head">
           <a href="/" class="neo-mobile-header__brand" data-neo-menu-close>
-            <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-header__logo-img" style="height: 48px; width: auto; transform: scale(2); transform-origin: left center;">
+            <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-header__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">
           </a>
           <button type="button" class="neo-mobile-menu__close" onclick="toggleNeoMobileMenu()" aria-label="Close menu">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
           </button>
         </div>
         <ul class="neo-mobile-menu__links">
+          <li><a href="/login/">Sign in</a></li>
           <li><a href="/" data-neo-menu-close>Home</a></li>
           <li><a href="/treatments/" data-neo-menu-close>Treatments</a></li>
           <li><a href="/clinic/" data-neo-menu-close>Clinic</a></li>
@@ -10612,7 +10619,7 @@ var s = document.createElement('script'); s.textContent = atob('CihmdW5jdGlvbigp
                   </div>
                   <p class="neo-body" style="font-size: 0.75rem; color: var(--neo-text-muted);">Delivery calculated at checkout. One discount per order: promo codes here.</p>
                 </div>
-                <button type="button" class="neo-btn neo-btn--primary" style="width: 100%; justify-content: center; padding: 1rem; margin-bottom: 1rem; border-radius: var(--neo-radius-full);" onclick="window.location.href='checkout.html'">Proceed to checkout</button>
+                <button type="button" class="neo-btn neo-btn--primary" style="width: 100%; justify-content: center; padding: 1rem; margin-bottom: 1rem; border-radius: var(--neo-radius-full);" onclick="window.location.href='/checkout/'">Proceed to checkout</button>
                 <a href="/shop/" class="neo-btn neo-btn--secondary" style="width: 100%; justify-content: center; padding: 1rem; border-radius: var(--neo-radius-full);">
                   Continue shopping
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.5rem;"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
@@ -10629,7 +10636,7 @@ var s = document.createElement('script'); s.textContent = atob('CihmdW5jdGlvbigp
         <div class="neo-footer__grid">
           <div class="neo-footer__brand">
             <a href="/" class="neo-footer__logo" aria-label="Radiance Glamour Lounge">
-              <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-footer__logo-img" style="height: 48px; width: auto; transform: scale(2); transform-origin: left center;">
+              <img src="https://mysavvi.github.io/radiance-glamour-lounge-demo/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-footer__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">
             </a>
             <div class="neo-footer__social" aria-label="Social media">
               <a href="https://www.facebook.com/p/Radiance-glamour-loungeAesthetic-clinic-100083286131948/" target="_blank" rel="noopener noreferrer" aria-label="Radiance Glamour Lounge on Facebook">
