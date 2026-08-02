@@ -206,14 +206,14 @@
             <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
               <label class="neo-body" style="font-weight: 600; font-size: var(--neo-text-sm);">Quantity</label>
               <div style="display: inline-flex; align-items: center; border-radius: var(--neo-radius-full); border: var(--neo-border-1) solid var(--neo-border-subtle); background: var(--neo-bg-base); width: fit-content;">
-                <button type="button" style="padding: 0.75rem 1rem; background: transparent; border: none; color: var(--neo-text-primary); cursor: pointer; border-radius: 9999px 0 0 9999px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
-                <span style="width: 3rem; text-align: center; font-size: var(--neo-text-base); font-weight: 600;">1</span>
-                <button type="button" style="padding: 0.75rem 1rem; background: transparent; border: none; color: var(--neo-text-primary); cursor: pointer; border-radius: 0 9999px 9999px 0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                <button type="button" id="product-qty-minus" style="padding: 0.75rem 1rem; background: transparent; border: none; color: var(--neo-text-primary); cursor: pointer; border-radius: 9999px 0 0 9999px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                <span id="product-qty-display" style="width: 3rem; text-align: center; font-size: var(--neo-text-base); font-weight: 600;">1</span>
+                <button type="button" id="product-qty-plus" style="padding: 0.75rem 1rem; background: transparent; border: none; color: var(--neo-text-primary); cursor: pointer; border-radius: 0 9999px 9999px 0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
               </div>
             </div>
 
             <div style="display: flex; gap: 1rem; margin-top: 1rem;">
-              <button type="button" class="neo-btn neo-btn--primary" style="flex: 1; justify-content: center; padding: 1.25rem; font-size: var(--neo-text-base); border-radius: var(--neo-radius-full);" onclick="window.location.href='cart.html'">Add to cart</button>
+              <button type="button" id="product-add-to-cart" class="neo-btn neo-btn--primary" style="flex: 1; justify-content: center; padding: 1.25rem; font-size: var(--neo-text-base); border-radius: var(--neo-radius-full); transition: all 0.3s ease;">Add to cart</button>
               <button type="button" class="neo-btn neo-btn--secondary" aria-label="Add to Wishlist" style="padding: 1.25rem; border-radius: var(--neo-radius-full); aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; flex: 0 0 auto;" onclick="this.style.color='var(--neo-accent)'; this.querySelector('svg').style.fill='var(--neo-accent)';">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
               </button>
@@ -344,6 +344,8 @@
 
   <script src="neo/mobile-nav.js" defer></script>
   <script src="neo/a11y-toolbar.js" defer></script>
+  <script src="neo/cookie-consent.js" defer></script>
+  <script src="neo/cart-ui.js" defer></script>
   <script src="neo/theme-toggle.js?v=3" defer></script>
   <script src="neo/cookie-consent.js" defer></script>
   <link rel="stylesheet" href="neo/savvi-shop.css">

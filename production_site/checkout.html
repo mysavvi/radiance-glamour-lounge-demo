@@ -36,7 +36,7 @@
     .checkout-right {
       flex: 1;
       padding: 2rem;
-      background: var(--neo-bg-surface);
+      background: var(--neo-bg-subtle); /* Lighter background for contrast */
       border-left: 1px solid var(--neo-border-subtle);
       display: flex;
       justify-content: flex-start;
@@ -277,7 +277,7 @@
             </div>
           </div>
 
-          <button type="submit" class="checkout-btn">Pay &pound;122.00</button>
+          <button type="submit" id="checkout-pay-btn" class="checkout-btn">Pay &pound;122.00</button>
         </form>
       </div>
     </div>
@@ -286,36 +286,8 @@
       <div class="checkout-summary-container">
         <h2 class="neo-h3" style="margin-top: 0; margin-bottom: 1.5rem;">Order Summary</h2>
         
-        <div class="summary-item">
-          <div class="summary-img-wrap">
-            <img src="images/logo1.png" alt="Radiance Beauty Serum">
-          </div>
-          <div class="summary-details">
-            <p class="summary-title">Radiance Beauty Serum</p>
-            <p class="neo-body rb-muted" style="margin: 0; font-size: 0.875rem;">Skincare &middot; 50ml</p>
-            <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
-              <button type="button" style="width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--neo-border-subtle); background: var(--neo-bg-base); display: flex; align-items: center; justify-content: center; cursor: pointer;">-</button>
-              <span style="font-size: 0.875rem; font-weight: 500;">1</span>
-              <button type="button" style="width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--neo-border-subtle); background: var(--neo-bg-base); display: flex; align-items: center; justify-content: center; cursor: pointer;">+</button>
-            </div>
-          </div>
-          <div class="summary-price">&pound;45.00</div>
-        </div>
-
-        <div class="summary-item">
-          <div class="summary-img-wrap">
-            <img src="images/logo1.png" alt="Lounge Signature Perfume">
-          </div>
-          <div class="summary-details">
-            <p class="summary-title">Lounge Signature Perfume</p>
-            <p class="neo-body rb-muted" style="margin: 0; font-size: 0.875rem;">Fragrance &middot; 50ml</p>
-            <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
-              <button type="button" style="width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--neo-border-subtle); background: var(--neo-bg-base); display: flex; align-items: center; justify-content: center; cursor: pointer;">-</button>
-              <span style="font-size: 0.875rem; font-weight: 500;">1</span>
-              <button type="button" style="width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--neo-border-subtle); background: var(--neo-bg-base); display: flex; align-items: center; justify-content: center; cursor: pointer;">+</button>
-            </div>
-          </div>
-          <div class="summary-price">&pound;65.00</div>
+        <div id="checkout-items-container" style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <!-- Handled by cart-ui.js -->
         </div>
 
         <div style="border-top: 1px solid var(--neo-border-subtle); padding-top: 1.5rem; margin-top: 1.5rem; display: flex; gap: 0.75rem;">
@@ -345,19 +317,19 @@
         <div class="summary-totals">
           <div class="summary-total-row">
             <span>Subtotal</span>
-            <span>&pound;110.00</span>
+            <span id="checkout-subtotal">&pound;110.00</span>
           </div>
           <div class="summary-total-row">
             <span>Shipping</span>
-            <span>&pound;5.00</span>
+            <span id="checkout-shipping">&pound;5.00</span>
           </div>
           <div class="summary-total-row">
             <span>Taxes</span>
-            <span>&pound;7.00</span>
+            <span id="checkout-taxes">&pound;7.00</span>
           </div>
           <div class="summary-total-row final" style="margin-bottom: 0.5rem;">
             <span>Total</span>
-            <span>&pound;122.00</span>
+            <span class="checkout-total-val">&pound;122.00</span>
           </div>
           <div style="display: flex; justify-content: flex-end; align-items: center; gap: 0.25rem; font-size: 0.75rem; font-weight: 600; color: var(--neo-accent);">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -367,5 +339,6 @@
       </div>
     </div>
   </div>
+  <script src="neo/cart-ui.js" defer></script>
 </body>
 </html>
