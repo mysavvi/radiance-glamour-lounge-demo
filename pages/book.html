@@ -48,11 +48,11 @@ body, #content, .site-content, .site-main, .elementor-widget-wrap,
   --neo-space-8: 36px;
 
   /* Border radius */
-  --neo-radius-sm: 4px;
-  --neo-radius-md: 8px;
-  --neo-radius-lg: 12px;
-  --neo-radius-xl: 16px;
-  --neo-radius-2xl: 24px;
+  --neo-radius-sm: 6px;
+  --neo-radius-md: 12px;
+  --neo-radius-lg: 16px;
+  --neo-radius-xl: 24px;
+  --neo-radius-2xl: 32px;
   --neo-radius-full: 9999px;
 
   /* Border width */
@@ -765,6 +765,15 @@ h3.neo-h3 {
   border: none;
   border-top: var(--neo-border-1) solid var(--neo-border-subtle);
   margin: var(--neo-space-3) 0;
+}
+
+.neo-glass-panel {
+  background: rgba(42, 46, 53, 0.4);
+  border-radius: var(--neo-radius-2xl);
+  border: var(--neo-border-1) solid var(--neo-border-subtle);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 
@@ -2321,7 +2330,7 @@ select {
   font-size: var(--neo-text-sm);
   font-weight: 500;
   line-height: 1;
-  border-radius: var(--neo-radius-md);
+  border-radius: var(--neo-radius-full);
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -6020,7 +6029,7 @@ html[data-neo-theme="dark"] .neo-footer__logo img { filter: invert(1) brightness
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -6064,7 +6073,7 @@ html[data-neo-theme="dark"] .neo-footer__logo img { filter: invert(1) brightness
     object-position: 45% center;
   }
   .rb-hero-scroll__frame:nth-child(5) img {
-    object-position: 45% center;
+    object-position: 25% center;
   }
 }
 

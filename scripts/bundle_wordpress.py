@@ -31,6 +31,9 @@ PAGE_MAP = {
     "book.html": ("book.html", "book", ""),
     "book-success.html": ("book-success.html", "book-success", ""),
     "shop.html": ("shop.html", "shop", ""),
+    "cart.html": ("cart.html", "cart", ""),
+    "product.html": ("product.html", "product", ""),
+    "checkout.html": ("checkout.html", "checkout", ""),
     "privacy-policy.html": ("privacy-policy.html", "privacy-policy", ""),
     "terms.html": ("terms.html", "terms", ""),
 }
@@ -44,6 +47,8 @@ HREF_MAP = [
     (r'href="book\.html', 'href="/book/'),
     (r'href="book-success\.html', 'href="/book/success/'),
     (r'href="shop\.html', 'href="/shop/'),
+    (r'href="cart\.html', 'href="/cart/'),
+    (r'href="product\.html', 'href="/product/'),
     (r'href="privacy-policy\.html', 'href="/privacy-policy/'),
     (r'href="terms\.html', 'href="/terms/'),
 ]

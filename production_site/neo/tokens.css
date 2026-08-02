@@ -15,11 +15,11 @@
   --neo-space-8: 36px;
 
   /* Border radius */
-  --neo-radius-sm: 4px;
-  --neo-radius-md: 8px;
-  --neo-radius-lg: 12px;
-  --neo-radius-xl: 16px;
-  --neo-radius-2xl: 24px;
+  --neo-radius-sm: 6px;
+  --neo-radius-md: 12px;
+  --neo-radius-lg: 16px;
+  --neo-radius-xl: 24px;
+  --neo-radius-2xl: 32px;
   --neo-radius-full: 9999px;
 
   /* Border width */
