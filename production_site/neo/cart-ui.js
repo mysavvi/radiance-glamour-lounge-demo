@@ -20,7 +20,8 @@
   let shopConfig = {
     vat_enabled: true,
     prices_include_vat: true,
-    vat_rate: 20
+    vat_rate: 20,
+    show_checkout_tax: true
   };
 
   async function loadConfig() {
@@ -54,8 +55,8 @@
     // Update any badge with class neo-cart-badge
     const badges = document.querySelectorAll('.neo-cart-badge, [data-cart-badge]');
     badges.forEach(badge => {
-      badge.textContent = totalItems;
-      badge.style.display = totalItems > 0 ? 'inline-flex' : 'none'; // or just rely on CSS
+      badge.textContent = totalItems > 0 ? totalItems : '0';
+      badge.style.display = totalItems > 0 ? 'inline-flex' : 'none';
     });
   }
 
@@ -78,10 +79,11 @@
       let cart = getCart();
       const existing = cart.find(i => i.id === id);
       if (existing) {
-        if (qty <= 0) {
+        const newQty = parseInt(qty, 10);
+        if (newQty <= 0) {
           cart = cart.filter(i => i.id !== id);
         } else {
-          existing.qty = qty;
+          existing.qty = newQty;
         }
         saveCart(cart);
       }
@@ -105,12 +107,28 @@
 
     if (!minusBtn || !plusBtn || !qtyDisplay || !addBtn) return;
 
+    // Read product data from the add-to-cart button's data attributes
+    // Fallback to DOM price display if not set
+    const productId    = addBtn.getAttribute('data-id')    || 'radiance-beauty-serum';
+    const productTitle = addBtn.getAttribute('data-title') || 'Radiance Beauty Serum';
+    const productImage = addBtn.getAttribute('data-image') || 'images/logo1.png';
+    const productCat   = addBtn.getAttribute('data-category') || 'Skincare';
+    const productSize  = addBtn.getAttribute('data-size')  || '';
+
+    // Read base price from the DOM price display element so it stays in sync
+    const priceDisplay = document.getElementById('product-price-display');
+    let basePrice = parseFloat(
+      priceDisplay
+        ? priceDisplay.textContent.replace(/[^0-9.]/g, '')
+        : (addBtn.getAttribute('data-price') || '0')
+    );
+    if (isNaN(basePrice) || basePrice <= 0) basePrice = parseFloat(addBtn.getAttribute('data-price')) || 45.00;
+
     let qty = 1;
 
     function updatePrice() {
-      const priceDisplay = document.getElementById('product-price-display');
       if (priceDisplay) {
-        priceDisplay.innerHTML = `&pound;${(45.00 * qty).toFixed(2)}`;
+        priceDisplay.innerHTML = `&pound;${(basePrice * qty).toFixed(2)}`;
       }
     }
 
@@ -130,15 +148,14 @@
 
     addBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      // Hardcoded product details for the prototype
       const product = {
-        id: 'radiance-beauty-serum',
-        title: 'Radiance Beauty Serum',
-        price: 45.00,
+        id: productId,
+        title: productTitle,
+        price: basePrice,
         qty: qty,
-        image: 'images/logo1.png',
-        category: 'Skincare',
-        size: '50ml'
+        image: productImage,
+        category: productCat,
+        size: productSize
       };
       
       window.CartAPI.addItem(product);
@@ -146,13 +163,12 @@
       // Visual feedback
       const originalText = addBtn.textContent;
       addBtn.textContent = 'Added to Cart!';
-      addBtn.style.backgroundColor = 'var(--neo-accent)';
-      addBtn.style.color = '#fff';
+      addBtn.style.transition = 'all 0.3s ease';
+      addBtn.style.opacity = '0.85';
       
       setTimeout(() => {
         addBtn.textContent = originalText;
-        addBtn.style.backgroundColor = '';
-        addBtn.style.color = '';
+        addBtn.style.opacity = '';
       }, 2000);
     });
   }
@@ -268,18 +284,18 @@
     
     let taxes = 0;
     let total = subtotal + shipping;
-    let taxLabel = 'Taxes';
+    let taxLabel = shopConfig.checkout_tax_text ? shopConfig.checkout_tax_text : 'Taxes';
 
-    if (shopConfig.vat_enabled && cart.length > 0) {
+    if (shopConfig.vat_enabled && shopConfig.show_checkout_tax && cart.length > 0) {
       if (shopConfig.prices_include_vat) {
         // Tax is already in the subtotal and shipping
         taxes = total - (total / (1 + (shopConfig.vat_rate / 100)));
-        taxLabel = `Tax (Included)`;
+        if (!shopConfig.checkout_tax_text) taxLabel = `Tax (Included)`;
       } else {
         // Tax needs to be added on top
         taxes = total * (shopConfig.vat_rate / 100);
         total += taxes;
-        taxLabel = `Tax (${shopConfig.vat_rate}%)`;
+        if (!shopConfig.checkout_tax_text) taxLabel = `Tax (${shopConfig.vat_rate}%)`;
       }
     }
 
@@ -309,7 +325,7 @@
       if (checkoutShippingEl) checkoutShippingEl.innerHTML = `&pound;${shipping.toFixed(2)}`;
       
       if (checkoutTaxesRow) {
-        if (shopConfig.vat_enabled && cart.length > 0) {
+        if (shopConfig.vat_enabled && shopConfig.show_checkout_tax && cart.length > 0) {
           checkoutTaxesRow.style.display = '';
           if (checkoutTaxesEl) checkoutTaxesEl.innerHTML = `&pound;${taxes.toFixed(2)}`;
           if (checkoutTaxesLabel) checkoutTaxesLabel.textContent = taxLabel;
