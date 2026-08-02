@@ -16,6 +16,29 @@
     }
   }
 
+  // Shop Configuration
+  let shopConfig = {
+    vat_enabled: true,
+    prices_include_vat: true,
+    vat_rate: 20
+  };
+
+  async function loadConfig() {
+    try {
+      const res = await fetch('/wp-json/savvi-pos/v1/public/config');
+      if (res.ok) {
+        const json = await res.json();
+        if (json.success && json.data) {
+          shopConfig = json.data;
+        }
+      }
+    } catch (e) {
+      console.warn('Could not load shop config, using defaults.');
+    }
+    // Dispatch event so UI can re-render totals once config is loaded
+    window.dispatchEvent(new Event('cart_config_loaded'));
+  }
+
   function saveCart(cart) {
     localStorage.setItem(CART_KEY, JSON.stringify(cart));
     updateBadges();
@@ -240,10 +263,25 @@
     const cart = getCart();
     const subtotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
     
-    // Default flat shipping and taxes for prototype
+    // Default flat shipping
     const shipping = cart.length > 0 ? 5.00 : 0;
-    const taxes = cart.length > 0 ? 7.00 : 0; // Simplified static tax mimicking original HTML
-    const total = subtotal + shipping + taxes;
+    
+    let taxes = 0;
+    let total = subtotal + shipping;
+    let taxLabel = 'Taxes';
+
+    if (shopConfig.vat_enabled && cart.length > 0) {
+      if (shopConfig.prices_include_vat) {
+        // Tax is already in the subtotal and shipping
+        taxes = total - (total / (1 + (shopConfig.vat_rate / 100)));
+        taxLabel = `Tax (Included)`;
+      } else {
+        // Tax needs to be added on top
+        taxes = total * (shopConfig.vat_rate / 100);
+        total += taxes;
+        taxLabel = `Tax (${shopConfig.vat_rate}%)`;
+      }
+    }
 
     // Update Subtotal element (for cart page)
     const subtotalEl = document.getElementById('cart-subtotal');
@@ -263,11 +301,23 @@
       const checkoutSubtotalEl = document.getElementById('checkout-subtotal');
       const checkoutShippingEl = document.getElementById('checkout-shipping');
       const checkoutTaxesEl = document.getElementById('checkout-taxes');
+      const checkoutTaxesLabel = document.getElementById('checkout-taxes-label');
+      const checkoutTaxesRow = document.getElementById('checkout-taxes-row');
       const checkoutPayBtn = document.getElementById('checkout-pay-btn');
 
       if (checkoutSubtotalEl) checkoutSubtotalEl.innerHTML = `&pound;${subtotal.toFixed(2)}`;
       if (checkoutShippingEl) checkoutShippingEl.innerHTML = `&pound;${shipping.toFixed(2)}`;
-      if (checkoutTaxesEl) checkoutTaxesEl.innerHTML = `&pound;${taxes.toFixed(2)}`;
+      
+      if (checkoutTaxesRow) {
+        if (shopConfig.vat_enabled && cart.length > 0) {
+          checkoutTaxesRow.style.display = '';
+          if (checkoutTaxesEl) checkoutTaxesEl.innerHTML = `&pound;${taxes.toFixed(2)}`;
+          if (checkoutTaxesLabel) checkoutTaxesLabel.textContent = taxLabel;
+        } else {
+          checkoutTaxesRow.style.display = 'none';
+        }
+      }
+
       checkoutTotalEls.forEach(el => el.innerHTML = `&pound;${total.toFixed(2)}`);
       
       if (checkoutPayBtn) {
@@ -347,6 +397,12 @@
     initShopPage();
     initCartPage();
     initCheckoutPage();
+    
+    // Load config and update
+    loadConfig();
+    window.addEventListener('cart_config_loaded', () => {
+      updateTotals(!!document.getElementById('checkout-items-container'));
+    });
   });
 
 })();
