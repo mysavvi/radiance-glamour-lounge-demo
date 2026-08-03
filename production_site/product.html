@@ -187,10 +187,10 @@
               <h1 class="neo-h2" style="margin-top: 0; margin-bottom: 0.5rem;">Radiance Beauty Serum</h1>
               <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0;">
                 <div style="display: flex; align-items: center; gap: 1rem;">
-                  <p id="product-price-display" class="neo-h3" style="font-weight: 500; margin: 0;">&pound;45.00</p>
-                  <span style="display: inline-flex; align-items: center; gap: 0.25rem; font-size: 0.75rem; font-weight: 600; background: var(--neo-bg-surface); padding: 0.25rem 0.5rem; border-radius: var(--neo-radius-full); color: var(--neo-text-secondary); border: 1px solid var(--neo-border-subtle);">
+                  <p id="product-price-display" data-unit-price="45.00" class="neo-h3" style="font-weight: 500; margin: 0;">&pound;45.00</p>
+                  <span data-points-per-unit="45" style="display: inline-flex; align-items: center; gap: 0.25rem; font-size: 0.75rem; font-weight: 600; background: var(--neo-bg-surface); padding: 0.25rem 0.5rem; border-radius: var(--neo-radius-full); color: var(--neo-text-secondary); border: 1px solid var(--neo-border-subtle);">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--neo-accent)" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--neo-accent);"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    Earn 45 Glamour Points
+                    <span id="product-points-text">Earn 45 Glamour Points</span>
                   </span>
                 </div>
                 <p class="neo-body rb-muted" style="margin: 0; font-size: 0.75rem;">
@@ -217,6 +217,15 @@
               <button type="button" class="neo-btn neo-btn--secondary" aria-label="Add to Wishlist" style="padding: 1.25rem; border-radius: var(--neo-radius-full); aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; flex: 0 0 auto;" onclick="this.style.color='var(--neo-accent)'; this.querySelector('svg').style.fill='var(--neo-accent)';">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
               </button>
+            </div>
+
+            <!-- Shipping Information -->
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-top: 1.5rem; padding: 1rem; background: var(--neo-bg-inset); border-radius: var(--neo-radius-lg); color: var(--neo-text-primary);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--neo-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              <div style="font-size: 0.875rem;">
+                <p style="margin: 0; font-weight: 600;">Free Shipping on orders over &pound;50</p>
+                <p class="rb-muted" style="margin: 0; font-size: 0.75rem;">Standard delivery takes 3-5 business days.</p>
+              </div>
             </div>
 
             <!-- Accordion Details -->

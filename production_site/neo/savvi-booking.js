@@ -73,6 +73,20 @@
 
   Widget.prototype.boot = function () {
     var self = this;
+    
+    var params = new URLSearchParams(window.location.search);
+    var treatmentParam = params.get('treatment') || '';
+    if (treatmentParam.indexOf('consultation') !== -1) {
+      this.mount.hidden = true;
+      var fb = document.querySelector('[data-savvi-fallback]');
+      if (fb) { 
+        fb.hidden = false; 
+        var select = fb.querySelector('select[name="treatment"]');
+        if (select) { select.value = treatmentParam; }
+      }
+      return;
+    }
+
     this.render(el('p', { class: 'neo-caption', text: 'Loading booking…' }));
     this.get('/public/services').then(function (res) {
       if (!res || !res.success || !res.data || !res.data.services || !res.data.services.length) {

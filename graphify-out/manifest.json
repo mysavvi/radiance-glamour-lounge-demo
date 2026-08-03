@@ -1,21 +1,21 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1785451587.8625863,
+    "mtime": 1785699177.6360707,
     "ast_hash": "19480d576290d08fae2258b678f88821",
     "semantic_hash": "19480d576290d08fae2258b678f88821"
   },
   ".codex/hooks.json": {
-    "mtime": 1785451587.8631783,
+    "mtime": 1785699177.6369028,
     "ast_hash": "393a418dd71ed7734f4e899dc4a9ccc2",
     "semantic_hash": "393a418dd71ed7734f4e899dc4a9ccc2"
   },
   ".cursor/hooks.json": {
-    "mtime": 1785451587.8636053,
+    "mtime": 1785699177.6376238,
     "ast_hash": "9cf9a22645bcd962fe5e31e9617bfa45",
     "semantic_hash": "9cf9a22645bcd962fe5e31e9617bfa45"
   },
   "check_js.js": {
-    "mtime": 1785382678.5728512,
+    "mtime": 1785699177.2383285,
     "ast_hash": "3caf247a25e7e11102174eeab7a8ad3d",
     "semantic_hash": "3caf247a25e7e11102174eeab7a8ad3d"
   },
@@ -695,342 +695,342 @@
     "semantic_hash": "4454c64013506f94402fb05a2ba64bf3"
   },
   "convert_wp.py": {
-    "mtime": 1785375713.3332407,
-    "ast_hash": "f2601301cd592b504a2cdccd7f3a97a7",
-    "semantic_hash": "f2601301cd592b504a2cdccd7f3a97a7"
+    "mtime": 1785743751.820453,
+    "ast_hash": "777d196c551e89d3a8d98b745cd15f66",
+    "semantic_hash": ""
   },
   "delete_drafts.py": {
-    "mtime": 1785390875.38067,
+    "mtime": 1785699177.241281,
     "ast_hash": "7fdc42bd87dc0b7c2d52e46a4728784e",
     "semantic_hash": "7fdc42bd87dc0b7c2d52e46a4728784e"
   },
   "deploy_wp.py": {
-    "mtime": 1785372998.409328,
+    "mtime": 1785744313.8845646,
     "ast_hash": "ff0d1cf0a073fdbe7e0068c5ef69586b",
     "semantic_hash": "ff0d1cf0a073fdbe7e0068c5ef69586b"
   },
   "fix_all_pages.py": {
-    "mtime": 1785389708.0754,
+    "mtime": 1785699177.2423644,
     "ast_hash": "9d6130e0606c8102da5a0ea944e75942",
     "semantic_hash": "9d6130e0606c8102da5a0ea944e75942"
   },
   "fix_home.py": {
-    "mtime": 1785389406.5230393,
+    "mtime": 1785699177.2429092,
     "ast_hash": "a84c53e43f7d3725d1b2f83c0962762c",
     "semantic_hash": "a84c53e43f7d3725d1b2f83c0962762c"
   },
   "fix_slug.py": {
-    "mtime": 1785389975.8179913,
+    "mtime": 1785699177.2434816,
     "ast_hash": "7a4f015097d2e16588cb923168d9b52d",
     "semantic_hash": "7a4f015097d2e16588cb923168d9b52d"
   },
   "fix_treatments.py": {
-    "mtime": 1785389595.90855,
+    "mtime": 1785699177.2440262,
     "ast_hash": "57e748d3ec90a9d3ff73c1f2de678af4",
     "semantic_hash": "57e748d3ec90a9d3ff73c1f2de678af4"
   },
   "image_map.json": {
-    "mtime": 1785396931.928994,
+    "mtime": 1785699177.244526,
     "ast_hash": "afb130501ba287aa56ebaf7c24828516",
     "semantic_hash": "afb130501ba287aa56ebaf7c24828516"
   },
   "list_all.py": {
-    "mtime": 1785389995.0026119,
+    "mtime": 1785699177.2450678,
     "ast_hash": "fde76071d622aa25e22bed6c8288664a",
     "semantic_hash": "fde76071d622aa25e22bed6c8288664a"
   },
   "list_pages.py": {
-    "mtime": 1785389396.783443,
+    "mtime": 1785699177.2457037,
     "ast_hash": "8931a399e43b5404aded47e30f9c8a40",
     "semantic_hash": "8931a399e43b5404aded47e30f9c8a40"
   },
   "live_script.js": {
-    "mtime": 1785382843.2611609,
+    "mtime": 1785699177.2471066,
     "ast_hash": "b1682b03a95990c04ebad3444eda3652",
     "semantic_hash": "b1682b03a95990c04ebad3444eda3652"
   },
   "pages/fix_css.py": {
-    "mtime": 1785308566.4541614,
+    "mtime": 1785699177.2657118,
     "ast_hash": "8cfb38503e023599e35de10f11088105",
     "semantic_hash": "8cfb38503e023599e35de10f11088105"
   },
   "pages/fix_overflow.py": {
-    "mtime": 1785451362.2542336,
+    "mtime": 1785699177.266362,
     "ast_hash": "10c426c710cffe46b509709027d3c2da",
     "semantic_hash": "10c426c710cffe46b509709027d3c2da"
   },
   "pages/fix_transition.py": {
-    "mtime": 1785372392.3884654,
+    "mtime": 1785699177.266935,
     "ast_hash": "fab807409de302c9820e0f12b7818347",
     "semantic_hash": "fab807409de302c9820e0f12b7818347"
   },
   "pages/inject_css.py": {
-    "mtime": 1785451362.2541986,
+    "mtime": 1785699177.272864,
     "ast_hash": "8e4c3a87e6ea8bb1342be0aaecd9baa9",
     "semantic_hash": "8e4c3a87e6ea8bb1342be0aaecd9baa9"
   },
   "production_site/client-reviews.json": {
-    "mtime": 1785216541.212541,
+    "mtime": 1785699177.3217554,
     "ast_hash": "d7730259513e9020c32c7a7d722f2ae0",
     "semantic_hash": "d7730259513e9020c32c7a7d722f2ae0"
   },
   "production_site/folder-gallery.js": {
-    "mtime": 1785451362.2443614,
+    "mtime": 1785699177.3240588,
     "ast_hash": "0396079e5f3c1a646ce0f1a0258f721e",
     "semantic_hash": "0396079e5f3c1a646ce0f1a0258f721e"
   },
   "production_site/hero-scroll.js": {
-    "mtime": 1785451362.3370402,
+    "mtime": 1785699177.3244042,
     "ast_hash": "9a5e5caa625f79e97a23ae4d4f36bdc5",
     "semantic_hash": "9a5e5caa625f79e97a23ae4d4f36bdc5"
   },
   "production_site/neo/a11y-init.js": {
-    "mtime": 1785216541.5779228,
+    "mtime": 1785699177.3422441,
     "ast_hash": "eaf2c52bdfb5d4f74fb98dddcc9b7d6f",
     "semantic_hash": "eaf2c52bdfb5d4f74fb98dddcc9b7d6f"
   },
   "production_site/neo/a11y-toolbar.js": {
-    "mtime": 1785216541.5187466,
+    "mtime": 1785699177.342805,
     "ast_hash": "26070ba29709906ba6d95dd2a851b8c9",
     "semantic_hash": "26070ba29709906ba6d95dd2a851b8c9"
   },
   "production_site/neo/analytics.js": {
-    "mtime": 1785216541.5770564,
+    "mtime": 1785699177.3432748,
     "ast_hash": "f04e142e81be03a8bd1bb45002b82e56",
     "semantic_hash": "f04e142e81be03a8bd1bb45002b82e56"
   },
   "production_site/neo/book-form-demo.js": {
-    "mtime": 1785216541.4185457,
+    "mtime": 1785699177.3516653,
     "ast_hash": "d4214b3d8f8eb03be63b28475432aae6",
     "semantic_hash": "d4214b3d8f8eb03be63b28475432aae6"
   },
   "production_site/neo/cookie-consent.js": {
-    "mtime": 1785216541.5805357,
+    "mtime": 1785699177.3569398,
     "ast_hash": "84dc0f422f105d52083bb64e86bca64d",
     "semantic_hash": "84dc0f422f105d52083bb64e86bca64d"
   },
   "production_site/neo/craft-audit.sh": {
-    "mtime": 1785451362.2443457,
+    "mtime": 1785699177.3571923,
     "ast_hash": "9e8490caa6068b1a73a15037c5480c4d",
     "semantic_hash": "9e8490caa6068b1a73a15037c5480c4d"
   },
   "production_site/neo/form-validation.js": {
-    "mtime": 1785216541.5382552,
+    "mtime": 1785699177.3575478,
     "ast_hash": "dc588931b71d84d3f292afa5dac50453",
     "semantic_hash": "dc588931b71d84d3f292afa5dac50453"
   },
   "production_site/neo/gallery-lightbox.js": {
-    "mtime": 1785216541.6879733,
+    "mtime": 1785699177.3577733,
     "ast_hash": "fa6f9c9e9690d40ab06e19b4fe0c0d87",
     "semantic_hash": "fa6f9c9e9690d40ab06e19b4fe0c0d87"
   },
   "production_site/neo/mobile-nav.js": {
-    "mtime": 1785451362.2542946,
+    "mtime": 1785699177.358511,
     "ast_hash": "a55018312f5e41b5a3e2a157850e9aa0",
     "semantic_hash": "a55018312f5e41b5a3e2a157850e9aa0"
   },
   "production_site/neo/neo-wp-boot.js": {
-    "mtime": 1785216541.5444822,
+    "mtime": 1785699177.3591583,
     "ast_hash": "6210258bb558fb9efd02972008e91423",
     "semantic_hash": "6210258bb558fb9efd02972008e91423"
   },
   "production_site/neo/palettes.json": {
-    "mtime": 1785216541.420034,
+    "mtime": 1785699177.3598843,
     "ast_hash": "9b436171bae2b5d66e8897acf6f3d8c6",
     "semantic_hash": "9b436171bae2b5d66e8897acf6f3d8c6"
   },
   "production_site/neo/savvi-booking.js": {
-    "mtime": 1785216541.4117038,
-    "ast_hash": "934c8b9c3a4381550d7e0500faeaf085",
-    "semantic_hash": "934c8b9c3a4381550d7e0500faeaf085"
+    "mtime": 1785763446.4839268,
+    "ast_hash": "1001e0fc8aa5334ae51a36f90a968f47",
+    "semantic_hash": ""
   },
   "production_site/neo/savvi-shop.js": {
-    "mtime": 1785216541.4282632,
+    "mtime": 1785699177.361175,
     "ast_hash": "a0a3f191eadfdb517b5c96e4152c2317",
     "semantic_hash": "a0a3f191eadfdb517b5c96e4152c2317"
   },
   "production_site/neo/scroll-reveal.js": {
-    "mtime": 1785216541.5814514,
+    "mtime": 1785699177.361406,
     "ast_hash": "d3bf3889bec0234fab4d848f9a2a5525",
     "semantic_hash": "d3bf3889bec0234fab4d848f9a2a5525"
   },
   "production_site/neo/social-media-card.js": {
-    "mtime": 1785398927.3147283,
+    "mtime": 1785699177.3616424,
     "ast_hash": "f962a029ecd339489a330eb6034a80c7",
     "semantic_hash": "f962a029ecd339489a330eb6034a80c7"
   },
   "production_site/neo/social-media-card.schema.json": {
-    "mtime": 1785216541.4347222,
+    "mtime": 1785699177.3621504,
     "ast_hash": "842ff6e8d08bdef9923e8ba067e33bc3",
     "semantic_hash": "842ff6e8d08bdef9923e8ba067e33bc3"
   },
   "production_site/neo/theme-init.js": {
-    "mtime": 1785216541.437776,
+    "mtime": 1785699177.36266,
     "ast_hash": "b30095a697952bd9c8e325d6e96022e3",
     "semantic_hash": "b30095a697952bd9c8e325d6e96022e3"
   },
   "production_site/neo/theme-toggle.js": {
-    "mtime": 1785216541.6942763,
+    "mtime": 1785699177.3629668,
     "ast_hash": "8f87a7b971bd56d9fa3d8facc06d8504",
     "semantic_hash": "8f87a7b971bd56d9fa3d8facc06d8504"
   },
   "production_site/neo/visual_qa.py": {
-    "mtime": 1785216541.5792973,
+    "mtime": 1785699177.3647575,
     "ast_hash": "dfc3148de2c1147b1a202db0759c396b",
     "semantic_hash": "dfc3148de2c1147b1a202db0759c396b"
   },
   "production_site/price-card-glow.js": {
-    "mtime": 1785216541.6959617,
+    "mtime": 1785699177.36507,
     "ast_hash": "9c486f74ec6223ff9888d3426e6e652a",
     "semantic_hash": "9c486f74ec6223ff9888d3426e6e652a"
   },
   "production_site/reviews-rotator.js": {
-    "mtime": 1785216541.6987762,
+    "mtime": 1785699177.366052,
     "ast_hash": "12164d96398f0a3a9c8653028fa79be8",
     "semantic_hash": "12164d96398f0a3a9c8653028fa79be8"
   },
   "production_site/social-media-card.json": {
-    "mtime": 1785398893.216393,
+    "mtime": 1785699177.367539,
     "ast_hash": "f60e8fa09143508fc3a84917325aabee",
     "semantic_hash": "f60e8fa09143508fc3a84917325aabee"
   },
   "scripts/apply_seo.py": {
-    "mtime": 1785373186.9215584,
+    "mtime": 1785699177.3867962,
     "ast_hash": "7aafd0ac213e0735a0d4280fa5d4fd81",
     "semantic_hash": "7aafd0ac213e0735a0d4280fa5d4fd81"
   },
   "scripts/bundle_wordpress.py": {
-    "mtime": 1785680824.2848945,
+    "mtime": 1785699178.254552,
     "ast_hash": "5b154e1a3eae3241911203ea41ed37e5",
     "semantic_hash": ""
   },
   "scripts/deploy_wp.py": {
-    "mtime": 1785373096.5203207,
+    "mtime": 1785699177.3879924,
     "ast_hash": "2ed701b6394e13fbd5926690cd292e62",
     "semantic_hash": "2ed701b6394e13fbd5926690cd292e62"
   },
   "scripts/rebuild_pages.py": {
-    "mtime": 1785451362.337043,
+    "mtime": 1785699177.3886197,
     "ast_hash": "9b66a7292075c5540beff2135918afca",
     "semantic_hash": "9b66a7292075c5540beff2135918afca"
   },
   "temp.js": {
-    "mtime": 1785382802.661798,
+    "mtime": 1785699177.3896081,
     "ast_hash": "6c99a2626754f972810f9e3544794a2a",
     "semantic_hash": "6c99a2626754f972810f9e3544794a2a"
   },
   "temp_b64.js": {
-    "mtime": 1785384359.9179914,
+    "mtime": 1785699177.3902392,
     "ast_hash": "e5fde5a9f83ae9517a159adec18d69ae",
     "semantic_hash": "e5fde5a9f83ae9517a159adec18d69ae"
   },
   "test_yoast.py": {
-    "mtime": 1785373173.6926086,
+    "mtime": 1785699177.3907857,
     "ast_hash": "ab67a243be23c20091b6ced94d3d2244",
     "semantic_hash": "ab67a243be23c20091b6ced94d3d2244"
   },
   "update_nav.py": {
-    "mtime": 1785391012.664267,
+    "mtime": 1785699177.3913388,
     "ast_hash": "cb887cf0957bf86c236df102087a4f82",
     "semantic_hash": "cb887cf0957bf86c236df102087a4f82"
   },
   "upload_images.py": {
-    "mtime": 1785390596.0120127,
+    "mtime": 1785699177.3919868,
     "ast_hash": "3062f5a28b1d61a72953b7d98f2df01d",
     "semantic_hash": "3062f5a28b1d61a72953b7d98f2df01d"
   },
   "wp_api_auth.py": {
-    "mtime": 1785372821.6711898,
+    "mtime": 1785699177.3940065,
     "ast_hash": "e9acf2e0ca2b828bd533a79102e813a1",
     "semantic_hash": "e9acf2e0ca2b828bd533a79102e813a1"
   },
   "wp_api_test.py": {
-    "mtime": 1785372791.2820184,
+    "mtime": 1785699177.3946009,
     "ast_hash": "83ccb1ff976668c311d9abe879661172",
     "semantic_hash": "83ccb1ff976668c311d9abe879661172"
   },
   "scripts/check_head.py": {
-    "mtime": 1785678970.9839618,
+    "mtime": 1785699178.2549944,
     "ast_hash": "2f9ac5b0ea6319e974c9f1fa08759b02",
     "semantic_hash": ""
   },
   "scripts/check_templates.py": {
-    "mtime": 1785678599.6488056,
+    "mtime": 1785699178.2555292,
     "ast_hash": "67fd60e3e57c7acf37b30b14aeda569e",
     "semantic_hash": ""
   },
   "scripts/create_system_pages.py": {
-    "mtime": 1785680832.3499448,
+    "mtime": 1785699178.2563708,
     "ast_hash": "a2001e3404da1d92ea9002e8f2d9d2f1",
     "semantic_hash": ""
   },
   "scripts/delete_duplicates.py": {
-    "mtime": 1785678063.6736174,
+    "mtime": 1785699178.2569091,
     "ast_hash": "d104bb382c2a937bcef2c8fbcccf6e7c",
     "semantic_hash": ""
   },
   "scripts/fetch_checkout.py": {
-    "mtime": 1785678953.88988,
+    "mtime": 1785699178.2574127,
     "ast_hash": "4111003309fdda6280e473b115ffcba2",
     "semantic_hash": ""
   },
   "scripts/fix_links.py": {
-    "mtime": 1785678179.0700636,
+    "mtime": 1785699178.2577214,
     "ast_hash": "a55b51198f7bbd3833bd0505fa11f346",
     "semantic_hash": ""
   },
   "scripts/fix_logos.py": {
-    "mtime": 1785679942.4846096,
+    "mtime": 1785699178.258183,
     "ast_hash": "9698eacd7ba5cf7e15364640a828d00b",
     "semantic_hash": ""
   },
   "scripts/fix_templates.py": {
-    "mtime": 1785678613.3351328,
+    "mtime": 1785699178.2586284,
     "ast_hash": "61c4b507f5acdbb83d02df5a4977b95a",
     "semantic_hash": ""
   },
   "scripts/inject_login_link.py": {
-    "mtime": 1785680556.08205,
+    "mtime": 1785699178.2590094,
     "ast_hash": "c50efd1a120d22fc1b0ebff647f45467",
     "semantic_hash": ""
   },
   "scripts/list_pages.py": {
-    "mtime": 1785678052.5968633,
+    "mtime": 1785699178.2594464,
     "ast_hash": "847bd7364290616d0fc829b5d7ad4420",
     "semantic_hash": ""
   },
   ".agents/rules/graphify.md": {
-    "mtime": 1785477325.0758874,
+    "mtime": 1785699177.634244,
     "ast_hash": "f1e53ecc9194573d3c28fc116c743a2e",
     "semantic_hash": ""
   },
   ".agents/workflows/graphify.md": {
-    "mtime": 1785477325.0763268,
+    "mtime": 1785699177.635178,
     "ast_hash": "6d73634a678cf1e1c71930adf80bd1f0",
     "semantic_hash": ""
   },
   "DESIGN.md": {
-    "mtime": 1785451961.7191825,
+    "mtime": 1785699177.638388,
     "ast_hash": "3d7fad8a8b797814f0741ae21b4e026b",
     "semantic_hash": ""
   },
   "LAUNCH_CHECKLIST.md": {
-    "mtime": 1785451362.2982333,
+    "mtime": 1785699177.2364013,
     "ast_hash": "53b8b9fee2cf819100e229a4a0fdaa95",
     "semantic_hash": ""
   },
   "PAGE_MAP.md": {
-    "mtime": 1785214764.6628494,
-    "ast_hash": "7dee4142315b716c9d7de58d2d754dea",
+    "mtime": 1785699191.5236123,
+    "ast_hash": "fddc28e7526a6ce5e6053451704e2174",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
-    "mtime": 1785451957.7141173,
+    "mtime": 1785699177.6390905,
     "ast_hash": "9b7981294f0d4e1b537dd8a4b1937023",
     "semantic_hash": ""
   },
   "WP_PASTE_GUIDE.md": {
-    "mtime": 1785451362.3859444,
+    "mtime": 1785699177.2376947,
     "ast_hash": "ce1f1d05780ad70c88cd81c8ee990dde",
     "semantic_hash": ""
   },
@@ -1470,7 +1470,7 @@
     "semantic_hash": ""
   },
   "claude-seo/skills/seo-cluster/templates/cluster-map.html": {
-    "mtime": 1785207761.3949008,
+    "mtime": 1785744266.1555336,
     "ast_hash": "c9bbb941699ab53730643be9f867a034",
     "semantic_hash": ""
   },
@@ -2195,272 +2195,272 @@
     "semantic_hash": ""
   },
   "cookies.txt": {
-    "mtime": 1785372946.766203,
+    "mtime": 1785699177.239681,
     "ast_hash": "631f99b63842e14a9007191e0c8182da",
     "semantic_hash": ""
   },
   "copilot-instructions.md": {
-    "mtime": 1785370558.7918866,
+    "mtime": 1785699177.240585,
     "ast_hash": "729d29daf0bede34a0e982974e3d732a",
     "semantic_hash": ""
   },
   "live_site.html": {
-    "mtime": 1785382883.675851,
+    "mtime": 1785744266.5101972,
     "ast_hash": "9bc86ade5b94c06b74300e5bbba5e71f",
     "semantic_hash": ""
   },
   "pages/book-success.html": {
-    "mtime": 1785680839.6276329,
-    "ast_hash": "ab10bef763aee198b8a1b91e897076ad",
+    "mtime": 1785764357.069766,
+    "ast_hash": "a04f3d1d5796a0410c2a2f9bf2782ebb",
     "semantic_hash": ""
   },
   "pages/book.html": {
-    "mtime": 1785680839.6062155,
-    "ast_hash": "59734b0116e9d0f1ffcace72ac5264ab",
+    "mtime": 1785764357.0999024,
+    "ast_hash": "15330cfb4702e48dab6c3525484c9e98",
     "semantic_hash": ""
   },
   "pages/cart.html": {
-    "mtime": 1785680839.6676455,
-    "ast_hash": "c6dbcd45503aeafdd1beaa8ad57d1219",
+    "mtime": 1785764357.1115854,
+    "ast_hash": "ea7059b2a871a25bcee683119c00ecf9",
     "semantic_hash": ""
   },
   "pages/checkout.html": {
-    "mtime": 1785680839.7088573,
-    "ast_hash": "9697d4f744b5e80fa856ad0a38ec11fb",
+    "mtime": 1785764357.1011546,
+    "ast_hash": "bf57c1ba0cc115ed3853674ae7830f1d",
     "semantic_hash": ""
   },
   "pages/clinic.html": {
-    "mtime": 1785680839.5249734,
-    "ast_hash": "bfda5eb02c50ed386419c94a465670d5",
+    "mtime": 1785764357.0934985,
+    "ast_hash": "9e79be231fc020e168e46861ce00d373",
     "semantic_hash": ""
   },
   "pages/contact.html": {
-    "mtime": 1785680839.581806,
-    "ast_hash": "48191141e3ea68a6bcfc6e6439ca2525",
+    "mtime": 1785764357.079566,
+    "ast_hash": "3232636a20175f9ee32dd6e3ab161366",
     "semantic_hash": ""
   },
   "pages/home.html": {
-    "mtime": 1785680839.3494382,
-    "ast_hash": "d11f4e56a05d1ee1cb3e5438d1a9e782",
+    "mtime": 1785764357.0608296,
+    "ast_hash": "a5ea60250b6b6f80a4969d2bc494d6ff",
     "semantic_hash": ""
   },
   "pages/login.html": {
-    "mtime": 1785680839.7697744,
-    "ast_hash": "153207aa26d9e1869a6dae156200dc32",
+    "mtime": 1785764357.0905929,
+    "ast_hash": "54161f747c85b3aaa13feaf5f96d3c24",
     "semantic_hash": ""
   },
   "pages/privacy-policy.html": {
-    "mtime": 1785680839.729566,
-    "ast_hash": "665b88d7d948e7f592556f842535d94e",
+    "mtime": 1785764357.0763903,
+    "ast_hash": "9477a79dfc24293353ae701db3030612",
     "semantic_hash": ""
   },
   "pages/product.html": {
-    "mtime": 1785680839.6897194,
-    "ast_hash": "874def6031af25ca3e4b9613ad3a7f83",
+    "mtime": 1785765791.1836739,
+    "ast_hash": "8fbdfd2a08ef239be09579d0b32725e8",
     "semantic_hash": ""
   },
   "pages/register.html": {
-    "mtime": 1785680839.7880712,
-    "ast_hash": "14d1e4b68800a4bcca07e28217203cd2",
+    "mtime": 1785764357.0847778,
+    "ast_hash": "c368130de38fbca4c708bcbcb4fb5089",
     "semantic_hash": ""
   },
   "pages/reviews.html": {
-    "mtime": 1785680839.552819,
-    "ast_hash": "fbbc196ef9b957c57b9c454f4e6c88b4",
+    "mtime": 1785764357.115401,
+    "ast_hash": "5a6d5791aea631fa436d7bb9dec1f803",
     "semantic_hash": ""
   },
   "pages/shop.html": {
-    "mtime": 1785680839.648476,
-    "ast_hash": "947f840fc55d321a004b66f207f0ab65",
+    "mtime": 1785764357.0971446,
+    "ast_hash": "89fed407aac75d29decc4279a914591c",
     "semantic_hash": ""
   },
   "pages/terms.html": {
-    "mtime": 1785680839.7523427,
-    "ast_hash": "3dbb848a7db3aaf53095b63b5c47ddad",
+    "mtime": 1785764357.0826125,
+    "ast_hash": "8da05eb2a7daebdf545d6c75d273d021",
     "semantic_hash": ""
   },
   "pages/treatments.html": {
-    "mtime": 1785680839.466225,
-    "ast_hash": "20a2c7cf916d4e3f3cce37bd76d83d8d",
+    "mtime": 1785764357.1184647,
+    "ast_hash": "5d7c72485c407cacc9dadcdd636dfd1f",
     "semantic_hash": ""
   },
   "preview/book-success.html": {
-    "mtime": 1785214757.177829,
+    "mtime": 1785744266.3312426,
     "ast_hash": "aacda1962b1ec9000c988e0fc23612c7",
     "semantic_hash": ""
   },
   "preview/book.html": {
-    "mtime": 1785214757.1858594,
+    "mtime": 1785744266.4232335,
     "ast_hash": "4fa00bf061d17358bb9365182cf7bbed",
     "semantic_hash": ""
   },
   "preview/clinic.html": {
-    "mtime": 1785214757.1829,
+    "mtime": 1785744266.3958263,
     "ast_hash": "dbfdafe8b3826cc32eff3a920b08b38a",
     "semantic_hash": ""
   },
   "preview/contact.html": {
-    "mtime": 1785214757.179364,
+    "mtime": 1785744266.3633218,
     "ast_hash": "69c06ac5687f5d603e5ae1713ba7a620",
     "semantic_hash": ""
   },
   "preview/home.html": {
-    "mtime": 1785214757.176345,
+    "mtime": 1785744266.2014444,
     "ast_hash": "dc9a15985d63af89519b9aad28845e49",
     "semantic_hash": ""
   },
   "preview/privacy.html": {
-    "mtime": 1785214757.1908789,
+    "mtime": 1785744266.4853568,
     "ast_hash": "6d5c24e71b67c39051d1f22c34510c2b",
     "semantic_hash": ""
   },
   "preview/reviews.html": {
-    "mtime": 1785214757.1883128,
+    "mtime": 1785744266.4412577,
     "ast_hash": "3b88601982b5a7f9df96c7b54a544f2a",
     "semantic_hash": ""
   },
   "preview/shop.html": {
-    "mtime": 1785214757.1838808,
+    "mtime": 1785744266.4086983,
     "ast_hash": "0b4ded6435a3e3acf573b92dc665e316",
     "semantic_hash": ""
   },
   "preview/terms.html": {
-    "mtime": 1785214757.1809092,
+    "mtime": 1785744266.378321,
     "ast_hash": "0e75f67d8fb5df03f611eaacac25b194",
     "semantic_hash": ""
   },
   "preview/treatments.html": {
-    "mtime": 1785214757.1897848,
+    "mtime": 1785744266.461615,
     "ast_hash": "cdb9562f8b34692450da88332a3f89e7",
     "semantic_hash": ""
   },
   "production_site/404.html": {
-    "mtime": 1785410616.0299883,
+    "mtime": 1785744266.1268802,
     "ast_hash": "f920d6515d507ca99b383b749fb7e4c6",
     "semantic_hash": ""
   },
   "production_site/GO_LIVE.md": {
-    "mtime": 1785216541.2032332,
+    "mtime": 1785699177.3197849,
     "ast_hash": "1f61a4f1d997f2cd7028183f6117e959",
     "semantic_hash": ""
   },
   "production_site/book-success.html": {
-    "mtime": 1785680562.1221242,
+    "mtime": 1785744266.1118727,
     "ast_hash": "5f057087f213b7d7c3b8d2e1a78f3ad2",
     "semantic_hash": ""
   },
   "production_site/book.html": {
-    "mtime": 1785680562.1303236,
+    "mtime": 1785763680.2967737,
     "ast_hash": "8aebdf11129b5d75a41de78a3f8ba925",
     "semantic_hash": ""
   },
   "production_site/cart.html": {
-    "mtime": 1785680562.133059,
-    "ast_hash": "4a990c2ff1bf09a1509a967030872bd7",
+    "mtime": 1785744266.1412046,
+    "ast_hash": "500f7631922cc787d3b52ec1a7d0bb6a",
     "semantic_hash": ""
   },
   "production_site/checkout.html": {
-    "mtime": 1785680489.4409788,
-    "ast_hash": "3612b8e71c77a7be30e4dc0b84be51a0",
+    "mtime": 1785744266.1387017,
+    "ast_hash": "a41b3195bd244f6befb4ae2cd48bca2a",
     "semantic_hash": ""
   },
   "production_site/clinic.html": {
-    "mtime": 1785680562.1276824,
+    "mtime": 1785744266.1316779,
     "ast_hash": "4a491c985f8d1c4d9991fee76db51dc6",
     "semantic_hash": ""
   },
   "production_site/contact.html": {
-    "mtime": 1785680562.1252105,
+    "mtime": 1785744266.1219532,
     "ast_hash": "f1a96e62c9c247bc3f9f2b7bda7c0837",
     "semantic_hash": ""
   },
   "production_site/index.html": {
-    "mtime": 1785680562.119818,
+    "mtime": 1785744266.1072829,
     "ast_hash": "df995df73c436333eef60a51807f2305",
     "semantic_hash": ""
   },
   "production_site/login.html": {
-    "mtime": 1785680808.8043375,
+    "mtime": 1785744266.128238,
     "ast_hash": "239a0da4a1c6b76767a04c31a21f9ccf",
     "semantic_hash": ""
   },
   "production_site/neo/WP_DELIVERY.md": {
-    "mtime": 1785451362.2443116,
+    "mtime": 1785699177.3420196,
     "ast_hash": "4776e1bfad5b4a4ae5c07b7565deab50",
     "semantic_hash": ""
   },
   "production_site/neo/a11y-toolbar.html": {
-    "mtime": 1785216541.6856203,
+    "mtime": 1785744266.1161623,
     "ast_hash": "d919f89a5f1cff571c56444c8289cbae",
     "semantic_hash": ""
   },
   "production_site/neo/components/social-media-card.html": {
-    "mtime": 1785216541.5502567,
+    "mtime": 1785744266.1150901,
     "ast_hash": "ef2d11ec98cbee1806af09d40e038356",
     "semantic_hash": ""
   },
   "production_site/neo/components/social-media-card.md": {
-    "mtime": 1785216541.5617974,
+    "mtime": 1785699177.3561893,
     "ast_hash": "055159195dc98a89501fc8b4950fae86",
     "semantic_hash": ""
   },
   "production_site/neo/palette-catalog.md": {
-    "mtime": 1785216541.4441729,
+    "mtime": 1785699177.3593874,
     "ast_hash": "39d23f11ac041410b3c649b91a42a795",
     "semantic_hash": ""
   },
   "production_site/privacy-policy.html": {
-    "mtime": 1785680562.1243784,
+    "mtime": 1785744266.1199346,
     "ast_hash": "9ed56391eaa3de8c853b8d11d0ea5bf2",
     "semantic_hash": ""
   },
   "production_site/product.html": {
-    "mtime": 1785680562.1209638,
-    "ast_hash": "67de68301440fc8389f08b345f440adc",
+    "mtime": 1785765815.2884607,
+    "ast_hash": "b6a8d84715da864c32f55f426d83d52f",
     "semantic_hash": ""
   },
   "production_site/register.html": {
-    "mtime": 1785680795.1994252,
+    "mtime": 1785744266.1255443,
     "ast_hash": "3a311a09f58e327c8148d0ffe0b722a9",
     "semantic_hash": ""
   },
   "production_site/shop.html": {
-    "mtime": 1785680562.1285133,
-    "ast_hash": "adbb0e70830dec79bbe731905e6aeca7",
+    "mtime": 1785764200.772274,
+    "ast_hash": "eb28f7d10937e0c96f12458dcaa6f6ab",
     "semantic_hash": ""
   },
   "production_site/terms.html": {
-    "mtime": 1785680562.1259456,
+    "mtime": 1785744266.1240404,
     "ast_hash": "d6941f0d06b00b479ff358ae1230e44c",
     "semantic_hash": ""
   },
   "production_site/testimonials.html": {
-    "mtime": 1785680562.1233053,
-    "ast_hash": "4eab962c7ce6f19fd0f2ebb567eb6380",
+    "mtime": 1785760714.2600613,
+    "ast_hash": "bdec87461288f68e05dbea20411552e1",
     "semantic_hash": ""
   },
   "production_site/treatments.html": {
-    "mtime": 1785680562.1347222,
+    "mtime": 1785744266.1431193,
     "ast_hash": "503a3e62a2a38eb9180157871e090dbc",
     "semantic_hash": ""
   },
   "scratch_checkout.md": {
-    "mtime": 1785679385.9243417,
+    "mtime": 1785699178.253292,
     "ast_hash": "4cdbc75589cf867185468cdf63a5bb6d",
     "semantic_hash": ""
   },
   "scratch_guidance.md": {
-    "mtime": 1785679370.6341074,
+    "mtime": 1785699178.2538834,
     "ast_hash": "e1daa4c06568e833be044c08a461f8f9",
     "semantic_hash": ""
   },
   "user_inputs.txt": {
-    "mtime": 1785372626.5470483,
+    "mtime": 1785699177.392812,
     "ast_hash": "a097cdd3a3affd2a73b7f382083595bf",
     "semantic_hash": ""
   },
   "wp-conversion-prompt.md": {
-    "mtime": 1775879971.3871694,
+    "mtime": 1785699177.3934615,
     "ast_hash": "838a499fc2b1b935528646015ca7be5e",
     "semantic_hash": ""
   },
@@ -2500,188 +2500,673 @@
     "semantic_hash": ""
   },
   "logo/favicon (1).png": {
-    "mtime": 1785408805.9553933,
+    "mtime": 1785699177.2517712,
     "ast_hash": "3b996e09419c8621aa2316cb1a4d4b2b",
     "semantic_hash": ""
   },
   "logo/logo1.png": {
-    "mtime": 1785408750.0656295,
+    "mtime": 1785699177.252763,
     "ast_hash": "9c6f119326bff465c524f80de076d6b0",
     "semantic_hash": ""
   },
   "production_site/images/clinic-treatment.jpg": {
-    "mtime": 1785216541.3129025,
+    "mtime": 1785699177.325291,
     "ast_hash": "431309576364368a6d60747fd2148838",
     "semantic_hash": ""
   },
   "production_site/images/favicon.png": {
-    "mtime": 1785409038.769947,
+    "mtime": 1785699177.3263786,
     "ast_hash": "3b996e09419c8621aa2316cb1a4d4b2b",
     "semantic_hash": ""
   },
   "production_site/images/gallery-facial.jpg": {
-    "mtime": 1785216541.2867413,
+    "mtime": 1785699177.326843,
     "ast_hash": "772ab5c6c2a63123af5f39ed07c23ab8",
     "semantic_hash": ""
   },
   "production_site/images/gallery-massage.jpg": {
-    "mtime": 1785216541.2491124,
+    "mtime": 1785699177.3275633,
     "ast_hash": "3662d0146029a487409b55d4b7833725",
     "semantic_hash": ""
   },
   "production_site/images/gallery-nails.jpg": {
-    "mtime": 1785216541.3360114,
+    "mtime": 1785699177.3282027,
     "ast_hash": "5dba8ba501cb8a6e9882de1ac5f51bcf",
     "semantic_hash": ""
   },
   "production_site/images/gallery-wax-laser.jpg": {
-    "mtime": 1785216541.3697326,
+    "mtime": 1785699177.3286994,
     "ast_hash": "8530b2401f46acd4642377867754c728",
     "semantic_hash": ""
   },
   "production_site/images/hero-1.jpg": {
-    "mtime": 1785216541.2989793,
+    "mtime": 1785699177.3292966,
     "ast_hash": "0c98e81683b1fe722238eb1a5dde479e",
     "semantic_hash": ""
   },
   "production_site/images/hero-1A.jpg": {
-    "mtime": 1785216541.2825487,
+    "mtime": 1785699177.330989,
     "ast_hash": "de2ee5ae0c338e0b80eba2f7ed029176",
     "semantic_hash": ""
   },
   "production_site/images/hero-2.jpg": {
-    "mtime": 1785216541.2515292,
+    "mtime": 1785699177.3317003,
     "ast_hash": "a411ff030b01085f9dafaa6a8f014ebc",
     "semantic_hash": ""
   },
   "production_site/images/hero-3.jpg": {
-    "mtime": 1785216541.2618535,
+    "mtime": 1785699177.332325,
     "ast_hash": "5e039e1758a236983384cc22701174e5",
     "semantic_hash": ""
   },
   "production_site/images/hero-4.jpg": {
-    "mtime": 1785216541.319762,
+    "mtime": 1785699177.332948,
     "ast_hash": "c6d3c287b66a9813caa2c71bb798b0f1",
     "semantic_hash": ""
   },
   "production_site/images/hero-5.jpg": {
-    "mtime": 1785216541.3332345,
+    "mtime": 1785699177.3335679,
     "ast_hash": "58a3bafe5027aec51b187c1bf5fd8f78",
     "semantic_hash": ""
   },
   "production_site/images/hero-wide.jpg": {
-    "mtime": 1785216541.3714771,
+    "mtime": 1785699177.3345785,
     "ast_hash": "64b0b0dfccc2b813173d12466c6056ea",
     "semantic_hash": ""
   },
   "production_site/images/hero.jpg": {
-    "mtime": 1785216541.236798,
+    "mtime": 1785699177.3358662,
     "ast_hash": "a0758c954a761178613f52ebbbf15812",
     "semantic_hash": ""
   },
   "production_site/images/logo1.png": {
-    "mtime": 1785409038.765597,
+    "mtime": 1785699177.3370152,
     "ast_hash": "9c6f119326bff465c524f80de076d6b0",
     "semantic_hash": ""
   },
   "production_site/images/nails-manicure.jpg": {
-    "mtime": 1785216541.337272,
+    "mtime": 1785699177.3376477,
     "ast_hash": "669a13b9e0832b0c3a507793356ecec8",
     "semantic_hash": ""
   },
   "production_site/images/savviweb-logo.png": {
-    "mtime": 1785216541.2465837,
+    "mtime": 1785699177.3383322,
     "ast_hash": "4d105557ef93f54b813777cba2d131f9",
     "semantic_hash": ""
   },
   "production_site/images/social/facebook.svg": {
-    "mtime": 1785216541.2661455,
+    "mtime": 1785699177.3388946,
     "ast_hash": "065493d7b21aad9bc03b383c93b105db",
     "semantic_hash": ""
   },
   "production_site/images/social/google.svg": {
-    "mtime": 1785216541.2704768,
+    "mtime": 1785699177.3392067,
     "ast_hash": "5a5f6f8f895c5bed6eeff07eed706bc8",
     "semantic_hash": ""
   },
   "production_site/images/social/instagram.svg": {
-    "mtime": 1785216541.26383,
+    "mtime": 1785699177.3394482,
     "ast_hash": "ab61e74556f04f930eb91ff78c66a91c",
     "semantic_hash": ""
   },
   "production_site/images/social/linkedin.svg": {
-    "mtime": 1785216541.2775016,
+    "mtime": 1785699177.339677,
     "ast_hash": "c1ed6202161a9d8fd06ee8b07249cf0e",
     "semantic_hash": ""
   },
   "production_site/images/social/tiktok.svg": {
-    "mtime": 1785216541.2811735,
+    "mtime": 1785699177.3399036,
     "ast_hash": "2b2c973cfd97e899dc702c8d6a0845a3",
     "semantic_hash": ""
   },
   "production_site/images/social/youtube.svg": {
-    "mtime": 1785216541.2756014,
+    "mtime": 1785699177.3401084,
     "ast_hash": "d538d97a29ae95f65632eecbe939c25a",
     "semantic_hash": ""
   },
   "production_site/neo/assets/palettes/crimson.png": {
-    "mtime": 1785216541.6773984,
+    "mtime": 1785699177.345424,
     "ast_hash": "8f8a8ff7afd37e25c3ea17862f7b1c84",
     "semantic_hash": ""
   },
   "production_site/neo/assets/palettes/luca-davincci.png": {
-    "mtime": 1785216541.667879,
+    "mtime": 1785699177.3458488,
     "ast_hash": "88959d6e7fedb5a461281be1aa264669",
     "semantic_hash": ""
   },
   "production_site/neo/assets/palettes/moon.png": {
-    "mtime": 1785216541.6787767,
+    "mtime": 1785699177.3464503,
     "ast_hash": "ea4f73eabf1ec5dfc007ecb70954d699",
     "semantic_hash": ""
   },
   "production_site/neo/assets/palettes/ocean-depth.png": {
-    "mtime": 1785216541.6689556,
+    "mtime": 1785699177.3478196,
     "ast_hash": "9ff674fc7f491307fb52b5e7a50b1e1f",
     "semantic_hash": ""
   },
   "production_site/neo/assets/palettes/sapphire.png": {
-    "mtime": 1785216541.6703577,
+    "mtime": 1785699177.3492453,
     "ast_hash": "9f214c9a139f6ffc16c894af1535b7f1",
     "semantic_hash": ""
   },
   "production_site/neo/assets/social/facebook.svg": {
-    "mtime": 1785216541.66228,
+    "mtime": 1785699177.3503273,
     "ast_hash": "065493d7b21aad9bc03b383c93b105db",
     "semantic_hash": ""
   },
   "production_site/neo/assets/social/google.svg": {
-    "mtime": 1785216541.6635523,
+    "mtime": 1785699177.3506427,
     "ast_hash": "5a5f6f8f895c5bed6eeff07eed706bc8",
     "semantic_hash": ""
   },
   "production_site/neo/assets/social/instagram.svg": {
-    "mtime": 1785216541.654742,
+    "mtime": 1785699177.350879,
     "ast_hash": "ab61e74556f04f930eb91ff78c66a91c",
     "semantic_hash": ""
   },
   "production_site/neo/assets/social/tiktok.svg": {
-    "mtime": 1785216541.6659768,
+    "mtime": 1785699177.3511152,
     "ast_hash": "2b2c973cfd97e899dc702c8d6a0845a3",
     "semantic_hash": ""
   },
   "production_site/neo/assets/social/youtube.svg": {
-    "mtime": 1785216541.6650827,
+    "mtime": 1785699177.351341,
     "ast_hash": "d538d97a29ae95f65632eecbe939c25a",
     "semantic_hash": ""
   },
   "screenshot_mobile.png": {
-    "mtime": 1785398155.576348,
+    "mtime": 1785699177.3793447,
     "ast_hash": "9ca616d88dc47e3c851ac342818ff3af",
     "semantic_hash": ""
   },
   "screenshot_social_card.png": {
-    "mtime": 1785398768.6216292,
+    "mtime": 1785699177.3852885,
     "ast_hash": "9198b082c620fba354472acd1534c18a",
+    "semantic_hash": ""
+  },
+  ".claude-flow/harness-active-policy.json": {
+    "mtime": 1785682078.3667207,
+    "ast_hash": "9011635f3a66910bb7c54cf29c079fde",
+    "semantic_hash": ""
+  },
+  ".claude/proven-config.json": {
+    "mtime": 1785682078.365714,
+    "ast_hash": "a3891078db2d38911fcd64b57f7bf9c7",
+    "semantic_hash": ""
+  },
+  "client-reviews.json": {
+    "mtime": 1785699177.1396987,
+    "ast_hash": "d7730259513e9020c32c7a7d722f2ae0",
+    "semantic_hash": ""
+  },
+  "folder-gallery.js": {
+    "mtime": 1785699177.1403444,
+    "ast_hash": "0396079e5f3c1a646ce0f1a0258f721e",
+    "semantic_hash": ""
+  },
+  "hero-scroll.js": {
+    "mtime": 1785699177.140548,
+    "ast_hash": "9a5e5caa625f79e97a23ae4d4f36bdc5",
+    "semantic_hash": ""
+  },
+  "neo/a11y-init.js": {
+    "mtime": 1785699177.171638,
+    "ast_hash": "eaf2c52bdfb5d4f74fb98dddcc9b7d6f",
+    "semantic_hash": ""
+  },
+  "neo/a11y-toolbar.js": {
+    "mtime": 1785699177.1721456,
+    "ast_hash": "26070ba29709906ba6d95dd2a851b8c9",
+    "semantic_hash": ""
+  },
+  "neo/analytics.js": {
+    "mtime": 1785699177.172684,
+    "ast_hash": "f04e142e81be03a8bd1bb45002b82e56",
+    "semantic_hash": ""
+  },
+  "neo/book-form-demo.js": {
+    "mtime": 1785699177.1822634,
+    "ast_hash": "d4214b3d8f8eb03be63b28475432aae6",
+    "semantic_hash": ""
+  },
+  "neo/cart-ui.js": {
+    "mtime": 1785744058.1957638,
+    "ast_hash": "bb12443f5b0828e8e941541f7da0a000",
+    "semantic_hash": ""
+  },
+  "neo/cookie-consent.js": {
+    "mtime": 1785699177.19033,
+    "ast_hash": "84dc0f422f105d52083bb64e86bca64d",
+    "semantic_hash": ""
+  },
+  "neo/craft-audit.sh": {
+    "mtime": 1785699177.190655,
+    "ast_hash": "9e8490caa6068b1a73a15037c5480c4d",
+    "semantic_hash": ""
+  },
+  "neo/form-validation.js": {
+    "mtime": 1785699177.1909544,
+    "ast_hash": "dc588931b71d84d3f292afa5dac50453",
+    "semantic_hash": ""
+  },
+  "neo/gallery-lightbox.js": {
+    "mtime": 1785699177.1911888,
+    "ast_hash": "fa6f9c9e9690d40ab06e19b4fe0c0d87",
+    "semantic_hash": ""
+  },
+  "neo/mobile-nav.js": {
+    "mtime": 1785699177.1920712,
+    "ast_hash": "a55018312f5e41b5a3e2a157850e9aa0",
+    "semantic_hash": ""
+  },
+  "neo/neo-wp-boot.js": {
+    "mtime": 1785699177.1932442,
+    "ast_hash": "6210258bb558fb9efd02972008e91423",
+    "semantic_hash": ""
+  },
+  "neo/palettes.json": {
+    "mtime": 1785699177.1948907,
+    "ast_hash": "9b436171bae2b5d66e8897acf6f3d8c6",
+    "semantic_hash": ""
+  },
+  "neo/savvi-booking.js": {
+    "mtime": 1785699177.1956587,
+    "ast_hash": "934c8b9c3a4381550d7e0500faeaf085",
+    "semantic_hash": ""
+  },
+  "neo/savvi-shop.js": {
+    "mtime": 1785699177.1963494,
+    "ast_hash": "a0a3f191eadfdb517b5c96e4152c2317",
+    "semantic_hash": ""
+  },
+  "neo/scroll-reveal.js": {
+    "mtime": 1785699177.1966293,
+    "ast_hash": "d3bf3889bec0234fab4d848f9a2a5525",
+    "semantic_hash": ""
+  },
+  "neo/social-media-card.js": {
+    "mtime": 1785699177.1969953,
+    "ast_hash": "f962a029ecd339489a330eb6034a80c7",
+    "semantic_hash": ""
+  },
+  "neo/social-media-card.schema.json": {
+    "mtime": 1785699177.1975756,
+    "ast_hash": "842ff6e8d08bdef9923e8ba067e33bc3",
+    "semantic_hash": ""
+  },
+  "neo/theme-init.js": {
+    "mtime": 1785699177.1980782,
+    "ast_hash": "b30095a697952bd9c8e325d6e96022e3",
+    "semantic_hash": ""
+  },
+  "neo/theme-toggle.js": {
+    "mtime": 1785699177.198403,
+    "ast_hash": "8f87a7b971bd56d9fa3d8facc06d8504",
+    "semantic_hash": ""
+  },
+  "neo/visual_qa.py": {
+    "mtime": 1785699177.2001796,
+    "ast_hash": "dfc3148de2c1147b1a202db0759c396b",
+    "semantic_hash": ""
+  },
+  "patch.py": {
+    "mtime": 1785744170.4841747,
+    "ast_hash": "0066fda0954055a845ce8955a31fd862",
+    "semantic_hash": ""
+  },
+  "price-card-glow.js": {
+    "mtime": 1785699177.2005057,
+    "ast_hash": "9c486f74ec6223ff9888d3426e6e652a",
+    "semantic_hash": ""
+  },
+  "production_site/neo/cart-ui.js": {
+    "mtime": 1785765845.0446756,
+    "ast_hash": "629ac5c6d0c91034db11b638c9db0842",
+    "semantic_hash": ""
+  },
+  "production_site/update_shop.py": {
+    "mtime": 1785699178.4537685,
+    "ast_hash": "5644ff7341370a64c18a12f07ef5df40",
+    "semantic_hash": ""
+  },
+  "reviews-rotator.js": {
+    "mtime": 1785699177.2064195,
+    "ast_hash": "12164d96398f0a3a9c8653028fa79be8",
+    "semantic_hash": ""
+  },
+  "social-media-card.json": {
+    "mtime": 1785699177.2094495,
+    "ast_hash": "f60e8fa09143508fc3a84917325aabee",
+    "semantic_hash": ""
+  },
+  ".agents/AGENTS.md": {
+    "mtime": 1785699178.0291154,
+    "ast_hash": "12c5febcd6d628c89a5a1b2cfdd70dc6",
+    "semantic_hash": ""
+  },
+  "404.html": {
+    "mtime": 1785744266.1631696,
+    "ast_hash": "f920d6515d507ca99b383b749fb7e4c6",
+    "semantic_hash": ""
+  },
+  "4339fe584dbf9dc0881f0f8ba2ddcaad.txt": {
+    "mtime": 1785699177.1382122,
+    "ast_hash": "1e6152b726a4c3c94839900ccc098039",
+    "semantic_hash": ""
+  },
+  "DEPLOY.md": {
+    "mtime": 1785699177.138404,
+    "ast_hash": "bcc2bc95615084eb4349b7457c3b8747",
+    "semantic_hash": ""
+  },
+  "GO_LIVE.md": {
+    "mtime": 1785699177.1385574,
+    "ast_hash": "1f61a4f1d997f2cd7028183f6117e959",
+    "semantic_hash": ""
+  },
+  "book-success.html": {
+    "mtime": 1785744266.1517694,
+    "ast_hash": "5f057087f213b7d7c3b8d2e1a78f3ad2",
+    "semantic_hash": ""
+  },
+  "book.html": {
+    "mtime": 1785744266.1772807,
+    "ast_hash": "6e8f822e247bed696276fbba09758d70",
+    "semantic_hash": ""
+  },
+  "cart.html": {
+    "mtime": 1785744266.514248,
+    "ast_hash": "500f7631922cc787d3b52ec1a7d0bb6a",
+    "semantic_hash": ""
+  },
+  "checkout.html": {
+    "mtime": 1785744266.1796434,
+    "ast_hash": "e5c6dcdec0dd9400c9e52c3c97dead4b",
+    "semantic_hash": ""
+  },
+  "clinic.html": {
+    "mtime": 1785744266.1666389,
+    "ast_hash": "4a491c985f8d1c4d9991fee76db51dc6",
+    "semantic_hash": ""
+  },
+  "contact.html": {
+    "mtime": 1785744266.1603096,
+    "ast_hash": "f1a96e62c9c247bc3f9f2b7bda7c0837",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1785744266.1490986,
+    "ast_hash": "df995df73c436333eef60a51807f2305",
+    "semantic_hash": ""
+  },
+  "indexnow-key.txt": {
+    "mtime": 1785699177.1559486,
+    "ast_hash": "f0d3c03931d6360be84a266ae0108d5b",
+    "semantic_hash": ""
+  },
+  "llms-full.txt": {
+    "mtime": 1785699177.1661997,
+    "ast_hash": "cbaf588935c2c2c81f86c3370f5bdbdb",
+    "semantic_hash": ""
+  },
+  "llms.txt": {
+    "mtime": 1785699177.1668322,
+    "ast_hash": "439dd0124c79234ed6201cd74aab648a",
+    "semantic_hash": ""
+  },
+  "login.html": {
+    "mtime": 1785744266.1648853,
+    "ast_hash": "239a0da4a1c6b76767a04c31a21f9ccf",
+    "semantic_hash": ""
+  },
+  "neo/WP_DELIVERY.md": {
+    "mtime": 1785699177.1713614,
+    "ast_hash": "4776e1bfad5b4a4ae5c07b7565deab50",
+    "semantic_hash": ""
+  },
+  "neo/a11y-toolbar.html": {
+    "mtime": 1785744266.1541092,
+    "ast_hash": "d919f89a5f1cff571c56444c8289cbae",
+    "semantic_hash": ""
+  },
+  "neo/components/social-media-card.html": {
+    "mtime": 1785744266.1531184,
+    "ast_hash": "ef2d11ec98cbee1806af09d40e038356",
+    "semantic_hash": ""
+  },
+  "neo/components/social-media-card.md": {
+    "mtime": 1785699177.189246,
+    "ast_hash": "055159195dc98a89501fc8b4950fae86",
+    "semantic_hash": ""
+  },
+  "neo/palette-catalog.md": {
+    "mtime": 1785699177.1941905,
+    "ast_hash": "39d23f11ac041410b3c649b91a42a795",
+    "semantic_hash": ""
+  },
+  "pages/404.html": {
+    "mtime": 1785764357.088245,
+    "ast_hash": "08c7e911f49fcc6e3d74c89b3d6c3579",
+    "semantic_hash": ""
+  },
+  "pages/index.html": {
+    "mtime": 1785764357.0518894,
+    "ast_hash": "610b4dc1aaa0ceeb96023c9d84763488",
+    "semantic_hash": ""
+  },
+  "pages/live_site.html": {
+    "mtime": 1785764357.1075082,
+    "ast_hash": "c1a766142941ec5d8723c2da66214f95",
+    "semantic_hash": ""
+  },
+  "pages/testimonials.html": {
+    "mtime": 1785764357.0735078,
+    "ast_hash": "93c599b31af4c6db331d6c625f14ab45",
+    "semantic_hash": ""
+  },
+  "privacy-policy.html": {
+    "mtime": 1785744266.1586185,
+    "ast_hash": "9ed56391eaa3de8c853b8d11d0ea5bf2",
+    "semantic_hash": ""
+  },
+  "product.html": {
+    "mtime": 1785744266.1502144,
+    "ast_hash": "a186fcbaa1c61223f9208efbdc2b94bc",
+    "semantic_hash": ""
+  },
+  "register.html": {
+    "mtime": 1785744266.1618946,
+    "ast_hash": "3a311a09f58e327c8148d0ffe0b722a9",
+    "semantic_hash": ""
+  },
+  "robots.txt": {
+    "mtime": 1785699177.2066526,
+    "ast_hash": "892306f055a2cda3e694dc6974ccc50a",
+    "semantic_hash": ""
+  },
+  "shop.html": {
+    "mtime": 1785744266.167768,
+    "ast_hash": "d8338daa1edd3e3a42ae8e8e9c4533b5",
+    "semantic_hash": ""
+  },
+  "terms.html": {
+    "mtime": 1785744266.161336,
+    "ast_hash": "d6941f0d06b00b479ff358ae1230e44c",
+    "semantic_hash": ""
+  },
+  "testimonials.html": {
+    "mtime": 1785744266.156814,
+    "ast_hash": "4eab962c7ce6f19fd0f2ebb567eb6380",
+    "semantic_hash": ""
+  },
+  "treatments.html": {
+    "mtime": 1785744266.7381446,
+    "ast_hash": "503a3e62a2a38eb9180157871e090dbc",
+    "semantic_hash": ""
+  },
+  "images/clinic-treatment.jpg": {
+    "mtime": 1785699177.141179,
+    "ast_hash": "431309576364368a6d60747fd2148838",
+    "semantic_hash": ""
+  },
+  "images/favicon.png": {
+    "mtime": 1785699177.1417537,
+    "ast_hash": "3b996e09419c8621aa2316cb1a4d4b2b",
+    "semantic_hash": ""
+  },
+  "images/gallery-facial.jpg": {
+    "mtime": 1785699177.142011,
+    "ast_hash": "772ab5c6c2a63123af5f39ed07c23ab8",
+    "semantic_hash": ""
+  },
+  "images/gallery-massage.jpg": {
+    "mtime": 1785699177.1424308,
+    "ast_hash": "3662d0146029a487409b55d4b7833725",
+    "semantic_hash": ""
+  },
+  "images/gallery-nails.jpg": {
+    "mtime": 1785699177.1429448,
+    "ast_hash": "5dba8ba501cb8a6e9882de1ac5f51bcf",
+    "semantic_hash": ""
+  },
+  "images/gallery-wax-laser.jpg": {
+    "mtime": 1785699177.1436179,
+    "ast_hash": "8530b2401f46acd4642377867754c728",
+    "semantic_hash": ""
+  },
+  "images/hero-1.jpg": {
+    "mtime": 1785699177.1443515,
+    "ast_hash": "0c98e81683b1fe722238eb1a5dde479e",
+    "semantic_hash": ""
+  },
+  "images/hero-1A.jpg": {
+    "mtime": 1785699177.145921,
+    "ast_hash": "de2ee5ae0c338e0b80eba2f7ed029176",
+    "semantic_hash": ""
+  },
+  "images/hero-2.jpg": {
+    "mtime": 1785699177.1464891,
+    "ast_hash": "a411ff030b01085f9dafaa6a8f014ebc",
+    "semantic_hash": ""
+  },
+  "images/hero-3.jpg": {
+    "mtime": 1785699177.1471457,
+    "ast_hash": "5e039e1758a236983384cc22701174e5",
+    "semantic_hash": ""
+  },
+  "images/hero-4.jpg": {
+    "mtime": 1785699177.147843,
+    "ast_hash": "c6d3c287b66a9813caa2c71bb798b0f1",
+    "semantic_hash": ""
+  },
+  "images/hero-5.jpg": {
+    "mtime": 1785699177.148372,
+    "ast_hash": "58a3bafe5027aec51b187c1bf5fd8f78",
+    "semantic_hash": ""
+  },
+  "images/hero-wide.jpg": {
+    "mtime": 1785699177.149747,
+    "ast_hash": "64b0b0dfccc2b813173d12466c6056ea",
+    "semantic_hash": ""
+  },
+  "images/hero.jpg": {
+    "mtime": 1785699177.1505628,
+    "ast_hash": "a0758c954a761178613f52ebbbf15812",
+    "semantic_hash": ""
+  },
+  "images/logo1.png": {
+    "mtime": 1785699177.1520088,
+    "ast_hash": "9c6f119326bff465c524f80de076d6b0",
+    "semantic_hash": ""
+  },
+  "images/nails-manicure.jpg": {
+    "mtime": 1785699177.1527312,
+    "ast_hash": "669a13b9e0832b0c3a507793356ecec8",
+    "semantic_hash": ""
+  },
+  "images/savviweb-logo.png": {
+    "mtime": 1785699177.1537192,
+    "ast_hash": "4d105557ef93f54b813777cba2d131f9",
+    "semantic_hash": ""
+  },
+  "images/social/facebook.svg": {
+    "mtime": 1785699177.1541598,
+    "ast_hash": "065493d7b21aad9bc03b383c93b105db",
+    "semantic_hash": ""
+  },
+  "images/social/google.svg": {
+    "mtime": 1785699177.1544123,
+    "ast_hash": "5a5f6f8f895c5bed6eeff07eed706bc8",
+    "semantic_hash": ""
+  },
+  "images/social/instagram.svg": {
+    "mtime": 1785699177.1546593,
+    "ast_hash": "ab61e74556f04f930eb91ff78c66a91c",
+    "semantic_hash": ""
+  },
+  "images/social/linkedin.svg": {
+    "mtime": 1785699177.1548815,
+    "ast_hash": "c1ed6202161a9d8fd06ee8b07249cf0e",
+    "semantic_hash": ""
+  },
+  "images/social/tiktok.svg": {
+    "mtime": 1785699177.1550965,
+    "ast_hash": "2b2c973cfd97e899dc702c8d6a0845a3",
+    "semantic_hash": ""
+  },
+  "images/social/youtube.svg": {
+    "mtime": 1785699177.1553078,
+    "ast_hash": "d538d97a29ae95f65632eecbe939c25a",
+    "semantic_hash": ""
+  },
+  "neo/assets/palettes/crimson.png": {
+    "mtime": 1785699177.175315,
+    "ast_hash": "8f8a8ff7afd37e25c3ea17862f7b1c84",
+    "semantic_hash": ""
+  },
+  "neo/assets/palettes/luca-davincci.png": {
+    "mtime": 1785699177.1759067,
+    "ast_hash": "88959d6e7fedb5a461281be1aa264669",
+    "semantic_hash": ""
+  },
+  "neo/assets/palettes/moon.png": {
+    "mtime": 1785699177.1765268,
+    "ast_hash": "ea4f73eabf1ec5dfc007ecb70954d699",
+    "semantic_hash": ""
+  },
+  "neo/assets/palettes/ocean-depth.png": {
+    "mtime": 1785699177.1791615,
+    "ast_hash": "9ff674fc7f491307fb52b5e7a50b1e1f",
+    "semantic_hash": ""
+  },
+  "neo/assets/palettes/sapphire.png": {
+    "mtime": 1785699177.180331,
+    "ast_hash": "9f214c9a139f6ffc16c894af1535b7f1",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/facebook.svg": {
+    "mtime": 1785699177.1808887,
+    "ast_hash": "065493d7b21aad9bc03b383c93b105db",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/google.svg": {
+    "mtime": 1785699177.1811388,
+    "ast_hash": "5a5f6f8f895c5bed6eeff07eed706bc8",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/instagram.svg": {
+    "mtime": 1785699177.1813889,
+    "ast_hash": "ab61e74556f04f930eb91ff78c66a91c",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/tiktok.svg": {
+    "mtime": 1785699177.181757,
+    "ast_hash": "2b2c973cfd97e899dc702c8d6a0845a3",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/youtube.svg": {
+    "mtime": 1785699177.1820042,
+    "ast_hash": "d538d97a29ae95f65632eecbe939c25a",
     "semantic_hash": ""
   }
 }

@@ -287,38 +287,33 @@
         </div>
         <p class="neo-body rb-muted rb-page-hero__lead">Verified reviews from Treatwell clients. These are real quotes from recent appointments at Radiance Glamour Lounge.</p>
 
-        <div class="rb-reviews-grid" data-neo-reveal>
-          <article class="rb-review-card">
-            <blockquote cite="https://www.treatwell.co.uk/place/radiance-glamour-lounge-ladies-only-salon/">
-              <p>&ldquo;Fantastic service as always and can always get an appointment when needed&rdquo;</p>
-            </blockquote>
-            <footer>Marie &middot; Eyebrow &amp; Eyelash Tinting &middot; Verified on Treatwell</footer>
-          </article>
-          <article class="rb-review-card">
-            <blockquote cite="https://www.treatwell.co.uk/place/radiance-glamour-lounge-ladies-only-salon/">
-              <p>&ldquo;I was very happy with the results of microneedling! Definitely go back!&rdquo;</p>
-            </blockquote>
-            <footer>Elaine &middot; Sohaila, Facials - Micro Needling &middot; Verified on Treatwell</footer>
-          </article>
-          <article class="rb-review-card">
-            <blockquote cite="https://www.treatwell.co.uk/place/radiance-glamour-lounge-ladies-only-salon/">
-              <p>&ldquo;Lovely Massage good pressure, friendly therapist&rdquo;</p>
-            </blockquote>
-            <footer>Laura &middot; Ghosia, Swedish Massage &middot; Verified on Treatwell</footer>
-          </article>
-          <article class="rb-review-card">
-            <blockquote cite="https://www.treatwell.co.uk/place/radiance-glamour-lounge-ladies-only-salon/">
-              <p>&ldquo;i loved how my eyebrows looked and there was a lot of attention to detail with them!&rdquo;</p>
-            </blockquote>
-            <footer>Almariya &middot; Saba, Ladies&rsquo; Facial Waxing &middot; Verified on Treatwell</footer>
-          </article>
-          <article class="rb-review-card">
-            <blockquote cite="https://www.treatwell.co.uk/place/radiance-glamour-lounge-ladies-only-salon/">
-              <p>&ldquo;Got the lash lift results I wanted.&rdquo;</p>
-            </blockquote>
-            <footer>Whitney &middot; Lash Lift &middot; Verified on Treatwell</footer>
-          </article>
+        <div class="rb-reviews-grid" id="reviews-container" data-neo-reveal>
+          <!-- Reviews will be loaded here dynamically -->
         </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            fetch('client-reviews.json')
+              .then(response => response.json())
+              .then(data => {
+                const container = document.getElementById('reviews-container');
+                if (!container) return;
+                
+                let html = '';
+                data.forEach(review => {
+                  html += `
+                    <article class="rb-review-card">
+                      <blockquote cite="https://www.treatwell.co.uk/place/radiance-glamour-lounge-ladies-only-salon/">
+                        <p>&ldquo;${review.text}&rdquo;</p>
+                      </blockquote>
+                      <footer>${review.name} &middot; Verified on Treatwell</footer>
+                    </article>
+                  `;
+                });
+                container.innerHTML = html;
+              })
+              .catch(error => console.error('Error loading reviews:', error));
+          });
+        </script>
 
         <section class="neo-section neo-section--inset" style="margin-top: var(--neo-space-8);" data-neo-reveal>
           <h2 class="neo-h3">Book your visit</h2>

@@ -117,18 +117,33 @@
 
     // Read base price from the DOM price display element so it stays in sync
     const priceDisplay = document.getElementById('product-price-display');
+    const pointsText = document.getElementById('product-points-text');
+    
     let basePrice = parseFloat(
       priceDisplay
-        ? priceDisplay.textContent.replace(/[^0-9.]/g, '')
+        ? priceDisplay.getAttribute('data-unit-price')
         : (addBtn.getAttribute('data-price') || '0')
     );
     if (isNaN(basePrice) || basePrice <= 0) basePrice = parseFloat(addBtn.getAttribute('data-price')) || 45.00;
+
+    let pointsPerUnit = 45;
+    if (pointsText && pointsText.parentElement.getAttribute('data-points-per-unit')) {
+      pointsPerUnit = parseInt(pointsText.parentElement.getAttribute('data-points-per-unit'), 10) || 45;
+    }
 
     let qty = 1;
 
     function updatePrice() {
       if (priceDisplay) {
-        priceDisplay.innerHTML = `&pound;${(basePrice * qty).toFixed(2)}`;
+        const totalPrice = (basePrice * qty).toFixed(2);
+        if (qty > 1) {
+          priceDisplay.innerHTML = `&pound;${totalPrice} <span style="font-size: 0.65em; font-weight: normal; color: var(--neo-text-muted);">(&pound;${basePrice.toFixed(2)} each)</span>`;
+        } else {
+          priceDisplay.innerHTML = `&pound;${totalPrice}`;
+        }
+      }
+      if (pointsText) {
+        pointsText.textContent = `Earn ${pointsPerUnit * qty} Glamour Points`;
       }
     }
 
@@ -346,6 +361,11 @@
           checkoutPayBtn.style.opacity = '1';
           checkoutPayBtn.style.cursor = 'pointer';
         }
+      }
+      
+      const checkoutEarnPoints = document.getElementById('checkout-earn-points');
+      if (checkoutEarnPoints) {
+        checkoutEarnPoints.textContent = `You will earn ${Math.floor(subtotal)} Glamour Points with this purchase`;
       }
     }
   }

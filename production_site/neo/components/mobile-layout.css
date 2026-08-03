@@ -479,7 +479,7 @@
 
 html,
 body.neo-body {
-  overscroll-behavior-y: none;
+  /* removed overscroll-behavior-y: none; to fix scroll lock on Safari */
 }
 
 button,

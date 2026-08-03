@@ -1,6 +1,22 @@
 /* ──────────────────────────────────────────────────────────────────────
    Radiance Glamour Lounge — Neo Salon Pro (moon palette, Fraunces + Inter)
    ────────────────────────────────────────────────────────────────────── */
+@charset "UTF-8";
+/* 
+  Custom styling on top of neo-design for Radiance Glamour Lounge 
+*/
+
+/* --- GLOBAL CONTAINER RESETS (BRAND GUIDELINES) --- */
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* --------------------------------------------------- */
+
 img, video { max-width: 100%; height: auto; }
 
 :root {
