@@ -1,16 +1,16 @@
 # Graph Report - Radiance Glamour Lounge  (2026-08-03)
 
 ## Corpus Check
-- 450 files · ~1,824,971 words
+- 454 files · ~2,152,696 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5385 nodes · 6919 edges · 469 communities (417 shown, 52 thin omitted)
+- 5388 nodes · 6919 edges · 472 communities (421 shown, 51 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 97 edges (avg confidence: 0.6)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7d2a859a`
+- Built from commit: `290f4d6f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -34,7 +34,7 @@
 - Domain Mode Modifier Libraries
 - google_auth.py
 - test_phase_j_executable.py
-- sendGift
+- initLive
 - a11y-toolbar.js
 - initLive
 - commoncrawl_graph.py
@@ -87,7 +87,7 @@
 - setLayout
 - items
 - setLayout
-- safe_requests_get
+- make_safe_playwright_route_handler
 - render_page.py
 - test_gbp_lint_and_polish.py
 - properties
@@ -393,7 +393,7 @@
 - [1.6.0] - 2026-03-23
 - [1.7.1] - 2026-03-30
 - Widget
-- [1.9.6] - 2026-04-26
+- [1.9.5] - 2026-04-26
 - properties
 - Radiance Glamour Lounge — WordPress page map
 - rules/graphify.md
@@ -447,15 +447,15 @@
   claude-seo/tests/test_render_page.py → claude-seo/scripts/render_page.py
 - `audit()` --calls--> `render_page()`  [EXTRACTED]
   claude-seo/scripts/agent_ux_check.py → claude-seo/scripts/render_page.py
+- `analyze_visual()` --calls--> `validate_url_strict()`  [EXTRACTED]
+  claude-seo/scripts/analyze_visual.py → claude-seo/scripts/url_safety.py
 - `main()` --calls--> `get_moz_api_key()`  [EXTRACTED]
   claude-seo/scripts/moz_api.py → claude-seo/scripts/backlinks_auth.py
-- `_get_cache_path()` --calls--> `get_cache_dir()`  [EXTRACTED]
-  claude-seo/scripts/commoncrawl_graph.py → claude-seo/scripts/backlinks_auth.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (469 total, 52 thin omitted)
+## Communities (472 total, 51 thin omitted)
 
 ### Community 0 - "gsc_query.py"
 Cohesion: 0.18
@@ -529,9 +529,9 @@ Nodes (41): 1. Subject, 2. Action, 3. Context, 4. Composition, 5. Lighting, 6. S
 Cohesion: 0.11
 Nodes (31): build_service(), check_credentials(), _chmod_quiet(), detect_tier(), _exchange_code(), get_oauth_credentials(), get_service_account_credentials(), load_config() (+23 more)
 
-### Community 19 - "sendGift"
-Cohesion: 0.15
-Nodes (18): bumpRailCount(), burstLikes(), formatCount(), parseRailCount(), pick(), pickGift(), pulseHeartButton(), pulseRailAction() (+10 more)
+### Community 19 - "initLive"
+Cohesion: 0.13
+Nodes (23): bindMotionPreference(), bindScrollPause(), bumpRailCount(), burstLikes(), formatCount(), initLive(), parseRailCount(), pick() (+15 more)
 
 ### Community 20 - "a11y-toolbar.js"
 Cohesion: 0.21
@@ -593,6 +593,10 @@ Nodes (19): applyConfig(), applyReviewPlatforms(), clearExit(), createChatItem()
 Cohesion: 0.19
 Nodes (19): applyConfig(), applyReviewPlatforms(), clearExit(), createChatItem(), fetchJson(), goTo(), loadData(), pickReview() (+11 more)
 
+### Community 35 - "test_technical_depth.py"
+Cohesion: 0.09
+Nodes (5): analyse(), _extract_speculation_actions(), main(), Pull the unique 'action' field values out of a speculationrules JSON., Tests for the v2 Checkpoint 3 technical-depth scripts. Coverage:…
+
 ### Community 36 - "_FakeRoute"
 Cohesion: 0.15
 Nodes (15): _FakeRequest, _FakeRoute, data:, blob:, chrome-extension: schemes are not DNS-bound., A redirect or subresource targeting metadata.google.internal. (with trailing…, Chromium might be tricked into fetching http://2130706433/... via a crafted…, Dual-stack regression: AF_UNSPEC returns both IPv4 and IPv6. If any record…, test_route_handler_aborts_on_dns_failure(), test_route_handler_aborts_private_resolution() (+7 more)
@@ -643,7 +647,7 @@ Nodes (15): cmd_create(), cmd_delete(), cmd_list(), cmd_show(), _ensure_dir(), _
 
 ### Community 48 - "url_safety.py"
 Cohesion: 0.09
-Nodes (37): analyze_visual(), main(), normalize_url(), ParseResult, Normalize URL and return (url, parsed_url)., Analyze visual aspects of a web page. Args: url: URL to analyze timeout: Page…, capture_screenshot(), main() (+29 more)
+Nodes (37): main(), Find every deprecated GBP feature reference in the HTML., scan(), audit_site(), _cli(), discovery_url_for(), parse_profile(), probe_endpoint() (+29 more)
 
 ### Community 49 - "moz_api.py"
 Cohesion: 0.21
@@ -686,8 +690,8 @@ Cohesion: 0.20
 Nodes (8): _dump(), _ErrorResponse, Regression tests for Google API key handling. These tests ensure API keys are…, test_crux_history_uses_header_and_redacts_errors(), test_crux_uses_header_and_redacts_errors(), test_lcp_subparts_uses_header_not_query_key(), test_nlp_uses_header_and_redacts_errors(), test_pagespeed_uses_header_and_redacts_errors()
 
 ### Community 59 - "start"
-Cohesion: 0.19
-Nodes (19): applyMotionPreference(), bindMotionPreference(), bindScrollPause(), canRun(), clearTimer(), enabled(), initLive(), initScrollNav() (+11 more)
+Cohesion: 0.26
+Nodes (14): applyMotionPreference(), canRun(), clearTimer(), enabled(), initScrollNav(), onScroll(), scheduleNext(), setActive() (+6 more)
 
 ### Community 60 - "start"
 Cohesion: 0.26
@@ -733,9 +737,9 @@ Nodes (12): properties, required, type, name, text, type, name, reviews (+4 more
 Cohesion: 0.29
 Nodes (12): applyMetrics(), clearFocus(), closeGallery(), endDrag(), focusPhoto(), isMobileView(), measureWidth(), metrics() (+4 more)
 
-### Community 72 - "safe_requests_get"
-Cohesion: 0.15
-Nodes (18): main(), Find every deprecated GBP feature reference in the HTML., scan(), analyse(), _extract_speculation_actions(), main(), Pull the unique 'action' field values out of a speculationrules JSON., audit_site() (+10 more)
+### Community 72 - "make_safe_playwright_route_handler"
+Cohesion: 0.18
+Nodes (14): analyze_visual(), main(), normalize_url(), ParseResult, Normalize URL and return (url, parsed_url)., Analyze visual aspects of a web page. Args: url: URL to analyze timeout: Page…, capture_screenshot(), main() (+6 more)
 
 ### Community 73 - "render_page.py"
 Cohesion: 0.24
@@ -1107,7 +1111,7 @@ Nodes (16): Automotive, Critical Fields (Direct Ranking Impact), Data Mapping (D
 
 ### Community 245 - "Changelog"
 Cohesion: 0.11
-Nodes (18): [1.7.0] - 2026-03-28, [1.7.2] - 2026-03-30, [1.9.5] - 2026-04-26, [2.1.0] - 2026-05-25, [2.2.2] - 2026-07-10, [2.2.3] - 2026-07-14, Added, Added (+10 more)
+Nodes (18): [1.7.0] - 2026-03-28, [1.7.2] - 2026-03-30, [1.9.6] - 2026-04-26, [2.1.0] - 2026-05-25, [2.2.2] - 2026-07-10, [2.2.3] - 2026-07-14, Added, Added (+10 more)
 
 ### Community 246 - "Google SEO Quick Reference (July 2026)"
 Cohesion: 0.12
@@ -1781,9 +1785,9 @@ Nodes (3): [1.7.1] - 2026-03-30, Changed, Fixed
 Cohesion: 0.25
 Nodes (5): depositFor(), el(), money(), SuccessWidget(), Widget()
 
-### Community 414 - "[1.9.6] - 2026-04-26"
+### Community 414 - "[1.9.5] - 2026-04-26"
 Cohesion: 0.67
-Nodes (3): [1.9.6] - 2026-04-26, Security, Tests
+Nodes (3): [1.9.5] - 2026-04-26, Added, License
 
 ### Community 415 - "properties"
 Cohesion: 0.11
@@ -1900,15 +1904,17 @@ Nodes (3): find_repo_root(), main(), Path
 ## Knowledge Gaps
 - **2449 isolated node(s):** `fs`, `html`, `$schema`, `name`, `name` (+2444 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **52 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **51 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `URLSafetyError` connect `url_safety.py` to `sync_flow.py`, `lcp_subparts.py`, `safe_requests_get`, `render_page.py`, `indexnow_submit.py`, `fetch_page.py`, `parasite_risk.py`, `validate_url`, `sitemap_discovery.py`?**
-  _High betweenness centrality (0.006) - this node is a cross-community bridge._
+- **Why does `URLSafetyError` connect `url_safety.py` to `test_technical_depth.py`, `sync_flow.py`, `lcp_subparts.py`, `make_safe_playwright_route_handler`, `render_page.py`, `indexnow_submit.py`, `fetch_page.py`, `parasite_risk.py`, `validate_url`, `sitemap_discovery.py`?**
+  _High betweenness centrality (0.005) - this node is a cross-community bridge._
 - **Why does `validate_url()` connect `validate_url` to `drift_compare.py`, `lcp_subparts.py`, `bing_webmaster.py`, `google_auth.py`, `moz_api.py`, `pagespeed_check.py`, `commoncrawl_graph.py`, `gsc_inspect.py`, `sitemap_discovery.py`?**
   _High betweenness centrality (0.005) - this node is a cross-community bridge._
+- **Why does `validate_url()` connect `sitemap_discovery.py` to `url_safety.py`, `google_auth.py`, `validate_url`, `backlinks_auth.py`?**
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `fs`, `html`, `$schema` to the rest of the system?**
   _2449 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `test_content_quality.py` be split into smaller, more focused modules?**
@@ -1917,5 +1923,3 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.056314699792960665 - nodes in this community are weakly interconnected._
 - **Should `sync_flow.py` be split into smaller, more focused modules?**
   _Cohesion score 0.05365686944634313 - nodes in this community are weakly interconnected._
-- **Should `social-media-card.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.10505050505050505 - nodes in this community are weakly interconnected._

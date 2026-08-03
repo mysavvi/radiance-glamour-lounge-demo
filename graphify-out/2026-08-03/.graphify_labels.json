@@ -18,7 +18,7 @@
   "16": "Domain Mode Modifier Libraries",
   "17": "google_auth.py",
   "18": "test_phase_j_executable.py",
-  "19": "sendGift",
+  "19": "initLive",
   "20": "a11y-toolbar.js",
   "21": "initLive",
   "22": "commoncrawl_graph.py",
@@ -71,7 +71,7 @@
   "69": "setLayout",
   "70": "items",
   "71": "setLayout",
-  "72": "safe_requests_get",
+  "72": "make_safe_playwright_route_handler",
   "73": "render_page.py",
   "74": "test_gbp_lint_and_polish.py",
   "75": "properties",
@@ -413,7 +413,7 @@
   "411": "[1.6.0] - 2026-03-23",
   "412": "[1.7.1] - 2026-03-30",
   "413": "Widget",
-  "414": "[1.9.6] - 2026-04-26",
+  "414": "[1.9.5] - 2026-04-26",
   "415": "properties",
   "416": "Radiance Glamour Lounge — WordPress page map",
   "417": "rules/graphify.md",
@@ -467,5 +467,8 @@
   "465": "neo/cookie-consent.js",
   "466": "neo/theme-init.js",
   "467": "patch.py",
-  "468": "update_shop.py"
+  "468": "update_shop.py",
+  "469": "generate_updater.py",
+  "470": "update_wp_pages.php",
+  "471": "fix_links.py"
 }
