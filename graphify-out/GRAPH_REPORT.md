@@ -1,7 +1,7 @@
 # Graph Report - Radiance Glamour Lounge  (2026-08-03)
 
 ## Corpus Check
-- 450 files · ~1,824,971 words
+- 450 files · ~1,824,988 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7d2a859a`
+- Built from commit: `ead760ff`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -34,9 +34,9 @@
 - Domain Mode Modifier Libraries
 - google_auth.py
 - test_phase_j_executable.py
-- sendGift
-- a11y-toolbar.js
 - initLive
+- a11y-toolbar.js
+- sendGift
 - commoncrawl_graph.py
 - test_bing_webmaster.py
 - test_gsc_pagination.py
@@ -94,7 +94,7 @@
 - neo/social-media-card.js
 - get_api_key
 - inject
-- inject
+- toggle
 - indexnow_submit.py
 - test_banana_api_key_safety.py
 - test_banana_install_layout.py
@@ -393,7 +393,7 @@
 - [1.6.0] - 2026-03-23
 - [1.7.1] - 2026-03-30
 - Widget
-- [1.9.6] - 2026-04-26
+- [1.9.5] - 2026-04-26
 - properties
 - Radiance Glamour Lounge — WordPress page map
 - rules/graphify.md
@@ -529,17 +529,17 @@ Nodes (41): 1. Subject, 2. Action, 3. Context, 4. Composition, 5. Lighting, 6. S
 Cohesion: 0.11
 Nodes (31): build_service(), check_credentials(), _chmod_quiet(), detect_tier(), _exchange_code(), get_oauth_credentials(), get_service_account_credentials(), load_config() (+23 more)
 
-### Community 19 - "sendGift"
-Cohesion: 0.15
-Nodes (18): bumpRailCount(), burstLikes(), formatCount(), parseRailCount(), pick(), pickGift(), pulseHeartButton(), pulseRailAction() (+10 more)
+### Community 19 - "initLive"
+Cohesion: 0.13
+Nodes (23): bindMotionPreference(), bindScrollPause(), bumpRailCount(), burstLikes(), formatCount(), initLive(), parseRailCount(), pick() (+15 more)
 
 ### Community 20 - "a11y-toolbar.js"
 Cohesion: 0.21
 Nodes (22): announce(), applyAll(), applyTextScale(), buildUI(), clearContrastModes(), closePanel(), getFocusable(), handleTool() (+14 more)
 
-### Community 21 - "initLive"
+### Community 21 - "sendGift"
 Cohesion: 0.13
-Nodes (23): bindMotionPreference(), bindScrollPause(), bumpRailCount(), burstLikes(), formatCount(), initLive(), parseRailCount(), pick() (+15 more)
+Nodes (20): bindScrollPause(), bumpRailCount(), burstLikes(), formatCount(), parseRailCount(), pick(), pickGift(), pulseHeartButton() (+12 more)
 
 ### Community 22 - "commoncrawl_graph.py"
 Cohesion: 0.14
@@ -574,8 +574,8 @@ Cohesion: 0.15
 Nodes (21): announce(), applyAll(), applyTextScale(), buildUI(), clearContrastModes(), closePanel(), handleTool(), init() (+13 more)
 
 ### Community 30 - "buildUI"
-Cohesion: 0.15
-Nodes (21): announce(), applyAll(), applyTextScale(), buildUI(), clearContrastModes(), closePanel(), handleTool(), init() (+13 more)
+Cohesion: 0.13
+Nodes (23): announce(), applyAll(), applyTextScale(), buildUI(), clearContrastModes(), closePanel(), handleTool(), init() (+15 more)
 
 ### Community 31 - "google_report.py"
 Cohesion: 0.15
@@ -590,8 +590,8 @@ Cohesion: 0.19
 Nodes (19): applyConfig(), applyReviewPlatforms(), clearExit(), createChatItem(), fetchJson(), goTo(), loadData(), pickReview() (+11 more)
 
 ### Community 34 - "temp.js"
-Cohesion: 0.19
-Nodes (19): applyConfig(), applyReviewPlatforms(), clearExit(), createChatItem(), fetchJson(), goTo(), loadData(), pickReview() (+11 more)
+Cohesion: 0.20
+Nodes (18): applyConfig(), applyReviewPlatforms(), clearExit(), createChatItem(), fetchJson(), goTo(), loadData(), pickReview() (+10 more)
 
 ### Community 36 - "_FakeRoute"
 Cohesion: 0.15
@@ -686,12 +686,12 @@ Cohesion: 0.20
 Nodes (8): _dump(), _ErrorResponse, Regression tests for Google API key handling. These tests ensure API keys are…, test_crux_history_uses_header_and_redacts_errors(), test_crux_uses_header_and_redacts_errors(), test_lcp_subparts_uses_header_not_query_key(), test_nlp_uses_header_and_redacts_errors(), test_pagespeed_uses_header_and_redacts_errors()
 
 ### Community 59 - "start"
-Cohesion: 0.19
-Nodes (19): applyMotionPreference(), bindMotionPreference(), bindScrollPause(), canRun(), clearTimer(), enabled(), initLive(), initScrollNav() (+11 more)
-
-### Community 60 - "start"
 Cohesion: 0.26
 Nodes (14): applyMotionPreference(), canRun(), clearTimer(), enabled(), initScrollNav(), onScroll(), scheduleNext(), setActive() (+6 more)
+
+### Community 60 - "start"
+Cohesion: 0.21
+Nodes (17): applyMotionPreference(), bindMotionPreference(), canRun(), clearTimer(), enabled(), initLive(), initScrollNav(), onScroll() (+9 more)
 
 ### Community 62 - "properties"
 Cohesion: 0.21
@@ -761,9 +761,9 @@ Nodes (11): get_api_key(), Get the Google API key from config or environment. Re
 Cohesion: 0.24
 Nodes (10): apply(), currentTheme(), inject(), injectIntoDrawer(), injectIntoFooter(), injectIntoHeader(), makeButton(), savedPref() (+2 more)
 
-### Community 79 - "inject"
-Cohesion: 0.24
-Nodes (10): apply(), currentTheme(), inject(), injectIntoDrawer(), injectIntoFooter(), injectIntoHeader(), makeButton(), savedPref() (+2 more)
+### Community 79 - "toggle"
+Cohesion: 0.33
+Nodes (9): apply(), currentTheme(), inject(), injectIntoDrawer(), injectIntoFooter(), injectIntoHeader(), makeButton(), toggle() (+1 more)
 
 ### Community 80 - "indexnow_submit.py"
 Cohesion: 0.36
@@ -1107,7 +1107,7 @@ Nodes (16): Automotive, Critical Fields (Direct Ranking Impact), Data Mapping (D
 
 ### Community 245 - "Changelog"
 Cohesion: 0.11
-Nodes (18): [1.7.0] - 2026-03-28, [1.7.2] - 2026-03-30, [1.9.5] - 2026-04-26, [2.1.0] - 2026-05-25, [2.2.2] - 2026-07-10, [2.2.3] - 2026-07-14, Added, Added (+10 more)
+Nodes (18): [1.7.0] - 2026-03-28, [1.7.2] - 2026-03-30, [1.9.6] - 2026-04-26, [2.1.0] - 2026-05-25, [2.2.2] - 2026-07-10, [2.2.3] - 2026-07-14, Added, Added (+10 more)
 
 ### Community 246 - "Google SEO Quick Reference (July 2026)"
 Cohesion: 0.12
@@ -1781,9 +1781,9 @@ Nodes (3): [1.7.1] - 2026-03-30, Changed, Fixed
 Cohesion: 0.25
 Nodes (5): depositFor(), el(), money(), SuccessWidget(), Widget()
 
-### Community 414 - "[1.9.6] - 2026-04-26"
+### Community 414 - "[1.9.5] - 2026-04-26"
 Cohesion: 0.67
-Nodes (3): [1.9.6] - 2026-04-26, Security, Tests
+Nodes (3): [1.9.5] - 2026-04-26, Added, License
 
 ### Community 415 - "properties"
 Cohesion: 0.11

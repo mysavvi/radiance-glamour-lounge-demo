@@ -2,9 +2,22 @@ import os
 import requests
 import json
 
-url_base = "https://radianceglamourlounge.com/wp-json/wp/v2/pages"
-username = "nabeeltamoor"
-password = "AC3(J*SeUZfcC^dlmNJbQ2Qc"
+env = {}
+env_path = os.path.join(os.path.dirname(__file__), '.env')
+if os.path.exists(env_path):
+    with open(env_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            if '=' in line and not line.strip().startswith('#'):
+                k, v = line.strip().split('=', 1)
+                env[k.strip()] = v.strip()
+
+url_base = env.get("WP_API_URL", "https://radianceglamourlounge.com/wp-json/wp/v2/pages")
+username = env.get("WP_USERNAME")
+password = env.get("WP_APP_PASSWORD")
+
+if not username or not password:
+    print("Error: Missing WP credentials in .env")
+    exit(1)
 
 # Get all pages to map slugs to IDs
 resp = requests.get(f"{url_base}?per_page=100", auth=(username, password))
@@ -15,7 +28,9 @@ if resp.status_code != 200:
 pages = resp.json()
 slug_to_id = {p['slug']: p['id'] for p in pages}
 
-print("Found slugs:", slug_to_id.keys())
+print(f"Authenticated as '{username}'. Found {len(slug_to_id)} WordPress page slugs:")
+for slug, pid in slug_to_id.items():
+    print(f"  - {slug} (ID: {pid})")
 
 # Upload each file
 pages_dir = "/Users/user/Desktop/Radiance Glamour Lounge/pages"

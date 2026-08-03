@@ -705,9 +705,9 @@
     "semantic_hash": "7fdc42bd87dc0b7c2d52e46a4728784e"
   },
   "deploy_wp.py": {
-    "mtime": 1785744313.8845646,
-    "ast_hash": "ff0d1cf0a073fdbe7e0068c5ef69586b",
-    "semantic_hash": "ff0d1cf0a073fdbe7e0068c5ef69586b"
+    "mtime": 1785787839.2053182,
+    "ast_hash": "0c28b4aab692e57463973c79f9fd5159",
+    "semantic_hash": ""
   },
   "fix_all_pages.py": {
     "mtime": 1785699177.2423644,
@@ -2225,8 +2225,8 @@
     "semantic_hash": ""
   },
   "pages/checkout.html": {
-    "mtime": 1785764357.1011546,
-    "ast_hash": "bf57c1ba0cc115ed3853674ae7830f1d",
+    "mtime": 1785766144.6505063,
+    "ast_hash": "e2417e97b31ef50d6cfbf7180dcd62f7",
     "semantic_hash": ""
   },
   "pages/clinic.html": {
@@ -2360,8 +2360,8 @@
     "semantic_hash": ""
   },
   "production_site/checkout.html": {
-    "mtime": 1785744266.1387017,
-    "ast_hash": "a41b3195bd244f6befb4ae2cd48bca2a",
+    "mtime": 1785766153.796398,
+    "ast_hash": "0a4f88cf82dfb77fc553735d9c3aa664",
     "semantic_hash": ""
   },
   "production_site/clinic.html": {
@@ -2820,8 +2820,8 @@
     "semantic_hash": ""
   },
   "production_site/neo/cart-ui.js": {
-    "mtime": 1785765845.0446756,
-    "ast_hash": "629ac5c6d0c91034db11b638c9db0842",
+    "mtime": 1785766172.354999,
+    "ast_hash": "6f95b24efb5cf471681c79c6a5f1b6c5",
     "semantic_hash": ""
   },
   "production_site/update_shop.py": {
@@ -2880,8 +2880,8 @@
     "semantic_hash": ""
   },
   "checkout.html": {
-    "mtime": 1785744266.1796434,
-    "ast_hash": "e5c6dcdec0dd9400c9e52c3c97dead4b",
+    "mtime": 1785766162.7980144,
+    "ast_hash": "7461559af4f297c5e6211f9518e10093",
     "semantic_hash": ""
   },
   "clinic.html": {
@@ -3167,6 +3167,11 @@
   "neo/assets/social/youtube.svg": {
     "mtime": 1785699177.1820042,
     "ast_hash": "d538d97a29ae95f65632eecbe939c25a",
+    "semantic_hash": ""
+  },
+  ".claude-flow/policy/state.json": {
+    "mtime": 1785776375.9285815,
+    "ast_hash": "e5f9cb2fd595e8d3290abbe08d12cb8f",
     "semantic_hash": ""
   }
 }
