@@ -3,8 +3,8 @@ import requests
 import json
 
 url_base = "https://radianceglamourlounge.com/wp-json/wp/v2/pages"
-username = "nabeeltamoor@googlemail.com"
-password = "u3Vf w01g IUUA A2Ei KF7L 1IPJ"
+username = "nabeeltamoor"
+password = "AC3(J*SeUZfcC^dlmNJbQ2Qc"
 
 # Get all pages to map slugs to IDs
 resp = requests.get(f"{url_base}?per_page=100", auth=(username, password))
