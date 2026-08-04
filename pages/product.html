@@ -9581,11 +9581,17 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
 </div>
 </div>
 </div>
-<!-- Carousel Indicators (Visual cues instead of text instructions) -->
-<div aria-hidden="true" style="display: flex; justify-content: center; gap: 0.375rem; margin-top: 1.25rem;">
-  <span style="width: 24px; height: 4px; border-radius: 4px; background: var(--neo-accent); transition: all 0.3s ease;"></span>
-  <span style="width: 8px; height: 4px; border-radius: 4px; background: var(--neo-border-subtle); transition: all 0.3s ease;"></span>
-  <span style="width: 8px; height: 4px; border-radius: 4px; background: var(--neo-border-subtle); transition: all 0.3s ease;"></span>
+<!-- Product Thumbnails (Interactive visual navigation) -->
+<div aria-label="Product Image Thumbnails" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 1.5rem;">
+  <button aria-label="View Image 1" style="border: 2px solid var(--neo-accent); border-radius: var(--neo-radius-md); overflow: hidden; background: var(--neo-bg-raised); cursor: pointer; padding: 0.5rem; aspect-ratio: 1/1; transition: all 0.2s ease;">
+    <img alt="Thumbnail 1" src="/images/logo1.png" style="width: 100%; height: 100%; object-fit: contain;"/>
+  </button>
+  <button aria-label="View Image 2" style="border: 2px solid transparent; border-radius: var(--neo-radius-md); overflow: hidden; background: var(--neo-bg-raised); cursor: pointer; padding: 0.5rem; aspect-ratio: 1/1; opacity: 0.7; transition: all 0.2s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
+    <img alt="Thumbnail 2" src="/images/logo1.png" style="width: 100%; height: 100%; object-fit: contain; filter: grayscale(1);"/>
+  </button>
+  <button aria-label="View Image 3" style="border: 2px solid transparent; border-radius: var(--neo-radius-md); overflow: hidden; background: var(--neo-bg-raised); cursor: pointer; padding: 0.5rem; aspect-ratio: 1/1; opacity: 0.7; transition: all 0.2s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
+    <img alt="Thumbnail 3" src="/images/logo1.png" style="width: 100%; height: 100%; object-fit: contain; filter: sepia(1);"/>
+  </button>
 </div>
 </div>
 <!-- Product Details -->
