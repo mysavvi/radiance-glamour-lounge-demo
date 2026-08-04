@@ -202,8 +202,8 @@
   --neo-shadow-light: rgba(255, 255, 255, 0.06);
 }
 
-:root[data-neo-theme="light"],
-[data-neo-palette="neo-classic"][data-neo-theme="light"] {
+:root[data-neo-theme="dark"],
+[data-neo-palette="neo-classic"][data-neo-theme="dark"] {
   --neo-accent: #ff7043;
   --neo-accent-light: #ff8a65;
   --neo-accent-dark: #e64a19;
@@ -237,8 +237,8 @@
   --neo-shadow-light: rgba(255, 255, 255, 0.9);
 }
 
-[data-neo-palette="moon"][data-neo-theme="dark"],
-[data-neo-palette="moon"]:not([data-neo-theme]) {
+[data-neo-palette="neo-classic"][data-neo-theme="dark"],
+[data-neo-palette="neo-classic"]:not([data-neo-theme]) {
   --neo-accent: #7B337E;
   --neo-accent-light: #9F6496;
   --neo-accent-dark: #5a2560;
@@ -272,7 +272,7 @@
   --neo-shadow-light: rgba(102, 103, 171, 0.12);
 }
 
-[data-neo-palette="moon"][data-neo-theme="light"] {
+[data-neo-palette="neo-classic"][data-neo-theme="dark"] {
   --neo-accent: #7B337E;
   --neo-accent-light: #9F6496;
   --neo-accent-dark: #5a2560;
@@ -341,7 +341,7 @@
   --neo-shadow-light: rgba(224, 197, 143, 0.08);
 }
 
-[data-neo-palette="sapphire"][data-neo-theme="light"] {
+[data-neo-palette="sapphire"][data-neo-theme="dark"] {
   --neo-accent: #305070;
   --neo-accent-light: #49769F;
   --neo-accent-dark: #112250;
@@ -410,7 +410,7 @@
   --neo-shadow-light: rgba(85, 102, 110, 0.1);
 }
 
-[data-neo-palette="crimson"][data-neo-theme="light"] {
+[data-neo-palette="crimson"][data-neo-theme="dark"] {
   --neo-accent: #C7080C;
   --neo-accent-light: #E22227;
   --neo-accent-dark: #6C0102;
@@ -479,7 +479,7 @@
   --neo-shadow-light: rgba(159, 100, 150, 0.1);
 }
 
-[data-neo-palette="luca-davincci"][data-neo-theme="light"] {
+[data-neo-palette="luca-davincci"][data-neo-theme="dark"] {
   --neo-accent: #7B466A;
   --neo-accent-light: #9F6496;
   --neo-accent-dark: #5D3C64;
@@ -548,7 +548,7 @@
   --neo-shadow-light: rgba(123, 189, 232, 0.08);
 }
 
-[data-neo-palette="ocean-depth"][data-neo-theme="light"] {
+[data-neo-palette="ocean-depth"][data-neo-theme="dark"] {
   --neo-accent: #0A4174;
   --neo-accent-light: #49769F;
   --neo-accent-dark: #001D39;
@@ -612,7 +612,7 @@
  * Neo Design — light theme structure (elevation only; colors in palettes.css)
  */
 
-[data-neo-theme="light"] {
+[data-neo-theme="dark"] {
   --neo-border-accent: var(--neo-accent-dark, var(--neo-accent));
   --neo-link: var(--neo-accent-dark, var(--neo-accent));
 
@@ -5785,7 +5785,7 @@ select {
   color-scheme: dark;
 }
 
-.wp-html-module[data-neo-theme="light"] {
+.wp-html-module[data-neo-theme="dark"] {
   color-scheme: light;
 }
 
@@ -10493,7 +10493,7 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
 
 
 
-<div class="wp-html-module" data-neo-html-class="rb-hero-nav-over" data-neo-page="home" data-neo-palette="moon" data-neo-theme="light" data-neo-wp-embed="">
+<div class="wp-html-module" data-neo-html-class="rb-hero-nav-over" data-neo-page="home" data-neo-palette="neo-classic" data-neo-theme="dark" data-neo-wp-embed="">
 
 <a class="neo-skip-link" href="#neo-main">Skip to main content</a>
 <div id="neo-a11y-root"></div>
