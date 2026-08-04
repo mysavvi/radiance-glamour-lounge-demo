@@ -10488,12 +10488,6 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
 
 <!-- SECTION 3: CONTENT -->
 <div class="wp-html-module" data-neo-palette="moon" data-neo-theme="light" data-neo-page="home">
- wp:html 
- External resources — verbatim from source, do not remove 
-
-
-
-
 
 <div class="wp-html-module" data-neo-html-class="rb-hero-nav-over" data-neo-page="home" data-neo-palette="moon" data-neo-theme="light" data-neo-wp-embed="">
 
@@ -10991,8 +10985,13 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
 <div class="neo-social-card-section__inner rb-social-presence__inner rb-social-presence__card-slot">
 <div class="neo-social-card rb-social-live" data-neo-reveal="">
 <div class="neo-social-card__screen rb-social-live__screen">
-<div class="neo-social-card__media rb-social-live__media">
-<img alt="" class="neo-social-card__bg rb-social-live__bg" data-neo-social-img="background" decoding="async" height="1196" loading="lazy" src="/images/media.jpg" width="720"/>
+<div class="neo-social-card__media rb-social-live__media" id="social-media-bg-container">
+<img alt="" class="neo-social-card__bg rb-social-live__bg is-active" decoding="async" height="1196" loading="lazy" src="/images/media.jpg" width="720" style="transition: opacity 1.4s ease; opacity: 1; position: absolute; inset: 0;"/>
+<img alt="" class="neo-social-card__bg rb-social-live__bg" decoding="async" height="1196" loading="lazy" src="/images/hero-1.jpg" width="720" style="transition: opacity 1.4s ease; opacity: 0; position: absolute; inset: 0;"/>
+<img alt="" class="neo-social-card__bg rb-social-live__bg" decoding="async" height="1196" loading="lazy" src="/images/hero-2.jpg" width="720" style="transition: opacity 1.4s ease; opacity: 0; position: absolute; inset: 0;"/>
+<img alt="" class="neo-social-card__bg rb-social-live__bg" decoding="async" height="1196" loading="lazy" src="/images/hero-3.jpg" width="720" style="transition: opacity 1.4s ease; opacity: 0; position: absolute; inset: 0;"/>
+<img alt="" class="neo-social-card__bg rb-social-live__bg" decoding="async" height="1196" loading="lazy" src="/images/hero-4.jpg" width="720" style="transition: opacity 1.4s ease; opacity: 0; position: absolute; inset: 0;"/>
+<img alt="" class="neo-social-card__bg rb-social-live__bg" decoding="async" height="1196" loading="lazy" src="/images/hero-5.jpg" width="720" style="transition: opacity 1.4s ease; opacity: 0; position: absolute; inset: 0;"/>
 </div>
 <div aria-hidden="true" class="neo-social-card__scrim rb-social-live__scrim"></div>
 <div aria-hidden="true" class="neo-social-card__vignette rb-social-live__vignette"></div>
@@ -11075,6 +11074,28 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
 </div>
 </div>
 </div>
+<script>
+  (function() {
+    const bgContainer = document.getElementById('social-media-bg-container');
+    if (!bgContainer) return;
+    
+    const bgImages = bgContainer.querySelectorAll('.neo-social-card__bg');
+    if (bgImages.length <= 1) return;
+    
+    let currentIndex = 0;
+    
+    setInterval(() => {
+      // Fade out current
+      bgImages[currentIndex].style.opacity = '0';
+      
+      // Update index
+      currentIndex = (currentIndex + 1) % bgImages.length;
+      
+      // Fade in next
+      bgImages[currentIndex].style.opacity = '1';
+    }, 5000);
+  })();
+</script>
 <aside class="rb-social-presence__aside" data-neo-reveal="">
 <div aria-label="Social links and client reviews" class="rb-social-presence__panel rb-social-presence__ticket" role="group">
 <div class="rb-social-presence__ticket-body">
@@ -11249,18 +11270,6 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
 </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
- /wp:html 
 </div>
 
 <!-- SECTION 4: SCRIPTS -->

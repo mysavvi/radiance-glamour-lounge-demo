@@ -1,0 +1,3307 @@
+{
+  ".claude/settings.local.json": {
+    "mtime": 1785699177.6360707,
+    "ast_hash": "19480d576290d08fae2258b678f88821",
+    "semantic_hash": "19480d576290d08fae2258b678f88821"
+  },
+  ".codex/hooks.json": {
+    "mtime": 1785699177.6369028,
+    "ast_hash": "393a418dd71ed7734f4e899dc4a9ccc2",
+    "semantic_hash": "393a418dd71ed7734f4e899dc4a9ccc2"
+  },
+  ".cursor/hooks.json": {
+    "mtime": 1785699177.6376238,
+    "ast_hash": "9cf9a22645bcd962fe5e31e9617bfa45",
+    "semantic_hash": "9cf9a22645bcd962fe5e31e9617bfa45"
+  },
+  "check_js.js": {
+    "mtime": 1785699177.2383285,
+    "ast_hash": "3caf247a25e7e11102174eeab7a8ad3d",
+    "semantic_hash": "3caf247a25e7e11102174eeab7a8ad3d"
+  },
+  "claude-seo/.claude-plugin/marketplace.json": {
+    "mtime": 1785207761.2262452,
+    "ast_hash": "60bfd481419f6c89d5101bde8de2dd4a",
+    "semantic_hash": "60bfd481419f6c89d5101bde8de2dd4a"
+  },
+  "claude-seo/.claude-plugin/plugin.json": {
+    "mtime": 1785207761.2264185,
+    "ast_hash": "602acf536d4854ad4b0fcbcf2b1813ec",
+    "semantic_hash": "602acf536d4854ad4b0fcbcf2b1813ec"
+  },
+  "claude-seo/.devcontainer/devcontainer.json": {
+    "mtime": 1785207761.2266455,
+    "ast_hash": "c4f7088afa08e6b0237a9fec7d4bd3a0",
+    "semantic_hash": "c4f7088afa08e6b0237a9fec7d4bd3a0"
+  },
+  "claude-seo/bin/claude-seo": {
+    "mtime": 1785207761.244627,
+    "ast_hash": "35a1d4517c676e52ee799a979bf1aea7",
+    "semantic_hash": "35a1d4517c676e52ee799a979bf1aea7"
+  },
+  "claude-seo/data/google-updates.json": {
+    "mtime": 1785207761.2453501,
+    "ast_hash": "b56d992038ddb28d56d433e7ff11821a",
+    "semantic_hash": "b56d992038ddb28d56d433e7ff11821a"
+  },
+  "claude-seo/extensions/ahrefs/install.ps1": {
+    "mtime": 1785207761.2503893,
+    "ast_hash": "b6721bf2f2754002afe3d39bc2a33238",
+    "semantic_hash": "b6721bf2f2754002afe3d39bc2a33238"
+  },
+  "claude-seo/extensions/ahrefs/install.sh": {
+    "mtime": 1785207761.2507355,
+    "ast_hash": "6c867b4d888b26c247e1ce381182bc17",
+    "semantic_hash": "6c867b4d888b26c247e1ce381182bc17"
+  },
+  "claude-seo/extensions/ahrefs/uninstall.sh": {
+    "mtime": 1785207761.251871,
+    "ast_hash": "b1a3a08fd1c40ef74c7bbff663125431",
+    "semantic_hash": "b1a3a08fd1c40ef74c7bbff663125431"
+  },
+  "claude-seo/extensions/banana/install.sh": {
+    "mtime": 1785207761.2553918,
+    "ast_hash": "8d8f19a7966a26dfd1d3b86c90088cea",
+    "semantic_hash": "8d8f19a7966a26dfd1d3b86c90088cea"
+  },
+  "claude-seo/extensions/banana/scripts/batch.py": {
+    "mtime": 1785207761.2599957,
+    "ast_hash": "c0d7ff754d35224c33f703b62cd81949",
+    "semantic_hash": "c0d7ff754d35224c33f703b62cd81949"
+  },
+  "claude-seo/extensions/banana/scripts/cost_tracker.py": {
+    "mtime": 1785207761.2604742,
+    "ast_hash": "ece0aa049afb201ce0ee9bfd482a4951",
+    "semantic_hash": "ece0aa049afb201ce0ee9bfd482a4951"
+  },
+  "claude-seo/extensions/banana/scripts/edit.py": {
+    "mtime": 1785207761.260939,
+    "ast_hash": "ad19e757b1bcef583d215fa98796af7c",
+    "semantic_hash": "ad19e757b1bcef583d215fa98796af7c"
+  },
+  "claude-seo/extensions/banana/scripts/generate.py": {
+    "mtime": 1785207761.2615526,
+    "ast_hash": "77d2130fe82baf579488cfc3a9a3c8d2",
+    "semantic_hash": "77d2130fe82baf579488cfc3a9a3c8d2"
+  },
+  "claude-seo/extensions/banana/scripts/presets.py": {
+    "mtime": 1785207761.262502,
+    "ast_hash": "87a8b53f26fdf3090c5ea85859fea1f1",
+    "semantic_hash": "87a8b53f26fdf3090c5ea85859fea1f1"
+  },
+  "claude-seo/extensions/banana/scripts/setup_mcp.py": {
+    "mtime": 1785207761.2632473,
+    "ast_hash": "e2048e03cc7e613ee7b6f2c4f4297635",
+    "semantic_hash": "e2048e03cc7e613ee7b6f2c4f4297635"
+  },
+  "claude-seo/extensions/banana/scripts/validate_setup.py": {
+    "mtime": 1785207761.2635953,
+    "ast_hash": "ef47b9c543097838ef5c74e7c3ac4388",
+    "semantic_hash": "ef47b9c543097838ef5c74e7c3ac4388"
+  },
+  "claude-seo/extensions/banana/uninstall.sh": {
+    "mtime": 1785207761.2661483,
+    "ast_hash": "fa19c703fcc6cef14a652e9c6eb92eb2",
+    "semantic_hash": "fa19c703fcc6cef14a652e9c6eb92eb2"
+  },
+  "claude-seo/extensions/bing-webmaster/install.ps1": {
+    "mtime": 1785207761.2679753,
+    "ast_hash": "113a0a78fc2418b857318c7fd511ba94",
+    "semantic_hash": "113a0a78fc2418b857318c7fd511ba94"
+  },
+  "claude-seo/extensions/bing-webmaster/install.sh": {
+    "mtime": 1785207761.268699,
+    "ast_hash": "a431adf1a704d93097e494abcca4596a",
+    "semantic_hash": "a431adf1a704d93097e494abcca4596a"
+  },
+  "claude-seo/extensions/bing-webmaster/uninstall.sh": {
+    "mtime": 1785207761.2707007,
+    "ast_hash": "103649986f1e666076669c902401dfed",
+    "semantic_hash": "103649986f1e666076669c902401dfed"
+  },
+  "claude-seo/extensions/dataforseo/field-config.json": {
+    "mtime": 1785207761.273581,
+    "ast_hash": "a9d1f76b0f140de95f648d1fe75c0efe",
+    "semantic_hash": "a9d1f76b0f140de95f648d1fe75c0efe"
+  },
+  "claude-seo/extensions/dataforseo/install.ps1": {
+    "mtime": 1785207761.2744381,
+    "ast_hash": "64a62eabe61f9f7b5f57763839e2f534",
+    "semantic_hash": "64a62eabe61f9f7b5f57763839e2f534"
+  },
+  "claude-seo/extensions/dataforseo/install.sh": {
+    "mtime": 1785207761.2749445,
+    "ast_hash": "a1f3ae3ba21e8a5d46b6aba018b1dff7",
+    "semantic_hash": "a1f3ae3ba21e8a5d46b6aba018b1dff7"
+  },
+  "claude-seo/extensions/dataforseo/uninstall.ps1": {
+    "mtime": 1785207761.2778547,
+    "ast_hash": "c519d9fafffd7074dfa192145599b0b4",
+    "semantic_hash": "c519d9fafffd7074dfa192145599b0b4"
+  },
+  "claude-seo/extensions/dataforseo/uninstall.sh": {
+    "mtime": 1785207761.2780974,
+    "ast_hash": "890cfc5f0e5976e75a1dc39098ff0e95",
+    "semantic_hash": "890cfc5f0e5976e75a1dc39098ff0e95"
+  },
+  "claude-seo/extensions/firecrawl/install.ps1": {
+    "mtime": 1785207761.2801876,
+    "ast_hash": "90d64e9e6539c7a5f6c3fc2df4ba20b1",
+    "semantic_hash": "90d64e9e6539c7a5f6c3fc2df4ba20b1"
+  },
+  "claude-seo/extensions/firecrawl/install.sh": {
+    "mtime": 1785207761.2806551,
+    "ast_hash": "44a29994a09109f330411b352d88fce9",
+    "semantic_hash": "44a29994a09109f330411b352d88fce9"
+  },
+  "claude-seo/extensions/firecrawl/uninstall.ps1": {
+    "mtime": 1785207761.2828948,
+    "ast_hash": "28e03ea626e6d5dd5069b58cd13dd447",
+    "semantic_hash": "28e03ea626e6d5dd5069b58cd13dd447"
+  },
+  "claude-seo/extensions/firecrawl/uninstall.sh": {
+    "mtime": 1785207761.283321,
+    "ast_hash": "876792c514eb3bd764743e60c5e411b0",
+    "semantic_hash": "876792c514eb3bd764743e60c5e411b0"
+  },
+  "claude-seo/extensions/profound/install.ps1": {
+    "mtime": 1785207761.285005,
+    "ast_hash": "23d35d097169f8baef1ea953a54e98f5",
+    "semantic_hash": "23d35d097169f8baef1ea953a54e98f5"
+  },
+  "claude-seo/extensions/profound/install.sh": {
+    "mtime": 1785207761.2866645,
+    "ast_hash": "713e62aee79006a16ed4d580e9cc2a78",
+    "semantic_hash": "713e62aee79006a16ed4d580e9cc2a78"
+  },
+  "claude-seo/extensions/profound/uninstall.sh": {
+    "mtime": 1785207761.2880828,
+    "ast_hash": "42c168745b25dfd6f638497d89c8d820",
+    "semantic_hash": "42c168745b25dfd6f638497d89c8d820"
+  },
+  "claude-seo/extensions/seranking/install.ps1": {
+    "mtime": 1785207761.2900827,
+    "ast_hash": "66b4f2fefcc40b892a885744332a3d4c",
+    "semantic_hash": "66b4f2fefcc40b892a885744332a3d4c"
+  },
+  "claude-seo/extensions/seranking/install.sh": {
+    "mtime": 1785207761.2918057,
+    "ast_hash": "68152789225e3fc8962663a428a67c79",
+    "semantic_hash": "68152789225e3fc8962663a428a67c79"
+  },
+  "claude-seo/extensions/seranking/uninstall.sh": {
+    "mtime": 1785207761.2931106,
+    "ast_hash": "f712e1ccf075271022c1445f40eb0499",
+    "semantic_hash": "f712e1ccf075271022c1445f40eb0499"
+  },
+  "claude-seo/extensions/unlighthouse/install.ps1": {
+    "mtime": 1785207761.2939389,
+    "ast_hash": "f49a2444ed39cb3428314daf5ecf2fea",
+    "semantic_hash": "f49a2444ed39cb3428314daf5ecf2fea"
+  },
+  "claude-seo/extensions/unlighthouse/install.sh": {
+    "mtime": 1785207761.2941687,
+    "ast_hash": "696c1f945015415dc352ac2c5e6833d3",
+    "semantic_hash": "696c1f945015415dc352ac2c5e6833d3"
+  },
+  "claude-seo/extensions/unlighthouse/uninstall.sh": {
+    "mtime": 1785207761.2960596,
+    "ast_hash": "76fe7b6ee2dd17a6d69199c3f5e5ba57",
+    "semantic_hash": "76fe7b6ee2dd17a6d69199c3f5e5ba57"
+  },
+  "claude-seo/hooks/hooks.json": {
+    "mtime": 1785207761.2966914,
+    "ast_hash": "d0d9915c44456c2abe1a7094c83c6ee0",
+    "semantic_hash": "d0d9915c44456c2abe1a7094c83c6ee0"
+  },
+  "claude-seo/hooks/run-python-hook.js": {
+    "mtime": 1785207761.297397,
+    "ast_hash": "51e1209391a560be8687a52e4f62d1f9",
+    "semantic_hash": "51e1209391a560be8687a52e4f62d1f9"
+  },
+  "claude-seo/hooks/validate-schema.py": {
+    "mtime": 1785207761.2980776,
+    "ast_hash": "072772fb4801dd2ed55c5f7243be48c1",
+    "semantic_hash": "072772fb4801dd2ed55c5f7243be48c1"
+  },
+  "claude-seo/install.ps1": {
+    "mtime": 1785207761.2999988,
+    "ast_hash": "0892b3337109bd2494e8fc45802536e5",
+    "semantic_hash": "0892b3337109bd2494e8fc45802536e5"
+  },
+  "claude-seo/install.sh": {
+    "mtime": 1785207761.3019588,
+    "ast_hash": "d1d25d9654e450e9705143cf112a6b46",
+    "semantic_hash": "d1d25d9654e450e9705143cf112a6b46"
+  },
+  "claude-seo/pyproject.toml": {
+    "mtime": 1785207761.3047545,
+    "ast_hash": "c273d78425aeed20da12479fb7052a2f",
+    "semantic_hash": "c273d78425aeed20da12479fb7052a2f"
+  },
+  "claude-seo/schema/templates.json": {
+    "mtime": 1785207761.3059926,
+    "ast_hash": "2baabe8cce03b62917d763e4c9eed779",
+    "semantic_hash": "2baabe8cce03b62917d763e4c9eed779"
+  },
+  "claude-seo/scripts/agent_ux_check.py": {
+    "mtime": 1785207761.3478343,
+    "ast_hash": "e62aad5dfc4e0bf01cc629d577bd746b",
+    "semantic_hash": "e62aad5dfc4e0bf01cc629d577bd746b"
+  },
+  "claude-seo/scripts/analyze_visual.py": {
+    "mtime": 1785207761.348371,
+    "ast_hash": "444d0821cb519f52bb97c7d21f30c446",
+    "semantic_hash": "444d0821cb519f52bb97c7d21f30c446"
+  },
+  "claude-seo/scripts/backlinks_auth.py": {
+    "mtime": 1785207761.3512459,
+    "ast_hash": "40cf64c2ac300f13b01518f1a7385b0f",
+    "semantic_hash": "40cf64c2ac300f13b01518f1a7385b0f"
+  },
+  "claude-seo/scripts/bing_webmaster.py": {
+    "mtime": 1785207761.3527777,
+    "ast_hash": "2fd4713d4322bcbe943f0b9ea790f56b",
+    "semantic_hash": "2fd4713d4322bcbe943f0b9ea790f56b"
+  },
+  "claude-seo/scripts/capture_screenshot.py": {
+    "mtime": 1785207761.356121,
+    "ast_hash": "0f3d9a254ec4e7996db636b2595459b8",
+    "semantic_hash": "0f3d9a254ec4e7996db636b2595459b8"
+  },
+  "claude-seo/scripts/commoncrawl_graph.py": {
+    "mtime": 1785207761.3601785,
+    "ast_hash": "3f2f5e8602ef6dfae689b50299eb1523",
+    "semantic_hash": "3f2f5e8602ef6dfae689b50299eb1523"
+  },
+  "claude-seo/scripts/consistency_check.py": {
+    "mtime": 1785207761.3608382,
+    "ast_hash": "518c85ab45946b47682e6dde0329f47e",
+    "semantic_hash": "518c85ab45946b47682e6dde0329f47e"
+  },
+  "claude-seo/scripts/content_humanize.py": {
+    "mtime": 1785207761.3612802,
+    "ast_hash": "edda22cf826ae365045a7a7ec4044b75",
+    "semantic_hash": "edda22cf826ae365045a7a7ec4044b75"
+  },
+  "claude-seo/scripts/content_quality.py": {
+    "mtime": 1785207761.3617353,
+    "ast_hash": "60b1db3bc868a6573ca8ae2dd0c5b142",
+    "semantic_hash": "60b1db3bc868a6573ca8ae2dd0c5b142"
+  },
+  "claude-seo/scripts/content_verify.py": {
+    "mtime": 1785207761.3622952,
+    "ast_hash": "9dd8c1d16ab6f1621582934dba6c452b",
+    "semantic_hash": "9dd8c1d16ab6f1621582934dba6c452b"
+  },
+  "claude-seo/scripts/crux_history.py": {
+    "mtime": 1785207761.3628743,
+    "ast_hash": "00ad164a312a549950ef2437faba96a3",
+    "semantic_hash": "00ad164a312a549950ef2437faba96a3"
+  },
+  "claude-seo/scripts/dataforseo_costs.py": {
+    "mtime": 1785207761.3634217,
+    "ast_hash": "adba950c573bea9c39de554a85eec95b",
+    "semantic_hash": "adba950c573bea9c39de554a85eec95b"
+  },
+  "claude-seo/scripts/dataforseo_merchant.py": {
+    "mtime": 1785207761.3638744,
+    "ast_hash": "5fe97d5b790bdb21ab08ff9105c8a88a",
+    "semantic_hash": "5fe97d5b790bdb21ab08ff9105c8a88a"
+  },
+  "claude-seo/scripts/dataforseo_normalize.py": {
+    "mtime": 1785207761.3647118,
+    "ast_hash": "c7dca529d5477dbfb89ca659fd9dda35",
+    "semantic_hash": "c7dca529d5477dbfb89ca659fd9dda35"
+  },
+  "claude-seo/scripts/domain_history.py": {
+    "mtime": 1785207761.3651624,
+    "ast_hash": "eeaecaca160f356f47e4a466bc25dd8d",
+    "semantic_hash": "eeaecaca160f356f47e4a466bc25dd8d"
+  },
+  "claude-seo/scripts/drift_baseline.py": {
+    "mtime": 1785207761.3656967,
+    "ast_hash": "fb609f7cfa7a6a32263ff413de7d173b",
+    "semantic_hash": "fb609f7cfa7a6a32263ff413de7d173b"
+  },
+  "claude-seo/scripts/drift_compare.py": {
+    "mtime": 1785207761.366274,
+    "ast_hash": "e05ee5f305ab7d87c8c492448bdcf3d0",
+    "semantic_hash": "e05ee5f305ab7d87c8c492448bdcf3d0"
+  },
+  "claude-seo/scripts/drift_history.py": {
+    "mtime": 1785207761.3671532,
+    "ast_hash": "e834f7c7b359ee2ed8c9e2b951192e1e",
+    "semantic_hash": "e834f7c7b359ee2ed8c9e2b951192e1e"
+  },
+  "claude-seo/scripts/drift_report.py": {
+    "mtime": 1785207761.3680515,
+    "ast_hash": "f457ef5c4b503bedc51aa06602b56dc1",
+    "semantic_hash": "f457ef5c4b503bedc51aa06602b56dc1"
+  },
+  "claude-seo/scripts/fetch_page.py": {
+    "mtime": 1785207761.368642,
+    "ast_hash": "a3b20c022f3ec445a061c1a655a9a45e",
+    "semantic_hash": "a3b20c022f3ec445a061c1a655a9a45e"
+  },
+  "claude-seo/scripts/ga4_report.py": {
+    "mtime": 1785207761.369068,
+    "ast_hash": "701e1c9e526a54f24a823927de75d2b0",
+    "semantic_hash": "701e1c9e526a54f24a823927de75d2b0"
+  },
+  "claude-seo/scripts/gbp_deprecation_lint.py": {
+    "mtime": 1785207761.3699963,
+    "ast_hash": "527760dda6e49d5bb5ff35a59a3f3545",
+    "semantic_hash": "527760dda6e49d5bb5ff35a59a3f3545"
+  },
+  "claude-seo/scripts/google_auth.py": {
+    "mtime": 1785207761.371371,
+    "ast_hash": "091ab2c0bd603867afa7b6f412dbeda5",
+    "semantic_hash": "091ab2c0bd603867afa7b6f412dbeda5"
+  },
+  "claude-seo/scripts/google_report.py": {
+    "mtime": 1785207761.3724375,
+    "ast_hash": "8771c50f2faf4bbcb4f14e0c9352380e",
+    "semantic_hash": "8771c50f2faf4bbcb4f14e0c9352380e"
+  },
+  "claude-seo/scripts/gsc_inspect.py": {
+    "mtime": 1785207761.3729074,
+    "ast_hash": "d8b00ae8c87612bcb92ba687a1523fa7",
+    "semantic_hash": "d8b00ae8c87612bcb92ba687a1523fa7"
+  },
+  "claude-seo/scripts/gsc_query.py": {
+    "mtime": 1785207761.3732498,
+    "ast_hash": "b36d2ad974e27852e223ad19b0800d54",
+    "semantic_hash": "b36d2ad974e27852e223ad19b0800d54"
+  },
+  "claude-seo/scripts/indexing_notify.py": {
+    "mtime": 1785207761.3736677,
+    "ast_hash": "724cf36eeb37c64d28f5e6deacafa0aa",
+    "semantic_hash": "724cf36eeb37c64d28f5e6deacafa0aa"
+  },
+  "claude-seo/scripts/indexnow_submit.py": {
+    "mtime": 1785207761.3740592,
+    "ast_hash": "63e814aefc8528a01e4cebadf5b239a6",
+    "semantic_hash": "63e814aefc8528a01e4cebadf5b239a6"
+  },
+  "claude-seo/scripts/iptc_ai_label.py": {
+    "mtime": 1785207761.3749356,
+    "ast_hash": "3786aac7df102eab73f18ac95e23e9cb",
+    "semantic_hash": "3786aac7df102eab73f18ac95e23e9cb"
+  },
+  "claude-seo/scripts/keyword_planner.py": {
+    "mtime": 1785207761.3755329,
+    "ast_hash": "40213b2c5a04bf3c8961c29aad2f9a60",
+    "semantic_hash": "40213b2c5a04bf3c8961c29aad2f9a60"
+  },
+  "claude-seo/scripts/lcp_subparts.py": {
+    "mtime": 1785207761.375957,
+    "ast_hash": "e2a9b7ae023773a35b44dee0e964dac5",
+    "semantic_hash": "e2a9b7ae023773a35b44dee0e964dac5"
+  },
+  "claude-seo/scripts/moz_api.py": {
+    "mtime": 1785207761.37649,
+    "ast_hash": "28e65bf14db405da62b8e935acb77a53",
+    "semantic_hash": "28e65bf14db405da62b8e935acb77a53"
+  },
+  "claude-seo/scripts/nlp_analyze.py": {
+    "mtime": 1785207761.3770127,
+    "ast_hash": "1c407ab71599c9a8a81807bfba168de6",
+    "semantic_hash": "1c407ab71599c9a8a81807bfba168de6"
+  },
+  "claude-seo/scripts/pagespeed_check.py": {
+    "mtime": 1785207761.377445,
+    "ast_hash": "5fbc6c7dc428daebd38b73ee0609109c",
+    "semantic_hash": "5fbc6c7dc428daebd38b73ee0609109c"
+  },
+  "claude-seo/scripts/parasite_risk.py": {
+    "mtime": 1785207761.3779218,
+    "ast_hash": "a85e7b6aa61ae90e2bd8cd4705a626b1",
+    "semantic_hash": "a85e7b6aa61ae90e2bd8cd4705a626b1"
+  },
+  "claude-seo/scripts/parse_html.py": {
+    "mtime": 1785207761.3787537,
+    "ast_hash": "6b3fb06006ee6bd477742a69094b3e14",
+    "semantic_hash": "6b3fb06006ee6bd477742a69094b3e14"
+  },
+  "claude-seo/scripts/portability_check.py": {
+    "mtime": 1785207761.3792963,
+    "ast_hash": "7e8485cd40443f79865a960335cb5c8d",
+    "semantic_hash": "7e8485cd40443f79865a960335cb5c8d"
+  },
+  "claude-seo/scripts/preload_check.py": {
+    "mtime": 1785207761.3797674,
+    "ast_hash": "060dccf359d02903a4725170d5ec5a43",
+    "semantic_hash": "060dccf359d02903a4725170d5ec5a43"
+  },
+  "claude-seo/scripts/release_sign.py": {
+    "mtime": 1785207761.380182,
+    "ast_hash": "e6e6b4af88b6c4b4c9c01542b593be06",
+    "semantic_hash": "e6e6b4af88b6c4b4c9c01542b593be06"
+  },
+  "claude-seo/scripts/render_page.py": {
+    "mtime": 1785207761.3806422,
+    "ast_hash": "3c01278aa1b27abbdb94759cfed21663",
+    "semantic_hash": "3c01278aa1b27abbdb94759cfed21663"
+  },
+  "claude-seo/scripts/runtime.py": {
+    "mtime": 1785207761.3812237,
+    "ast_hash": "50033dfd2a1d81366c6863f6537b82dc",
+    "semantic_hash": "50033dfd2a1d81366c6863f6537b82dc"
+  },
+  "claude-seo/scripts/schema_ecommerce_validate.py": {
+    "mtime": 1785207761.3820202,
+    "ast_hash": "21c761dfa343bd49176cf0517c3fb246",
+    "semantic_hash": "21c761dfa343bd49176cf0517c3fb246"
+  },
+  "claude-seo/scripts/schema_generate.py": {
+    "mtime": 1785207761.3826685,
+    "ast_hash": "e7ed7208b22a177cc1396221b9985c3f",
+    "semantic_hash": "e7ed7208b22a177cc1396221b9985c3f"
+  },
+  "claude-seo/scripts/seo_updates.py": {
+    "mtime": 1785207761.3832603,
+    "ast_hash": "b39f912550714dccbd66f675e689522d",
+    "semantic_hash": "b39f912550714dccbd66f675e689522d"
+  },
+  "claude-seo/scripts/sitemap_discovery.py": {
+    "mtime": 1785207761.3839688,
+    "ast_hash": "fe18b1120a8e5bd3ee5fca55bc0aa92e",
+    "semantic_hash": "fe18b1120a8e5bd3ee5fca55bc0aa92e"
+  },
+  "claude-seo/scripts/sync_flow.py": {
+    "mtime": 1785207761.3845246,
+    "ast_hash": "860d933722ce591363995f1d4050c29d",
+    "semantic_hash": "860d933722ce591363995f1d4050c29d"
+  },
+  "claude-seo/scripts/ucp_check.py": {
+    "mtime": 1785207761.3853614,
+    "ast_hash": "ac5c15f23af5216d4a3bbdfffc46f1ac",
+    "semantic_hash": "ac5c15f23af5216d4a3bbdfffc46f1ac"
+  },
+  "claude-seo/scripts/unlighthouse_run.py": {
+    "mtime": 1785207761.385883,
+    "ast_hash": "102a07592646c081fa52d04cb180756c",
+    "semantic_hash": "102a07592646c081fa52d04cb180756c"
+  },
+  "claude-seo/scripts/url_safety.py": {
+    "mtime": 1785207761.386289,
+    "ast_hash": "b831d4e9724e8153a8ccaf51268ab69f",
+    "semantic_hash": "b831d4e9724e8153a8ccaf51268ab69f"
+  },
+  "claude-seo/scripts/validate_backlink_report.py": {
+    "mtime": 1785207761.3874137,
+    "ast_hash": "5a51cd19bf44eb83751345fbd876ac4b",
+    "semantic_hash": "5a51cd19bf44eb83751345fbd876ac4b"
+  },
+  "claude-seo/scripts/verify_backlinks.py": {
+    "mtime": 1785207761.3883991,
+    "ast_hash": "f36b85b7ae144e24ac9941287b9cb748",
+    "semantic_hash": "f36b85b7ae144e24ac9941287b9cb748"
+  },
+  "claude-seo/scripts/verify_release.py": {
+    "mtime": 1785207761.3889735,
+    "ast_hash": "aff0856b4190249e0efd3da7491d7627",
+    "semantic_hash": "aff0856b4190249e0efd3da7491d7627"
+  },
+  "claude-seo/scripts/youtube_search.py": {
+    "mtime": 1785207761.3895328,
+    "ast_hash": "8eeabae91d6d35b9e82e6447314ccfea",
+    "semantic_hash": "8eeabae91d6d35b9e82e6447314ccfea"
+  },
+  "claude-seo/tests/test_agent_mcp_permissions.py": {
+    "mtime": 1785207761.4722736,
+    "ast_hash": "9a7210519dd593cc2cd967fdf77a2624",
+    "semantic_hash": "9a7210519dd593cc2cd967fdf77a2624"
+  },
+  "claude-seo/tests/test_audit_instructions.py": {
+    "mtime": 1785207761.4724808,
+    "ast_hash": "f59de599d0cd3940fb38263c5c1b860a",
+    "semantic_hash": "f59de599d0cd3940fb38263c5c1b860a"
+  },
+  "claude-seo/tests/test_banana_api_key_safety.py": {
+    "mtime": 1785207761.4728432,
+    "ast_hash": "d2d142efcde8bc9c2dcb8f00850d32b6",
+    "semantic_hash": "d2d142efcde8bc9c2dcb8f00850d32b6"
+  },
+  "claude-seo/tests/test_banana_install_layout.py": {
+    "mtime": 1785207761.4733875,
+    "ast_hash": "2c157b910d81418120f3212f6625b20d",
+    "semantic_hash": "2c157b910d81418120f3212f6625b20d"
+  },
+  "claude-seo/tests/test_bing_webmaster.py": {
+    "mtime": 1785207761.4737663,
+    "ast_hash": "e058cabc49a53d072e19bff280c9bf35",
+    "semantic_hash": "e058cabc49a53d072e19bff280c9bf35"
+  },
+  "claude-seo/tests/test_consistency_check.py": {
+    "mtime": 1785207761.4741302,
+    "ast_hash": "1dfeca08d1013260fdc65dab240513bb",
+    "semantic_hash": "1dfeca08d1013260fdc65dab240513bb"
+  },
+  "claude-seo/tests/test_content_quality.py": {
+    "mtime": 1785207761.4744027,
+    "ast_hash": "2ac5be575729ee235dd633fddf08ba8b",
+    "semantic_hash": "2ac5be575729ee235dd633fddf08ba8b"
+  },
+  "claude-seo/tests/test_contributors.py": {
+    "mtime": 1785207761.474722,
+    "ast_hash": "61e170d86511ba14dd6ab131cbcbfe3e",
+    "semantic_hash": "61e170d86511ba14dd6ab131cbcbfe3e"
+  },
+  "claude-seo/tests/test_cross_platform_hooks.py": {
+    "mtime": 1785207761.475094,
+    "ast_hash": "3a23ac780e72bd1df95e811d3a585b3e",
+    "semantic_hash": "3a23ac780e72bd1df95e811d3a585b3e"
+  },
+  "claude-seo/tests/test_drift_portability.py": {
+    "mtime": 1785207761.4753928,
+    "ast_hash": "df25f70a0fddfa187076fab45318f28c",
+    "semantic_hash": "df25f70a0fddfa187076fab45318f28c"
+  },
+  "claude-seo/tests/test_extension_installer_injection.py": {
+    "mtime": 1785207761.4756835,
+    "ast_hash": "60080dd93eaccafa623c80bfa0472789",
+    "semantic_hash": "60080dd93eaccafa623c80bfa0472789"
+  },
+  "claude-seo/tests/test_fetch_page_decoding.py": {
+    "mtime": 1785207761.475924,
+    "ast_hash": "824a9b63ffa6e16c820199873b63db6d",
+    "semantic_hash": "824a9b63ffa6e16c820199873b63db6d"
+  },
+  "claude-seo/tests/test_gbp_lint_and_polish.py": {
+    "mtime": 1785207761.4766848,
+    "ast_hash": "33a34eabbd68a993c7e64dee7f57c013",
+    "semantic_hash": "33a34eabbd68a993c7e64dee7f57c013"
+  },
+  "claude-seo/tests/test_google_api_key_safety.py": {
+    "mtime": 1785207761.4771118,
+    "ast_hash": "4924254917d2eb3835dc059c98567fac",
+    "semantic_hash": "4924254917d2eb3835dc059c98567fac"
+  },
+  "claude-seo/tests/test_google_report_full_audit.py": {
+    "mtime": 1785207761.477453,
+    "ast_hash": "df4231ae9af148d675f89c8576d006b1",
+    "semantic_hash": "df4231ae9af148d675f89c8576d006b1"
+  },
+  "claude-seo/tests/test_gsc_pagination.py": {
+    "mtime": 1785207761.4777224,
+    "ast_hash": "75483a2195b9468bdc4b9042be40189f",
+    "semantic_hash": "75483a2195b9468bdc4b9042be40189f"
+  },
+  "claude-seo/tests/test_gsc_query.py": {
+    "mtime": 1785207761.4780147,
+    "ast_hash": "db9df647c2ca69f50a48886e5df98d61",
+    "semantic_hash": "db9df647c2ca69f50a48886e5df98d61"
+  },
+  "claude-seo/tests/test_gsc_totals_aggregate.py": {
+    "mtime": 1785207761.4782417,
+    "ast_hash": "717b1d50b13ee80cfff95cfa030dbe56",
+    "semantic_hash": "717b1d50b13ee80cfff95cfa030dbe56"
+  },
+  "claude-seo/tests/test_lazy_detection.py": {
+    "mtime": 1785207761.4784508,
+    "ast_hash": "db4ee0f204108f244e2da34a7251a33a",
+    "semantic_hash": "db4ee0f204108f244e2da34a7251a33a"
+  },
+  "claude-seo/tests/test_manifest_consistency.py": {
+    "mtime": 1785207761.478762,
+    "ast_hash": "ac399eeefcc91d9cf968e980908e8261",
+    "semantic_hash": "ac399eeefcc91d9cf968e980908e8261"
+  },
+  "claude-seo/tests/test_moz_api.py": {
+    "mtime": 1785207761.4791594,
+    "ast_hash": "0359210f7bc81f28aeb549a9b2e668ea",
+    "semantic_hash": "0359210f7bc81f28aeb549a9b2e668ea"
+  },
+  "claude-seo/tests/test_nlp_analyze.py": {
+    "mtime": 1785207761.4793842,
+    "ast_hash": "9694fec57ede4bb8fdcd9d164b2b3e2f",
+    "semantic_hash": "9694fec57ede4bb8fdcd9d164b2b3e2f"
+  },
+  "claude-seo/tests/test_parasite_risk_and_extensions.py": {
+    "mtime": 1785207761.479677,
+    "ast_hash": "5bae885871f3a51d1ba952fc3ca51aea",
+    "semantic_hash": "5bae885871f3a51d1ba952fc3ca51aea"
+  },
+  "claude-seo/tests/test_phase_j_executable.py": {
+    "mtime": 1785207761.4800074,
+    "ast_hash": "a125def8a435b2c2f13b17bd9ba0eb40",
+    "semantic_hash": "a125def8a435b2c2f13b17bd9ba0eb40"
+  },
+  "claude-seo/tests/test_portability.py": {
+    "mtime": 1785207761.48045,
+    "ast_hash": "ede7c352790921b495663b8faaf730fb",
+    "semantic_hash": "ede7c352790921b495663b8faaf730fb"
+  },
+  "claude-seo/tests/test_pyproject_metadata.py": {
+    "mtime": 1785207761.4806595,
+    "ast_hash": "e73c9f354ece5002f7c62bd567a9d032",
+    "semantic_hash": "e73c9f354ece5002f7c62bd567a9d032"
+  },
+  "claude-seo/tests/test_render_page.py": {
+    "mtime": 1785207761.4809422,
+    "ast_hash": "3860d5f844dc76f8f1ab8e63ec727805",
+    "semantic_hash": "3860d5f844dc76f8f1ab8e63ec727805"
+  },
+  "claude-seo/tests/test_runtime.py": {
+    "mtime": 1785207761.4821217,
+    "ast_hash": "c0d0c7b321c0d963d320a225d7912423",
+    "semantic_hash": "c0d0c7b321c0d963d320a225d7912423"
+  },
+  "claude-seo/tests/test_runtime_installers.py": {
+    "mtime": 1785207761.4827366,
+    "ast_hash": "9e4d000eba470823385d218f1d588933",
+    "semantic_hash": "9e4d000eba470823385d218f1d588933"
+  },
+  "claude-seo/tests/test_schema_hook_policy.py": {
+    "mtime": 1785207761.483761,
+    "ast_hash": "a0cd8a81a822a1c733b4ab7c51d3f473",
+    "semantic_hash": "a0cd8a81a822a1c733b4ab7c51d3f473"
+  },
+  "claude-seo/tests/test_schema_v2.py": {
+    "mtime": 1785207761.4844732,
+    "ast_hash": "cb1d1bc4f881255c97df62f37e574dfa",
+    "semantic_hash": "cb1d1bc4f881255c97df62f37e574dfa"
+  },
+  "claude-seo/tests/test_sitemap_discovery.py": {
+    "mtime": 1785207761.4852598,
+    "ast_hash": "71cd844985107b7f2ac419cfaaefe4d3",
+    "semantic_hash": "71cd844985107b7f2ac419cfaaefe4d3"
+  },
+  "claude-seo/tests/test_sync_flow.py": {
+    "mtime": 1785207761.486187,
+    "ast_hash": "6b177711c7fd256e339780375df86dcf",
+    "semantic_hash": "6b177711c7fd256e339780375df86dcf"
+  },
+  "claude-seo/tests/test_technical_depth.py": {
+    "mtime": 1785207761.4872425,
+    "ast_hash": "0f25e3cefcf5150b44b859a4eae85623",
+    "semantic_hash": "0f25e3cefcf5150b44b859a4eae85623"
+  },
+  "claude-seo/tests/test_url_safety.py": {
+    "mtime": 1785207761.48778,
+    "ast_hash": "60af478d1be3ba46c6daf7444950951c",
+    "semantic_hash": "60af478d1be3ba46c6daf7444950951c"
+  },
+  "claude-seo/uninstall.ps1": {
+    "mtime": 1785207761.48808,
+    "ast_hash": "ab57ef1a400bd7f17b90b723dbac5a08",
+    "semantic_hash": "ab57ef1a400bd7f17b90b723dbac5a08"
+  },
+  "claude-seo/uninstall.sh": {
+    "mtime": 1785207761.4882758,
+    "ast_hash": "4454c64013506f94402fb05a2ba64bf3",
+    "semantic_hash": "4454c64013506f94402fb05a2ba64bf3"
+  },
+  "convert_wp.py": {
+    "mtime": 1785743751.820453,
+    "ast_hash": "777d196c551e89d3a8d98b745cd15f66",
+    "semantic_hash": ""
+  },
+  "delete_drafts.py": {
+    "mtime": 1785699177.241281,
+    "ast_hash": "7fdc42bd87dc0b7c2d52e46a4728784e",
+    "semantic_hash": "7fdc42bd87dc0b7c2d52e46a4728784e"
+  },
+  "deploy_wp.py": {
+    "mtime": 1785787839.2053182,
+    "ast_hash": "0c28b4aab692e57463973c79f9fd5159",
+    "semantic_hash": ""
+  },
+  "fix_all_pages.py": {
+    "mtime": 1785699177.2423644,
+    "ast_hash": "9d6130e0606c8102da5a0ea944e75942",
+    "semantic_hash": "9d6130e0606c8102da5a0ea944e75942"
+  },
+  "fix_home.py": {
+    "mtime": 1785699177.2429092,
+    "ast_hash": "a84c53e43f7d3725d1b2f83c0962762c",
+    "semantic_hash": "a84c53e43f7d3725d1b2f83c0962762c"
+  },
+  "fix_slug.py": {
+    "mtime": 1785699177.2434816,
+    "ast_hash": "7a4f015097d2e16588cb923168d9b52d",
+    "semantic_hash": "7a4f015097d2e16588cb923168d9b52d"
+  },
+  "fix_treatments.py": {
+    "mtime": 1785699177.2440262,
+    "ast_hash": "57e748d3ec90a9d3ff73c1f2de678af4",
+    "semantic_hash": "57e748d3ec90a9d3ff73c1f2de678af4"
+  },
+  "image_map.json": {
+    "mtime": 1785699177.244526,
+    "ast_hash": "afb130501ba287aa56ebaf7c24828516",
+    "semantic_hash": "afb130501ba287aa56ebaf7c24828516"
+  },
+  "list_all.py": {
+    "mtime": 1785699177.2450678,
+    "ast_hash": "fde76071d622aa25e22bed6c8288664a",
+    "semantic_hash": "fde76071d622aa25e22bed6c8288664a"
+  },
+  "list_pages.py": {
+    "mtime": 1785699177.2457037,
+    "ast_hash": "8931a399e43b5404aded47e30f9c8a40",
+    "semantic_hash": "8931a399e43b5404aded47e30f9c8a40"
+  },
+  "live_script.js": {
+    "mtime": 1785699177.2471066,
+    "ast_hash": "b1682b03a95990c04ebad3444eda3652",
+    "semantic_hash": "b1682b03a95990c04ebad3444eda3652"
+  },
+  "pages/fix_css.py": {
+    "mtime": 1785699177.2657118,
+    "ast_hash": "8cfb38503e023599e35de10f11088105",
+    "semantic_hash": "8cfb38503e023599e35de10f11088105"
+  },
+  "pages/fix_overflow.py": {
+    "mtime": 1785699177.266362,
+    "ast_hash": "10c426c710cffe46b509709027d3c2da",
+    "semantic_hash": "10c426c710cffe46b509709027d3c2da"
+  },
+  "pages/fix_transition.py": {
+    "mtime": 1785699177.266935,
+    "ast_hash": "fab807409de302c9820e0f12b7818347",
+    "semantic_hash": "fab807409de302c9820e0f12b7818347"
+  },
+  "pages/inject_css.py": {
+    "mtime": 1785699177.272864,
+    "ast_hash": "8e4c3a87e6ea8bb1342be0aaecd9baa9",
+    "semantic_hash": "8e4c3a87e6ea8bb1342be0aaecd9baa9"
+  },
+  "production_site/client-reviews.json": {
+    "mtime": 1785699177.3217554,
+    "ast_hash": "d7730259513e9020c32c7a7d722f2ae0",
+    "semantic_hash": "d7730259513e9020c32c7a7d722f2ae0"
+  },
+  "production_site/folder-gallery.js": {
+    "mtime": 1785699177.3240588,
+    "ast_hash": "0396079e5f3c1a646ce0f1a0258f721e",
+    "semantic_hash": "0396079e5f3c1a646ce0f1a0258f721e"
+  },
+  "production_site/hero-scroll.js": {
+    "mtime": 1785699177.3244042,
+    "ast_hash": "9a5e5caa625f79e97a23ae4d4f36bdc5",
+    "semantic_hash": "9a5e5caa625f79e97a23ae4d4f36bdc5"
+  },
+  "production_site/neo/a11y-init.js": {
+    "mtime": 1785699177.3422441,
+    "ast_hash": "eaf2c52bdfb5d4f74fb98dddcc9b7d6f",
+    "semantic_hash": "eaf2c52bdfb5d4f74fb98dddcc9b7d6f"
+  },
+  "production_site/neo/a11y-toolbar.js": {
+    "mtime": 1785699177.342805,
+    "ast_hash": "26070ba29709906ba6d95dd2a851b8c9",
+    "semantic_hash": "26070ba29709906ba6d95dd2a851b8c9"
+  },
+  "production_site/neo/analytics.js": {
+    "mtime": 1785699177.3432748,
+    "ast_hash": "f04e142e81be03a8bd1bb45002b82e56",
+    "semantic_hash": "f04e142e81be03a8bd1bb45002b82e56"
+  },
+  "production_site/neo/book-form-demo.js": {
+    "mtime": 1785699177.3516653,
+    "ast_hash": "d4214b3d8f8eb03be63b28475432aae6",
+    "semantic_hash": "d4214b3d8f8eb03be63b28475432aae6"
+  },
+  "production_site/neo/cookie-consent.js": {
+    "mtime": 1785699177.3569398,
+    "ast_hash": "84dc0f422f105d52083bb64e86bca64d",
+    "semantic_hash": "84dc0f422f105d52083bb64e86bca64d"
+  },
+  "production_site/neo/craft-audit.sh": {
+    "mtime": 1785699177.3571923,
+    "ast_hash": "9e8490caa6068b1a73a15037c5480c4d",
+    "semantic_hash": "9e8490caa6068b1a73a15037c5480c4d"
+  },
+  "production_site/neo/form-validation.js": {
+    "mtime": 1785699177.3575478,
+    "ast_hash": "dc588931b71d84d3f292afa5dac50453",
+    "semantic_hash": "dc588931b71d84d3f292afa5dac50453"
+  },
+  "production_site/neo/gallery-lightbox.js": {
+    "mtime": 1785699177.3577733,
+    "ast_hash": "fa6f9c9e9690d40ab06e19b4fe0c0d87",
+    "semantic_hash": "fa6f9c9e9690d40ab06e19b4fe0c0d87"
+  },
+  "production_site/neo/mobile-nav.js": {
+    "mtime": 1785699177.358511,
+    "ast_hash": "a55018312f5e41b5a3e2a157850e9aa0",
+    "semantic_hash": "a55018312f5e41b5a3e2a157850e9aa0"
+  },
+  "production_site/neo/neo-wp-boot.js": {
+    "mtime": 1785699177.3591583,
+    "ast_hash": "6210258bb558fb9efd02972008e91423",
+    "semantic_hash": "6210258bb558fb9efd02972008e91423"
+  },
+  "production_site/neo/palettes.json": {
+    "mtime": 1785699177.3598843,
+    "ast_hash": "9b436171bae2b5d66e8897acf6f3d8c6",
+    "semantic_hash": "9b436171bae2b5d66e8897acf6f3d8c6"
+  },
+  "production_site/neo/savvi-booking.js": {
+    "mtime": 1785763446.4839268,
+    "ast_hash": "1001e0fc8aa5334ae51a36f90a968f47",
+    "semantic_hash": ""
+  },
+  "production_site/neo/savvi-shop.js": {
+    "mtime": 1785699177.361175,
+    "ast_hash": "a0a3f191eadfdb517b5c96e4152c2317",
+    "semantic_hash": "a0a3f191eadfdb517b5c96e4152c2317"
+  },
+  "production_site/neo/scroll-reveal.js": {
+    "mtime": 1785699177.361406,
+    "ast_hash": "d3bf3889bec0234fab4d848f9a2a5525",
+    "semantic_hash": "d3bf3889bec0234fab4d848f9a2a5525"
+  },
+  "production_site/neo/social-media-card.js": {
+    "mtime": 1785699177.3616424,
+    "ast_hash": "f962a029ecd339489a330eb6034a80c7",
+    "semantic_hash": "f962a029ecd339489a330eb6034a80c7"
+  },
+  "production_site/neo/social-media-card.schema.json": {
+    "mtime": 1785699177.3621504,
+    "ast_hash": "842ff6e8d08bdef9923e8ba067e33bc3",
+    "semantic_hash": "842ff6e8d08bdef9923e8ba067e33bc3"
+  },
+  "production_site/neo/theme-init.js": {
+    "mtime": 1785699177.36266,
+    "ast_hash": "b30095a697952bd9c8e325d6e96022e3",
+    "semantic_hash": "b30095a697952bd9c8e325d6e96022e3"
+  },
+  "production_site/neo/theme-toggle.js": {
+    "mtime": 1785699177.3629668,
+    "ast_hash": "8f87a7b971bd56d9fa3d8facc06d8504",
+    "semantic_hash": "8f87a7b971bd56d9fa3d8facc06d8504"
+  },
+  "production_site/neo/visual_qa.py": {
+    "mtime": 1785699177.3647575,
+    "ast_hash": "dfc3148de2c1147b1a202db0759c396b",
+    "semantic_hash": "dfc3148de2c1147b1a202db0759c396b"
+  },
+  "production_site/price-card-glow.js": {
+    "mtime": 1785699177.36507,
+    "ast_hash": "9c486f74ec6223ff9888d3426e6e652a",
+    "semantic_hash": "9c486f74ec6223ff9888d3426e6e652a"
+  },
+  "production_site/reviews-rotator.js": {
+    "mtime": 1785699177.366052,
+    "ast_hash": "12164d96398f0a3a9c8653028fa79be8",
+    "semantic_hash": "12164d96398f0a3a9c8653028fa79be8"
+  },
+  "production_site/social-media-card.json": {
+    "mtime": 1785699177.367539,
+    "ast_hash": "f60e8fa09143508fc3a84917325aabee",
+    "semantic_hash": "f60e8fa09143508fc3a84917325aabee"
+  },
+  "scripts/apply_seo.py": {
+    "mtime": 1785699177.3867962,
+    "ast_hash": "7aafd0ac213e0735a0d4280fa5d4fd81",
+    "semantic_hash": "7aafd0ac213e0735a0d4280fa5d4fd81"
+  },
+  "scripts/bundle_wordpress.py": {
+    "mtime": 1785699178.254552,
+    "ast_hash": "5b154e1a3eae3241911203ea41ed37e5",
+    "semantic_hash": ""
+  },
+  "scripts/deploy_wp.py": {
+    "mtime": 1785699177.3879924,
+    "ast_hash": "2ed701b6394e13fbd5926690cd292e62",
+    "semantic_hash": "2ed701b6394e13fbd5926690cd292e62"
+  },
+  "scripts/rebuild_pages.py": {
+    "mtime": 1785699177.3886197,
+    "ast_hash": "9b66a7292075c5540beff2135918afca",
+    "semantic_hash": "9b66a7292075c5540beff2135918afca"
+  },
+  "temp.js": {
+    "mtime": 1785699177.3896081,
+    "ast_hash": "6c99a2626754f972810f9e3544794a2a",
+    "semantic_hash": "6c99a2626754f972810f9e3544794a2a"
+  },
+  "temp_b64.js": {
+    "mtime": 1785699177.3902392,
+    "ast_hash": "e5fde5a9f83ae9517a159adec18d69ae",
+    "semantic_hash": "e5fde5a9f83ae9517a159adec18d69ae"
+  },
+  "test_yoast.py": {
+    "mtime": 1785699177.3907857,
+    "ast_hash": "ab67a243be23c20091b6ced94d3d2244",
+    "semantic_hash": "ab67a243be23c20091b6ced94d3d2244"
+  },
+  "update_nav.py": {
+    "mtime": 1785699177.3913388,
+    "ast_hash": "cb887cf0957bf86c236df102087a4f82",
+    "semantic_hash": "cb887cf0957bf86c236df102087a4f82"
+  },
+  "upload_images.py": {
+    "mtime": 1785699177.3919868,
+    "ast_hash": "3062f5a28b1d61a72953b7d98f2df01d",
+    "semantic_hash": "3062f5a28b1d61a72953b7d98f2df01d"
+  },
+  "wp_api_auth.py": {
+    "mtime": 1785699177.3940065,
+    "ast_hash": "e9acf2e0ca2b828bd533a79102e813a1",
+    "semantic_hash": "e9acf2e0ca2b828bd533a79102e813a1"
+  },
+  "wp_api_test.py": {
+    "mtime": 1785699177.3946009,
+    "ast_hash": "83ccb1ff976668c311d9abe879661172",
+    "semantic_hash": "83ccb1ff976668c311d9abe879661172"
+  },
+  "scripts/check_head.py": {
+    "mtime": 1785699178.2549944,
+    "ast_hash": "2f9ac5b0ea6319e974c9f1fa08759b02",
+    "semantic_hash": ""
+  },
+  "scripts/check_templates.py": {
+    "mtime": 1785699178.2555292,
+    "ast_hash": "67fd60e3e57c7acf37b30b14aeda569e",
+    "semantic_hash": ""
+  },
+  "scripts/create_system_pages.py": {
+    "mtime": 1785699178.2563708,
+    "ast_hash": "a2001e3404da1d92ea9002e8f2d9d2f1",
+    "semantic_hash": ""
+  },
+  "scripts/delete_duplicates.py": {
+    "mtime": 1785699178.2569091,
+    "ast_hash": "d104bb382c2a937bcef2c8fbcccf6e7c",
+    "semantic_hash": ""
+  },
+  "scripts/fetch_checkout.py": {
+    "mtime": 1785699178.2574127,
+    "ast_hash": "4111003309fdda6280e473b115ffcba2",
+    "semantic_hash": ""
+  },
+  "scripts/fix_links.py": {
+    "mtime": 1785699178.2577214,
+    "ast_hash": "a55b51198f7bbd3833bd0505fa11f346",
+    "semantic_hash": ""
+  },
+  "scripts/fix_logos.py": {
+    "mtime": 1785699178.258183,
+    "ast_hash": "9698eacd7ba5cf7e15364640a828d00b",
+    "semantic_hash": ""
+  },
+  "scripts/fix_templates.py": {
+    "mtime": 1785699178.2586284,
+    "ast_hash": "61c4b507f5acdbb83d02df5a4977b95a",
+    "semantic_hash": ""
+  },
+  "scripts/inject_login_link.py": {
+    "mtime": 1785699178.2590094,
+    "ast_hash": "c50efd1a120d22fc1b0ebff647f45467",
+    "semantic_hash": ""
+  },
+  "scripts/list_pages.py": {
+    "mtime": 1785699178.2594464,
+    "ast_hash": "847bd7364290616d0fc829b5d7ad4420",
+    "semantic_hash": ""
+  },
+  ".agents/rules/graphify.md": {
+    "mtime": 1785699177.634244,
+    "ast_hash": "f1e53ecc9194573d3c28fc116c743a2e",
+    "semantic_hash": ""
+  },
+  ".agents/workflows/graphify.md": {
+    "mtime": 1785699177.635178,
+    "ast_hash": "6d73634a678cf1e1c71930adf80bd1f0",
+    "semantic_hash": ""
+  },
+  "DESIGN.md": {
+    "mtime": 1785699177.638388,
+    "ast_hash": "3d7fad8a8b797814f0741ae21b4e026b",
+    "semantic_hash": ""
+  },
+  "LAUNCH_CHECKLIST.md": {
+    "mtime": 1785699177.2364013,
+    "ast_hash": "53b8b9fee2cf819100e229a4a0fdaa95",
+    "semantic_hash": ""
+  },
+  "PAGE_MAP.md": {
+    "mtime": 1785699191.5236123,
+    "ast_hash": "fddc28e7526a6ce5e6053451704e2174",
+    "semantic_hash": ""
+  },
+  "PRODUCT.md": {
+    "mtime": 1785699177.6390905,
+    "ast_hash": "9b7981294f0d4e1b537dd8a4b1937023",
+    "semantic_hash": ""
+  },
+  "WP_PASTE_GUIDE.md": {
+    "mtime": 1785699177.2376947,
+    "ast_hash": "ce1f1d05780ad70c88cd81c8ee990dde",
+    "semantic_hash": ""
+  },
+  "claude-seo/.github/FUNDING.yml": {
+    "mtime": 1785207761.2272768,
+    "ast_hash": "c662ad18f3d96c7d7b3abcd71313db5c",
+    "semantic_hash": ""
+  },
+  "claude-seo/.github/ISSUE_TEMPLATE/bug_report.yml": {
+    "mtime": 1785207761.2276275,
+    "ast_hash": "ffdca599bb07ea55fc6f30f6f72f27d0",
+    "semantic_hash": ""
+  },
+  "claude-seo/.github/ISSUE_TEMPLATE/config.yml": {
+    "mtime": 1785207761.2277997,
+    "ast_hash": "bf9a9b5895ccf19d4d68c041494b5117",
+    "semantic_hash": ""
+  },
+  "claude-seo/.github/ISSUE_TEMPLATE/feature_request.yml": {
+    "mtime": 1785207761.2279935,
+    "ast_hash": "f6f3a0230b387d3273e1648c3b3c30dc",
+    "semantic_hash": ""
+  },
+  "claude-seo/.github/ISSUE_TEMPLATE/task.yml": {
+    "mtime": 1785207761.2282038,
+    "ast_hash": "ca015b83c1b88825afc7e02a4689fb00",
+    "semantic_hash": ""
+  },
+  "claude-seo/.github/PULL_REQUEST_TEMPLATE.md": {
+    "mtime": 1785207761.2283921,
+    "ast_hash": "9372c919131dbfb3755ce4a244e7b4fc",
+    "semantic_hash": ""
+  },
+  "claude-seo/.github/dependabot.yml": {
+    "mtime": 1785207761.2285357,
+    "ast_hash": "adcdb7f2575331b3d39cf293db33ab26",
+    "semantic_hash": ""
+  },
+  "claude-seo/.github/release.yml": {
+    "mtime": 1785207761.2286725,
+    "ast_hash": "07a001b64aee2e77d301c909077e1589",
+    "semantic_hash": ""
+  },
+  "claude-seo/.github/workflows/ci.yml": {
+    "mtime": 1785207761.228943,
+    "ast_hash": "566f2cecd7062e4f4a267c22c9427201",
+    "semantic_hash": ""
+  },
+  "claude-seo/.github/workflows/v2.yml": {
+    "mtime": 1785207761.2292905,
+    "ast_hash": "cf78771e2415810a0010d731d271e4b4",
+    "semantic_hash": ""
+  },
+  "claude-seo/AGENTS.md": {
+    "mtime": 1785207761.2298467,
+    "ast_hash": "b7f696076f6aa4e54e2e5db3d30498c6",
+    "semantic_hash": ""
+  },
+  "claude-seo/CHANGELOG.md": {
+    "mtime": 1785207761.2304356,
+    "ast_hash": "ae1c1838078691aed9cee355bc968b3c",
+    "semantic_hash": ""
+  },
+  "claude-seo/CLAUDE.md": {
+    "mtime": 1785207761.231019,
+    "ast_hash": "4199720ab5f3479bc87d8b29aa2b7bb4",
+    "semantic_hash": ""
+  },
+  "claude-seo/CODE_OF_CONDUCT.md": {
+    "mtime": 1785207761.2314532,
+    "ast_hash": "35b87707aa4215e5052cd6f3f2561b58",
+    "semantic_hash": ""
+  },
+  "claude-seo/CONTRIBUTING.md": {
+    "mtime": 1785207761.2317011,
+    "ast_hash": "30bded4f83a6ccc5657a4d526e2a180a",
+    "semantic_hash": ""
+  },
+  "claude-seo/CONTRIBUTORS.md": {
+    "mtime": 1785207761.2321303,
+    "ast_hash": "e0cb9522508547fb4c6d935a9ba9e4ae",
+    "semantic_hash": ""
+  },
+  "claude-seo/PRIVACY.md": {
+    "mtime": 1785207761.2327812,
+    "ast_hash": "24fc0eb6d51c80a4759d449e315ae639",
+    "semantic_hash": ""
+  },
+  "claude-seo/README.md": {
+    "mtime": 1785207761.2332513,
+    "ast_hash": "809632c09ee8a34930bfa42c9e80c7f3",
+    "semantic_hash": ""
+  },
+  "claude-seo/SECURITY.md": {
+    "mtime": 1785207761.2340143,
+    "ast_hash": "baacea8f01f64e2ebb999d1f37a72733",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-backlinks.md": {
+    "mtime": 1785207761.2344701,
+    "ast_hash": "e59bb7196f5504506b829aa7a16e669d",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-cluster.md": {
+    "mtime": 1785207761.2346797,
+    "ast_hash": "4da400c3425cc399efabc638b4e5e5e6",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-content.md": {
+    "mtime": 1785207761.2348692,
+    "ast_hash": "092189a685e4100a9a0676daeeabb3d4",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-dataforseo.md": {
+    "mtime": 1785207761.2350538,
+    "ast_hash": "ca6730b380c31500f5876cc3dcd4fd7a",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-drift.md": {
+    "mtime": 1785207761.236018,
+    "ast_hash": "f774db7eb8b28c58d11604a9315b509b",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-ecommerce.md": {
+    "mtime": 1785207761.2367043,
+    "ast_hash": "717b3c48f94bfaf7a61d4dfa90f9a82e",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-flow.md": {
+    "mtime": 1785207761.2371786,
+    "ast_hash": "9cd5f9accbd144e1eb5359790ec3744c",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-geo.md": {
+    "mtime": 1785207761.2375357,
+    "ast_hash": "642110247d49ba6423ba3db7361ecc68",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-google.md": {
+    "mtime": 1785207761.2378492,
+    "ast_hash": "f19e9205396de522466b64d51f473056",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-image-gen.md": {
+    "mtime": 1785207761.2383711,
+    "ast_hash": "85a3e7f4a893d618df5432e823227275",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-local.md": {
+    "mtime": 1785207761.238766,
+    "ast_hash": "fb253686ad616c9b9cf6fef668b4b805",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-maps.md": {
+    "mtime": 1785207761.239039,
+    "ast_hash": "0d3e0500ff5ebcf02fdb9a1c1a62bdb9",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-performance.md": {
+    "mtime": 1785207761.2393801,
+    "ast_hash": "6697f0c1f010e6ea16e2c832304aa8a5",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-schema.md": {
+    "mtime": 1785207761.2396717,
+    "ast_hash": "7290711778142d10efd357ca89c161a4",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-sitemap.md": {
+    "mtime": 1785207761.239905,
+    "ast_hash": "c549698a2c1338b1e161e2595dd26b1e",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-sxo.md": {
+    "mtime": 1785207761.2401834,
+    "ast_hash": "47f7327cb116043b054596165c751a5b",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-technical.md": {
+    "mtime": 1785207761.240392,
+    "ast_hash": "46e7563e536252cf9a91e4992c511bc1",
+    "semantic_hash": ""
+  },
+  "claude-seo/agents/seo-visual.md": {
+    "mtime": 1785207761.2405953,
+    "ast_hash": "7cc396c1b56f1925f23f39a5e371817a",
+    "semantic_hash": ""
+  },
+  "claude-seo/docs/ARCHITECTURE.md": {
+    "mtime": 1785207761.245901,
+    "ast_hash": "fcb555d2b1283d6472d7f4a70165d8dc",
+    "semantic_hash": ""
+  },
+  "claude-seo/docs/COMMANDS.md": {
+    "mtime": 1785207761.2463772,
+    "ast_hash": "4e8ac455f57b8644af5d7f24f9cea6d2",
+    "semantic_hash": ""
+  },
+  "claude-seo/docs/INSTALLATION.md": {
+    "mtime": 1785207761.2467902,
+    "ast_hash": "d1187d07538f72b76515915230d0a9fc",
+    "semantic_hash": ""
+  },
+  "claude-seo/docs/MCP-INTEGRATION.md": {
+    "mtime": 1785207761.2471883,
+    "ast_hash": "496ea5627e5fdcf2b586cc4cc0b06d29",
+    "semantic_hash": ""
+  },
+  "claude-seo/docs/MIGRATION-v1-to-v2.md": {
+    "mtime": 1785207761.247578,
+    "ast_hash": "4087ab986989632a54431ec88aa7587b",
+    "semantic_hash": ""
+  },
+  "claude-seo/docs/TROUBLESHOOTING.md": {
+    "mtime": 1785207761.2480574,
+    "ast_hash": "e0b9bb335e55c5bda88092a20813ce20",
+    "semantic_hash": ""
+  },
+  "claude-seo/docs/WORKFLOW-public-private.md": {
+    "mtime": 1785207761.2485726,
+    "ast_hash": "f3a28e9366b5e553b67cee90d1c3e37f",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/ahrefs/docs/AHREFS-SETUP.md": {
+    "mtime": 1785207761.2495875,
+    "ast_hash": "a4f8d6fe03bfb51f91a826a1871ec0bb",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/ahrefs/skills/seo-ahrefs/SKILL.md": {
+    "mtime": 1785207761.2515793,
+    "ast_hash": "1eeb2f2b8bd542c747555fa0d0a6287b",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/banana/README.md": {
+    "mtime": 1785207761.2525206,
+    "ast_hash": "6865b6c489ed5d7c9a7b2e8d5c219802",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/banana/agents/seo-image-gen.md": {
+    "mtime": 1785207761.2535412,
+    "ast_hash": "a4732fd2743a832084477c76a1da6b5f",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/banana/docs/BANANA-SETUP.md": {
+    "mtime": 1785207761.2548819,
+    "ast_hash": "c857807b093abe0bd62b58fcdcf5e536",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/banana/references/cost-tracking.md": {
+    "mtime": 1785207761.255941,
+    "ast_hash": "db29a2842bbd87c722ade716f125c807",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/banana/references/gemini-models.md": {
+    "mtime": 1785207761.2564101,
+    "ast_hash": "425202c28bf4b4b904fed5d94fff3e83",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/banana/references/mcp-tools.md": {
+    "mtime": 1785207761.2569194,
+    "ast_hash": "9fb28cf25e76d789b8202eca69a9356d",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/banana/references/post-processing.md": {
+    "mtime": 1785207761.2573748,
+    "ast_hash": "d27964357565fe59778861bce1f23378",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/banana/references/presets.md": {
+    "mtime": 1785207761.2577715,
+    "ast_hash": "6202781097240dfba23439cdb710620f",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/banana/references/prompt-engineering.md": {
+    "mtime": 1785207761.258345,
+    "ast_hash": "c671e3e17e7585177c50d037299673f1",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/banana/references/seo-image-presets.md": {
+    "mtime": 1785207761.259329,
+    "ast_hash": "64443326750529969ad6056a2c7f5d0d",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/banana/skills/seo-image-gen/LICENSE.txt": {
+    "mtime": 1785207761.2641962,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/banana/skills/seo-image-gen/SKILL.md": {
+    "mtime": 1785207761.2649887,
+    "ast_hash": "8bf0b98e824a2514ea9ee19d2e16c9ec",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/bing-webmaster/docs/BING-WEBMASTER-SETUP.md": {
+    "mtime": 1785207761.2675035,
+    "ast_hash": "b5d54b198c134aa3d1c1f656d7425f2c",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/bing-webmaster/skills/seo-bing/SKILL.md": {
+    "mtime": 1785207761.2701886,
+    "ast_hash": "2c5bc13c55faf8f75f1aef9acaef49c1",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/dataforseo/README.md": {
+    "mtime": 1785207761.2715597,
+    "ast_hash": "eed9bac0a920199d4f5b5135e29d112c",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/dataforseo/agents/seo-dataforseo.md": {
+    "mtime": 1785207761.2724822,
+    "ast_hash": "5914f7a666bbfd4273dac30f7a4b6671",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/dataforseo/docs/DATAFORSEO-SETUP.md": {
+    "mtime": 1785207761.2731285,
+    "ast_hash": "6d2c0b599dc6198edbc3c850139e909d",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/dataforseo/skills/seo-dataforseo/LICENSE.txt": {
+    "mtime": 1785207761.2755337,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/dataforseo/skills/seo-dataforseo/SKILL.md": {
+    "mtime": 1785207761.2759898,
+    "ast_hash": "33204e445427d724d3d9a4eaa058f6a2",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/dataforseo/skills/seo-dataforseo/references/cost-tiers.md": {
+    "mtime": 1785207761.2764955,
+    "ast_hash": "cb817d91e6a5a579980eeca192bc3956",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/dataforseo/skills/seo-dataforseo/references/tool-catalog.md": {
+    "mtime": 1785207761.276955,
+    "ast_hash": "742126ae93fbf424004b4fd63ce2f3b4",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/firecrawl/README.md": {
+    "mtime": 1785207761.2785294,
+    "ast_hash": "11646b20d610fdb4e478b02b9e9d2e11",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/firecrawl/docs/FIRECRAWL-SETUP.md": {
+    "mtime": 1785207761.2794905,
+    "ast_hash": "753ae67d1b2c4f2be19cd992f9838c8e",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/firecrawl/skills/seo-firecrawl/LICENSE.txt": {
+    "mtime": 1785207761.2816415,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/firecrawl/skills/seo-firecrawl/SKILL.md": {
+    "mtime": 1785207761.2825477,
+    "ast_hash": "6148579ead2b011144728f2689987f9f",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/profound/docs/PROFOUND-SETUP.md": {
+    "mtime": 1785207761.2843604,
+    "ast_hash": "a041cde9e82bd8545a8b219944f6c078",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/profound/skills/seo-profound/SKILL.md": {
+    "mtime": 1785207761.2878067,
+    "ast_hash": "a7a34b944f24885ea59de60bd4dcd725",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/seranking/docs/SERANKING-SETUP.md": {
+    "mtime": 1785207761.2894306,
+    "ast_hash": "3e7856b5a28ce475786c3c957845a465",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/seranking/skills/seo-seranking/SKILL.md": {
+    "mtime": 1785207761.2928147,
+    "ast_hash": "01d5ce797ebc195168a53be8211c1ff2",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/unlighthouse/docs/UNLIGHTHOUSE-SETUP.md": {
+    "mtime": 1785207761.2936814,
+    "ast_hash": "3b6276677fe3c75f1931066ec9a0ef42",
+    "semantic_hash": ""
+  },
+  "claude-seo/extensions/unlighthouse/skills/seo-unlighthouse/SKILL.md": {
+    "mtime": 1785207761.2951672,
+    "ast_hash": "d1653a529ace767ab645c55999bef374",
+    "semantic_hash": ""
+  },
+  "claude-seo/pdf/google-seo-reference.md": {
+    "mtime": 1785207761.3043652,
+    "ast_hash": "4c839af540ba5b228ec3234869c5b759",
+    "semantic_hash": ""
+  },
+  "claude-seo/requirements.txt": {
+    "mtime": 1785207761.305404,
+    "ast_hash": "6bd935607d877c43711541dc27261de5",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-audit/LICENSE.txt": {
+    "mtime": 1785207761.3904133,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-audit/SKILL.md": {
+    "mtime": 1785207761.390998,
+    "ast_hash": "d43d2b6fd488011d3cef8670182f1013",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-backlinks/LICENSE.txt": {
+    "mtime": 1785207761.3914857,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-backlinks/SKILL.md": {
+    "mtime": 1785207761.3920155,
+    "ast_hash": "cfb860342e49f2f6c48ecbc0f46e1887",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-cluster/SKILL.md": {
+    "mtime": 1785207761.3926687,
+    "ast_hash": "26c55a50549dfdf1e78d1ce02f67129d",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-cluster/references/execution-workflow.md": {
+    "mtime": 1785207761.3933392,
+    "ast_hash": "2c7b39d89dbe6de6b1824e4475ed82f8",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-cluster/references/hub-spoke-architecture.md": {
+    "mtime": 1785207761.393904,
+    "ast_hash": "e543a5b3b1441671de0292d837cb3a01",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-cluster/references/serp-overlap-methodology.md": {
+    "mtime": 1785207761.394403,
+    "ast_hash": "f485aa43ea8fa1998e894f776f616bfc",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-cluster/templates/cluster-map.html": {
+    "mtime": 1785744266.1555336,
+    "ast_hash": "c9bbb941699ab53730643be9f867a034",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-competitor-pages/LICENSE.txt": {
+    "mtime": 1785207761.3954427,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-competitor-pages/SKILL.md": {
+    "mtime": 1785207761.395966,
+    "ast_hash": "010b863a74bd75ad2ee35e26e393bb67",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-content-brief/LICENSE.txt": {
+    "mtime": 1785207761.3965201,
+    "ast_hash": "61c8c3781bfcd931db8e1aab037778f0",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-content-brief/SKILL.md": {
+    "mtime": 1785207761.3972926,
+    "ast_hash": "aa63e87e42d3e78690b50680ab9ed6da",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-content-brief/references/excluded-domains.md": {
+    "mtime": 1785207761.3977993,
+    "ast_hash": "c00cf2a63ae94c4d5d8698f159385476",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-content-brief/references/keyword-density.md": {
+    "mtime": 1785207761.398176,
+    "ast_hash": "10e7c293b4f1eecf993e6560fa11c36c",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-content-brief/references/page-type-templates.md": {
+    "mtime": 1785207761.3985953,
+    "ast_hash": "3331a536d5830f0897d4ea72f3e06f0a",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-content/LICENSE.txt": {
+    "mtime": 1785207761.3990035,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-content/SKILL.md": {
+    "mtime": 1785207761.399631,
+    "ast_hash": "281b19e484dc229d0a48211e6681c19d",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-dataforseo/LICENSE.txt": {
+    "mtime": 1785207761.401075,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-dataforseo/SKILL.md": {
+    "mtime": 1785207761.4014597,
+    "ast_hash": "688167477496bd919e58677aede9d1fe",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-dataforseo/references/cost-tiers.md": {
+    "mtime": 1785207761.4023075,
+    "ast_hash": "cb817d91e6a5a579980eeca192bc3956",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-dataforseo/references/tool-catalog.md": {
+    "mtime": 1785207761.4026434,
+    "ast_hash": "742126ae93fbf424004b4fd63ce2f3b4",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-drift/SKILL.md": {
+    "mtime": 1785207761.4035964,
+    "ast_hash": "2ea81366ca3f5e70960d4f959a9cb558",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-drift/references/comparison-rules.md": {
+    "mtime": 1785207761.404463,
+    "ast_hash": "50e15c193bd2cd6221d642909b80bf88",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-ecommerce/SKILL.md": {
+    "mtime": 1785207761.4052162,
+    "ast_hash": "58e13428d5f7946a41a61b64819fb1a3",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-ecommerce/references/marketplace-endpoints.md": {
+    "mtime": 1785207761.4055998,
+    "ast_hash": "a8f03cbe92b066712183c9baaf5d7e69",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-ecommerce/references/ucp-universal-commerce-protocol.md": {
+    "mtime": 1785207761.405973,
+    "ast_hash": "2fd5d1160639206785857b91b75c0ea2",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/SKILL.md": {
+    "mtime": 1785207761.4064496,
+    "ast_hash": "ee867ab729795da291930505b6687c2b",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/bibliography.md": {
+    "mtime": 1785207761.4069707,
+    "ast_hash": "e427e77954f7cac1eb486b27b09eb914",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/flow-framework.md": {
+    "mtime": 1785207761.4073045,
+    "ast_hash": "290d0a12d57fb0dea94200b40143b0fc",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/README.md": {
+    "mtime": 1785207761.408233,
+    "ast_hash": "b393776653b04677e99c20143fd105bd",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/find/content-planning-for-topical-relevance-prompt.md": {
+    "mtime": 1785207761.4086392,
+    "ast_hash": "d52a0bdabbc0d9197db1be5f06ef43a5",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/find/content-prioritization-prompt.md": {
+    "mtime": 1785207761.408849,
+    "ast_hash": "8788e0fbfe773cdc1a17f19b652d8dee",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/find/keyword-research-prompt.md": {
+    "mtime": 1785207761.4090931,
+    "ast_hash": "aaf09d5f22094ca7747c2694052b40e0",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/find/keyword-variations-for-topical-relevance-prompt.md": {
+    "mtime": 1785207761.4093335,
+    "ast_hash": "49638295424dfa3f23931e325ce4cb13",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/find/prompt-audience-avatar.md": {
+    "mtime": 1785207761.40955,
+    "ast_hash": "cb64a936152802d286f6854129edd768",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/leverage/backlink-competition-prompt.md": {
+    "mtime": 1785207761.4099126,
+    "ast_hash": "007aaab8dc055b04bb538e9f5d650b55",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/local/ai-homepage-rewrite-prompt.md": {
+    "mtime": 1785207761.4102752,
+    "ast_hash": "2e3224854ab04f892899d7f0cf947c89",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/local/claude-deep-research-prompt.md": {
+    "mtime": 1785207761.4104955,
+    "ast_hash": "881b838e15bee83b0d47e530b3c6780d",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/local/gbp-categories-prompt.md": {
+    "mtime": 1785207761.410702,
+    "ast_hash": "59a1a095fcdc6558a33aa3a5deb68090",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/local/gbp-description-claude-prompt-1.md": {
+    "mtime": 1785207761.4109318,
+    "ast_hash": "f169a3a108537328ac0e9a9068f34d85",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/local/gbp-description-claude-prompt-2.md": {
+    "mtime": 1785207761.4251888,
+    "ast_hash": "b1746bf8125321d961169afcb8b05047",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/local/gbp-description-claude-prompt-3.md": {
+    "mtime": 1785207761.4255826,
+    "ast_hash": "fdf76e9e894d1594fc06aaf814a3fc3f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/local/gbp-services-prompt.md": {
+    "mtime": 1785207761.4258945,
+    "ast_hash": "b36ace8c1550f0aeb00f478f6258e783",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/local/prompt-generating-a-meta-description.md": {
+    "mtime": 1785207761.4261298,
+    "ast_hash": "792fb9be7ac6a560caaa3616903c1783",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/local/prompt-generating-a-title-tag.md": {
+    "mtime": 1785207761.4264324,
+    "ast_hash": "b58ec7d7264861fc218b7636d8ccee5f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/local/prompt-rewriting-existing-homepage.md": {
+    "mtime": 1785207761.4267206,
+    "ast_hash": "914c07cd11df1b003afb9f86a6102267",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/local/prompt-rewriting-existing-service-page.md": {
+    "mtime": 1785207761.4269612,
+    "ast_hash": "bbdd1d4dd9301ac45a07e67937479180",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/ai-detector-test-follow-up-prompt.md": {
+    "mtime": 1785207761.4274058,
+    "ast_hash": "b6a9dd4db00af827ee0d0226d1ed8385",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/ai-supporting-pages-rewrite-prompt.md": {
+    "mtime": 1785207761.427633,
+    "ast_hash": "e48b2e7ea521f214815c4cb4a78bdb55",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/basic-prompt.md": {
+    "mtime": 1785207761.42816,
+    "ast_hash": "1c4b76c336a4c907eab528036a75b57d",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/blog-post-outline-prompt.md": {
+    "mtime": 1785207761.4285877,
+    "ast_hash": "8f47be1535d3f482cdc2709cb4fc7f28",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/blog-post-writing-prompt.md": {
+    "mtime": 1785207761.4289212,
+    "ast_hash": "e1d1a65a8ba932a9de59909ec0ddcdc1",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/claude-prompt-1.md": {
+    "mtime": 1785207761.4291792,
+    "ast_hash": "1ffea277aeb97c5d294f029689b36948",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/claude-prompt-2.md": {
+    "mtime": 1785207761.429406,
+    "ast_hash": "147059dfbb2641594fefe7eebbed47ef",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/ctr-audit-prompt.md": {
+    "mtime": 1785207761.4296153,
+    "ast_hash": "7274c2e8548c25b18f9ce73dfe57d4d7",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/follow-up-prompt-1.md": {
+    "mtime": 1785207761.429867,
+    "ast_hash": "6fd5049edf9e3b450d07bb1eb9595b05",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/follow-up-prompt-2.md": {
+    "mtime": 1785207761.4301186,
+    "ast_hash": "ad215c756575fdeefaae5349e11d0b06",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/follow-up-prompt.md": {
+    "mtime": 1785207761.4303555,
+    "ast_hash": "1ea829e2fa23070e00f205454110955c",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/paa-question-rewording-prompt.md": {
+    "mtime": 1785207761.4306448,
+    "ast_hash": "0a021296f024ac8bcdb0363eaa4e4677",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/prompt-core-30-content-audit.md": {
+    "mtime": 1785207761.43096,
+    "ast_hash": "10a23ca289dcb90b31f8c2e211d3a4a1",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/property-content-with-authority-audit-prompt.md": {
+    "mtime": 1785207761.431242,
+    "ast_hash": "8ce40593e94dadacd3eac289866adba3",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/reddit-claude-prompt.md": {
+    "mtime": 1785207761.4314058,
+    "ast_hash": "158727ed6f9501ede22b6fa45df7042f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/schema-prompt-1.md": {
+    "mtime": 1785207761.4315915,
+    "ast_hash": "ebc3dbcd969d0ab6a9115c91b5669394",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/step-1-the-chatgpt-discovery-prompt.md": {
+    "mtime": 1785207761.4318154,
+    "ast_hash": "b8a953ee60fe2cf4c3fbd2a9f81e0480",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/step-2-the-follow-up-qualifying-prompt.md": {
+    "mtime": 1785207761.4321902,
+    "ast_hash": "59f036ef8b912643eb252ba1cb702484",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/technical-audit-prompt.md": {
+    "mtime": 1785207761.4325416,
+    "ast_hash": "36f791171dcc0c9fec3341fd763f22f9",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/visibility-follow-up-prompt.md": {
+    "mtime": 1785207761.4330096,
+    "ast_hash": "b3da17f1b35c419573caaf6cb81a2047",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/optimize/visiblity-prompt.md": {
+    "mtime": 1785207761.4332972,
+    "ast_hash": "709bb8b1c2bff5871e9ab28fbf6232a8",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/win/bofu-page-brief-generator.md": {
+    "mtime": 1785207761.433655,
+    "ast_hash": "ba596638fc0e7b9dc87c2e881ace042e",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/win/conversion-audit-prompt.md": {
+    "mtime": 1785207761.4339876,
+    "ast_hash": "8578c03a595f21308788499205c4b2f1",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-flow/references/prompts/win/dual-surface-content-scorecard.md": {
+    "mtime": 1785207761.4341779,
+    "ast_hash": "0657c9376bb5783bd6d809a0a753e721",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-geo/LICENSE.txt": {
+    "mtime": 1785207761.4345448,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-geo/SKILL.md": {
+    "mtime": 1785207761.4349117,
+    "ast_hash": "9d4e38ec1133d348d790b6c54e04e603",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-geo/references/google-ai-optimization-guide.md": {
+    "mtime": 1785207761.4354196,
+    "ast_hash": "358c45650e9c0f45dd6ceb0507fa5697",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-geo/references/llmstxt-evidence.md": {
+    "mtime": 1785207761.4366243,
+    "ast_hash": "7c77aa98212a31aef67fb92dbd1d0d5f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/LICENSE.txt": {
+    "mtime": 1785207761.437665,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/SKILL.md": {
+    "mtime": 1785207761.438174,
+    "ast_hash": "9435466f250ae8ea06c4cf29d77febdb",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/assets/templates/cwv-audit-report.md": {
+    "mtime": 1785207761.4385839,
+    "ast_hash": "b3e9500bff56d42246a51dafe774e8b9",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/assets/templates/gsc-performance-report.md": {
+    "mtime": 1785207761.4388232,
+    "ast_hash": "1a883e1682a2715fdb7ca46c6c519c2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/assets/templates/indexation-status-report.md": {
+    "mtime": 1785207761.438989,
+    "ast_hash": "014e37f48eb336bda02ffe89196697a9",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/references/auth-setup.md": {
+    "mtime": 1785207761.4393704,
+    "ast_hash": "6559db8eab060e752835908acd913106",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/references/dma-consent-mode-v2.md": {
+    "mtime": 1785207761.439581,
+    "ast_hash": "cd0d8e5b6c59c3125204dfad63e3a6d9",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/references/ga4-data-api.md": {
+    "mtime": 1785207761.4399085,
+    "ast_hash": "24894e7a1422388fb356187f073b93c7",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/references/indexing-api.md": {
+    "mtime": 1785207761.4400773,
+    "ast_hash": "85315a65d626de66d5f6b2ea4984b579",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/references/keyword-planner-api.md": {
+    "mtime": 1785207761.4405417,
+    "ast_hash": "90483900ce4c40878905100a2d3df20d",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/references/nlp-api.md": {
+    "mtime": 1785207761.4407544,
+    "ast_hash": "f01a2b7da597083b7eab7b1510a8bac4",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/references/pagespeed-crux-api.md": {
+    "mtime": 1785207761.4410756,
+    "ast_hash": "be043afef416edd6ac8903128558c302",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/references/rate-limits-quotas.md": {
+    "mtime": 1785207761.4420269,
+    "ast_hash": "d75572701f08f8856a0aab12ff35ba1e",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/references/search-console-api.md": {
+    "mtime": 1785207761.4424138,
+    "ast_hash": "325a93a67920146470084856d372d964",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/references/supplementary-apis.md": {
+    "mtime": 1785207761.4429085,
+    "ast_hash": "ccf5b0978c140b152ccb74e4ea4f2d2d",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-google/references/youtube-api.md": {
+    "mtime": 1785207761.443618,
+    "ast_hash": "41abeaa5a2f787fa0080d6a1c1fca87b",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-hreflang/LICENSE.txt": {
+    "mtime": 1785207761.4439564,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-hreflang/SKILL.md": {
+    "mtime": 1785207761.4444277,
+    "ast_hash": "58e941a1d65e2a73102cefda9702b4a1",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-hreflang/references/content-parity.md": {
+    "mtime": 1785207761.4450142,
+    "ast_hash": "3005a9dab475a4f4d4ca8988cc5434f3",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-hreflang/references/cultural-profiles.md": {
+    "mtime": 1785207761.4453444,
+    "ast_hash": "083fb49f542d3f170f17f264b55fca56",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-hreflang/references/locale-formats.md": {
+    "mtime": 1785207761.4455118,
+    "ast_hash": "17394f7c8876fafdab8474e949c83748",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-hreflang/references/machine-translation-qa.md": {
+    "mtime": 1785207761.4461396,
+    "ast_hash": "98fe6ccbb4322f6157729421a5097009",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-image-gen/LICENSE.txt": {
+    "mtime": 1785207761.446755,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-image-gen/SKILL.md": {
+    "mtime": 1785207761.447075,
+    "ast_hash": "b70d82d01c4edde3305eb7582bcd8222",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-image-gen/references/cost-tracking.md": {
+    "mtime": 1785207761.4476657,
+    "ast_hash": "41c3efad0a6c8db298f580e562818eb4",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-image-gen/references/gemini-models.md": {
+    "mtime": 1785207761.44796,
+    "ast_hash": "d20288cac2f6078fce54055d9ea6f9f6",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-image-gen/references/mcp-tools.md": {
+    "mtime": 1785207761.4486334,
+    "ast_hash": "618bd7d9878a729cadf53da82665c799",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-image-gen/references/post-processing.md": {
+    "mtime": 1785207761.449134,
+    "ast_hash": "d27964357565fe59778861bce1f23378",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-image-gen/references/presets.md": {
+    "mtime": 1785207761.449729,
+    "ast_hash": "6202781097240dfba23439cdb710620f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-image-gen/references/prompt-engineering.md": {
+    "mtime": 1785207761.4501808,
+    "ast_hash": "2fc03742ba47755e484d90a58dae29f7",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-image-gen/references/seo-image-presets.md": {
+    "mtime": 1785207761.4506965,
+    "ast_hash": "704effb9a142f9c69c2f7c3c1ee3222f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-images/LICENSE.txt": {
+    "mtime": 1785207761.4510605,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-images/SKILL.md": {
+    "mtime": 1785207761.4513595,
+    "ast_hash": "089023d969636322fa3dca942c6caa8f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-local/LICENSE.txt": {
+    "mtime": 1785207761.451841,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-local/SKILL.md": {
+    "mtime": 1785207761.4524941,
+    "ast_hash": "5622c5b0f9a294d8ea309ee216faebc4",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-maps/LICENSE.txt": {
+    "mtime": 1785207761.4530325,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-maps/SKILL.md": {
+    "mtime": 1785207761.453508,
+    "ast_hash": "6c170e4049d3a972d6368aa2355ed8a2",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-page/LICENSE.txt": {
+    "mtime": 1785207761.4541056,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-page/SKILL.md": {
+    "mtime": 1785207761.4543493,
+    "ast_hash": "b84587a93fe7c6068bc3ce5bd1fb29ef",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-plan/LICENSE.txt": {
+    "mtime": 1785207761.4550385,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-plan/SKILL.md": {
+    "mtime": 1785207761.4554453,
+    "ast_hash": "5942e656ea1df2702c4afd0bae341231",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-plan/assets/agency.md": {
+    "mtime": 1785207761.4557781,
+    "ast_hash": "4965bf78dac73d91f256877c9fdc31f5",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-plan/assets/ecommerce.md": {
+    "mtime": 1785207761.4561515,
+    "ast_hash": "791634b9b1dc874ad7eaccf00893a1c8",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-plan/assets/generic.md": {
+    "mtime": 1785207761.4564831,
+    "ast_hash": "dd84fd2ce4bb21fe1cf0bcf4b34e5a68",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-plan/assets/local-service.md": {
+    "mtime": 1785207761.4567146,
+    "ast_hash": "29fac7fa887b8d6f60458dbc62e32102",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-plan/assets/publisher.md": {
+    "mtime": 1785207761.457372,
+    "ast_hash": "115e24b12341831a04d03d6dfdf52a86",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-plan/assets/saas.md": {
+    "mtime": 1785207761.4578164,
+    "ast_hash": "b52f8be17ddada8280c2696e63167e70",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-programmatic/LICENSE.txt": {
+    "mtime": 1785207761.4583082,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-programmatic/SKILL.md": {
+    "mtime": 1785207761.45884,
+    "ast_hash": "58123252a81f93a60a9234309ae52ac8",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-schema/LICENSE.txt": {
+    "mtime": 1785207761.4594522,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-schema/SKILL.md": {
+    "mtime": 1785207761.4598758,
+    "ast_hash": "1d2345b476bc607b04a76cf9843c6ac2",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-schema/references/deprecated-types-2024-2026.md": {
+    "mtime": 1785207761.4606383,
+    "ast_hash": "50ab5be9ad6bf3595cf2a075362fc5a7",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-sitemap/LICENSE.txt": {
+    "mtime": 1785207761.46103,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-sitemap/SKILL.md": {
+    "mtime": 1785207761.4614973,
+    "ast_hash": "2836bf0be51a4d6e33534d998e73e893",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-sxo/SKILL.md": {
+    "mtime": 1785207761.4621851,
+    "ast_hash": "81795e5ba5c6447ce24a419b7c20a847",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-sxo/references/page-type-taxonomy.md": {
+    "mtime": 1785207761.4627569,
+    "ast_hash": "c39ef8b3a5da30a884da3dbd8ce1536f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-sxo/references/persona-scoring.md": {
+    "mtime": 1785207761.463139,
+    "ast_hash": "208ad73460e91cde5259b3c12200602b",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-sxo/references/user-story-framework.md": {
+    "mtime": 1785207761.4634626,
+    "ast_hash": "f28d7860ec386bebac76d14a5022d105",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-sxo/references/wireframe-templates.md": {
+    "mtime": 1785207761.4637232,
+    "ast_hash": "6ce0aa290106c09ab190d4e914295337",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-technical/LICENSE.txt": {
+    "mtime": 1785207761.4640636,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-technical/SKILL.md": {
+    "mtime": 1785207761.4644346,
+    "ast_hash": "b6a642ed550f627a022cb866c50345d3",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo-technical/references/agent-friendly-pages.md": {
+    "mtime": 1785207761.4647927,
+    "ast_hash": "420b794bee4dd53d8868c1e9bd68c7b1",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo/LICENSE.txt": {
+    "mtime": 1785207761.465071,
+    "ast_hash": "c6f170069a37235aa3696507dbfaef2f",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo/SKILL.md": {
+    "mtime": 1785207761.465606,
+    "ast_hash": "fb568fb0146a74827354846741eb8e2e",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo/references/backlink-quality.md": {
+    "mtime": 1785207761.4666116,
+    "ast_hash": "73b97b99756650dd096ae3fa9debce90",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo/references/cwv-thresholds.md": {
+    "mtime": 1785207761.4676597,
+    "ast_hash": "cf1dc9fb8c59cac2dcdf0d728b06cc42",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo/references/eeat-framework.md": {
+    "mtime": 1785207761.467995,
+    "ast_hash": "fcfa57352a53ba03ed1076f7a5fede87",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo/references/free-backlink-sources.md": {
+    "mtime": 1785207761.4683788,
+    "ast_hash": "41039212bc769a975c7a466962ff4219",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo/references/local-schema-types.md": {
+    "mtime": 1785207761.468751,
+    "ast_hash": "704a1c81d655d457207da8aa2e340652",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo/references/local-seo-signals.md": {
+    "mtime": 1785207761.469029,
+    "ast_hash": "a4c4de21d9295c1726841f3de00ea8ed",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo/references/maps-api-endpoints.md": {
+    "mtime": 1785207761.4695754,
+    "ast_hash": "43284d85808953b52eb5744420595f8d",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo/references/maps-free-apis.md": {
+    "mtime": 1785207761.4699678,
+    "ast_hash": "9569f7ea8fc49f7f283aa12b9bb50da8",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo/references/maps-gbp-checklist.md": {
+    "mtime": 1785207761.4702928,
+    "ast_hash": "5cbfc94af6f40f1f54ad5df0f4abed30",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo/references/maps-geo-grid.md": {
+    "mtime": 1785207761.4705808,
+    "ast_hash": "8e2b9ec66625ea9abed6576f505609dc",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo/references/quality-gates.md": {
+    "mtime": 1785207761.4708698,
+    "ast_hash": "a1d10dc5d047b96b7059055609a1cf58",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo/references/schema-types.md": {
+    "mtime": 1785207761.4714715,
+    "ast_hash": "dc0a488c483cc5327c1b0ff1a0e6a1a1",
+    "semantic_hash": ""
+  },
+  "claude-seo/skills/seo/references/thinking-framework.md": {
+    "mtime": 1785207761.4719155,
+    "ast_hash": "d39993fce04f4960758b5f05969db73d",
+    "semantic_hash": ""
+  },
+  "cookies.txt": {
+    "mtime": 1785699177.239681,
+    "ast_hash": "631f99b63842e14a9007191e0c8182da",
+    "semantic_hash": ""
+  },
+  "copilot-instructions.md": {
+    "mtime": 1785699177.240585,
+    "ast_hash": "729d29daf0bede34a0e982974e3d732a",
+    "semantic_hash": ""
+  },
+  "live_site.html": {
+    "mtime": 1785744266.5101972,
+    "ast_hash": "9bc86ade5b94c06b74300e5bbba5e71f",
+    "semantic_hash": ""
+  },
+  "pages/book-success.html": {
+    "mtime": 1785790724.5957444,
+    "ast_hash": "a7731d28eb4b429f01cc1a214b50a713",
+    "semantic_hash": ""
+  },
+  "pages/book.html": {
+    "mtime": 1785790724.6609862,
+    "ast_hash": "8af7045f256a4d2d027d348abe21be3c",
+    "semantic_hash": ""
+  },
+  "pages/cart.html": {
+    "mtime": 1785790724.6858833,
+    "ast_hash": "0da1061f2a51ca1d8f5e36a3b7f47a03",
+    "semantic_hash": ""
+  },
+  "pages/checkout.html": {
+    "mtime": 1785790724.6648395,
+    "ast_hash": "57e91e425575b9b938ebf9f493100043",
+    "semantic_hash": ""
+  },
+  "pages/clinic.html": {
+    "mtime": 1785790724.6475518,
+    "ast_hash": "c2f3cfc95be24cba49a54ff7293f95c6",
+    "semantic_hash": ""
+  },
+  "pages/contact.html": {
+    "mtime": 1785790724.6163285,
+    "ast_hash": "fbd4b3983a1064045cfa49dc41de34cf",
+    "semantic_hash": ""
+  },
+  "pages/home.html": {
+    "mtime": 1785764357.0608296,
+    "ast_hash": "a5ea60250b6b6f80a4969d2bc494d6ff",
+    "semantic_hash": ""
+  },
+  "pages/login.html": {
+    "mtime": 1785790724.6376402,
+    "ast_hash": "4fad35a139ab60c7b4702aeb89c981c8",
+    "semantic_hash": ""
+  },
+  "pages/privacy-policy.html": {
+    "mtime": 1785790724.6107688,
+    "ast_hash": "f2e55e5f2b10c28c436ae4a4ca59fe5e",
+    "semantic_hash": ""
+  },
+  "pages/product.html": {
+    "mtime": 1785790724.5864575,
+    "ast_hash": "82b505cdb5eba18a11c4ac4cb2126409",
+    "semantic_hash": ""
+  },
+  "pages/register.html": {
+    "mtime": 1785790724.6291723,
+    "ast_hash": "58a6d7d841019e1de0f4a344866f5da4",
+    "semantic_hash": ""
+  },
+  "pages/reviews.html": {
+    "mtime": 1785764357.115401,
+    "ast_hash": "5a6d5791aea631fa436d7bb9dec1f803",
+    "semantic_hash": ""
+  },
+  "pages/shop.html": {
+    "mtime": 1785790724.6528597,
+    "ast_hash": "90b9496a5fa7ea00e56511eea4db2171",
+    "semantic_hash": ""
+  },
+  "pages/terms.html": {
+    "mtime": 1785790724.622828,
+    "ast_hash": "b30ad309a035ce324e19a4265b985c0f",
+    "semantic_hash": ""
+  },
+  "pages/treatments.html": {
+    "mtime": 1785790724.7017047,
+    "ast_hash": "54b9d18cd1a69a7368ddc85f4cd909d8",
+    "semantic_hash": ""
+  },
+  "preview/book-success.html": {
+    "mtime": 1785744266.3312426,
+    "ast_hash": "aacda1962b1ec9000c988e0fc23612c7",
+    "semantic_hash": ""
+  },
+  "preview/book.html": {
+    "mtime": 1785744266.4232335,
+    "ast_hash": "4fa00bf061d17358bb9365182cf7bbed",
+    "semantic_hash": ""
+  },
+  "preview/clinic.html": {
+    "mtime": 1785744266.3958263,
+    "ast_hash": "dbfdafe8b3826cc32eff3a920b08b38a",
+    "semantic_hash": ""
+  },
+  "preview/contact.html": {
+    "mtime": 1785744266.3633218,
+    "ast_hash": "69c06ac5687f5d603e5ae1713ba7a620",
+    "semantic_hash": ""
+  },
+  "preview/home.html": {
+    "mtime": 1785744266.2014444,
+    "ast_hash": "dc9a15985d63af89519b9aad28845e49",
+    "semantic_hash": ""
+  },
+  "preview/privacy.html": {
+    "mtime": 1785744266.4853568,
+    "ast_hash": "6d5c24e71b67c39051d1f22c34510c2b",
+    "semantic_hash": ""
+  },
+  "preview/reviews.html": {
+    "mtime": 1785744266.4412577,
+    "ast_hash": "3b88601982b5a7f9df96c7b54a544f2a",
+    "semantic_hash": ""
+  },
+  "preview/shop.html": {
+    "mtime": 1785744266.4086983,
+    "ast_hash": "0b4ded6435a3e3acf573b92dc665e316",
+    "semantic_hash": ""
+  },
+  "preview/terms.html": {
+    "mtime": 1785744266.378321,
+    "ast_hash": "0e75f67d8fb5df03f611eaacac25b194",
+    "semantic_hash": ""
+  },
+  "preview/treatments.html": {
+    "mtime": 1785744266.461615,
+    "ast_hash": "cdb9562f8b34692450da88332a3f89e7",
+    "semantic_hash": ""
+  },
+  "production_site/404.html": {
+    "mtime": 1785789022.5362396,
+    "ast_hash": "dd371dd1f4c7bddd2366228110da7887",
+    "semantic_hash": ""
+  },
+  "production_site/GO_LIVE.md": {
+    "mtime": 1785699177.3197849,
+    "ast_hash": "1f61a4f1d997f2cd7028183f6117e959",
+    "semantic_hash": ""
+  },
+  "production_site/book-success.html": {
+    "mtime": 1785789022.5319753,
+    "ast_hash": "90db2b6e06c74917372f9ec38947536c",
+    "semantic_hash": ""
+  },
+  "production_site/book.html": {
+    "mtime": 1785789022.5395274,
+    "ast_hash": "c74e351a87297f74b7294bec4d390d14",
+    "semantic_hash": ""
+  },
+  "production_site/cart.html": {
+    "mtime": 1785789022.5412865,
+    "ast_hash": "e88937356d12ef5733ba064ac93d0e6e",
+    "semantic_hash": ""
+  },
+  "production_site/checkout.html": {
+    "mtime": 1785766153.796398,
+    "ast_hash": "0a4f88cf82dfb77fc553735d9c3aa664",
+    "semantic_hash": ""
+  },
+  "production_site/clinic.html": {
+    "mtime": 1785789022.5373476,
+    "ast_hash": "2561d476364a458421e419dc2f8df8a7",
+    "semantic_hash": ""
+  },
+  "production_site/contact.html": {
+    "mtime": 1785789022.5347824,
+    "ast_hash": "8b225443244babb13e27ed765f1f841c",
+    "semantic_hash": ""
+  },
+  "production_site/index.html": {
+    "mtime": 1785789022.5300767,
+    "ast_hash": "4be20e65e3cc9c11bca8350f3e892ac0",
+    "semantic_hash": ""
+  },
+  "production_site/login.html": {
+    "mtime": 1785744266.128238,
+    "ast_hash": "239a0da4a1c6b76767a04c31a21f9ccf",
+    "semantic_hash": ""
+  },
+  "production_site/neo/WP_DELIVERY.md": {
+    "mtime": 1785699177.3420196,
+    "ast_hash": "4776e1bfad5b4a4ae5c07b7565deab50",
+    "semantic_hash": ""
+  },
+  "production_site/neo/a11y-toolbar.html": {
+    "mtime": 1785744266.1161623,
+    "ast_hash": "d919f89a5f1cff571c56444c8289cbae",
+    "semantic_hash": ""
+  },
+  "production_site/neo/components/social-media-card.html": {
+    "mtime": 1785744266.1150901,
+    "ast_hash": "ef2d11ec98cbee1806af09d40e038356",
+    "semantic_hash": ""
+  },
+  "production_site/neo/components/social-media-card.md": {
+    "mtime": 1785699177.3561893,
+    "ast_hash": "055159195dc98a89501fc8b4950fae86",
+    "semantic_hash": ""
+  },
+  "production_site/neo/palette-catalog.md": {
+    "mtime": 1785699177.3593874,
+    "ast_hash": "39d23f11ac041410b3c649b91a42a795",
+    "semantic_hash": ""
+  },
+  "production_site/privacy-policy.html": {
+    "mtime": 1785789022.5339441,
+    "ast_hash": "2a002b817a3ef5fbf3b72f935aa53e7f",
+    "semantic_hash": ""
+  },
+  "production_site/product.html": {
+    "mtime": 1785789022.530988,
+    "ast_hash": "288f16c0cb2836f410eed717840f3405",
+    "semantic_hash": ""
+  },
+  "production_site/register.html": {
+    "mtime": 1785744266.1255443,
+    "ast_hash": "3a311a09f58e327c8148d0ffe0b722a9",
+    "semantic_hash": ""
+  },
+  "production_site/shop.html": {
+    "mtime": 1785789022.5383298,
+    "ast_hash": "f1e2e30a50f3563210ea5a27de4eafcb",
+    "semantic_hash": ""
+  },
+  "production_site/terms.html": {
+    "mtime": 1785789022.5354095,
+    "ast_hash": "8409ef4314c02f9a1609a1461251110f",
+    "semantic_hash": ""
+  },
+  "production_site/testimonials.html": {
+    "mtime": 1785789022.5329845,
+    "ast_hash": "a183aa8929bcbbcec8ba50f9d3d35c0c",
+    "semantic_hash": ""
+  },
+  "production_site/treatments.html": {
+    "mtime": 1785789022.5426872,
+    "ast_hash": "ecd259d43ca49844513e2746e322f829",
+    "semantic_hash": ""
+  },
+  "scratch_checkout.md": {
+    "mtime": 1785699178.253292,
+    "ast_hash": "4cdbc75589cf867185468cdf63a5bb6d",
+    "semantic_hash": ""
+  },
+  "scratch_guidance.md": {
+    "mtime": 1785699178.2538834,
+    "ast_hash": "e1daa4c06568e833be044c08a461f8f9",
+    "semantic_hash": ""
+  },
+  "user_inputs.txt": {
+    "mtime": 1785699177.392812,
+    "ast_hash": "a097cdd3a3affd2a73b7f382083595bf",
+    "semantic_hash": ""
+  },
+  "wp-conversion-prompt.md": {
+    "mtime": 1785699177.3934615,
+    "ast_hash": "838a499fc2b1b935528646015ca7be5e",
+    "semantic_hash": ""
+  },
+  "claude-seo/assets/cover.svg": {
+    "mtime": 1785207761.24151,
+    "ast_hash": "116d8c2fbb2dffd6676d03212a1de91b",
+    "semantic_hash": ""
+  },
+  "claude-seo/assets/framework.svg": {
+    "mtime": 1785207761.2420015,
+    "ast_hash": "aa2cd939d3314aff149afce291499ddc",
+    "semantic_hash": ""
+  },
+  "claude-seo/assets/growth-3-months.png": {
+    "mtime": 1785207761.2429802,
+    "ast_hash": "32f66b6916819100bf8608141758285d",
+    "semantic_hash": ""
+  },
+  "claude-seo/assets/signal-flow.svg": {
+    "mtime": 1785207761.2438607,
+    "ast_hash": "c59ed41dfc35ad7835566a574cbaaee5",
+    "semantic_hash": ""
+  },
+  "claude-seo/assets/sub-skills.svg": {
+    "mtime": 1785207761.2441478,
+    "ast_hash": "b5d4c9f81e96ef4ed04fca382a78fb52",
+    "semantic_hash": ""
+  },
+  "claude-seo/screenshots/seo-audit-demo.gif": {
+    "mtime": 1785207761.3130233,
+    "ast_hash": "4ac90acf9e800cc4d0b1d54652b51cbe",
+    "semantic_hash": ""
+  },
+  "claude-seo/screenshots/seo-command-demo.gif": {
+    "mtime": 1785207761.3466814,
+    "ast_hash": "d26ef1379f6482b8443753267c81ac38",
+    "semantic_hash": ""
+  },
+  "logo/favicon (1).png": {
+    "mtime": 1785699177.2517712,
+    "ast_hash": "3b996e09419c8621aa2316cb1a4d4b2b",
+    "semantic_hash": ""
+  },
+  "logo/logo1.png": {
+    "mtime": 1785699177.252763,
+    "ast_hash": "9c6f119326bff465c524f80de076d6b0",
+    "semantic_hash": ""
+  },
+  "production_site/images/clinic-treatment.jpg": {
+    "mtime": 1785699177.325291,
+    "ast_hash": "431309576364368a6d60747fd2148838",
+    "semantic_hash": ""
+  },
+  "production_site/images/favicon.png": {
+    "mtime": 1785699177.3263786,
+    "ast_hash": "3b996e09419c8621aa2316cb1a4d4b2b",
+    "semantic_hash": ""
+  },
+  "production_site/images/gallery-facial.jpg": {
+    "mtime": 1785699177.326843,
+    "ast_hash": "772ab5c6c2a63123af5f39ed07c23ab8",
+    "semantic_hash": ""
+  },
+  "production_site/images/gallery-massage.jpg": {
+    "mtime": 1785699177.3275633,
+    "ast_hash": "3662d0146029a487409b55d4b7833725",
+    "semantic_hash": ""
+  },
+  "production_site/images/gallery-nails.jpg": {
+    "mtime": 1785699177.3282027,
+    "ast_hash": "5dba8ba501cb8a6e9882de1ac5f51bcf",
+    "semantic_hash": ""
+  },
+  "production_site/images/gallery-wax-laser.jpg": {
+    "mtime": 1785699177.3286994,
+    "ast_hash": "8530b2401f46acd4642377867754c728",
+    "semantic_hash": ""
+  },
+  "production_site/images/hero-1.jpg": {
+    "mtime": 1785699177.3292966,
+    "ast_hash": "0c98e81683b1fe722238eb1a5dde479e",
+    "semantic_hash": ""
+  },
+  "production_site/images/hero-1A.jpg": {
+    "mtime": 1785699177.330989,
+    "ast_hash": "de2ee5ae0c338e0b80eba2f7ed029176",
+    "semantic_hash": ""
+  },
+  "production_site/images/hero-2.jpg": {
+    "mtime": 1785699177.3317003,
+    "ast_hash": "a411ff030b01085f9dafaa6a8f014ebc",
+    "semantic_hash": ""
+  },
+  "production_site/images/hero-3.jpg": {
+    "mtime": 1785699177.332325,
+    "ast_hash": "5e039e1758a236983384cc22701174e5",
+    "semantic_hash": ""
+  },
+  "production_site/images/hero-4.jpg": {
+    "mtime": 1785699177.332948,
+    "ast_hash": "c6d3c287b66a9813caa2c71bb798b0f1",
+    "semantic_hash": ""
+  },
+  "production_site/images/hero-5.jpg": {
+    "mtime": 1785699177.3335679,
+    "ast_hash": "58a3bafe5027aec51b187c1bf5fd8f78",
+    "semantic_hash": ""
+  },
+  "production_site/images/hero-wide.jpg": {
+    "mtime": 1785699177.3345785,
+    "ast_hash": "64b0b0dfccc2b813173d12466c6056ea",
+    "semantic_hash": ""
+  },
+  "production_site/images/hero.jpg": {
+    "mtime": 1785699177.3358662,
+    "ast_hash": "a0758c954a761178613f52ebbbf15812",
+    "semantic_hash": ""
+  },
+  "production_site/images/logo1.png": {
+    "mtime": 1785699177.3370152,
+    "ast_hash": "9c6f119326bff465c524f80de076d6b0",
+    "semantic_hash": ""
+  },
+  "production_site/images/nails-manicure.jpg": {
+    "mtime": 1785699177.3376477,
+    "ast_hash": "669a13b9e0832b0c3a507793356ecec8",
+    "semantic_hash": ""
+  },
+  "production_site/images/savviweb-logo.png": {
+    "mtime": 1785699177.3383322,
+    "ast_hash": "4d105557ef93f54b813777cba2d131f9",
+    "semantic_hash": ""
+  },
+  "production_site/images/social/facebook.svg": {
+    "mtime": 1785699177.3388946,
+    "ast_hash": "065493d7b21aad9bc03b383c93b105db",
+    "semantic_hash": ""
+  },
+  "production_site/images/social/google.svg": {
+    "mtime": 1785699177.3392067,
+    "ast_hash": "5a5f6f8f895c5bed6eeff07eed706bc8",
+    "semantic_hash": ""
+  },
+  "production_site/images/social/instagram.svg": {
+    "mtime": 1785699177.3394482,
+    "ast_hash": "ab61e74556f04f930eb91ff78c66a91c",
+    "semantic_hash": ""
+  },
+  "production_site/images/social/linkedin.svg": {
+    "mtime": 1785699177.339677,
+    "ast_hash": "c1ed6202161a9d8fd06ee8b07249cf0e",
+    "semantic_hash": ""
+  },
+  "production_site/images/social/tiktok.svg": {
+    "mtime": 1785699177.3399036,
+    "ast_hash": "2b2c973cfd97e899dc702c8d6a0845a3",
+    "semantic_hash": ""
+  },
+  "production_site/images/social/youtube.svg": {
+    "mtime": 1785699177.3401084,
+    "ast_hash": "d538d97a29ae95f65632eecbe939c25a",
+    "semantic_hash": ""
+  },
+  "production_site/neo/assets/palettes/crimson.png": {
+    "mtime": 1785699177.345424,
+    "ast_hash": "8f8a8ff7afd37e25c3ea17862f7b1c84",
+    "semantic_hash": ""
+  },
+  "production_site/neo/assets/palettes/luca-davincci.png": {
+    "mtime": 1785699177.3458488,
+    "ast_hash": "88959d6e7fedb5a461281be1aa264669",
+    "semantic_hash": ""
+  },
+  "production_site/neo/assets/palettes/moon.png": {
+    "mtime": 1785699177.3464503,
+    "ast_hash": "ea4f73eabf1ec5dfc007ecb70954d699",
+    "semantic_hash": ""
+  },
+  "production_site/neo/assets/palettes/ocean-depth.png": {
+    "mtime": 1785699177.3478196,
+    "ast_hash": "9ff674fc7f491307fb52b5e7a50b1e1f",
+    "semantic_hash": ""
+  },
+  "production_site/neo/assets/palettes/sapphire.png": {
+    "mtime": 1785699177.3492453,
+    "ast_hash": "9f214c9a139f6ffc16c894af1535b7f1",
+    "semantic_hash": ""
+  },
+  "production_site/neo/assets/social/facebook.svg": {
+    "mtime": 1785699177.3503273,
+    "ast_hash": "065493d7b21aad9bc03b383c93b105db",
+    "semantic_hash": ""
+  },
+  "production_site/neo/assets/social/google.svg": {
+    "mtime": 1785699177.3506427,
+    "ast_hash": "5a5f6f8f895c5bed6eeff07eed706bc8",
+    "semantic_hash": ""
+  },
+  "production_site/neo/assets/social/instagram.svg": {
+    "mtime": 1785699177.350879,
+    "ast_hash": "ab61e74556f04f930eb91ff78c66a91c",
+    "semantic_hash": ""
+  },
+  "production_site/neo/assets/social/tiktok.svg": {
+    "mtime": 1785699177.3511152,
+    "ast_hash": "2b2c973cfd97e899dc702c8d6a0845a3",
+    "semantic_hash": ""
+  },
+  "production_site/neo/assets/social/youtube.svg": {
+    "mtime": 1785699177.351341,
+    "ast_hash": "d538d97a29ae95f65632eecbe939c25a",
+    "semantic_hash": ""
+  },
+  "screenshot_mobile.png": {
+    "mtime": 1785699177.3793447,
+    "ast_hash": "9ca616d88dc47e3c851ac342818ff3af",
+    "semantic_hash": ""
+  },
+  "screenshot_social_card.png": {
+    "mtime": 1785699177.3852885,
+    "ast_hash": "9198b082c620fba354472acd1534c18a",
+    "semantic_hash": ""
+  },
+  ".claude-flow/harness-active-policy.json": {
+    "mtime": 1785682078.3667207,
+    "ast_hash": "9011635f3a66910bb7c54cf29c079fde",
+    "semantic_hash": ""
+  },
+  ".claude/proven-config.json": {
+    "mtime": 1785682078.365714,
+    "ast_hash": "a3891078db2d38911fcd64b57f7bf9c7",
+    "semantic_hash": ""
+  },
+  "client-reviews.json": {
+    "mtime": 1785699177.1396987,
+    "ast_hash": "d7730259513e9020c32c7a7d722f2ae0",
+    "semantic_hash": ""
+  },
+  "folder-gallery.js": {
+    "mtime": 1785699177.1403444,
+    "ast_hash": "0396079e5f3c1a646ce0f1a0258f721e",
+    "semantic_hash": ""
+  },
+  "hero-scroll.js": {
+    "mtime": 1785699177.140548,
+    "ast_hash": "9a5e5caa625f79e97a23ae4d4f36bdc5",
+    "semantic_hash": ""
+  },
+  "neo/a11y-init.js": {
+    "mtime": 1785699177.171638,
+    "ast_hash": "eaf2c52bdfb5d4f74fb98dddcc9b7d6f",
+    "semantic_hash": ""
+  },
+  "neo/a11y-toolbar.js": {
+    "mtime": 1785699177.1721456,
+    "ast_hash": "26070ba29709906ba6d95dd2a851b8c9",
+    "semantic_hash": ""
+  },
+  "neo/analytics.js": {
+    "mtime": 1785699177.172684,
+    "ast_hash": "f04e142e81be03a8bd1bb45002b82e56",
+    "semantic_hash": ""
+  },
+  "neo/book-form-demo.js": {
+    "mtime": 1785699177.1822634,
+    "ast_hash": "d4214b3d8f8eb03be63b28475432aae6",
+    "semantic_hash": ""
+  },
+  "neo/cart-ui.js": {
+    "mtime": 1785744058.1957638,
+    "ast_hash": "bb12443f5b0828e8e941541f7da0a000",
+    "semantic_hash": ""
+  },
+  "neo/cookie-consent.js": {
+    "mtime": 1785699177.19033,
+    "ast_hash": "84dc0f422f105d52083bb64e86bca64d",
+    "semantic_hash": ""
+  },
+  "neo/craft-audit.sh": {
+    "mtime": 1785699177.190655,
+    "ast_hash": "9e8490caa6068b1a73a15037c5480c4d",
+    "semantic_hash": ""
+  },
+  "neo/form-validation.js": {
+    "mtime": 1785699177.1909544,
+    "ast_hash": "dc588931b71d84d3f292afa5dac50453",
+    "semantic_hash": ""
+  },
+  "neo/gallery-lightbox.js": {
+    "mtime": 1785699177.1911888,
+    "ast_hash": "fa6f9c9e9690d40ab06e19b4fe0c0d87",
+    "semantic_hash": ""
+  },
+  "neo/mobile-nav.js": {
+    "mtime": 1785699177.1920712,
+    "ast_hash": "a55018312f5e41b5a3e2a157850e9aa0",
+    "semantic_hash": ""
+  },
+  "neo/neo-wp-boot.js": {
+    "mtime": 1785699177.1932442,
+    "ast_hash": "6210258bb558fb9efd02972008e91423",
+    "semantic_hash": ""
+  },
+  "neo/palettes.json": {
+    "mtime": 1785699177.1948907,
+    "ast_hash": "9b436171bae2b5d66e8897acf6f3d8c6",
+    "semantic_hash": ""
+  },
+  "neo/savvi-booking.js": {
+    "mtime": 1785699177.1956587,
+    "ast_hash": "934c8b9c3a4381550d7e0500faeaf085",
+    "semantic_hash": ""
+  },
+  "neo/savvi-shop.js": {
+    "mtime": 1785699177.1963494,
+    "ast_hash": "a0a3f191eadfdb517b5c96e4152c2317",
+    "semantic_hash": ""
+  },
+  "neo/scroll-reveal.js": {
+    "mtime": 1785699177.1966293,
+    "ast_hash": "d3bf3889bec0234fab4d848f9a2a5525",
+    "semantic_hash": ""
+  },
+  "neo/social-media-card.js": {
+    "mtime": 1785699177.1969953,
+    "ast_hash": "f962a029ecd339489a330eb6034a80c7",
+    "semantic_hash": ""
+  },
+  "neo/social-media-card.schema.json": {
+    "mtime": 1785699177.1975756,
+    "ast_hash": "842ff6e8d08bdef9923e8ba067e33bc3",
+    "semantic_hash": ""
+  },
+  "neo/theme-init.js": {
+    "mtime": 1785699177.1980782,
+    "ast_hash": "b30095a697952bd9c8e325d6e96022e3",
+    "semantic_hash": ""
+  },
+  "neo/theme-toggle.js": {
+    "mtime": 1785699177.198403,
+    "ast_hash": "8f87a7b971bd56d9fa3d8facc06d8504",
+    "semantic_hash": ""
+  },
+  "neo/visual_qa.py": {
+    "mtime": 1785699177.2001796,
+    "ast_hash": "dfc3148de2c1147b1a202db0759c396b",
+    "semantic_hash": ""
+  },
+  "patch.py": {
+    "mtime": 1785744170.4841747,
+    "ast_hash": "0066fda0954055a845ce8955a31fd862",
+    "semantic_hash": ""
+  },
+  "price-card-glow.js": {
+    "mtime": 1785699177.2005057,
+    "ast_hash": "9c486f74ec6223ff9888d3426e6e652a",
+    "semantic_hash": ""
+  },
+  "production_site/neo/cart-ui.js": {
+    "mtime": 1785766172.354999,
+    "ast_hash": "6f95b24efb5cf471681c79c6a5f1b6c5",
+    "semantic_hash": ""
+  },
+  "production_site/update_shop.py": {
+    "mtime": 1785699178.4537685,
+    "ast_hash": "5644ff7341370a64c18a12f07ef5df40",
+    "semantic_hash": ""
+  },
+  "reviews-rotator.js": {
+    "mtime": 1785699177.2064195,
+    "ast_hash": "12164d96398f0a3a9c8653028fa79be8",
+    "semantic_hash": ""
+  },
+  "social-media-card.json": {
+    "mtime": 1785699177.2094495,
+    "ast_hash": "f60e8fa09143508fc3a84917325aabee",
+    "semantic_hash": ""
+  },
+  ".agents/AGENTS.md": {
+    "mtime": 1785699178.0291154,
+    "ast_hash": "12c5febcd6d628c89a5a1b2cfdd70dc6",
+    "semantic_hash": ""
+  },
+  "404.html": {
+    "mtime": 1785789022.5165365,
+    "ast_hash": "dd371dd1f4c7bddd2366228110da7887",
+    "semantic_hash": ""
+  },
+  "4339fe584dbf9dc0881f0f8ba2ddcaad.txt": {
+    "mtime": 1785699177.1382122,
+    "ast_hash": "1e6152b726a4c3c94839900ccc098039",
+    "semantic_hash": ""
+  },
+  "DEPLOY.md": {
+    "mtime": 1785699177.138404,
+    "ast_hash": "bcc2bc95615084eb4349b7457c3b8747",
+    "semantic_hash": ""
+  },
+  "GO_LIVE.md": {
+    "mtime": 1785699177.1385574,
+    "ast_hash": "1f61a4f1d997f2cd7028183f6117e959",
+    "semantic_hash": ""
+  },
+  "book-success.html": {
+    "mtime": 1785789022.5117192,
+    "ast_hash": "90db2b6e06c74917372f9ec38947536c",
+    "semantic_hash": ""
+  },
+  "book.html": {
+    "mtime": 1785789022.521357,
+    "ast_hash": "fe072f2823a6cc6bf1102836d5049718",
+    "semantic_hash": ""
+  },
+  "cart.html": {
+    "mtime": 1785789022.5273983,
+    "ast_hash": "e88937356d12ef5733ba064ac93d0e6e",
+    "semantic_hash": ""
+  },
+  "checkout.html": {
+    "mtime": 1785766162.7980144,
+    "ast_hash": "7461559af4f297c5e6211f9518e10093",
+    "semantic_hash": ""
+  },
+  "clinic.html": {
+    "mtime": 1785789022.5184352,
+    "ast_hash": "2561d476364a458421e419dc2f8df8a7",
+    "semantic_hash": ""
+  },
+  "contact.html": {
+    "mtime": 1785789022.514061,
+    "ast_hash": "8b225443244babb13e27ed765f1f841c",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1785789022.509272,
+    "ast_hash": "4be20e65e3cc9c11bca8350f3e892ac0",
+    "semantic_hash": ""
+  },
+  "indexnow-key.txt": {
+    "mtime": 1785699177.1559486,
+    "ast_hash": "f0d3c03931d6360be84a266ae0108d5b",
+    "semantic_hash": ""
+  },
+  "llms-full.txt": {
+    "mtime": 1785699177.1661997,
+    "ast_hash": "cbaf588935c2c2c81f86c3370f5bdbdb",
+    "semantic_hash": ""
+  },
+  "llms.txt": {
+    "mtime": 1785699177.1668322,
+    "ast_hash": "439dd0124c79234ed6201cd74aab648a",
+    "semantic_hash": ""
+  },
+  "login.html": {
+    "mtime": 1785744266.1648853,
+    "ast_hash": "239a0da4a1c6b76767a04c31a21f9ccf",
+    "semantic_hash": ""
+  },
+  "neo/WP_DELIVERY.md": {
+    "mtime": 1785699177.1713614,
+    "ast_hash": "4776e1bfad5b4a4ae5c07b7565deab50",
+    "semantic_hash": ""
+  },
+  "neo/a11y-toolbar.html": {
+    "mtime": 1785744266.1541092,
+    "ast_hash": "d919f89a5f1cff571c56444c8289cbae",
+    "semantic_hash": ""
+  },
+  "neo/components/social-media-card.html": {
+    "mtime": 1785744266.1531184,
+    "ast_hash": "ef2d11ec98cbee1806af09d40e038356",
+    "semantic_hash": ""
+  },
+  "neo/components/social-media-card.md": {
+    "mtime": 1785699177.189246,
+    "ast_hash": "055159195dc98a89501fc8b4950fae86",
+    "semantic_hash": ""
+  },
+  "neo/palette-catalog.md": {
+    "mtime": 1785699177.1941905,
+    "ast_hash": "39d23f11ac041410b3c649b91a42a795",
+    "semantic_hash": ""
+  },
+  "pages/404.html": {
+    "mtime": 1785790724.6338494,
+    "ast_hash": "bb67d71816dea2a6c516ccd330ad25a0",
+    "semantic_hash": ""
+  },
+  "pages/index.html": {
+    "mtime": 1785790724.5685835,
+    "ast_hash": "133e7fe2301b1c2e6689ae83b0d08c92",
+    "semantic_hash": ""
+  },
+  "pages/live_site.html": {
+    "mtime": 1785790724.6795037,
+    "ast_hash": "5b0f6fc6b1f91a278ffebb26017e0664",
+    "semantic_hash": ""
+  },
+  "pages/testimonials.html": {
+    "mtime": 1785790724.6017125,
+    "ast_hash": "2e30801689635462aa69843f40a3b5e0",
+    "semantic_hash": ""
+  },
+  "privacy-policy.html": {
+    "mtime": 1785789022.5134504,
+    "ast_hash": "2a002b817a3ef5fbf3b72f935aa53e7f",
+    "semantic_hash": ""
+  },
+  "product.html": {
+    "mtime": 1785789022.510452,
+    "ast_hash": "d4120a115d4e808cf60a1cd4b7bfca75",
+    "semantic_hash": ""
+  },
+  "register.html": {
+    "mtime": 1785744266.1618946,
+    "ast_hash": "3a311a09f58e327c8148d0ffe0b722a9",
+    "semantic_hash": ""
+  },
+  "robots.txt": {
+    "mtime": 1785699177.2066526,
+    "ast_hash": "892306f055a2cda3e694dc6974ccc50a",
+    "semantic_hash": ""
+  },
+  "shop.html": {
+    "mtime": 1785789022.5198617,
+    "ast_hash": "9bfde8c31a62546396ab722d2456727b",
+    "semantic_hash": ""
+  },
+  "terms.html": {
+    "mtime": 1785789022.5147967,
+    "ast_hash": "8409ef4314c02f9a1609a1461251110f",
+    "semantic_hash": ""
+  },
+  "testimonials.html": {
+    "mtime": 1785789022.5128484,
+    "ast_hash": "3ee4aee3eb5f432e25bba6fcaec0fa41",
+    "semantic_hash": ""
+  },
+  "treatments.html": {
+    "mtime": 1785789022.5287979,
+    "ast_hash": "ecd259d43ca49844513e2746e322f829",
+    "semantic_hash": ""
+  },
+  "images/clinic-treatment.jpg": {
+    "mtime": 1785699177.141179,
+    "ast_hash": "431309576364368a6d60747fd2148838",
+    "semantic_hash": ""
+  },
+  "images/favicon.png": {
+    "mtime": 1785699177.1417537,
+    "ast_hash": "3b996e09419c8621aa2316cb1a4d4b2b",
+    "semantic_hash": ""
+  },
+  "images/gallery-facial.jpg": {
+    "mtime": 1785699177.142011,
+    "ast_hash": "772ab5c6c2a63123af5f39ed07c23ab8",
+    "semantic_hash": ""
+  },
+  "images/gallery-massage.jpg": {
+    "mtime": 1785699177.1424308,
+    "ast_hash": "3662d0146029a487409b55d4b7833725",
+    "semantic_hash": ""
+  },
+  "images/gallery-nails.jpg": {
+    "mtime": 1785699177.1429448,
+    "ast_hash": "5dba8ba501cb8a6e9882de1ac5f51bcf",
+    "semantic_hash": ""
+  },
+  "images/gallery-wax-laser.jpg": {
+    "mtime": 1785699177.1436179,
+    "ast_hash": "8530b2401f46acd4642377867754c728",
+    "semantic_hash": ""
+  },
+  "images/hero-1.jpg": {
+    "mtime": 1785699177.1443515,
+    "ast_hash": "0c98e81683b1fe722238eb1a5dde479e",
+    "semantic_hash": ""
+  },
+  "images/hero-1A.jpg": {
+    "mtime": 1785699177.145921,
+    "ast_hash": "de2ee5ae0c338e0b80eba2f7ed029176",
+    "semantic_hash": ""
+  },
+  "images/hero-2.jpg": {
+    "mtime": 1785699177.1464891,
+    "ast_hash": "a411ff030b01085f9dafaa6a8f014ebc",
+    "semantic_hash": ""
+  },
+  "images/hero-3.jpg": {
+    "mtime": 1785699177.1471457,
+    "ast_hash": "5e039e1758a236983384cc22701174e5",
+    "semantic_hash": ""
+  },
+  "images/hero-4.jpg": {
+    "mtime": 1785699177.147843,
+    "ast_hash": "c6d3c287b66a9813caa2c71bb798b0f1",
+    "semantic_hash": ""
+  },
+  "images/hero-5.jpg": {
+    "mtime": 1785699177.148372,
+    "ast_hash": "58a3bafe5027aec51b187c1bf5fd8f78",
+    "semantic_hash": ""
+  },
+  "images/hero-wide.jpg": {
+    "mtime": 1785699177.149747,
+    "ast_hash": "64b0b0dfccc2b813173d12466c6056ea",
+    "semantic_hash": ""
+  },
+  "images/hero.jpg": {
+    "mtime": 1785699177.1505628,
+    "ast_hash": "a0758c954a761178613f52ebbbf15812",
+    "semantic_hash": ""
+  },
+  "images/logo1.png": {
+    "mtime": 1785699177.1520088,
+    "ast_hash": "9c6f119326bff465c524f80de076d6b0",
+    "semantic_hash": ""
+  },
+  "images/nails-manicure.jpg": {
+    "mtime": 1785699177.1527312,
+    "ast_hash": "669a13b9e0832b0c3a507793356ecec8",
+    "semantic_hash": ""
+  },
+  "images/savviweb-logo.png": {
+    "mtime": 1785699177.1537192,
+    "ast_hash": "4d105557ef93f54b813777cba2d131f9",
+    "semantic_hash": ""
+  },
+  "images/social/facebook.svg": {
+    "mtime": 1785699177.1541598,
+    "ast_hash": "065493d7b21aad9bc03b383c93b105db",
+    "semantic_hash": ""
+  },
+  "images/social/google.svg": {
+    "mtime": 1785699177.1544123,
+    "ast_hash": "5a5f6f8f895c5bed6eeff07eed706bc8",
+    "semantic_hash": ""
+  },
+  "images/social/instagram.svg": {
+    "mtime": 1785699177.1546593,
+    "ast_hash": "ab61e74556f04f930eb91ff78c66a91c",
+    "semantic_hash": ""
+  },
+  "images/social/linkedin.svg": {
+    "mtime": 1785699177.1548815,
+    "ast_hash": "c1ed6202161a9d8fd06ee8b07249cf0e",
+    "semantic_hash": ""
+  },
+  "images/social/tiktok.svg": {
+    "mtime": 1785699177.1550965,
+    "ast_hash": "2b2c973cfd97e899dc702c8d6a0845a3",
+    "semantic_hash": ""
+  },
+  "images/social/youtube.svg": {
+    "mtime": 1785699177.1553078,
+    "ast_hash": "d538d97a29ae95f65632eecbe939c25a",
+    "semantic_hash": ""
+  },
+  "neo/assets/palettes/crimson.png": {
+    "mtime": 1785699177.175315,
+    "ast_hash": "8f8a8ff7afd37e25c3ea17862f7b1c84",
+    "semantic_hash": ""
+  },
+  "neo/assets/palettes/luca-davincci.png": {
+    "mtime": 1785699177.1759067,
+    "ast_hash": "88959d6e7fedb5a461281be1aa264669",
+    "semantic_hash": ""
+  },
+  "neo/assets/palettes/moon.png": {
+    "mtime": 1785699177.1765268,
+    "ast_hash": "ea4f73eabf1ec5dfc007ecb70954d699",
+    "semantic_hash": ""
+  },
+  "neo/assets/palettes/ocean-depth.png": {
+    "mtime": 1785699177.1791615,
+    "ast_hash": "9ff674fc7f491307fb52b5e7a50b1e1f",
+    "semantic_hash": ""
+  },
+  "neo/assets/palettes/sapphire.png": {
+    "mtime": 1785699177.180331,
+    "ast_hash": "9f214c9a139f6ffc16c894af1535b7f1",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/facebook.svg": {
+    "mtime": 1785699177.1808887,
+    "ast_hash": "065493d7b21aad9bc03b383c93b105db",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/google.svg": {
+    "mtime": 1785699177.1811388,
+    "ast_hash": "5a5f6f8f895c5bed6eeff07eed706bc8",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/instagram.svg": {
+    "mtime": 1785699177.1813889,
+    "ast_hash": "ab61e74556f04f930eb91ff78c66a91c",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/tiktok.svg": {
+    "mtime": 1785699177.181757,
+    "ast_hash": "2b2c973cfd97e899dc702c8d6a0845a3",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/youtube.svg": {
+    "mtime": 1785699177.1820042,
+    "ast_hash": "d538d97a29ae95f65632eecbe939c25a",
+    "semantic_hash": ""
+  },
+  ".claude-flow/policy/state.json": {
+    "mtime": 1785776375.9285815,
+    "ast_hash": "e5f9cb2fd595e8d3290abbe08d12cb8f",
+    "semantic_hash": ""
+  },
+  "generate_updater.py": {
+    "mtime": 1785789513.400422,
+    "ast_hash": "f4d0572b7339c0b6ae28e519be42b4ba",
+    "semantic_hash": ""
+  },
+  "update_wp_pages.php": {
+    "mtime": 1785790727.0581093,
+    "ast_hash": "afd99fdf6be082c6f1b3ecdcafc2bed4",
+    "semantic_hash": ""
+  },
+  "fix_links.py": {
+    "mtime": 1785790719.883938,
+    "ast_hash": "cd21cbe8f4319701dea126966a2e6497",
+    "semantic_hash": ""
+  },
+  "build_theme.py": {
+    "mtime": 1785791070.3712435,
+    "ast_hash": "66452a6b03092f26227c6ded0b404bc4",
+    "semantic_hash": ""
+  },
+  "radiance-theme/404.php": {
+    "mtime": 1785791076.1630595,
+    "ast_hash": "fa214998f21ad5ff15d821d1efaecb5e",
+    "semantic_hash": ""
+  },
+  "radiance-theme/footer.php": {
+    "mtime": 1785791076.1431782,
+    "ast_hash": "0b463b261baca165c14a7f733b126b11",
+    "semantic_hash": ""
+  },
+  "radiance-theme/front-page.php": {
+    "mtime": 1785791076.1486692,
+    "ast_hash": "4abbd52cfced00553f850a17cacbc23a",
+    "semantic_hash": ""
+  },
+  "radiance-theme/functions.php": {
+    "mtime": 1785791076.143342,
+    "ast_hash": "273237b2936348fd96a40d4a7462f04c",
+    "semantic_hash": ""
+  },
+  "radiance-theme/header.php": {
+    "mtime": 1785791076.1429536,
+    "ast_hash": "f2b04fe101f1d893268106291bca5df9",
+    "semantic_hash": ""
+  },
+  "radiance-theme/index.php": {
+    "mtime": 1785791076.1827855,
+    "ast_hash": "f7261c07dd1136ff19fce47e1f7fc121",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page-book-success.php": {
+    "mtime": 1785791076.15347,
+    "ast_hash": "e21225913cb8de11ecf277edcd2d112c",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page-book.php": {
+    "mtime": 1785791076.1729126,
+    "ast_hash": "addb96eb4fb457eae7515cb23444523b",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page-cart.php": {
+    "mtime": 1785791076.1764424,
+    "ast_hash": "a0d3be8286e968e01977c1cc47004874",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page-checkout.php": {
+    "mtime": 1785791076.174097,
+    "ast_hash": "4a35702c169a22a0bf25c60f810c3e2a",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page-clinic.php": {
+    "mtime": 1785791076.1693318,
+    "ast_hash": "edfe139ef8c481f6f6b1f044fde5f7f0",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page-contact.php": {
+    "mtime": 1785791076.158655,
+    "ast_hash": "c1b33a39eea5a70a99634798f65d102a",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page-login.php": {
+    "mtime": 1785791076.1673286,
+    "ast_hash": "3a3ae6e3a72baa08c0b523def8256813",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page-privacy-policy.php": {
+    "mtime": 1785791076.157077,
+    "ast_hash": "46f9edf74dd17c4ccd5f6c78ed2b2688",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page-product.php": {
+    "mtime": 1785791076.1517024,
+    "ast_hash": "57eca2a4a311b66c764d83e8d49242c1",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page-register.php": {
+    "mtime": 1785791076.1614113,
+    "ast_hash": "e48356c9afdeccb9e65f33d13d78a4b7",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page-reviews.php": {
+    "mtime": 1785791076.1806185,
+    "ast_hash": "cb0ddd3bbe42881b1b9a49e002ca4582",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page-shop.php": {
+    "mtime": 1785791076.1713898,
+    "ast_hash": "4119d4d26f952d755db822d310c7f14f",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page-terms.php": {
+    "mtime": 1785791076.1600628,
+    "ast_hash": "acfc56b79711e59a72015aa94abd4dd1",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page-testimonials.php": {
+    "mtime": 1785791076.1549966,
+    "ast_hash": "a3b98efdb76eea91a9aa86f77aba34b4",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page-treatments.php": {
+    "mtime": 1785791076.1822426,
+    "ast_hash": "57924e2195c87e367abe029283516e4a",
+    "semantic_hash": ""
+  },
+  "radiance-theme/page.php": {
+    "mtime": 1785791076.1829915,
+    "ast_hash": "b918c3df9ea1a39256ec013399626c80",
+    "semantic_hash": ""
+  }
+}
