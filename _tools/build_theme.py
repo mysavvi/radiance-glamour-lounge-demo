@@ -22,7 +22,7 @@ Text Domain: radiance-theme
 
 """
 try:
-    with open('preview/home.html', 'r') as f:
+    with open('pages/home.html', 'r') as f:
         content = f.read()
         start = content.find('<style>')
         end = content.find('</style>')
