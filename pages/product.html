@@ -9577,18 +9577,19 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
   <!-- Elegant Segmented Progress Indicators -->
   <div style="position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; z-index: 15; display: flex; gap: 0.5rem; pointer-events: none;">
     <div onclick="setGalleryImage(0)" style="flex: 1; height: 3px; border-radius: 4px; background: color-mix(in srgb, var(--neo-text-primary) 15%, transparent); overflow: hidden; cursor: pointer; pointer-events: auto;">
-      <div class="gallery-progress" style="width: 100%; height: 100%; background: var(--neo-accent); transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+      <div class="gallery-progress" style="width: 0%; height: 100%; background: var(--neo-accent);"></div>
     </div>
     <div onclick="setGalleryImage(1)" style="flex: 1; height: 3px; border-radius: 4px; background: color-mix(in srgb, var(--neo-text-primary) 15%, transparent); overflow: hidden; cursor: pointer; pointer-events: auto;">
-      <div class="gallery-progress" style="width: 0%; height: 100%; background: var(--neo-accent); transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+      <div class="gallery-progress" style="width: 0%; height: 100%; background: var(--neo-accent);"></div>
     </div>
     <div onclick="setGalleryImage(2)" style="flex: 1; height: 3px; border-radius: 4px; background: color-mix(in srgb, var(--neo-text-primary) 15%, transparent); overflow: hidden; cursor: pointer; pointer-events: auto;">
-      <div class="gallery-progress" style="width: 0%; height: 100%; background: var(--neo-accent); transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+      <div class="gallery-progress" style="width: 0%; height: 100%; background: var(--neo-accent);"></div>
     </div>
   </div>
 </div>
 
 <script>
+  const AUTOPLAY_MS = 4000;
   let currentImg = 0;
   let galleryInterval;
 
@@ -9597,6 +9598,7 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
     const bars = document.querySelectorAll('.gallery-progress');
     if (!imgs.length) return;
     
+    // Update Images
     imgs.forEach((img, index) => {
       if (index === currentImg) {
         img.style.opacity = '1';
@@ -9607,9 +9609,29 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
       }
     });
     
+    // Update Progress Bars
     bars.forEach((bar, index) => {
-      bar.style.width = index <= currentImg ? '100%' : '0%';
+      // Reset transition instantly
+      bar.style.transition = 'none';
+      
+      if (index < currentImg) {
+        bar.style.width = '100%';
+      } else if (index > currentImg) {
+        bar.style.width = '0%';
+      } else {
+        // Active bar starts at 0%
+        bar.style.width = '0%';
+      }
     });
+    
+    // Force browser reflow to apply the 0% width without animation
+    void document.body.offsetWidth;
+    
+    // Start continuous animation for active bar
+    if (bars[currentImg]) {
+      bars[currentImg].style.transition = `width ${AUTOPLAY_MS}ms linear`;
+      bars[currentImg].style.width = '100%';
+    }
   }
 
   function changeGalleryImage(dir) {
@@ -9631,10 +9653,11 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
     clearInterval(galleryInterval);
     galleryInterval = setInterval(() => {
       changeGalleryImage(1);
-    }, 4000); // Auto-advance every 4 seconds
+    }, AUTOPLAY_MS);
   }
 
-  // Start auto-play
+  // Initialize gallery on load
+  updateGalleryVisuals();
   resetGalleryInterval();
 </script>
 <!-- Product Details -->
