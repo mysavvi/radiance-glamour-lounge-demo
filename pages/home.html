@@ -10561,20 +10561,20 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
 <div class="rb-hero-scroll__sticky">
 <div aria-hidden="true" class="rb-hero-scroll__bg">
 <div aria-label="Salon highlights" aria-roledescription="carousel" class="rb-hero-scroll__frames" role="group">
-<figure class="rb-hero-scroll__frame is-active">
-<img alt="Styling stations at Radiance Glamour Lounge, Merseyway, Stockport" decoding="async" fetchpriority="high" height="599" src="https://radianceglamourlounge.com/wp-content/uploads/2026/07/hero-1-1.jpg" width="1024"/>
+<figure class="rb-hero-scroll__frame is-active" style="transition: opacity 1.5s ease-in-out; opacity: 1;">
+<img alt="Styling stations at Radiance Glamour Lounge, Merseyway, Stockport" decoding="async" fetchpriority="high" src="/images/hero-1.jpg" style="width: 100%; height: 100%; object-fit: cover;"/>
 </figure>
-<figure aria-hidden="true" class="rb-hero-scroll__frame">
-<img alt="Emerald lounge seating and blossom tree at Radiance Glamour Lounge" decoding="async" height="640" src="https://radianceglamourlounge.com/wp-content/uploads/2026/07/hero-2-1.jpg" width="1024"/>
+<figure aria-hidden="true" class="rb-hero-scroll__frame" style="transition: opacity 1.5s ease-in-out; opacity: 0;">
+<img alt="Emerald lounge seating and blossom tree at Radiance Glamour Lounge" decoding="async" src="/images/hero-2.jpg" style="width: 100%; height: 100%; object-fit: cover;"/>
 </figure>
-<figure aria-hidden="true" class="rb-hero-scroll__frame">
-<img alt="Hair washing stations at Radiance Glamour Lounge, Stockport" decoding="async" height="640" src="https://radianceglamourlounge.com/wp-content/uploads/2026/07/hero-3-1.jpg" width="1024"/>
+<figure aria-hidden="true" class="rb-hero-scroll__frame" style="transition: opacity 1.5s ease-in-out; opacity: 0;">
+<img alt="Hair washing stations at Radiance Glamour Lounge, Stockport" decoding="async" src="/images/hero-3.jpg" style="width: 100%; height: 100%; object-fit: cover;"/>
 </figure>
-<figure aria-hidden="true" class="rb-hero-scroll__frame">
-<img alt="Reception and floral feature wall at Radiance Glamour Lounge" decoding="async" height="640" src="https://radianceglamourlounge.com/wp-content/uploads/2026/07/hero-4-1.jpg" width="1024"/>
+<figure aria-hidden="true" class="rb-hero-scroll__frame" style="transition: opacity 1.5s ease-in-out; opacity: 0;">
+<img alt="Reception and floral feature wall at Radiance Glamour Lounge" decoding="async" src="/images/hero-4.jpg" style="width: 100%; height: 100%; object-fit: cover;"/>
 </figure>
-<figure aria-hidden="true" class="rb-hero-scroll__frame">
-<img alt="Aesthetic treatment room at Radiance Glamour Lounge" decoding="async" height="480" src="https://radianceglamourlounge.com/wp-content/uploads/2026/07/hero-5-1.jpg" width="720"/>
+<figure aria-hidden="true" class="rb-hero-scroll__frame" style="transition: opacity 1.5s ease-in-out; opacity: 0;">
+<img alt="Aesthetic treatment room at Radiance Glamour Lounge" decoding="async" src="/images/hero-5.jpg" style="width: 100%; height: 100%; object-fit: cover;"/>
 </figure>
 </div>
 <div class="rb-hero-scroll__scrim"></div>
@@ -10593,16 +10593,84 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
 </div>
 </div>
 <div class="rb-hero-scroll__chrome">
-<div aria-hidden="true" class="rb-hero-scroll__dots">
-<span class="rb-hero-scroll__dot is-active"></span>
-<span class="rb-hero-scroll__dot"></span>
-<span class="rb-hero-scroll__dot"></span>
-<span class="rb-hero-scroll__dot"></span>
-<span class="rb-hero-scroll__dot"></span>
+<div aria-hidden="true" class="rb-hero-scroll__dots" style="display: flex; gap: 8px;">
+<span class="rb-hero-scroll__dot is-active" style="width: 24px; height: 4px; border-radius: 4px; background: var(--neo-accent); transition: all 0.3s ease;"></span>
+<span class="rb-hero-scroll__dot" style="width: 8px; height: 4px; border-radius: 4px; background: var(--neo-border-subtle); transition: all 0.3s ease;"></span>
+<span class="rb-hero-scroll__dot" style="width: 8px; height: 4px; border-radius: 4px; background: var(--neo-border-subtle); transition: all 0.3s ease;"></span>
+<span class="rb-hero-scroll__dot" style="width: 8px; height: 4px; border-radius: 4px; background: var(--neo-border-subtle); transition: all 0.3s ease;"></span>
+<span class="rb-hero-scroll__dot" style="width: 8px; height: 4px; border-radius: 4px; background: var(--neo-border-subtle); transition: all 0.3s ease;"></span>
 </div>
 </div>
 </div>
 </div>
+
+<script>
+  (function() {
+    let heroCurrentIndex = 0;
+    const heroFrames = document.querySelectorAll('.rb-hero-scroll__frame');
+    const heroDots = document.querySelectorAll('.rb-hero-scroll__dot');
+    let heroInterval = null;
+
+    function setHeroImage(index) {
+      // Fade out current
+      heroFrames[heroCurrentIndex].style.opacity = '0';
+      heroDots[heroCurrentIndex].style.width = '8px';
+      heroDots[heroCurrentIndex].style.background = 'var(--neo-border-subtle)';
+      
+      // Update index
+      heroCurrentIndex = index;
+      
+      // Fade in next
+      heroFrames[heroCurrentIndex].style.opacity = '1';
+      heroDots[heroCurrentIndex].style.width = '24px';
+      heroDots[heroCurrentIndex].style.background = 'var(--neo-accent)';
+    }
+
+    function changeHeroImage(direction) {
+      let newIndex = (heroCurrentIndex + direction + heroFrames.length) % heroFrames.length;
+      setHeroImage(newIndex);
+      resetHeroAutoplay();
+    }
+
+    function resetHeroAutoplay() {
+      if (heroInterval) clearInterval(heroInterval);
+      if (heroFrames.length > 1) {
+        heroInterval = setInterval(() => {
+          changeHeroImage(1);
+        }, 5000);
+      }
+    }
+
+    if (heroFrames.length > 1) {
+      resetHeroAutoplay();
+      
+      // Add click events to the dots
+      heroDots.forEach((dot, index) => {
+        dot.style.cursor = 'pointer';
+        dot.addEventListener('click', () => {
+          setHeroImage(index);
+          resetHeroAutoplay();
+        });
+      });
+
+      // Add click events to the frames (left/right halves)
+      const framesContainer = document.querySelector('.rb-hero-scroll__frames');
+      if (framesContainer) {
+        framesContainer.style.cursor = 'pointer';
+        framesContainer.addEventListener('click', (e) => {
+          const rect = framesContainer.getBoundingClientRect();
+          const clickX = e.clientX - rect.left;
+          if (clickX < rect.width / 2) {
+            changeHeroImage(-1);
+          } else {
+            changeHeroImage(1);
+          }
+        });
+      }
+    }
+  })();
+</script>
+
 </section>
 <section class="rb-section rb-about" id="about">
 <div class="neo-container">
@@ -10926,13 +10994,13 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
 <div class="neo-social-card rb-social-live" data-neo-reveal="">
 <div class="neo-social-card__screen rb-social-live__screen">
 <div class="neo-social-card__media rb-social-live__media">
-<img alt="" class="neo-social-card__bg rb-social-live__bg" data-neo-social-img="background" decoding="async" height="1196" loading="lazy" src="https://radianceglamourlounge.com/wp-content/uploads/2026/07/hero-2-1.jpg" width="720"/>
+<img alt="" class="neo-social-card__bg rb-social-live__bg" data-neo-social-img="background" decoding="async" height="1196" loading="lazy" src="/images/media.jpg" width="720"/>
 </div>
 <div aria-hidden="true" class="neo-social-card__scrim rb-social-live__scrim"></div>
 <div aria-hidden="true" class="neo-social-card__vignette rb-social-live__vignette"></div>
 <header class="neo-social-card__host rb-social-live__host">
 <a class="neo-social-card__host-link rb-social-live__host-link" data-neo-social-link="tiktok" href="#" rel="noopener noreferrer" target="_blank">
-<img alt="" class="neo-social-card__host-avatar rb-social-live__host-avatar" data-neo-social-img="avatar-host" decoding="async" height="80" loading="lazy" src="https://radianceglamourlounge.com/wp-content/uploads/2026/07/hero-2-1.jpg" width="80"/>
+<img alt="" class="neo-social-card__host-avatar rb-social-live__host-avatar" data-neo-social-img="avatar-host" decoding="async" height="80" loading="lazy" src="/images/media.jpg" width="80"/>
 <span class="neo-social-card__host-body rb-social-live__host-body">
 <span class="neo-social-card__host-row rb-social-live__host-row">
 <span class="neo-social-card__badge rb-social-live__badge"><span class="neo-social-card__badge-dot rb-social-live__badge-dot"></span> Live</span>
