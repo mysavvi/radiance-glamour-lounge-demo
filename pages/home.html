@@ -10561,19 +10561,19 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
 <div class="rb-hero-scroll__sticky">
 <div aria-hidden="true" class="rb-hero-scroll__bg">
 <div aria-label="Salon highlights" aria-roledescription="carousel" class="rb-hero-scroll__frames" role="group">
-<figure class="rb-hero-scroll__frame is-active" style="transition: opacity 1.5s ease-in-out; opacity: 1;">
+<figure class="rb-hero-scroll__frame is-active">
 <img alt="Styling stations at Radiance Glamour Lounge, Merseyway, Stockport" decoding="async" fetchpriority="high" src="/images/hero-1.jpg" style="width: 100%; height: 100%; object-fit: cover;"/>
 </figure>
-<figure aria-hidden="true" class="rb-hero-scroll__frame" style="transition: opacity 1.5s ease-in-out; opacity: 0;">
+<figure aria-hidden="true" class="rb-hero-scroll__frame">
 <img alt="Emerald lounge seating and blossom tree at Radiance Glamour Lounge" decoding="async" src="/images/hero-2.jpg" style="width: 100%; height: 100%; object-fit: cover;"/>
 </figure>
-<figure aria-hidden="true" class="rb-hero-scroll__frame" style="transition: opacity 1.5s ease-in-out; opacity: 0;">
+<figure aria-hidden="true" class="rb-hero-scroll__frame">
 <img alt="Hair washing stations at Radiance Glamour Lounge, Stockport" decoding="async" src="/images/hero-3.jpg" style="width: 100%; height: 100%; object-fit: cover;"/>
 </figure>
-<figure aria-hidden="true" class="rb-hero-scroll__frame" style="transition: opacity 1.5s ease-in-out; opacity: 0;">
+<figure aria-hidden="true" class="rb-hero-scroll__frame">
 <img alt="Reception and floral feature wall at Radiance Glamour Lounge" decoding="async" src="/images/hero-4.jpg" style="width: 100%; height: 100%; object-fit: cover;"/>
 </figure>
-<figure aria-hidden="true" class="rb-hero-scroll__frame" style="transition: opacity 1.5s ease-in-out; opacity: 0;">
+<figure aria-hidden="true" class="rb-hero-scroll__frame">
 <img alt="Aesthetic treatment room at Radiance Glamour Lounge" decoding="async" src="/images/hero-5.jpg" style="width: 100%; height: 100%; object-fit: cover;"/>
 </figure>
 </div>
@@ -10593,12 +10593,12 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
 </div>
 </div>
 <div class="rb-hero-scroll__chrome">
-<div aria-hidden="true" class="rb-hero-scroll__dots" style="display: flex; gap: 8px;">
-<span class="rb-hero-scroll__dot is-active" style="width: 24px; height: 4px; border-radius: 4px; background: var(--neo-accent); transition: all 0.3s ease;"></span>
-<span class="rb-hero-scroll__dot" style="width: 8px; height: 4px; border-radius: 4px; background: var(--neo-border-subtle); transition: all 0.3s ease;"></span>
-<span class="rb-hero-scroll__dot" style="width: 8px; height: 4px; border-radius: 4px; background: var(--neo-border-subtle); transition: all 0.3s ease;"></span>
-<span class="rb-hero-scroll__dot" style="width: 8px; height: 4px; border-radius: 4px; background: var(--neo-border-subtle); transition: all 0.3s ease;"></span>
-<span class="rb-hero-scroll__dot" style="width: 8px; height: 4px; border-radius: 4px; background: var(--neo-border-subtle); transition: all 0.3s ease;"></span>
+<div aria-hidden="true" class="rb-hero-scroll__dots">
+<span class="rb-hero-scroll__dot is-active"></span>
+<span class="rb-hero-scroll__dot"></span>
+<span class="rb-hero-scroll__dot"></span>
+<span class="rb-hero-scroll__dot"></span>
+<span class="rb-hero-scroll__dot"></span>
 </div>
 </div>
 </div>
@@ -10612,18 +10612,16 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
     let heroInterval = null;
 
     function setHeroImage(index) {
-      // Fade out current
-      heroFrames[heroCurrentIndex].style.opacity = '0';
-      heroDots[heroCurrentIndex].style.width = '8px';
-      heroDots[heroCurrentIndex].style.background = 'var(--neo-border-subtle)';
+      // Deactivate current
+      heroFrames[heroCurrentIndex].classList.remove('is-active');
+      heroDots[heroCurrentIndex].classList.remove('is-active');
       
       // Update index
       heroCurrentIndex = index;
       
-      // Fade in next
-      heroFrames[heroCurrentIndex].style.opacity = '1';
-      heroDots[heroCurrentIndex].style.width = '24px';
-      heroDots[heroCurrentIndex].style.background = 'var(--neo-accent)';
+      // Activate next
+      heroFrames[heroCurrentIndex].classList.add('is-active');
+      heroDots[heroCurrentIndex].classList.add('is-active');
     }
 
     function changeHeroImage(direction) {
