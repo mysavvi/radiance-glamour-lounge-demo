@@ -277,8 +277,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
  */
 
 :root,
-[data-neo-palette="moon"][data-neo-theme="light"],
-[data-neo-palette="moon"]:not([data-neo-theme]) {
+[data-neo-palette="neo-classic"][data-neo-theme="dark"],
+[data-neo-palette="neo-classic"]:not([data-neo-theme]) {
   --neo-accent: #ff7043;
   --neo-accent-light: #ff8a65;
   --neo-accent-dark: #e64a19;
@@ -313,7 +313,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 }
 
 :root[data-neo-theme="light"],
-[data-neo-palette="moon"][data-neo-theme="light"] {
+[data-neo-palette="neo-classic"][data-neo-theme="light"] {
   --neo-accent: #ff7043;
   --neo-accent-light: #ff8a65;
   --neo-accent-dark: #e64a19;
@@ -347,7 +347,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   --neo-shadow-light: rgba(255, 255, 255, 0.9);
 }
 
-[data-neo-palette="moon"][data-neo-theme="light"],
+[data-neo-palette="moon"][data-neo-theme="dark"],
 [data-neo-palette="moon"]:not([data-neo-theme]) {
   --neo-accent: #7B337E;
   --neo-accent-light: #9F6496;
@@ -416,7 +416,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   --neo-shadow-light: rgba(255, 255, 255, 0.95);
 }
 
-[data-neo-palette="sapphire"][data-neo-theme="light"],
+[data-neo-palette="sapphire"][data-neo-theme="dark"],
 [data-neo-palette="sapphire"]:not([data-neo-theme]) {
   --neo-accent: #E0C58F;
   --neo-accent-light: #ecd4a8;
@@ -485,7 +485,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   --neo-shadow-light: rgba(255, 255, 255, 0.95);
 }
 
-[data-neo-palette="crimson"][data-neo-theme="light"],
+[data-neo-palette="crimson"][data-neo-theme="dark"],
 [data-neo-palette="crimson"]:not([data-neo-theme]) {
   --neo-accent: #E22227;
   --neo-accent-light: #f04a4e;
@@ -554,7 +554,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   --neo-shadow-light: rgba(255, 255, 255, 0.95);
 }
 
-[data-neo-palette="luca-davincci"][data-neo-theme="light"],
+[data-neo-palette="luca-davincci"][data-neo-theme="dark"],
 [data-neo-palette="luca-davincci"]:not([data-neo-theme]) {
   --neo-accent: #D391B0;
   --neo-accent-light: #e0a8c4;
@@ -623,7 +623,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   --neo-shadow-light: rgba(255, 255, 255, 0.95);
 }
 
-[data-neo-palette="ocean-depth"][data-neo-theme="light"],
+[data-neo-palette="ocean-depth"][data-neo-theme="dark"],
 [data-neo-palette="ocean-depth"]:not([data-neo-theme]) {
   --neo-accent: #7BBDE8;
   --neo-accent-light: #9dcef0;
@@ -698,7 +698,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
  */
 
 :root,
-[data-neo-theme="light"] {
+[data-neo-theme="dark"] {
   /* Neutral recessed shadows for inputs/toggles/media wells — no palette color bleed */
   --neo-control-highlight: rgba(255, 255, 255, 0.05);
   --neo-control-shadow: rgba(0, 0, 0, 0.5);
@@ -1216,7 +1216,7 @@ a:focus:not(:focus-visible) {
   box-shadow: inset 0 0 0 2px #000;
 }
 
-.wp-html-module[data-a11y-high-contrast="true"][data-neo-theme="light"] #neo-main {
+.wp-html-module[data-a11y-high-contrast="true"][data-neo-theme="dark"] #neo-main {
   --neo-text-primary: #fff;
   --neo-text-muted: #e0e0e0;
   --neo-bg-base: #000;
@@ -1741,11 +1741,11 @@ a:focus:not(:focus-visible) {
   transition: transform var(--neo-duration-normal) var(--neo-ease-default);
 }
 
-.wp-html-module[data-neo-theme="light"] .neo-theme-toggle__switch {
+.wp-html-module[data-neo-theme="dark"] .neo-theme-toggle__switch {
   background: var(--neo-accent);
 }
 
-.wp-html-module[data-neo-theme="light"] .neo-theme-toggle__switch-knob {
+.wp-html-module[data-neo-theme="dark"] .neo-theme-toggle__switch-knob {
   transform: translateX(18px);
 }
 
@@ -5636,8 +5636,8 @@ select {
 .neo-footer__logo:hover,
 .neo-footer__logo:focus-visible { text-decoration: none; }
 /* Logo art is black; invert to white on dark surfaces so it adapts to the theme toggle. */
-.wp-html-module[data-neo-theme="light"] .rb-brand-mark,
-.wp-html-module[data-neo-theme="light"] .neo-footer__logo img { filter: invert(1) brightness(1.7); }
+.wp-html-module[data-neo-theme="dark"] .rb-brand-mark,
+.wp-html-module[data-neo-theme="dark"] .neo-footer__logo img { filter: invert(1) brightness(1.7); }
 
 /* Neo's overflow-x: hidden forces overflow-y: auto and breaks sticky heroes. */
 .neo-page {
@@ -7697,7 +7697,7 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
   border: 1px solid color-mix(in oklch, var(--neo-border) 72%, var(--neo-accent) 28%);
 }
 
-[data-neo-theme="light"] .rb-treat-hero__index {
+[data-neo-theme="dark"] .rb-treat-hero__index {
   background: color-mix(in oklch, var(--neo-bg-raised) 92%, var(--neo-accent) 8%);
   border-color: color-mix(in oklch, var(--neo-border) 80%, transparent);
 }
@@ -7745,7 +7745,7 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
     box-shadow var(--neo-duration-fast) var(--neo-ease-default);
 }
 
-[data-neo-theme="light"] .rb-treat-jump__chip {
+[data-neo-theme="dark"] .rb-treat-jump__chip {
   background: color-mix(in oklch, var(--neo-bg-raised) 88%, var(--neo-accent) 12%);
   box-shadow: 0 8px 18px -14px color-mix(in oklch, black 55%, transparent);
 }
@@ -8571,7 +8571,7 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
   color: var(--neo-text-primary);
   box-shadow: var(--neo-shadow-sm);
 }
-[data-neo-theme="light"] .rb-clinic-hero__badge {
+[data-neo-theme="dark"] .rb-clinic-hero__badge {
   background: rgba(20, 18, 24, 0.88);
   color: var(--neo-text-primary);
 }
@@ -8970,7 +8970,7 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
   }
 }
 
-.wp-html-module[data-neo-theme="light"] .rb-clinic-teaser__panel {
+.wp-html-module[data-neo-theme="dark"] .rb-clinic-teaser__panel {
   background: color-mix(in srgb, var(--neo-bg-raised) 88%, transparent);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.08),
