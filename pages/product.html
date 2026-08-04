@@ -9581,8 +9581,12 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
 </div>
 </div>
 </div>
-<!-- Snap Indicators / Instructions -->
-<p class="neo-body rb-muted" style="text-align: center; font-size: 0.75rem; margin-top: 1rem;">Swipe or scroll to see more images</p>
+<!-- Carousel Indicators (Visual cues instead of text instructions) -->
+<div aria-hidden="true" style="display: flex; justify-content: center; gap: 0.375rem; margin-top: 1.25rem;">
+  <span style="width: 24px; height: 4px; border-radius: 4px; background: var(--neo-accent); transition: all 0.3s ease;"></span>
+  <span style="width: 8px; height: 4px; border-radius: 4px; background: var(--neo-border-subtle); transition: all 0.3s ease;"></span>
+  <span style="width: 8px; height: 4px; border-radius: 4px; background: var(--neo-border-subtle); transition: all 0.3s ease;"></span>
+</div>
 </div>
 <!-- Product Details -->
 <div style="display: flex; flex-direction: column; gap: 1.5rem;">
