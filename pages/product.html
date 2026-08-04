@@ -9563,37 +9563,55 @@ a.neo-contact-list__value:focus-visible { color: var(--neo-accent-text); }
 
 <div class="neo-product-layout" style="max-width: 1100px; margin: 0 auto;">
 <!-- Image Gallery -->
-<div style="position: relative;">
-<div class="neo-carousel neo-surface-inset">
-<div class="neo-carousel-item">
-<div class="neo-carousel-card">
-<img alt="Radiance Beauty Serum Image 1" src="/images/logo1.png" style="width: 100%; max-width: 100%; height: auto; object-fit: contain;"/>
+<!-- Dynamic Story-Style Gallery -->
+<div style="position: relative; border-radius: var(--neo-radius-2xl); overflow: hidden; background: var(--neo-bg-raised); box-shadow: var(--neo-elv-1); aspect-ratio: 1/1;" id="dynamic-gallery">
+  <!-- Crossfading Images -->
+  <img class="gallery-img active" alt="Radiance Beauty Serum Image 1" src="/images/logo1.png" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; opacity: 1; transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1); z-index: 2;"/>
+  <img class="gallery-img" alt="Radiance Beauty Serum Image 2" src="/images/logo1.png" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; filter: grayscale(1); opacity: 0; transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1); z-index: 1;"/>
+  <img class="gallery-img" alt="Radiance Beauty Serum Image 3" src="/images/logo1.png" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; filter: sepia(1); opacity: 0; transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1); z-index: 1;"/>
+
+  <!-- Invisible Interaction Zones -->
+  <button aria-label="Previous image" style="position: absolute; left: 0; top: 0; bottom: 0; width: 50%; z-index: 10; background: transparent; border: none; cursor: w-resize;" onclick="changeGalleryImage(-1)"></button>
+  <button aria-label="Next image" style="position: absolute; right: 0; top: 0; bottom: 0; width: 50%; z-index: 10; background: transparent; border: none; cursor: e-resize;" onclick="changeGalleryImage(1)"></button>
+
+  <!-- Elegant Segmented Progress Indicators -->
+  <div style="position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; z-index: 15; display: flex; gap: 0.5rem; pointer-events: none;">
+    <div style="flex: 1; height: 3px; border-radius: 4px; background: color-mix(in srgb, var(--neo-text-primary) 15%, transparent); overflow: hidden;">
+      <div class="gallery-progress" style="width: 100%; height: 100%; background: var(--neo-accent); transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+    </div>
+    <div style="flex: 1; height: 3px; border-radius: 4px; background: color-mix(in srgb, var(--neo-text-primary) 15%, transparent); overflow: hidden;">
+      <div class="gallery-progress" style="width: 0%; height: 100%; background: var(--neo-accent); transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+    </div>
+    <div style="flex: 1; height: 3px; border-radius: 4px; background: color-mix(in srgb, var(--neo-text-primary) 15%, transparent); overflow: hidden;">
+      <div class="gallery-progress" style="width: 0%; height: 100%; background: var(--neo-accent); transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="neo-carousel-item">
-<div class="neo-carousel-card">
-<img alt="Radiance Beauty Serum Image 2" src="/images/logo1.png" style="width: 100%; max-width: 100%; height: auto; object-fit: contain; filter: grayscale(1);"/>
-</div>
-</div>
-<div class="neo-carousel-item">
-<div class="neo-carousel-card">
-<img alt="Radiance Beauty Serum Image 3" src="/images/logo1.png" style="width: 100%; max-width: 100%; height: auto; object-fit: contain; filter: sepia(1);"/>
-</div>
-</div>
-</div>
-<!-- Product Thumbnails (Interactive visual navigation) -->
-<div aria-label="Product Image Thumbnails" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 1.5rem;">
-  <button aria-label="View Image 1" style="border: 2px solid var(--neo-accent); border-radius: var(--neo-radius-md); overflow: hidden; background: var(--neo-bg-raised); cursor: pointer; padding: 0.5rem; aspect-ratio: 1/1; transition: all 0.2s ease;">
-    <img alt="Thumbnail 1" src="/images/logo1.png" style="width: 100%; height: 100%; object-fit: contain;"/>
-  </button>
-  <button aria-label="View Image 2" style="border: 2px solid transparent; border-radius: var(--neo-radius-md); overflow: hidden; background: var(--neo-bg-raised); cursor: pointer; padding: 0.5rem; aspect-ratio: 1/1; opacity: 0.7; transition: all 0.2s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
-    <img alt="Thumbnail 2" src="/images/logo1.png" style="width: 100%; height: 100%; object-fit: contain; filter: grayscale(1);"/>
-  </button>
-  <button aria-label="View Image 3" style="border: 2px solid transparent; border-radius: var(--neo-radius-md); overflow: hidden; background: var(--neo-bg-raised); cursor: pointer; padding: 0.5rem; aspect-ratio: 1/1; opacity: 0.7; transition: all 0.2s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
-    <img alt="Thumbnail 3" src="/images/logo1.png" style="width: 100%; height: 100%; object-fit: contain; filter: sepia(1);"/>
-  </button>
-</div>
-</div>
+
+<script>
+  let currentImg = 0;
+  function changeGalleryImage(dir) {
+    const imgs = document.querySelectorAll('.gallery-img');
+    const bars = document.querySelectorAll('.gallery-progress');
+    if (!imgs.length) return;
+    
+    // Fade out current
+    imgs[currentImg].style.opacity = '0';
+    imgs[currentImg].style.zIndex = '1';
+    
+    // Calculate next
+    currentImg = (currentImg + dir + imgs.length) % imgs.length;
+    
+    // Fade in new
+    imgs[currentImg].style.opacity = '1';
+    imgs[currentImg].style.zIndex = '2';
+    
+    // Update progress bars
+    bars.forEach((bar, index) => {
+      bar.style.width = index <= currentImg ? '100%' : '0%';
+    });
+  }
+</script>
 <!-- Product Details -->
 <div style="display: flex; flex-direction: column; gap: 1.5rem;">
 <div>
