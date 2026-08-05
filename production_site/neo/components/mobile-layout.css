@@ -517,3 +517,15 @@ html.neo-menu-open,
     -webkit-overflow-scrolling: touch;
   }
 }
+
+/* --- Dark Mode Logo Luminance & Visibility Enhancements --- */
+html[data-neo-theme="dark"] .neo-header__logo-img,
+html[data-neo-theme="dark"] .neo-mobile-header__brand img,
+html[data-neo-theme="dark"] .neo-mobile-menu__head .neo-mobile-header__brand img,
+html[data-neo-theme="dark"] .neo-footer__logo img,
+[data-neo-theme="dark"] .neo-header__logo-img,
+[data-neo-theme="dark"] .neo-mobile-header__brand img,
+[data-neo-theme="dark"] .neo-footer__logo img {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.95)) drop-shadow(0 0 15px rgba(255, 255, 255, 0.6)) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+  transition: filter var(--neo-duration-normal, 0.2s) ease;
+}

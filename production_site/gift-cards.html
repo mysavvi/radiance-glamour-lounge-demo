@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en" data-neo-palette="moon" data-neo-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Luxury Gift Vouchers | Radiance Glamour Lounge, Stockport</title>
+  <meta name="description" content="Treat someone special to a luxury beauty or aesthetic treatment voucher at Radiance Glamour Lounge, Stockport. Choose £10, £20, £30, £50, £100 or custom amounts.">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap">
+  <link rel="stylesheet" href="neo/neo-design.css">
+  <link rel="stylesheet" href="site.css?v=135">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="neo/theme-init.js"></script>
+  <script src="neo/a11y-init.js"></script>
+  <script src="neo/scroll-reveal.js"></script>
+  <style>
+    .gift-hero {
+      text-align: center;
+      padding: var(--neo-space-8) var(--neo-space-4) var(--neo-space-4);
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .gift-hero__eyebrow {
+      color: var(--neo-accent-text);
+      font-size: var(--neo-text-xs);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: var(--neo-space-2);
+    }
+    .gift-hero__title {
+      font-family: var(--neo-font-display);
+      font-size: var(--neo-text-4xl);
+      color: var(--neo-text-primary);
+      margin: 0 0 var(--neo-space-3) 0;
+      font-weight: 600;
+      line-height: 1.15;
+    }
+    .gift-hero__lead {
+      color: var(--neo-text-muted);
+      font-size: var(--neo-text-lg);
+      line-height: var(--neo-leading-relaxed);
+      margin: 0;
+    }
+
+    /* Grid Layout */
+    .gift-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--neo-space-8);
+      max-width: 1100px;
+      margin: 0 auto var(--neo-space-12);
+      padding: 0 var(--neo-space-4);
+    }
+    @media (min-width: 900px) {
+      .gift-container {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+      }
+    }
+
+    /* Voucher Card Preview (3D Neumorphism) */
+    .gift-preview-sticky {
+      position: sticky;
+      top: 100px;
+    }
+    /* Light Purple Satin with Subtle Dark Plum Depth & 84px Logo */
+    .gift-preview-sticky {
+      position: sticky;
+      top: 100px;
+      display: flex;
+      justify-content: center;
+    }
+    .gift-card-preview {
+      aspect-ratio: 1.586 / 1;
+      width: 100%;
+      max-width: 440px;
+      min-height: 340px;
+      border-radius: 16px;
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+      color: #2E0A24;
+      background: linear-gradient(145deg, #FDF9FC 0%, #F5E8F3 48%, #E8D3E4 100%);
+      border: 1px solid rgba(140, 90, 135, 0.2);
+      box-shadow: 0 22px 48px -10px rgba(90, 45, 85, 0.2),
+                  inset 0 1px 2px rgba(255, 255, 255, 0.9);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gift-card-preview:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 28px 58px -10px rgba(90, 45, 85, 0.5),
+                  inset 0 1px 2px rgba(255, 255, 255, 0.85);
+    }
+    .gift-card-preview__bg-glow {
+      position: absolute;
+      top: -30%;
+      right: -20%;
+      width: 240px;
+      height: 240px;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .gift-card-preview__top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      margin-bottom: 4px;
+    }
+    img.gift-card-preview__logo,
+    .gift-card-preview__logo {
+      height: 180px !important;
+      max-height: 180px !important;
+      width: auto !important;
+      max-width: 90% !important;
+      object-fit: contain !important;
+      filter: drop-shadow(0 3px 8px rgba(40, 10, 35, 0.15));
+    }
+    .gift-card-preview__middle {
+      z-index: 2;
+      margin: 4px 0;
+    }
+    .gift-card-preview__amount {
+      font-family: var(--neo-font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1;
+      color: #2E0A24;
+      margin-bottom: 8px;
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+    }
+    .gift-card-preview__details {
+      margin-top: 4px;
+    }
+    .gift-card-preview__to {
+      font-family: var(--neo-font-display);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #380D2C;
+      letter-spacing: 0.02em;
+    }
+    .gift-card-preview__msg {
+      font-family: var(--neo-font-display);
+      font-size: 0.92rem;
+      color: rgba(56, 13, 44, 0.9);
+      font-style: italic;
+      margin-top: 2px;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      line-height: 1.3;
+    }
+    .gift-card-preview__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+      font-size: 0.7rem;
+      color: rgba(46, 10, 36, 0.7);
+      border-top: 1px solid rgba(46, 10, 36, 0.15);
+      padding-top: 8px;
+      margin-top: 4px;
+    }
+    .gift-card-preview__code {
+      font-family: monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      color: rgba(46, 10, 36, 0.9);
+    }
+    
+    /* Responsive adjustment for small screens so content never clips */
+    @media (max-width: 480px) {
+      .gift-card-preview {
+        padding: 16px 18px;
+        border-radius: 14px;
+        min-height: 310px;
+      }
+      img.gift-card-preview__logo,
+      .gift-card-preview__logo { height: 140px !important; max-height: 140px !important; }
+      .gift-card-preview__amount { font-size: 2rem; margin-bottom: 4px; }
+      .gift-card-preview__to { font-size: 1rem; }
+      .gift-card-preview__msg { font-size: 0.82rem; }
+      .gift-card-preview__bottom { padding-top: 6px; font-size: 0.62rem; }
+      .gift-card-preview__code { font-size: 0.62rem; }
+    }
+
+    /* Option Selection Forms */
+    .gift-form-card {
+      background: var(--neo-bg-raised);
+      border: 1px solid var(--neo-border-subtle);
+      border-radius: var(--neo-radius-xl);
+      padding: var(--neo-space-8);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      box-sizing: border-box;
+    }
+    .gift-form-title {
+      font-family: var(--neo-font-display);
+      font-size: var(--neo-text-xl);
+      color: var(--neo-text-primary);
+      margin: 0 0 var(--neo-space-4) 0;
+      font-weight: 600;
+    }
+
+    /* Value Selector Buttons Grid */
+    .value-selector-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--neo-space-3);
+      margin-bottom: var(--neo-space-4);
+    }
+    @media (max-width: 480px) {
+      .value-selector-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .value-btn {
+      background: var(--neo-bg-inset);
+      border: 1px solid var(--neo-border-subtle);
+      border-radius: var(--neo-radius-lg);
+      padding: var(--neo-space-3) var(--neo-space-2);
+      text-align: center;
+      cursor: pointer;
+      transition: all var(--neo-duration-fast) ease;
+      color: var(--neo-text-primary);
+      font-weight: 600;
+      font-size: var(--neo-text-lg);
+    }
+    .value-btn:hover {
+      border-color: var(--neo-accent);
+      background: var(--neo-surface-raised);
+    }
+    .value-btn--active {
+      background: var(--neo-accent) !important;
+      color: #ffffff !important;
+      border-color: var(--neo-accent) !important;
+      box-shadow: var(--neo-accent-glow);
+    }
+    .value-btn__sub {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 400;
+      opacity: 0.8;
+      margin-top: 2px;
+    }
+
+    .form-group {
+      margin-bottom: var(--neo-space-4);
+      text-align: left;
+    }
+    .form-label {
+      display: block;
+      font-size: var(--neo-text-sm);
+      font-weight: 500;
+      margin-bottom: var(--neo-space-2);
+      color: var(--neo-text-primary);
+    }
+    .form-input, .form-textarea, .form-select {
+      width: 100%;
+      padding: var(--neo-space-3) var(--neo-space-4);
+      background: var(--neo-bg-inset);
+      border: 1px solid var(--neo-border-subtle);
+      border-radius: var(--neo-radius-md);
+      color: var(--neo-text-primary);
+      font-family: inherit;
+      font-size: var(--neo-text-base);
+      transition: all var(--neo-duration-fast) ease;
+      outline: none;
+      box-sizing: border-box;
+    }
+    .form-input:focus, .form-textarea:focus, .form-select:focus {
+      border-color: var(--neo-accent);
+      box-shadow: var(--neo-accent-glow);
+    }
+
+    /* Delivery Type Tabs */
+    .delivery-type-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--neo-space-3);
+      margin-bottom: var(--neo-space-5);
+    }
+    .delivery-card {
+      border: 1px solid var(--neo-border-subtle);
+      background: var(--neo-bg-inset);
+      border-radius: var(--neo-radius-lg);
+      padding: var(--neo-space-3);
+      cursor: pointer;
+      text-align: center;
+      transition: all var(--neo-duration-fast) ease;
+    }
+    .delivery-card--active {
+      border-color: var(--neo-accent);
+      background: var(--neo-bg-raised);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .delivery-card__icon {
+      font-size: 1.25rem;
+      margin-bottom: 2px;
+    }
+    .delivery-card__title {
+      font-size: var(--neo-text-sm);
+      font-weight: 600;
+      color: var(--neo-text-primary);
+    }
+    .delivery-card__desc {
+      font-size: var(--neo-text-xs);
+      color: var(--neo-text-muted);
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      max-width: 900px;
+      margin: 0 auto var(--neo-space-12);
+      padding: 0 var(--neo-space-4);
+    }
+    .faq-title {
+      font-family: var(--neo-font-display);
+      font-size: var(--neo-text-2xl);
+      text-align: center;
+      margin-bottom: var(--neo-space-6);
+      color: var(--neo-text-primary);
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--neo-space-4);
+    }
+    @media (min-width: 768px) {
+      .faq-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .faq-card {
+      background: var(--neo-bg-raised);
+      border: 1px solid var(--neo-border-subtle);
+      border-radius: var(--neo-radius-lg);
+      padding: var(--neo-space-5);
+    }
+    .faq-card__q {
+      font-weight: 600;
+      color: var(--neo-text-primary);
+      margin: 0 0 var(--neo-space-2) 0;
+      font-size: var(--neo-text-base);
+    }
+    .faq-card__a {
+      color: var(--neo-text-muted);
+      font-size: var(--neo-text-sm);
+      line-height: var(--neo-leading-relaxed);
+      margin: 0;
+    }
+  </style>
+</head>
+<body class="neo-body">
+  <a href="#neo-main" class="neo-skip-link">Skip to main content</a>
+  <div id="neo-a11y-root"></div>
+
+  <div class="neo-page">
+    <header class="neo-mobile-header" id="neo-mobile-header">
+      <div class="neo-mobile-header__inner">
+        <a href="index.html" class="neo-mobile-header__brand">
+          <img src="images/logo1.png" alt="Radiance Glamour Lounge" class="neo-header__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">
+        </a>
+        <div class="neo-mobile-header__actions">
+          <a href="cart.html" style="position: relative; color: var(--neo-text-primary); padding: 0.5rem; display: flex; align-items: center;" aria-label="Cart">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <span class="neo-cart-badge" style="position: absolute; top: -4px; right: -4px; background: var(--neo-accent); color: white; border-radius: 9999px; font-size: 0.65rem; font-weight: 700; width: 1.25rem; height: 1.25rem; display: flex; align-items: center; justify-content: center; border: 2px solid var(--neo-bg-base);">0</span>
+          </a>
+          <a href="/book/" class="neo-btn neo-btn--primary neo-btn--sm rb-mobile-header-cta">Book</a>
+          <button type="button" class="neo-mobile-header__menu-btn" onclick="toggleNeoMobileMenu()" aria-label="Open menu" aria-haspopup="dialog" aria-expanded="false" aria-controls="neo-mobile-menu">
+            <span class="neo-burger" aria-hidden="true"><span></span><span></span><span></span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="neo-desktop-nav" id="neo-desktop-nav" aria-label="Main">
+      <div class="neo-desktop-nav__inner">
+        <a href="index.html" class="neo-mobile-header__brand">
+          <img src="images/logo1.png" alt="Radiance Glamour Lounge" class="neo-header__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">
+        </a>
+        <div class="neo-desktop-nav__actions">
+          <ul class="neo-desktop-nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="treatments.html">Treatments</a></li>
+            <li><a href="clinic.html">Clinic</a></li>
+            <li><a href="testimonials.html">Reviews</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div style="display: flex; gap: 1rem; align-items: center;">
+            <a href="cart.html" style="position: relative; color: var(--neo-text-primary); padding: 0.5rem; display: flex; align-items: center;" aria-label="Cart">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              <span class="neo-cart-badge" style="position: absolute; top: -4px; right: -4px; background: var(--neo-accent); color: white; border-radius: 9999px; font-size: 0.65rem; font-weight: 700; width: 1.25rem; height: 1.25rem; display: flex; align-items: center; justify-content: center; border: 2px solid var(--neo-bg-base);">0</span>
+            </a>
+            <a href="/book/" class="neo-btn neo-btn--primary">Book now</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="neo-mobile-menu" id="neo-mobile-menu" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true">
+      <div class="neo-mobile-menu__inner">
+        <div class="neo-mobile-menu__head">
+          <a href="index.html" class="neo-mobile-header__brand" data-neo-menu-close>
+            <img src="images/logo1.png" alt="Radiance Glamour Lounge" class="neo-header__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">
+          </a>
+          <button type="button" class="neo-mobile-menu__close" onclick="toggleNeoMobileMenu()" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <ul class="neo-mobile-menu__links">
+          <li><a href="index.html" data-neo-menu-close>Home</a></li>
+          <li><a href="treatments.html" data-neo-menu-close>Treatments</a></li>
+          <li><a href="clinic.html" data-neo-menu-close>Clinic</a></li>
+          <li><a href="testimonials.html" data-neo-menu-close>Reviews</a></li>
+          <li><a href="shop.html" data-neo-menu-close>Shop</a></li>
+          <li><a href="contact.html" data-neo-menu-close>Contact</a></li>
+        </ul>
+        <div class="neo-mobile-menu__cta">
+          <a href="/book/" class="neo-btn neo-btn--primary" data-neo-menu-close>Book now</a>
+        </div>
+      </div>
+    </div>
+
+    <main id="neo-main" class="neo-page__main" tabindex="-1">
+      <nav aria-label="Breadcrumb" class="neo-breadcrumbs-wrap">
+        <ol class="neo-breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li aria-current="page">Gift Cards</li>
+        </ol>
+      </nav>
+
+      <section class="gift-hero">
+        <span class="gift-hero__eyebrow">Luxury Experience Vouchers</span>
+        <h1 class="gift-hero__title">Give the Gift of Radiance</h1>
+        <p class="gift-hero__lead">Surprise someone special with a bespoke hair, beauty or aesthetic clinic voucher. Redeemable for all salon treatments and luxury products in Merseyway, Stockport.</p>
+      </section>
+
+      <div class="gift-container">
+        <!-- Interactive Luxury VIP Card Preview (Left Side) -->
+        <div class="gift-preview-sticky">
+          <div class="gift-card-preview" id="giftCardPreview">
+            <div class="gift-card-preview__bg-glow"></div>
+            <div class="gift-card-preview__top">
+              <img src="images/logo1.png" alt="Radiance Glamour Lounge" class="gift-card-preview__logo">
+            </div>
+
+            <div class="gift-card-preview__middle">
+              <div class="gift-card-preview__amount" id="previewAmount">£50.00</div>
+              <div class="gift-card-preview__details">
+                <div class="gift-card-preview__to" id="previewTo">For: Someone Special</div>
+                <div class="gift-card-preview__msg" id="previewMsg">&ldquo;A little pampering treat for you at Radiance Glamour Lounge!&rdquo;</div>
+              </div>
+            </div>
+
+            <div class="gift-card-preview__bottom">
+              <span>Radiance Glamour Lounge &middot; Stockport</span>
+              <span class="gift-card-preview__code">RAD-2026-PASS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Voucher Selection Form (Right Side) -->
+        <div class="gift-form-card">
+          <h2 class="gift-form-title">1. Select Voucher Amount</h2>
+          
+          <div class="value-selector-grid" role="radiogroup" aria-label="Gift voucher value">
+            <button type="button" class="value-btn" data-value="10" onclick="selectValue(10, this)">
+              £10
+              <span class="value-btn__sub">Touch-Up</span>
+            </button>
+            <button type="button" class="value-btn" data-value="20" onclick="selectValue(20, this)">
+              £20
+              <span class="value-btn__sub">Pamper Treat</span>
+            </button>
+            <button type="button" class="value-btn" data-value="30" onclick="selectValue(30, this)">
+              £30
+              <span class="value-btn__sub">Popular</span>
+            </button>
+            <button type="button" class="value-btn value-btn--active" data-value="50" onclick="selectValue(50, this)">
+              £50
+              <span class="value-btn__sub">Luxury Package</span>
+            </button>
+            <button type="button" class="value-btn" data-value="100" onclick="selectValue(100, this)">
+              £100
+              <span class="value-btn__sub">VIP Lounge</span>
+            </button>
+            <button type="button" class="value-btn" data-value="custom" onclick="selectCustomValue(this)">
+              Custom
+              <span class="value-btn__sub">Any Amount</span>
+            </button>
+          </div>
+
+          <!-- Custom Amount Field (hidden by default) -->
+          <div class="form-group" id="customAmountGroup" style="display: none;">
+            <label class="form-label" for="customAmountInput">Custom Amount (£)</label>
+            <input type="number" id="customAmountInput" class="form-input" min="10" max="500" placeholder="Enter amount e.g. 150" oninput="updateCustomAmount(this.value)">
+            <div id="amountWarning" style="display: none; color: #d32f2f; font-size: 0.85rem; font-weight: 500; margin-top: 6px; padding: 6px 12px; background: rgba(211, 47, 47, 0.08); border-radius: var(--neo-radius-sm); border: 1px solid rgba(211, 47, 47, 0.2);" role="alert" aria-live="assertive"></div>
+          </div>
+
+          <h2 class="gift-form-title" style="margin-top: var(--neo-space-6);">2. Personalize Your Gift</h2>
+
+          <div class="form-group">
+            <label class="form-label" for="recipientName">Recipient Name</label>
+            <input type="text" id="recipientName" class="form-input" placeholder="e.g. Emma Watson" oninput="updateRecipientName(this.value)">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="recipientEmail">Recipient Email (for Digital E-Voucher)</label>
+            <input type="email" id="recipientEmail" class="form-input" placeholder="emma@example.com">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="senderName">Your Name</label>
+            <input type="text" id="senderName" class="form-input" placeholder="e.g. Sarah">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="giftMsg">Personal Gift Message</label>
+            <textarea id="giftMsg" class="form-textarea" rows="3" placeholder="Wishing you a wonderful pampering session at Radiance Glamour Lounge!" oninput="updateGiftMsg(this.value)"></textarea>
+          </div>
+
+          <h2 class="gift-form-title" style="margin-top: var(--neo-space-6);">3. Delivery Method</h2>
+
+          <div class="delivery-type-grid">
+            <div class="delivery-card delivery-card--active" onclick="selectDelivery('digital', this)">
+              <div class="delivery-card__icon">✉️</div>
+              <div class="delivery-card__title">E-Gift Voucher</div>
+              <div class="delivery-card__desc">Instant email & PDF pass</div>
+            </div>
+            <div class="delivery-card" onclick="selectDelivery('physical', this)">
+              <div class="delivery-card__icon">🎁</div>
+              <div class="delivery-card__title">Salon Physical Card</div>
+              <div class="delivery-card__desc">Collect at Stockport salon</div>
+            </div>
+          </div>
+
+          <button type="button" class="neo-btn neo-btn--primary" id="addGiftToCartBtn" onclick="addGiftCardToBasket()" style="width: 100%; justify-content: center; min-height: 52px; font-size: var(--neo-text-base); font-weight: 600;">
+            Add £50.00 Gift Card to Basket
+          </button>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-card">
+            <h3 class="faq-card__q">How long are vouchers valid?</h3>
+            <p class="faq-card__a">All Radiance Glamour Lounge gift vouchers are valid for 12 months from the date of purchase.</p>
+          </div>
+          <div class="faq-card">
+            <h3 class="faq-card__q">Where can the voucher be redeemed?</h3>
+            <p class="faq-card__a">Vouchers can be redeemed for any hair, beauty, aesthetic clinic consultation, or retail product in our Stockport salon.</p>
+          </div>
+          <div class="faq-card">
+            <h3 class="faq-card__q">How does the recipient get the voucher?</h3>
+            <p class="faq-card__a">Digital E-Vouchers are emailed instantly (or scheduled for a special date) with a printable PDF pass containing a unique voucher code.</p>
+          </div>
+          <div class="faq-card">
+            <h3 class="faq-card__q">Can the voucher be split across visits?</h3>
+            <p class="faq-card__a">Yes! Any remaining balance stays stored on their voucher code for future appointments until fully used.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="neo-footer neo-footer--with-bottom-nav">
+      <div class="neo-footer__inner">
+        <div class="neo-footer__grid">
+          <div class="neo-footer__brand">
+            <a href="index.html" class="neo-footer__logo" aria-label="Radiance Glamour Lounge">
+              <img src="images/logo1.png" alt="Radiance Glamour Lounge" class="neo-footer__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">
+            </a>
+            <div class="neo-footer__social" aria-label="Social media">
+              <a href="https://www.facebook.com/p/Radiance-glamour-loungeAesthetic-clinic-100083286131948/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <img src="neo/assets/social/facebook.svg" alt="Facebook" width="24" height="24" loading="lazy">
+              </a>
+              <a href="https://www.instagram.com/radiance_glamour_lounge/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <img src="neo/assets/social/instagram.svg" alt="Instagram" width="24" height="24" loading="lazy">
+              </a>
+              <a href="https://www.tiktok.com/@nabilag84" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                <img src="neo/assets/social/tiktok.svg" alt="TikTok" width="24" height="24" loading="lazy">
+              </a>
+            </div>
+            <p class="neo-footer__tagline">Ladies-only hair and beauty salon in Merseyway Shopping Centre, Stockport. Relaxed, glam and professional.</p>
+          </div>
+          <nav class="neo-footer__col neo-footer__col--explore" aria-label="Footer">
+            <h2 class="neo-footer__heading">Explore</h2>
+            <ul class="neo-footer__links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="treatments.html">Treatments</a></li>
+              <li><a href="clinic.html">Clinic</a></li>
+              <li><a href="testimonials.html">Reviews</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="/book/">Book</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="neo-footer__col neo-footer__col--contact">
+            <h2 class="neo-footer__heading">Get in touch</h2>
+            <ul class="neo-footer__contact">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>12-16 Prince&rsquo;s St, Stockport SK1 1SE</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                <a href="tel:07857579631">07857 579631</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="neo-footer__bottom">
+          <div class="neo-footer__bottom-left">
+            <p class="neo-footer__copyright">&copy; 2026 Radiance Glamour Lounge. All rights reserved.</p>
+            <a class="neo-footer__credit" href="https://savviweb.com" target="_blank" rel="noopener noreferrer">
+              <span>Designed by</span>
+              <img src="images/savviweb-logo.png" alt="" width="18" height="18">
+              <strong>Savviweb.com</strong>
+            </a>
+          </div>
+          <div class="neo-footer__legal">
+            <a href="privacy-policy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <button type="button" class="neo-a11y-footer-btn" data-neo-a11y-open aria-haspopup="dialog" style="display: none !important;">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4" r="2"></circle><path d="M12 6v7"></path><path d="M5 8h14"></path><path d="M12 13l-4 8"></path><path d="M12 13l4 8"></path></svg>
+              <span>Accessibility</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <nav class="neo-bottom-nav" aria-label="Mobile">
+      <div class="neo-bottom-nav__inner">
+        <a href="index.html" class="neo-bottom-nav__tab">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/></svg>
+          <span>Home</span>
+        </a>
+        <a href="treatments.html" class="neo-bottom-nav__tab">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          <span>Treatments</span>
+        </a>
+        <a href="tel:07857579631" class="neo-bottom-nav__tab">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>Call</span>
+        </a>
+        <a href="/book/" class="neo-bottom-nav__tab">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Book</span>
+        </a>
+        <a href="shop.html" class="neo-bottom-nav__tab">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+          <span>Shop</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <script src="neo/mobile-nav.js" defer></script>
+  <script src="neo/a11y-toolbar.js" defer></script>
+  <script src="neo/theme-toggle.js?v=3" defer></script>
+  <script src="neo/cookie-consent.js" defer></script>
+  <script>
+    const MAX_AMOUNT = 500;
+    const MIN_AMOUNT = 10;
+    let currentAmount = 50;
+    let selectedDeliveryType = 'digital';
+
+    function selectValue(val, btn) {
+      currentAmount = val;
+      document.querySelectorAll('.value-btn').forEach(b => b.classList.remove('value-btn--active'));
+      btn.classList.add('value-btn--active');
+      document.getElementById('customAmountGroup').style.display = 'none';
+      hideAmountWarning();
+      updatePreviewAmount();
+    }
+
+    function selectCustomValue(btn) {
+      document.querySelectorAll('.value-btn').forEach(b => b.classList.remove('value-btn--active'));
+      btn.classList.add('value-btn--active');
+      document.getElementById('customAmountGroup').style.display = 'block';
+      const input = document.getElementById('customAmountInput');
+      if (input.value !== '') {
+        updateCustomAmount(input.value);
+      } else {
+        currentAmount = 25;
+        hideAmountWarning();
+        updatePreviewAmount();
+      }
+    }
+
+    function updateCustomAmount(val) {
+      const parsed = parseFloat(val);
+
+      if (isNaN(parsed) || val === '') {
+        currentAmount = 0;
+        hideAmountWarning();
+        updatePreviewAmount();
+        return;
+      }
+
+      if (parsed > MAX_AMOUNT) {
+        currentAmount = MAX_AMOUNT;
+        document.getElementById('customAmountInput').value = MAX_AMOUNT;
+        showAmountWarning(`Maximum gift voucher limit is \u00A3${MAX_AMOUNT}. Amount set to \u00A3${MAX_AMOUNT}.`);
+      } else if (parsed < MIN_AMOUNT) {
+        currentAmount = parsed;
+        showAmountWarning(`Minimum gift voucher amount is \u00A3${MIN_AMOUNT}.`);
+      } else {
+        currentAmount = parsed;
+        hideAmountWarning();
+      }
+      updatePreviewAmount();
+    }
+
+    function showAmountWarning(msg) {
+      const el = document.getElementById('amountWarning');
+      if (el) {
+        el.textContent = msg;
+        el.style.display = 'block';
+      }
+    }
+
+    function hideAmountWarning() {
+      const el = document.getElementById('amountWarning');
+      if (el) {
+        el.style.display = 'none';
+        el.textContent = '';
+      }
+    }
+
+    function updatePreviewAmount() {
+      const formatted = '\u00A3' + currentAmount.toFixed(2);
+      document.getElementById('previewAmount').textContent = formatted;
+      document.getElementById('addGiftToCartBtn').textContent = `Add ${formatted} Gift Card to Basket`;
+    }
+
+    function updateRecipientName(val) {
+      document.getElementById('previewTo').textContent = 'For: ' + (val.trim() || 'Someone Special');
+    }
+
+    function updateGiftMsg(val) {
+      document.getElementById('previewMsg').textContent = '"' + (val.trim() || 'A little pampering treat for you at Radiance Glamour Lounge!') + '"';
+    }
+
+    function selectDelivery(type, el) {
+      selectedDeliveryType = type;
+      document.querySelectorAll('.delivery-card').forEach(c => c.classList.remove('delivery-card--active'));
+      el.classList.add('delivery-card--active');
+    }
+
+    function addGiftCardToBasket() {
+      if (currentAmount > MAX_AMOUNT) {
+        showAmountWarning(`Maximum gift voucher limit is \u00A3${MAX_AMOUNT}.`);
+        return;
+      }
+      if (currentAmount < MIN_AMOUNT) {
+        showAmountWarning(`Minimum gift voucher amount is \u00A3${MIN_AMOUNT}. Please enter at least \u00A3${MIN_AMOUNT}.`);
+        return;
+      }
+
+      const recipient = document.getElementById('recipientName').value || 'Someone Special';
+      const formatted = '\u00A3' + currentAmount.toFixed(2);
+      
+      // Store gift card object in localStorage cart
+      const giftItem = {
+        id: 'gift-card-' + currentAmount + '-' + Date.now(),
+        title: `Radiance Gift Voucher (${formatted})`,
+        price: currentAmount,
+        category: 'Gift Card',
+        image: 'images/logo1.png',
+        recipient: recipient,
+        message: document.getElementById('giftMsg').value || ''
+      };
+
+      try {
+        let cart = JSON.parse(localStorage.getItem('neo_cart') || '[]');
+        cart.push(giftItem);
+        localStorage.setItem('neo_cart', JSON.stringify(cart));
+        
+        // Dispatch cart badge update event
+        window.dispatchEvent(new Event('cart-updated'));
+      } catch(e) {}
+
+      // Visual button feedback
+      const btn = document.getElementById('addGiftToCartBtn');
+      const originalText = btn.textContent;
+      btn.textContent = '✓ Gift Card Added to Basket!';
+      btn.style.background = '#4caf50';
+
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.background = '';
+        window.location.href = 'cart.html';
+      }, 800);
+    }
+  </script>
+</body>
+</html>

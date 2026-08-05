@@ -1,0 +1,36 @@
+/* Neo x SAVVI POS shop widget styles */
+.savvi-shop { display: grid; gap: var(--neo-space-5, 1.5rem); }
+.savvi-shop__msg { margin: 0; min-height: 1.25rem; font-size: 0.95rem; }
+.savvi-shop__msg.is-error { color: var(--neo-color-danger, #c0392b); }
+
+.savvi-shop__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: var(--neo-space-4, 1rem);
+}
+.savvi-shop__card { display: grid; gap: var(--neo-space-2, 0.5rem); align-content: start; }
+.savvi-shop__img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--neo-radius-md, 0.75rem);
+}
+.savvi-shop__img--placeholder {
+  background: var(--neo-surface-inset, #f1ece5);
+}
+.savvi-shop__name { margin: 0; }
+.savvi-shop__desc { margin: 0; }
+.savvi-shop__price { margin: 0; font-weight: 600; }
+.savvi-shop__stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--neo-space-3, 0.75rem);
+}
+.savvi-shop__qty { min-width: 1.5rem; text-align: center; font-variant-numeric: tabular-nums; }
+
+.savvi-shop__basket { display: grid; gap: var(--neo-space-3, 0.75rem); }
+.savvi-shop__lines { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
+.savvi-shop__line { display: flex; justify-content: space-between; gap: 1rem; }
+.savvi-shop__total { margin: 0.5rem 0 0; font-weight: 600; }
+.savvi-shop__checkout .neo-btn { width: 100%; }
+.savvi-shop--success { text-align: center; gap: var(--neo-space-3, 0.75rem); }

@@ -390,8 +390,8 @@
         state.textScale === 0
           ? "Text size default"
           : state.textScale > 0
-          ? "Text size increased"
-          : "Text size decreased"
+            ? "Text size increased"
+            : "Text size decreased"
       );
     });
 

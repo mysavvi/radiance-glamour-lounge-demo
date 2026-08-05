@@ -1,0 +1,98 @@
+/**
+ * Neo Design — icons (Lucide-compatible sizing)
+ * Raised tiles + embossed accent glyphs (light top-left, shadow bottom-right)
+ */
+
+:root {
+  --neo-icon-tile: 40px;
+  --neo-icon-emboss-filter:
+    drop-shadow(-0.75px -0.75px 0 var(--neo-accent-light))
+    drop-shadow(1px 1px 0 color-mix(in srgb, var(--neo-shadow-dark) 75%, transparent))
+    drop-shadow(0 2px 2px color-mix(in srgb, var(--neo-shadow-dark) 30%, transparent));
+}
+
+.neo-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--neo-accent);
+  stroke: currentColor;
+  fill: none;
+}
+
+.neo-icon--xs { width: var(--neo-icon-xs); height: var(--neo-icon-xs); }
+.neo-icon--sm { width: var(--neo-icon-sm); height: var(--neo-icon-sm); }
+.neo-icon--md { width: var(--neo-icon-md); height: var(--neo-icon-md); }
+.neo-icon--lg { width: var(--neo-icon-lg); height: var(--neo-icon-lg); }
+.neo-icon--xl { width: var(--neo-icon-xl); height: var(--neo-icon-xl); }
+
+.neo-icon-container {
+  width: var(--neo-icon-container);
+  height: var(--neo-icon-container);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Raised neumorphic tile */
+.neo-icon-container.neo-icon,
+.neo-icon-tile {
+  width: var(--neo-icon-tile);
+  height: var(--neo-icon-tile);
+  background: var(--neo-bg-raised);
+  border-radius: var(--neo-radius-md);
+  box-shadow: var(--neo-elv-2);
+  position: relative;
+  color: var(--neo-accent);
+}
+
+.neo-icon-container.neo-icon.neo-icon--xs,
+.neo-icon-container.neo-icon.neo-icon--sm,
+.neo-icon-container.neo-icon.neo-icon--md,
+.neo-icon-container.neo-icon.neo-icon--lg,
+.neo-icon-container.neo-icon.neo-icon--xl {
+  width: var(--neo-icon-tile);
+  height: var(--neo-icon-tile);
+}
+
+.neo-icon-container.neo-icon::before,
+.neo-icon-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--neo-shadow-light) 80%, transparent);
+}
+
+.neo-icon--emboss {
+  color: var(--neo-accent);
+}
+
+.neo-icon--thin svg { stroke-width: 1; }
+.neo-icon--regular svg { stroke-width: 1.5; }
+.neo-icon--medium svg { stroke-width: 2; }
+.neo-icon--bold svg { stroke-width: 3; }
+
+.neo-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.neo-icon-container.neo-icon svg,
+.neo-icon-tile .neo-icon svg,
+.neo-icon--emboss svg {
+  width: var(--neo-icon-md);
+  height: var(--neo-icon-md);
+  filter: var(--neo-icon-emboss-filter);
+}
+
+.neo-empty__icon svg {
+  filter: var(--neo-icon-emboss-filter);
+}
+
+.neo-a11y-btn--active svg,
+.neo-a11y-trigger svg {
+  filter: var(--neo-icon-emboss-filter);
+}

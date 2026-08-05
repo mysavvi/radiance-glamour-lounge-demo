@@ -125,10 +125,10 @@
                 gap: 3rem;
                 align-items: start;
               }
-            }
-            .neo-sidebar {
-              position: sticky;
-              top: 100px;
+              .neo-sidebar {
+                position: sticky;
+                top: 100px;
+              }
             }
             .neo-sidebar-list {
               list-style: none;
@@ -181,7 +181,10 @@
             }
           </style>
 
-          <div class="neo-shop-layout">
+          <!-- SAVVI POS Dynamic Mount -->
+          <div data-savvi-mount="shop" data-api="/wp-json/savvi-pos/v1" hidden></div>
+
+          <div class="neo-shop-layout" data-savvi-fallback>
             <aside class="neo-sidebar" aria-label="Product Categories">
               <h3 class="neo-body" style="font-weight: 600; font-size: var(--neo-text-sm); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; color: var(--neo-text-secondary);">Categories</h3>
               <ul class="neo-sidebar-list">
@@ -209,7 +212,7 @@
                 <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Skincare &middot; 50ml</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                   <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;45.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Radiance Beauty Serum to cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                  <button type="button" class="neo-btn neo-btn--primary shop-add-to-cart" data-id="radiance-beauty-serum" data-title="Radiance Beauty Serum" data-price="45.0" data-image="images/logo1.png" data-category="Skincare" data-size="50ml" aria-label="Add Radiance Beauty Serum to cart">Add to cart</button>
                 </div>
               </div>
             </article>
@@ -229,7 +232,7 @@
                 <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Haircare &middot; 200ml</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                   <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;32.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Glamour Hair Mask to cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                  <button type="button" class="neo-btn neo-btn--primary shop-add-to-cart" data-id="glamour-hair-mask" data-title="Glamour Hair Mask" data-price="32.0" data-image="images/logo1.png" data-category="Haircare" data-size="200ml" aria-label="Add Glamour Hair Mask to cart">Add to cart</button>
                 </div>
               </div>
             </article>
@@ -249,7 +252,7 @@
                 <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Skincare &middot; 100ml</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                   <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;28.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Hydrating Mist to cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                  <button type="button" class="neo-btn neo-btn--primary shop-add-to-cart" data-id="hydrating-mist" data-title="Hydrating Mist" data-price="28.0" data-image="images/logo1.png" data-category="Skincare" data-size="100ml" aria-label="Add Hydrating Mist to cart">Add to cart</button>
                 </div>
               </div>
             </article>
@@ -269,7 +272,7 @@
                 <p class="neo-body rb-muted" style="font-size: var(--neo-text-sm); margin: 0 0 1rem 0;">Fragrance &middot; 50ml</p>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                   <span class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg);">&pound;65.00</span>
-                  <button type="button" class="neo-btn neo-btn--primary" aria-label="Add Lounge Signature Perfume to cart" onclick="window.location.href='cart.html'">Add to cart</button>
+                  <button type="button" class="neo-btn neo-btn--primary shop-add-to-cart" data-id="lounge-signature-perfume" data-title="Lounge Signature Perfume" data-price="65.0" data-image="images/logo1.png" data-category="Fragrance" data-size="50ml" aria-label="Add Lounge Signature Perfume to cart">Add to cart</button>
                 </div>
               </div>
             </article>
@@ -338,7 +341,7 @@
             <a href="privacy-policy.html">Privacy</a>
             <a href="terms.html">Terms</a>
             <button type="button" class="neo-a11y-footer-btn" data-neo-a11y-open aria-haspopup="dialog">
-              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4" r="2"></circle><path d="M12 6v7"></path><path d="M5 8h14"></path><path d="M12 13l-4 8"></path><path d="M12 13l4 8"></path></svg>
               <span>Accessibility</span>
             </button>
           </div>
@@ -384,7 +387,8 @@
   <script src="neo/a11y-toolbar.js" defer></script>
   <script src="neo/theme-toggle.js?v=3" defer></script>
   <script src="neo/cookie-consent.js" defer></script>
-  <link rel="stylesheet" href="neo/savvi-shop.css">
+  <script src="neo/cart-ui.js" defer></script>
   <script src="neo/savvi-shop.js" defer></script>
+  <link rel="stylesheet" href="neo/savvi-shop.css">
 </body>
 </html>

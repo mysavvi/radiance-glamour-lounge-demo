@@ -38,6 +38,10 @@
 
   function apply(theme, persist) {
     html.setAttribute("data-neo-theme", theme);
+    var embeds = document.querySelectorAll("[data-neo-wp-embed], .wp-html-module");
+    Array.prototype.forEach.call(embeds, function (el) {
+      el.setAttribute("data-neo-theme", theme);
+    });
     if (persist) {
       try {
         localStorage.setItem(KEY, theme);

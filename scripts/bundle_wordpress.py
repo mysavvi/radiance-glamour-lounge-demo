@@ -38,6 +38,8 @@ PAGE_MAP = {
     "terms.html": ("terms.html", "terms", ""),
     "login.html": ("login.html", "login", ""),
     "register.html": ("register.html", "register", ""),
+    "gift-cards.html": ("gift-cards.html", "gift-cards", ""),
+    "about.html": ("about.html", "about", ""),
 }
 
 HREF_MAP = [
@@ -46,6 +48,7 @@ HREF_MAP = [
     (r'href="clinic\.html', 'href="/clinic/'),
     (r'href="testimonials\.html', 'href="/reviews/'),
     (r'href="contact\.html', 'href="/contact/'),
+    (r'href="about\.html', 'href="/about/'),
     (r'href="book\.html', 'href="/book/'),
     (r'href="book-success\.html', 'href="/book/success/'),
     (r'href="shop\.html', 'href="/shop/'),
@@ -56,10 +59,12 @@ HREF_MAP = [
     (r'href="terms\.html', 'href="/terms/'),
     (r'href="login\.html', 'href="/login/'),
     (r'href="register\.html', 'href="/register/'),
+    (r'href="gift-cards\.html', 'href="/gift-cards/'),
     (r"window\.location\.href='cart\.html'", "window.location.href='/cart/'"),
     (r"window\.location\.href='checkout\.html'", "window.location.href='/checkout/'"),
     (r"window\.location\.href='product\.html'", "window.location.href='/product/'"),
     (r"window\.location\.href='shop\.html'", "window.location.href='/shop/'"),
+    (r"window\.location\.href='gift-cards\.html'", "window.location.href='/gift-cards/'"),
 ]
 
 IMPORT_RE = re.compile(
