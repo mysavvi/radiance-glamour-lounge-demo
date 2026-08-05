@@ -1,16 +1,16 @@
 # Graph Report - Radiance Glamour Lounge  (2026-08-05)
 
 ## Corpus Check
-- 579 files · ~3,849,974 words
+- 587 files · ~3,851,959 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5941 nodes · 7773 edges · 582 communities (530 shown, 52 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 117 edges (avg confidence: 0.6)
+- 5966 nodes · 7809 edges · 589 communities (534 shown, 55 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 117 edges (avg confidence: 0.6)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7367cf83`
+- Built from commit: `55b666eb`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -75,7 +75,7 @@
 - DataForSEO: Live SEO Data (Extension)
 - test_google_api_key_safety.py
 - start
-- sendGift
+- initLive
 - test_sitemap_discovery.py
 - properties
 - theme-toggle.js
@@ -84,7 +84,7 @@
 - domain_history.py
 - E-commerce SEO Analysis
 - _localhost_preview/neo/social-media-card.js
-- toggle
+- setLayout
 - items
 - buildUI
 - temp.js
@@ -93,7 +93,7 @@
 - properties
 - neo/social-media-card.js
 - youtube_search.py
-- inject
+- toggle
 - Widget
 - indexnow_submit.py
 - test_banana_api_key_safety.py
@@ -269,7 +269,7 @@
 - seo-performance.md
 - Contributors
 - [1.6.0] - 2026-03-23
-- Prompt: Generating a Title Tag
+- bibliography.md
 - Free Backlink Data Sources
 - Claude SEO: Multi-Platform Agent Instructions
 - seo-sitemap.md
@@ -310,7 +310,7 @@
 - Basic Prompt
 - Blog Post Outline Prompt
 - Blog Post Writing Prompt
-- bibliography.md
+- Claude Prompt 1
 - Claude Prompt 2
 - CTR AUDIT PROMPT
 - Follow-up Prompt
@@ -349,7 +349,7 @@
 - Google Cloud Natural Language API Reference
 - Content Parity Audit for Multi-Language Sites
 - Cultural Adaptation Profiles for International SEO
-- Banana Extension Setup Guide
+- neo/savvi-dynamic-pricing.js
 - seo-cluster.md
 - seo-drift.md
 - seo-ecommerce.md
@@ -403,7 +403,7 @@
 - [1.2.1] - 2026-02-28
 - [1.7.1] - 2026-03-30
 - Widget
-- [1.9.5] - 2026-04-26
+- [1.9.6] - 2026-04-26
 - properties
 - Radiance Glamour Lounge — WordPress page map
 - rules/graphify.md
@@ -461,6 +461,9 @@
 - _localhost_preview/neo/scroll-reveal.js
 - find_repo_root
 - _localhost_preview/neo/craft-audit.sh
+- deploy_cart_ssh.py
+- deploy_pages_ssh.py
+- deploy_theme_js.py
 
 ## God Nodes (most connected - your core abstractions)
 1. `Command List` - 34 edges
@@ -489,7 +492,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (582 total, 52 thin omitted)
+## Communities (589 total, 55 thin omitted)
 
 ### Community 0 - "gsc_query.py"
 Cohesion: 0.18
@@ -727,9 +730,9 @@ Nodes (8): _dump(), _ErrorResponse, Regression tests for Google API key handling
 Cohesion: 0.17
 Nodes (20): boot(), applyMotionPreference(), bindMotionPreference(), bindScrollPause(), canRun(), clearTimer(), enabled(), initLive() (+12 more)
 
-### Community 60 - "sendGift"
-Cohesion: 0.15
-Nodes (18): bumpRailCount(), burstLikes(), formatCount(), parseRailCount(), pick(), pickGift(), pulseHeartButton(), pulseRailAction() (+10 more)
+### Community 60 - "initLive"
+Cohesion: 0.13
+Nodes (23): bindMotionPreference(), bindScrollPause(), bumpRailCount(), burstLikes(), formatCount(), initLive(), parseRailCount(), pick() (+15 more)
 
 ### Community 62 - "properties"
 Cohesion: 0.21
@@ -759,9 +762,9 @@ Nodes (37): 1. Product Page Analysis (No DataForSEO Needed), 2. Google Shopping 
 Cohesion: 0.11
 Nodes (44): applyConfig(), applyMotionPreference(), applyReviewPlatforms(), bindMotionPreference(), bindScrollPause(), bumpRailCount(), burstLikes(), createChatItem() (+36 more)
 
-### Community 69 - "toggle"
-Cohesion: 0.21
-Nodes (15): boot(), applyMetrics(), clearFocus(), closeGallery(), endDrag(), focusPhoto(), initScrollNav(), isMobileView() (+7 more)
+### Community 69 - "setLayout"
+Cohesion: 0.24
+Nodes (13): boot(), applyMetrics(), clearFocus(), closeGallery(), endDrag(), focusPhoto(), isMobileView(), measureWidth() (+5 more)
 
 ### Community 70 - "items"
 Cohesion: 0.17
@@ -795,9 +798,9 @@ Nodes (44): applyConfig(), applyMotionPreference(), applyReviewPlatforms(), bind
 Cohesion: 0.33
 Nodes (9): _build_youtube_service(), get_channel_info(), get_video_details(), main(), Get detailed information about a specific YouTube video. Args: video_id:…, Get channel information. Args: channel_id: YouTube channel ID. api_key:…, Build the YouTube Data API v3 service., Search YouTube for videos matching a query. Args: query: Search query string.… (+1 more)
 
-### Community 78 - "inject"
-Cohesion: 0.24
-Nodes (10): apply(), currentTheme(), inject(), injectIntoDrawer(), injectIntoFooter(), injectIntoHeader(), makeButton(), savedPref() (+2 more)
+### Community 78 - "toggle"
+Cohesion: 0.23
+Nodes (12): apply(), currentTheme(), initScrollNav(), inject(), injectIntoDrawer(), injectIntoFooter(), injectIntoHeader(), makeButton() (+4 more)
 
 ### Community 79 - "Widget"
 Cohesion: 0.25
@@ -932,8 +935,8 @@ Cohesion: 0.36
 Nodes (14): boot(), getEmbedRoot(), getFocusable(), getMenu(), getMenuButton(), hideThemeHeaders(), initMenuA11y(), initScrollNav() (+6 more)
 
 ### Community 154 - "start"
-Cohesion: 0.19
-Nodes (19): applyMotionPreference(), bindMotionPreference(), bindScrollPause(), canRun(), clearTimer(), enabled(), initLive(), initScrollNav() (+11 more)
+Cohesion: 0.26
+Nodes (14): applyMotionPreference(), canRun(), clearTimer(), enabled(), initScrollNav(), onScroll(), scheduleNext(), setActive() (+6 more)
 
 ### Community 155 - "js/theme-toggle.js"
 Cohesion: 0.36
@@ -1060,8 +1063,8 @@ Cohesion: 0.08
 Nodes (23): 1. GBP Signals (25%), 2. Reviews & Reputation (20%), 3. Local On-Page SEO (20%), 4. NAP Consistency & Citations (15%), 5. Local Schema Markup (10%), 6. Local Link & Authority Signals (10%), AI Search Impact on Local, Analysis Dimensions (+15 more)
 
 ### Community 211 - "Banana Image Generation Extension for Claude SEO"
-Cohesion: 0.17
-Nodes (10): Audit Integration, Banana Image Generation Extension for Claude SEO, Commands, How It Works, Installation, Post-Generation SEO Checklist, Prerequisites, Troubleshooting (+2 more)
+Cohesion: 0.09
+Nodes (21): Banana Extension Setup Guide, Common Issues, Generated images not appearing, Google AI API Key, "IMAGE_SAFETY" error, ImageMagick (Optional), MCP Server Configuration, "MCP tools not available" (+13 more)
 
 ### Community 212 - "AI Search / GEO Optimization (May 2026)"
 Cohesion: 0.09
@@ -1197,7 +1200,7 @@ Nodes (16): Automotive, Critical Fields (Direct Ranking Impact), Data Mapping (D
 
 ### Community 245 - "Changelog"
 Cohesion: 0.11
-Nodes (18): [1.7.0] - 2026-03-28, [1.7.2] - 2026-03-30, [1.9.6] - 2026-04-26, [2.1.0] - 2026-05-25, [2.2.2] - 2026-07-10, [2.2.3] - 2026-07-14, Added, Added (+10 more)
+Nodes (18): [1.7.0] - 2026-03-28, [1.7.2] - 2026-03-30, [1.9.5] - 2026-04-26, [2.1.0] - 2026-05-25, [2.2.2] - 2026-07-10, [2.2.3] - 2026-07-14, Added, Added (+10 more)
 
 ### Community 246 - "Google SEO Quick Reference (July 2026)"
 Cohesion: 0.12
@@ -1327,9 +1330,9 @@ Nodes (12): 2026 maintenance review cycle, 2026 maintenance review cycle, Commun
 Cohesion: 0.67
 Nodes (3): [1.6.0] - 2026-03-23, Added, Changed
 
-### Community 278 - "Prompt: Generating a Title Tag"
-Cohesion: 0.20
-Nodes (9): AI Compatibility, Example, Inputs, Output, Prompt, Prompt: Generating a Title Tag, See Also, Source Note (+1 more)
+### Community 278 - "bibliography.md"
+Cohesion: 0.13
+Nodes (13): Bibliography, PDF Sources, Source Policy, Web Sources, AI Compatibility, Example, Inputs, Output (+5 more)
 
 ### Community 279 - "Free Backlink Data Sources"
 Cohesion: 0.17
@@ -1491,9 +1494,9 @@ Nodes (9): AI Compatibility, Blog Post Outline Prompt, Example, Inputs, Output, 
 Cohesion: 0.20
 Nodes (9): AI Compatibility, Blog Post Writing Prompt, Example, Inputs, Output, Prompt, See Also, Source Note (+1 more)
 
-### Community 319 - "bibliography.md"
-Cohesion: 0.13
-Nodes (13): Bibliography, PDF Sources, Source Policy, Web Sources, AI Compatibility, Claude Prompt 1, Example, Inputs (+5 more)
+### Community 319 - "Claude Prompt 1"
+Cohesion: 0.20
+Nodes (9): AI Compatibility, Claude Prompt 1, Example, Inputs, Output, Prompt, See Also, Source Note (+1 more)
 
 ### Community 320 - "Claude Prompt 2"
 Cohesion: 0.20
@@ -1647,9 +1650,9 @@ Nodes (7): Content Parity Audit for Multi-Language Sites, Content Parity Matrix,
 Cohesion: 0.25
 Nodes (7): Cultural Adaptation Profiles for International SEO, DACH Region (DE, AT, CH), Default Profile (Unlisted Languages), Francophone (FR, BE, CA-FR, CH-FR), Hispanic (ES, LATAM), How to Use in Analysis, Japanese (JA)
 
-### Community 358 - "Banana Extension Setup Guide"
-Cohesion: 0.18
-Nodes (11): Banana Extension Setup Guide, Common Issues, Generated images not appearing, Google AI API Key, "IMAGE_SAFETY" error, ImageMagick (Optional), MCP Server Configuration, "MCP tools not available" (+3 more)
+### Community 358 - "neo/savvi-dynamic-pricing.js"
+Cohesion: 0.83
+Nodes (3): formatPrice(), initDynamicPricing(), slugify()
 
 ### Community 360 - "seo-cluster.md"
 Cohesion: 0.29
@@ -1863,9 +1866,9 @@ Nodes (3): [1.7.1] - 2026-03-30, Changed, Fixed
 Cohesion: 0.25
 Nodes (5): depositFor(), el(), money(), SuccessWidget(), Widget()
 
-### Community 414 - "[1.9.5] - 2026-04-26"
+### Community 414 - "[1.9.6] - 2026-04-26"
 Cohesion: 0.67
-Nodes (3): [1.9.5] - 2026-04-26, Added, License
+Nodes (3): [1.9.6] - 2026-04-26, Security, Tests
 
 ### Community 415 - "properties"
 Cohesion: 0.11
@@ -1908,8 +1911,8 @@ Cohesion: 0.18
 Nodes (11): type, type, type, type, properties, type, avatar, avatarPosition (+3 more)
 
 ### Community 440 - "production_site/neo/cart-ui.js"
-Cohesion: 0.33
-Nodes (7): getCart(), initCartPage(), initCheckoutPage(), renderCartItems(), saveCart(), updateBadges(), updateTotals()
+Cohesion: 0.39
+Nodes (11): boot(), getCart(), initCartPage(), initCheckoutPage(), initProductPage(), initShopPage(), loadConfig(), renderCartItems() (+3 more)
 
 ### Community 441 - "render_page.py"
 Cohesion: 0.24
@@ -1920,8 +1923,8 @@ Cohesion: 0.38
 Nodes (8): animateAngle(), createGlow(), disable(), enable(), handleMove(), refresh(), startListening(), stopListening()
 
 ### Community 444 - "neo/cart-ui.js"
-Cohesion: 0.44
-Nodes (7): getCart(), initCartPage(), initCheckoutPage(), renderCartItems(), saveCart(), updateBadges(), updateTotals()
+Cohesion: 0.39
+Nodes (11): boot(), getCart(), initCartPage(), initCheckoutPage(), initProductPage(), initShopPage(), loadConfig(), renderCartItems() (+3 more)
 
 ### Community 445 - "neo/social-media-card.schema.json"
 Cohesion: 0.22
@@ -2070,17 +2073,17 @@ Nodes (3): find_repo_root(), main(), Path
 ## Knowledge Gaps
 - **2510 isolated node(s):** `craft-audit.sh script`, `$schema`, `title`, `type`, `businessName` (+2505 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **52 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **55 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `validate_url()` connect `validate_url` to `drift_compare.py`, `pagespeed_check.py`, `verify_backlinks.py`, `bing_webmaster.py`, `url_safety.py`, `google_auth.py`, `moz_api.py`, `commoncrawl_graph.py`, `get_oauth_credentials`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
+- **Why does `Changelog` connect `Changelog` to `[1.1.0] - 2026-02-07`, `[1.4.0] - 2026-03-12`, `[1.9.7] - 2026-05-09`, `[1.2.0] - 2026-02-19`, `[1.3.0] - 2026-03-06`, `[1.5.0] - 2026-03-19`, `[1.8.1] - 2026-04-06`, `[1.8.2] - 2026-04-10`, `[1.9.0] - 2026-04-14`, `[1.6.0] - 2026-03-23`, `[1.9.8] - 2026-05-09`, `[2.2.4] - 2026-07-20`, `[1.0.0] - 2026-02-07`, `[1.2.1] - 2026-02-28`, `[1.7.1] - 2026-03-30`, `[1.9.6] - 2026-04-26`, `[1.6.1] - 2026-03-27`, `Migrating from claude-seo v1.x to v2.0.0`, `[1.9.9] - 2026-05-11`, `[2.0.0] - 2026-05-17`, `[2.2.0] - 2026-06-12`, `[2.2.1] - 2026-06-22`?**
+  _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **Why does `URLSafetyError` connect `url_safety.py` to `sync_flow.py`, `pagespeed_check.py`, `safe_requests_get`, `verify_backlinks.py`, `indexnow_submit.py`, `render_page.py`, `fetch_page.py`, `sitemap_discovery.py`, `make_safe_playwright_route_handler`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **Why does `_percentile()` connect `pagespeed_check.py` to `dataforseo_normalize.py`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `craft-audit.sh script`, `$schema`, `title` to the rest of the system?**
   _2510 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `test_content_quality.py` be split into smaller, more focused modules?**

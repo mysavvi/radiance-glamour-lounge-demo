@@ -740,9 +740,9 @@
     "semantic_hash": "eaf2c52bdfb5d4f74fb98dddcc9b7d6f"
   },
   "production_site/neo/a11y-toolbar.js": {
-    "mtime": 1785699177.342805,
-    "ast_hash": "26070ba29709906ba6d95dd2a851b8c9",
-    "semantic_hash": "26070ba29709906ba6d95dd2a851b8c9"
+    "mtime": 1785944638.1646583,
+    "ast_hash": "c1f2458bf4d28affae06d93295a60ae2",
+    "semantic_hash": ""
   },
   "production_site/neo/analytics.js": {
     "mtime": 1785699177.3432748,
@@ -815,14 +815,14 @@
     "semantic_hash": "842ff6e8d08bdef9923e8ba067e33bc3"
   },
   "production_site/neo/theme-init.js": {
-    "mtime": 1785699177.36266,
-    "ast_hash": "b30095a697952bd9c8e325d6e96022e3",
-    "semantic_hash": "b30095a697952bd9c8e325d6e96022e3"
+    "mtime": 1785943077.8078566,
+    "ast_hash": "790192737523a04304ecaaf3bf7d1bd8",
+    "semantic_hash": ""
   },
   "production_site/neo/theme-toggle.js": {
-    "mtime": 1785699177.3629668,
-    "ast_hash": "8f87a7b971bd56d9fa3d8facc06d8504",
-    "semantic_hash": "8f87a7b971bd56d9fa3d8facc06d8504"
+    "mtime": 1785943090.467179,
+    "ast_hash": "58e9e431d506ef73abd32e6b093ae021",
+    "semantic_hash": ""
   },
   "production_site/neo/visual_qa.py": {
     "mtime": 1785699177.3647575,
@@ -850,8 +850,8 @@
     "semantic_hash": "7aafd0ac213e0735a0d4280fa5d4fd81"
   },
   "scripts/bundle_wordpress.py": {
-    "mtime": 1785830804.6003997,
-    "ast_hash": "5b154e1a3eae3241911203ea41ed37e5",
+    "mtime": 1785950307.6095457,
+    "ast_hash": "573e70f764501375cc000a438797dad6",
     "semantic_hash": ""
   },
   "scripts/deploy_wp.py": {
@@ -2120,128 +2120,128 @@
     "semantic_hash": ""
   },
   "pages/book-success.html": {
-    "mtime": 1785939984.2501247,
-    "ast_hash": "0a76f2b2134782e08dbcd1153defd38e",
+    "mtime": 1785951585.515881,
+    "ast_hash": "1539494e260240be67dcbeac1797f643",
     "semantic_hash": ""
   },
   "pages/book.html": {
-    "mtime": 1785939984.2062414,
-    "ast_hash": "102a6a3829bfd50fbbb44f7d057e33ed",
+    "mtime": 1785951585.4585516,
+    "ast_hash": "cd1d56552d0d7f29ba0b916ee6880edf",
     "semantic_hash": ""
   },
   "pages/cart.html": {
-    "mtime": 1785939984.3440473,
-    "ast_hash": "2203072dfb3964f4ef66e0e795d2045f",
+    "mtime": 1785951585.6219776,
+    "ast_hash": "de218e21a326dc5757064374fed7c230",
     "semantic_hash": ""
   },
   "pages/checkout.html": {
-    "mtime": 1785939984.4381707,
-    "ast_hash": "5fa31980841f69096b7162c5c87311be",
+    "mtime": 1785951585.7371418,
+    "ast_hash": "1e4916a06db5530c9293461a4d85dc1d",
     "semantic_hash": ""
   },
   "pages/clinic.html": {
-    "mtime": 1785939984.0813503,
-    "ast_hash": "35e1cc87466108a9bfd8698e1c6daac1",
+    "mtime": 1785951585.2793765,
+    "ast_hash": "79a48f16f302a2109f3d206a88f42dc8",
     "semantic_hash": ""
   },
   "pages/contact.html": {
-    "mtime": 1785939984.1655498,
-    "ast_hash": "a9ef34c84fe18179ee7f2997c33b1132",
+    "mtime": 1785951585.399716,
+    "ast_hash": "2276b27580630e81fd2d28c163e45db7",
     "semantic_hash": ""
   },
   "pages/home.html": {
-    "mtime": 1785939983.9777405,
-    "ast_hash": "be26bf030e153d84056ecee74a5d53cf",
+    "mtime": 1785951585.0514889,
+    "ast_hash": "c2a10192e2fac3d15c4d7cd9e778932e",
     "semantic_hash": ""
   },
   "pages/login.html": {
-    "mtime": 1785939984.5695252,
-    "ast_hash": "0e96177bb6d7f4ad423afef2f506a96f",
+    "mtime": 1785951585.9102983,
+    "ast_hash": "0f176a11ce5ab2ddc2da3f6dd699ffdc",
     "semantic_hash": ""
   },
   "pages/privacy-policy.html": {
-    "mtime": 1785939984.481329,
-    "ast_hash": "90d0d3400ddf3d938391f16ec6d24f82",
+    "mtime": 1785951585.7942085,
+    "ast_hash": "4fdce9191067e30067b510d8fc8bbb47",
     "semantic_hash": ""
   },
   "pages/product.html": {
-    "mtime": 1785939984.3877964,
-    "ast_hash": "167c65e6888650428cff096a1e5eea87",
+    "mtime": 1785951585.6766698,
+    "ast_hash": "7a4639b2a90529fae730cfac51355035",
     "semantic_hash": ""
   },
   "pages/register.html": {
-    "mtime": 1785939984.627954,
-    "ast_hash": "6d80917cf3ac2eb32e20a929063a2175",
+    "mtime": 1785951585.9720128,
+    "ast_hash": "736af879d6b9d35d6408fb2845852de0",
     "semantic_hash": ""
   },
   "pages/reviews.html": {
-    "mtime": 1785939984.1276271,
-    "ast_hash": "028b42229c5dffc5b48fca667de6b68f",
+    "mtime": 1785951585.3383672,
+    "ast_hash": "c7e38691b49a66e75c1897ad4b87d619",
     "semantic_hash": ""
   },
   "pages/shop.html": {
-    "mtime": 1785939984.2974713,
-    "ast_hash": "d007a8b156e5565994390864cbca7d01",
+    "mtime": 1785951585.5711465,
+    "ast_hash": "b3205d4f0f61e89c45f0cba38214ce7e",
     "semantic_hash": ""
   },
   "pages/terms.html": {
-    "mtime": 1785939984.5250075,
-    "ast_hash": "afcdaad4606c66ef73c876ef393b7837",
+    "mtime": 1785951585.8530767,
+    "ast_hash": "38e04af6268b8f7fa091b7bb28d095ad",
     "semantic_hash": ""
   },
   "pages/treatments.html": {
-    "mtime": 1785939984.0339036,
-    "ast_hash": "7f41b459eda7d55c94709ba3f982d5e4",
+    "mtime": 1785951585.2071414,
+    "ast_hash": "4769a0498ab52e9b8b292aa2e270bffc",
     "semantic_hash": ""
   },
   "preview/book-success.html": {
-    "mtime": 1785917532.0891163,
-    "ast_hash": "aacda1962b1ec9000c988e0fc23612c7",
+    "mtime": 1785944513.5247066,
+    "ast_hash": "17e44156d9e326fc187eb8c38df21881",
     "semantic_hash": ""
   },
   "preview/book.html": {
-    "mtime": 1785917532.1134412,
-    "ast_hash": "4fa00bf061d17358bb9365182cf7bbed",
+    "mtime": 1785944513.5407443,
+    "ast_hash": "4aefce5e172fdf961a6e63c366d22f6e",
     "semantic_hash": ""
   },
   "preview/clinic.html": {
-    "mtime": 1785917532.1035552,
-    "ast_hash": "dbfdafe8b3826cc32eff3a920b08b38a",
+    "mtime": 1785944513.535561,
+    "ast_hash": "5901eb5c1e0b663b5e443f8f7ebabf56",
     "semantic_hash": ""
   },
   "preview/contact.html": {
-    "mtime": 1785917532.0935957,
-    "ast_hash": "69c06ac5687f5d603e5ae1713ba7a620",
+    "mtime": 1785944513.5268629,
+    "ast_hash": "656a65c0cc91ccdf1aee09221c80a663",
     "semantic_hash": ""
   },
   "preview/home.html": {
-    "mtime": 1785917532.0844631,
-    "ast_hash": "dc9a15985d63af89519b9aad28845e49",
+    "mtime": 1785944513.5225503,
+    "ast_hash": "89790ec502de014714226c1f154c0390",
     "semantic_hash": ""
   },
   "preview/privacy.html": {
-    "mtime": 1785917532.1853812,
-    "ast_hash": "6d5c24e71b67c39051d1f22c34510c2b",
+    "mtime": 1785944513.5515954,
+    "ast_hash": "3f86cccc8d493bda009f727eada0b06d",
     "semantic_hash": ""
   },
   "preview/reviews.html": {
-    "mtime": 1785917532.117081,
-    "ast_hash": "3b88601982b5a7f9df96c7b54a544f2a",
+    "mtime": 1785944513.543911,
+    "ast_hash": "ccfc321dff4e7a8cc772291bb63160a8",
     "semantic_hash": ""
   },
   "preview/shop.html": {
-    "mtime": 1785917532.108913,
-    "ast_hash": "0b4ded6435a3e3acf573b92dc665e316",
+    "mtime": 1785944513.5380921,
+    "ast_hash": "c9625c9b786f4f53d8c52babde1758a7",
     "semantic_hash": ""
   },
   "preview/terms.html": {
-    "mtime": 1785917532.0994306,
-    "ast_hash": "0e75f67d8fb5df03f611eaacac25b194",
+    "mtime": 1785944513.5290687,
+    "ast_hash": "0728185b252d9532b673a4c3c863bc4a",
     "semantic_hash": ""
   },
   "preview/treatments.html": {
-    "mtime": 1785917532.1638625,
-    "ast_hash": "cdb9562f8b34692450da88332a3f89e7",
+    "mtime": 1785944513.5470877,
+    "ast_hash": "1ebde457cf78cc9e8cc4d8575eee5178",
     "semantic_hash": ""
   },
   "production_site/404.html": {
@@ -2255,43 +2255,43 @@
     "semantic_hash": ""
   },
   "production_site/book-success.html": {
-    "mtime": 1785939970.6133,
-    "ast_hash": "c0f18164f72ae1e7fe433b66d8e2278c",
+    "mtime": 1785951578.7743874,
+    "ast_hash": "eba4241c8ccdfe876cc44046e8d02143",
     "semantic_hash": ""
   },
   "production_site/book.html": {
-    "mtime": 1785939970.6295245,
-    "ast_hash": "6a3d1463c11b22c6901b25abcae30bff",
+    "mtime": 1785951578.7876687,
+    "ast_hash": "dedf54d65280147a5899841f1e5b0710",
     "semantic_hash": ""
   },
   "production_site/cart.html": {
-    "mtime": 1785939970.632075,
-    "ast_hash": "15969567e6530c7dfe9ed41418380863",
+    "mtime": 1785951578.7894542,
+    "ast_hash": "f91fdb02fa36c444baa944b4f1f09bac",
     "semantic_hash": ""
   },
   "production_site/checkout.html": {
-    "mtime": 1785939970.6308258,
-    "ast_hash": "871121a4c10f04694dc855e77452e533",
+    "mtime": 1785951578.7887526,
+    "ast_hash": "bdc078f02e6db00fff80c63edb5e644a",
     "semantic_hash": ""
   },
   "production_site/clinic.html": {
-    "mtime": 1785939970.6264906,
-    "ast_hash": "94b0109c3117bc80d95a9237394f1ac7",
+    "mtime": 1785951578.7857683,
+    "ast_hash": "5eb5df48e445267f7eb5c9f7005b6baf",
     "semantic_hash": ""
   },
   "production_site/contact.html": {
-    "mtime": 1785939970.616542,
-    "ast_hash": "cadb7c0580e18248d0fe4100c4109f58",
+    "mtime": 1785951578.7800846,
+    "ast_hash": "5a2afd5a24296addf1791ea02495117c",
     "semantic_hash": ""
   },
   "production_site/index.html": {
-    "mtime": 1785939970.609113,
-    "ast_hash": "3867f109090137190cb41b3e17060073",
+    "mtime": 1785951578.7722468,
+    "ast_hash": "008d69e7930de69099949bd60247bc16",
     "semantic_hash": ""
   },
   "production_site/login.html": {
-    "mtime": 1785939970.622787,
-    "ast_hash": "cd9a2558a7bda0fbcd78c4d955ed30f3",
+    "mtime": 1785951578.7845721,
+    "ast_hash": "38c07fee6071fa3cc0efbc2d00776d2f",
     "semantic_hash": ""
   },
   "production_site/neo/WP_DELIVERY.md": {
@@ -2320,38 +2320,38 @@
     "semantic_hash": ""
   },
   "production_site/privacy-policy.html": {
-    "mtime": 1785939970.6156971,
-    "ast_hash": "9cbf8b69f4439e7ca93b2800f0b97f7d",
+    "mtime": 1785951578.7786543,
+    "ast_hash": "fc14f7a1348914e4f89a9eca06f70a61",
     "semantic_hash": ""
   },
   "production_site/product.html": {
-    "mtime": 1785939970.6107202,
-    "ast_hash": "c0995a79674b921ac1e0ab8b67bee5a3",
+    "mtime": 1785951578.7734265,
+    "ast_hash": "25db5e2aec5ae9e1dc4f021dd481980b",
     "semantic_hash": ""
   },
   "production_site/register.html": {
-    "mtime": 1785939970.6178932,
-    "ast_hash": "8c6b4620c54987ec17bcbdde61f24f70",
+    "mtime": 1785951578.7829502,
+    "ast_hash": "22e018cc245cd7f353479b85a2968e79",
     "semantic_hash": ""
   },
   "production_site/shop.html": {
-    "mtime": 1785939970.628316,
-    "ast_hash": "09d54be900f46e24948eb7fc65935bd7",
+    "mtime": 1785951578.7868035,
+    "ast_hash": "a93b979c830893a445f2dbf42d9e2832",
     "semantic_hash": ""
   },
   "production_site/terms.html": {
-    "mtime": 1785939970.617197,
-    "ast_hash": "ab319affa73c293c4f8ae75a03a1c737",
+    "mtime": 1785951578.781877,
+    "ast_hash": "86690b30dd6031b2ffe207896aa62a88",
     "semantic_hash": ""
   },
   "production_site/testimonials.html": {
-    "mtime": 1785939970.6145115,
-    "ast_hash": "91a11e58c29745f991e84a1f03692f1b",
+    "mtime": 1785951578.7763064,
+    "ast_hash": "69ddeff04d5610b0d4a77e2b6726bed7",
     "semantic_hash": ""
   },
   "production_site/treatments.html": {
-    "mtime": 1785939970.6336122,
-    "ast_hash": "b8576813102636999ad49f22e96c5f86",
+    "mtime": 1785951578.7902057,
+    "ast_hash": "e2751530ea4d59de191394318ad12e67",
     "semantic_hash": ""
   },
   "user_inputs.txt": {
@@ -2615,8 +2615,8 @@
     "semantic_hash": ""
   },
   "neo/a11y-toolbar.js": {
-    "mtime": 1785936510.2175105,
-    "ast_hash": "26070ba29709906ba6d95dd2a851b8c9",
+    "mtime": 1785944638.1398659,
+    "ast_hash": "c1f2458bf4d28affae06d93295a60ae2",
     "semantic_hash": ""
   },
   "neo/analytics.js": {
@@ -2695,13 +2695,13 @@
     "semantic_hash": ""
   },
   "neo/theme-init.js": {
-    "mtime": 1785936510.284315,
-    "ast_hash": "b30095a697952bd9c8e325d6e96022e3",
+    "mtime": 1785943071.9130185,
+    "ast_hash": "790192737523a04304ecaaf3bf7d1bd8",
     "semantic_hash": ""
   },
   "neo/theme-toggle.js": {
-    "mtime": 1785936510.2850528,
-    "ast_hash": "8f87a7b971bd56d9fa3d8facc06d8504",
+    "mtime": 1785943084.1879103,
+    "ast_hash": "58e9e431d506ef73abd32e6b093ae021",
     "semantic_hash": ""
   },
   "neo/visual_qa.py": {
@@ -2760,38 +2760,38 @@
     "semantic_hash": ""
   },
   "book-success.html": {
-    "mtime": 1785917531.393352,
-    "ast_hash": "90db2b6e06c74917372f9ec38947536c",
+    "mtime": 1785944513.4017284,
+    "ast_hash": "c2fba4efcd26c2ff6f5cddc356d16d14",
     "semantic_hash": ""
   },
   "book.html": {
-    "mtime": 1785917531.4242117,
-    "ast_hash": "fe072f2823a6cc6bf1102836d5049718",
+    "mtime": 1785944513.4188774,
+    "ast_hash": "1aac4391227d71a9fa8240061bc8561a",
     "semantic_hash": ""
   },
   "cart.html": {
-    "mtime": 1785929788.4369924,
-    "ast_hash": "c311eb5a7ffc18487a2a39651063beea",
+    "mtime": 1785944513.4221265,
+    "ast_hash": "d30a78a481ae4ecff4c7265629f345aa",
     "semantic_hash": ""
   },
   "checkout.html": {
-    "mtime": 1785929788.4541218,
-    "ast_hash": "8bc02617ee226cb84cf7b639045bd602",
+    "mtime": 1785944513.4200888,
+    "ast_hash": "3d5726b1e45637eac0a53142b150dce9",
     "semantic_hash": ""
   },
   "clinic.html": {
-    "mtime": 1785917531.4223826,
-    "ast_hash": "2561d476364a458421e419dc2f8df8a7",
+    "mtime": 1785944513.4164014,
+    "ast_hash": "b63b322c4f8855f30b669bcaaae1e7cf",
     "semantic_hash": ""
   },
   "contact.html": {
-    "mtime": 1785917531.4035535,
-    "ast_hash": "8b225443244babb13e27ed765f1f841c",
+    "mtime": 1785944513.4063287,
+    "ast_hash": "3cbfc4b17c52f4f4ea7a3666c6e6dcb2",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1785917531.3658488,
-    "ast_hash": "4be20e65e3cc9c11bca8350f3e892ac0",
+    "mtime": 1785944513.3986614,
+    "ast_hash": "876a83e238877e2c7ad730715fda8752",
     "semantic_hash": ""
   },
   "indexnow-key.txt": {
@@ -2800,8 +2800,8 @@
     "semantic_hash": ""
   },
   "login.html": {
-    "mtime": 1785917531.42053,
-    "ast_hash": "239a0da4a1c6b76767a04c31a21f9ccf",
+    "mtime": 1785944513.415595,
+    "ast_hash": "b87940473944ba71da23618d6729afb1",
     "semantic_hash": ""
   },
   "neo/WP_DELIVERY.md": {
@@ -2815,8 +2815,8 @@
     "semantic_hash": ""
   },
   "neo/components/social-media-card.html": {
-    "mtime": 1785936510.2434886,
-    "ast_hash": "ef2d11ec98cbee1806af09d40e038356",
+    "mtime": 1785951449.1473856,
+    "ast_hash": "8f6c0a90014524112c236cd16c4d5668",
     "semantic_hash": ""
   },
   "neo/components/social-media-card.md": {
@@ -2845,18 +2845,18 @@
     "semantic_hash": ""
   },
   "privacy-policy.html": {
-    "mtime": 1785917531.4016213,
-    "ast_hash": "2a002b817a3ef5fbf3b72f935aa53e7f",
+    "mtime": 1785944513.4049253,
+    "ast_hash": "f0a1113772e98e5eefcbe14d6473a998",
     "semantic_hash": ""
   },
   "product.html": {
-    "mtime": 1785917531.3733556,
-    "ast_hash": "d4120a115d4e808cf60a1cd4b7bfca75",
+    "mtime": 1785944513.400442,
+    "ast_hash": "cc71c0342294db4c958b828140401aa0",
     "semantic_hash": ""
   },
   "register.html": {
-    "mtime": 1785917531.4075053,
-    "ast_hash": "3a311a09f58e327c8148d0ffe0b722a9",
+    "mtime": 1785944513.40956,
+    "ast_hash": "9501da450289f8c63b088d18219b9865",
     "semantic_hash": ""
   },
   "robots.txt": {
@@ -2865,23 +2865,23 @@
     "semantic_hash": ""
   },
   "shop.html": {
-    "mtime": 1785929788.4450834,
-    "ast_hash": "1f08563dbbe8a1508731e20cf2cc275e",
+    "mtime": 1785944513.4173145,
+    "ast_hash": "e3e141d12a23ac71a9a7163ef8317136",
     "semantic_hash": ""
   },
   "terms.html": {
-    "mtime": 1785917531.4054863,
-    "ast_hash": "8409ef4314c02f9a1609a1461251110f",
+    "mtime": 1785944513.4076295,
+    "ast_hash": "4279659f3b67d18042fbb324ab0226a8",
     "semantic_hash": ""
   },
   "testimonials.html": {
-    "mtime": 1785917531.3998282,
-    "ast_hash": "3ee4aee3eb5f432e25bba6fcaec0fa41",
+    "mtime": 1785944513.4035523,
+    "ast_hash": "327e8c34700e0dcb8f2d48f34e62ca95",
     "semantic_hash": ""
   },
   "treatments.html": {
-    "mtime": 1785917531.4334898,
-    "ast_hash": "ecd259d43ca49844513e2746e322f829",
+    "mtime": 1785944513.4228554,
+    "ast_hash": "b1c0c669661e50e1f1f6d9104661b8a2",
     "semantic_hash": ""
   },
   "images/clinic-treatment.jpg": {
@@ -3015,28 +3015,28 @@
     "semantic_hash": ""
   },
   "neo/assets/social/facebook.svg": {
-    "mtime": 1785936510.2234917,
-    "ast_hash": "065493d7b21aad9bc03b383c93b105db",
+    "mtime": 1785951395.1949325,
+    "ast_hash": "0dfc15baefc7555f326cc6249254659c",
     "semantic_hash": ""
   },
   "neo/assets/social/google.svg": {
-    "mtime": 1785936510.2246413,
-    "ast_hash": "5a5f6f8f895c5bed6eeff07eed706bc8",
+    "mtime": 1785951395.686396,
+    "ast_hash": "cd4b9b246510f4cabeb52db42380faf9",
     "semantic_hash": ""
   },
   "neo/assets/social/instagram.svg": {
-    "mtime": 1785936510.2222674,
-    "ast_hash": "ab61e74556f04f930eb91ff78c66a91c",
+    "mtime": 1785951398.2213666,
+    "ast_hash": "54aba56856fb96ec0fb2b52073552e85",
     "semantic_hash": ""
   },
   "neo/assets/social/tiktok.svg": {
-    "mtime": 1785936510.2268267,
-    "ast_hash": "2b2c973cfd97e899dc702c8d6a0845a3",
+    "mtime": 1785951400.3608658,
+    "ast_hash": "7f079654ab55c2702aebb56aea903ba8",
     "semantic_hash": ""
   },
   "neo/assets/social/youtube.svg": {
-    "mtime": 1785936510.225781,
-    "ast_hash": "d538d97a29ae95f65632eecbe939c25a",
+    "mtime": 1785951395.6126616,
+    "ast_hash": "8f36363fde49da606fa8167ac6cf763c",
     "semantic_hash": ""
   },
   ".claude-flow/policy/state.json": {
@@ -3315,8 +3315,8 @@
     "semantic_hash": ""
   },
   "build_preview.py": {
-    "mtime": 1785911377.3874898,
-    "ast_hash": "8ebe18a45dcb7c268a149863d3c1bb7f",
+    "mtime": 1785940702.5920408,
+    "ast_hash": "939778280d5f8f2e47ae401a7fb32ff4",
     "semantic_hash": ""
   },
   "fix_all_links.py": {
@@ -3525,103 +3525,103 @@
     "semantic_hash": ""
   },
   "_localhost_preview/book-success.html": {
-    "mtime": 1785929774.7722306,
-    "ast_hash": "48bdd7fff1703e2e548f663d67c08e8b",
+    "mtime": 1785951586.6949353,
+    "ast_hash": "07094c093b933dae530305cb7afbe94f",
     "semantic_hash": ""
   },
   "_localhost_preview/book.html": {
-    "mtime": 1785929774.945409,
-    "ast_hash": "9a42f45c4a7d6ed8a55584480d4a53bf",
+    "mtime": 1785951586.7810445,
+    "ast_hash": "e249941448fa3d9537afe6190b8ae1b0",
     "semantic_hash": ""
   },
   "_localhost_preview/cart.html": {
-    "mtime": 1785929774.98899,
-    "ast_hash": "8110377526d9e4fd1067ee28babe459c",
+    "mtime": 1785951586.8251827,
+    "ast_hash": "1148e2a8115856149b8aee5956ef8bf4",
     "semantic_hash": ""
   },
   "_localhost_preview/checkout.html": {
-    "mtime": 1785929774.9617798,
-    "ast_hash": "77cf0d9a418308d49794ee221d149df3",
+    "mtime": 1785951586.7939856,
+    "ast_hash": "d4b90d3d5e0f4112d3fb11c8c48c17d9",
     "semantic_hash": ""
   },
   "_localhost_preview/clinic.html": {
-    "mtime": 1785929774.8915038,
-    "ast_hash": "a990725db98676cec2fe4a02d03d5f8e",
+    "mtime": 1785951586.7680209,
+    "ast_hash": "f2bd130f7c1d62e1c83fb0676a7dce02",
     "semantic_hash": ""
   },
   "_localhost_preview/contact.html": {
-    "mtime": 1785929774.8131151,
-    "ast_hash": "f54f7ecb41e1807b0d53708ad6fff354",
+    "mtime": 1785951586.7230163,
+    "ast_hash": "4f07c8ea2b9c8b23f11f8912ef71faca",
     "semantic_hash": ""
   },
   "_localhost_preview/home.html": {
-    "mtime": 1785929774.7555983,
-    "ast_hash": "ebeb24aad32ae192f2d3475692451e95",
+    "mtime": 1785951586.67708,
+    "ast_hash": "b8ab9ee9c476fd20044b5408bc488510",
     "semantic_hash": ""
   },
   "_localhost_preview/index.html": {
-    "mtime": 1785929774.7319448,
+    "mtime": 1785951586.6560163,
     "ast_hash": "f640b24934d65953bcba32a45d9e09c7",
     "semantic_hash": ""
   },
   "_localhost_preview/live_site.html": {
-    "mtime": 1785929774.9804182,
+    "mtime": 1785951586.813735,
     "ast_hash": "5749157d1d46130adbc284ebe9a5e163",
     "semantic_hash": ""
   },
   "_localhost_preview/login.html": {
-    "mtime": 1785929774.8551629,
-    "ast_hash": "8b4b2634c7e7c2b99ea1201c4bbc99b2",
+    "mtime": 1785951586.7593265,
+    "ast_hash": "f8da2df78c20ce5926343972e436bd52",
     "semantic_hash": ""
   },
   "_localhost_preview/privacy-policy.html": {
-    "mtime": 1785929774.8067465,
-    "ast_hash": "50dfbfbb642be1cda0ca59e74cb20aa1",
+    "mtime": 1785951586.7140973,
+    "ast_hash": "cbbe457ef9c541ff19d48e4b798c97d3",
     "semantic_hash": ""
   },
   "_localhost_preview/product.html": {
-    "mtime": 1785929774.76048,
-    "ast_hash": "daa6165ee108586125e666347ff3ce28",
+    "mtime": 1785951586.6876583,
+    "ast_hash": "adfb82d7c3542f5e06a4e537feef1560",
     "semantic_hash": ""
   },
   "_localhost_preview/register.html": {
-    "mtime": 1785929774.8435092,
-    "ast_hash": "7ce719abe0d8b20b7ed277cf867f6f0a",
+    "mtime": 1785951586.7544155,
+    "ast_hash": "02ab3ab4a305e1953e609e7bdd4e2d7a",
     "semantic_hash": ""
   },
   "_localhost_preview/reviews.html": {
-    "mtime": 1785929774.993032,
-    "ast_hash": "aa33303baa3d422c0cd2158e933237c1",
+    "mtime": 1785951586.829827,
+    "ast_hash": "0ea26f3f2f76cc094dbc5b7856d5d6c8",
     "semantic_hash": ""
   },
   "_localhost_preview/shop.html": {
-    "mtime": 1785929774.9324324,
-    "ast_hash": "cdbe25a452bce1f22ae45b68dcb53803",
+    "mtime": 1785951586.7748675,
+    "ast_hash": "7912869d6595b4df56db8805bfd647d0",
     "semantic_hash": ""
   },
   "_localhost_preview/terms.html": {
-    "mtime": 1785929774.8252237,
-    "ast_hash": "d1f8b00c7c26ff9f29c5af79e9cb475d",
+    "mtime": 1785951586.744945,
+    "ast_hash": "5f6cbb78eeab3a997b8255262c0b3feb",
     "semantic_hash": ""
   },
   "_localhost_preview/testimonials.html": {
-    "mtime": 1785929774.7921193,
+    "mtime": 1785951586.7016518,
     "ast_hash": "1f2de5bf1dea08d69dbed9d70d538971",
     "semantic_hash": ""
   },
   "_localhost_preview/treatments.html": {
-    "mtime": 1785929774.999708,
-    "ast_hash": "7eda01290e0a6f443720062943d8195f",
+    "mtime": 1785951586.8442926,
+    "ast_hash": "b79b09a115da0679db4d8a7e06f3367c",
     "semantic_hash": ""
   },
   "_tools/live_site.html": {
-    "mtime": 1785917531.974409,
-    "ast_hash": "9bc86ade5b94c06b74300e5bbba5e71f",
+    "mtime": 1785944513.502622,
+    "ast_hash": "483394687b6eb33b2650ebb7956f5ced",
     "semantic_hash": ""
   },
   "_tools/live_treatments.html": {
-    "mtime": 1785917531.9918706,
-    "ast_hash": "4902ffc1c5aed0abd9ae2fc3617d3ee6",
+    "mtime": 1785944513.5066037,
+    "ast_hash": "9ccf622053679ab816653ab880aa029f",
     "semantic_hash": ""
   },
   "_tools/llms-full.txt": {
@@ -3900,78 +3900,78 @@
     "semantic_hash": ""
   },
   "elementor_ready/book-success.html": {
-    "mtime": 1785917532.6066334,
-    "ast_hash": "9cd13d5e4925201fac859ec340fe9d96",
+    "mtime": 1785944513.644933,
+    "ast_hash": "51b4e4abd98d98bc7aaa2e01dc9b935a",
     "semantic_hash": ""
   },
   "elementor_ready/book.html": {
-    "mtime": 1785917532.621028,
-    "ast_hash": "5df90a60ea30ad9594ebb3f1905fd559",
+    "mtime": 1785944513.6601095,
+    "ast_hash": "809b632dbe414d684c73118fda66b056",
     "semantic_hash": ""
   },
   "elementor_ready/cart.html": {
-    "mtime": 1785917532.623165,
-    "ast_hash": "5fc7380811cdfd4b8d077b86ce261692",
+    "mtime": 1785944513.6625512,
+    "ast_hash": "75cd81c8abd63f3cd967f286767a76d9",
     "semantic_hash": ""
   },
   "elementor_ready/checkout.html": {
-    "mtime": 1785917532.6222036,
-    "ast_hash": "f41b92465d05b14d05cd9ed65909bf18",
+    "mtime": 1785944513.6614947,
+    "ast_hash": "19a933758898a1e03c905c90a5344a98",
     "semantic_hash": ""
   },
   "elementor_ready/clinic.html": {
-    "mtime": 1785917532.618929,
-    "ast_hash": "ca72093b5858aea44ea3b3197cc69bbd",
+    "mtime": 1785944513.6575646,
+    "ast_hash": "60c7e8494fbf275af4471aa421d1996a",
     "semantic_hash": ""
   },
   "elementor_ready/contact.html": {
-    "mtime": 1785917532.6101646,
-    "ast_hash": "99e4370d691172268b410ed20ad14dc4",
+    "mtime": 1785944513.6519887,
+    "ast_hash": "2b8fcbe22b0bd9fae224b9cebf4c440b",
     "semantic_hash": ""
   },
   "elementor_ready/index.html": {
-    "mtime": 1785917532.6005974,
-    "ast_hash": "570d1aa06da2f015f1238e001263dcfa",
+    "mtime": 1785944513.6415904,
+    "ast_hash": "ee76f242e18475a5bcb0b569cb48accf",
     "semantic_hash": ""
   },
   "elementor_ready/login.html": {
-    "mtime": 1785917532.617882,
-    "ast_hash": "9cdd9b678c7915e923cd9010b5d87438",
+    "mtime": 1785944513.655755,
+    "ast_hash": "60813b6bd2999f596441ad6dc2f1a188",
     "semantic_hash": ""
   },
   "elementor_ready/privacy-policy.html": {
-    "mtime": 1785917532.6089427,
-    "ast_hash": "637e5f7d71ee9e642ddf097db1fa7546",
+    "mtime": 1785944513.6495678,
+    "ast_hash": "c966fc2d5c8285301bf27d2977367c87",
     "semantic_hash": ""
   },
   "elementor_ready/product.html": {
-    "mtime": 1785917532.603678,
-    "ast_hash": "2539c1245c6ccaf1e4d543ecdde30f8a",
+    "mtime": 1785944513.6431744,
+    "ast_hash": "e93bccc384bf88571acc2c7e5d8e87a4",
     "semantic_hash": ""
   },
   "elementor_ready/register.html": {
-    "mtime": 1785917532.6141057,
-    "ast_hash": "03bfef0cb88f4526323ade530baaa38c",
+    "mtime": 1785944513.6544106,
+    "ast_hash": "40999fa977663dad07cc5480d799fe62",
     "semantic_hash": ""
   },
   "elementor_ready/shop.html": {
-    "mtime": 1785917532.619837,
-    "ast_hash": "deb4e4bd43fa6fc7aeec93535c33f00b",
+    "mtime": 1785944513.6590059,
+    "ast_hash": "51bc444e4173d08965e2481b2bd88bde",
     "semantic_hash": ""
   },
   "elementor_ready/terms.html": {
-    "mtime": 1785917532.611326,
-    "ast_hash": "dc90be866b2bc29c7c5137bfa2466c87",
+    "mtime": 1785944513.6530051,
+    "ast_hash": "1413d9724df0c8f2270f738b1a215602",
     "semantic_hash": ""
   },
   "elementor_ready/testimonials.html": {
-    "mtime": 1785917532.6075952,
-    "ast_hash": "6ae7e08435d5dfe6d66df0489449659f",
+    "mtime": 1785944513.6476846,
+    "ast_hash": "74e244ce518096b8cd88117d47ed5a36",
     "semantic_hash": ""
   },
   "elementor_ready/treatments.html": {
-    "mtime": 1785917532.624385,
-    "ast_hash": "8758d96e9a4c4c76ba8faa2d290affe7",
+    "mtime": 1785944513.6640801,
+    "ast_hash": "8027165b05fed5d7cb7dfa3020979123",
     "semantic_hash": ""
   },
   "elementor_snippets/404.html": {
@@ -4150,63 +4150,63 @@
     "semantic_hash": ""
   },
   "services/aesthetic-clinic-consultation-stockport.html": {
-    "mtime": 1785938743.508736,
-    "ast_hash": "cccde1618875c480716c914661411b1a",
+    "mtime": 1785944513.6770613,
+    "ast_hash": "089fb8899d8ded8f9b34f36b05cea3df",
     "semantic_hash": ""
   },
   "services/aqualyx-fat-dissolving-stockport.html": {
-    "mtime": 1785938743.5103965,
-    "ast_hash": "af46051382716dbb52e17f8db8ccc9f3",
+    "mtime": 1785944513.6761024,
+    "ast_hash": "9d2ba299b4e473d4950d740e83d245bc",
     "semantic_hash": ""
   },
   "services/chemical-peel-stockport.html": {
-    "mtime": 1785938743.5230856,
-    "ast_hash": "38be59497f19a7c7c4d80f9efd81cc44",
+    "mtime": 1785944513.6653922,
+    "ast_hash": "84b2e3e199a46fea1e844d4e4ff83103",
     "semantic_hash": ""
   },
   "services/cosmetic-injectables-and-treatments-stockport.html": {
-    "mtime": 1785938743.5161915,
-    "ast_hash": "0b0831869213b5ff070c9a2fbb1de052",
+    "mtime": 1785944513.672929,
+    "ast_hash": "405b0da1bcdac27534c50067d44463af",
     "semantic_hash": ""
   },
   "services/cosmetic-injectables-stockport.html": {
-    "mtime": 1785938743.5179365,
-    "ast_hash": "b6625bd28d8432a42a6b38e6a7b063ca",
+    "mtime": 1785944513.6707256,
+    "ast_hash": "5b58fb0ed70e96f15cdd2560a456ea94",
     "semantic_hash": ""
   },
   "services/dermaplaning-stockport.html": {
-    "mtime": 1785938743.511773,
-    "ast_hash": "39d4a5e1780ab2a9b23d8e27b5dd6531",
+    "mtime": 1785944513.6748421,
+    "ast_hash": "22b0f5622e7016975253c9f9d7742cb5",
     "semantic_hash": ""
   },
   "services/jalupro-stockport.html": {
-    "mtime": 1785938743.5201433,
-    "ast_hash": "2389e4ae926eed1ecbcb897248860407",
+    "mtime": 1785944513.6690333,
+    "ast_hash": "9314f6a02aa1edc1e2975f4deaf116fb",
     "semantic_hash": ""
   },
   "services/microneedling-stockport.html": {
-    "mtime": 1785938743.5218236,
-    "ast_hash": "0321f1ff03803131036e82f409d7bbbc",
+    "mtime": 1785944513.6676817,
+    "ast_hash": "90e94b2fcec9cb2981885385ce57a5c0",
     "semantic_hash": ""
   },
   "services/plasma-pen-stockport.html": {
-    "mtime": 1785938743.5242665,
-    "ast_hash": "2e816d735336f2bb6b76833144b5d99a",
+    "mtime": 1785944513.6665976,
+    "ast_hash": "87ffffd2de242b7e8c49ea04c6c67637",
     "semantic_hash": ""
   },
   "services/prp-vampire-facial-stockport.html": {
-    "mtime": 1785938743.5141983,
-    "ast_hash": "89a5f29a51b13e0261c3fb523d5437a4",
+    "mtime": 1785944513.671637,
+    "ast_hash": "e0a2753e9e027c885f04950792dbdbde",
     "semantic_hash": ""
   },
   "services/sunekos-stockport.html": {
-    "mtime": 1785938743.5130236,
-    "ast_hash": "5320d38645bc8e996c2c9a68ad9c392d",
+    "mtime": 1785944513.6739872,
+    "ast_hash": "9d642363aecea59c6871a71e76aab512",
     "semantic_hash": ""
   },
   "services/vampire-face-lift-stockport.html": {
-    "mtime": 1785938743.506994,
-    "ast_hash": "8568ee3eb2ca567840ef29421f22ff0f",
+    "mtime": 1785944513.6780493,
+    "ast_hash": "a01f5f75cc94095576eb7bf0b18ebbee",
     "semantic_hash": ""
   },
   "images/cosmetic-injectables-stockport-hero.jpg": {
@@ -4250,63 +4250,63 @@
     "semantic_hash": ""
   },
   "dist_wp/aesthetic-clinic-consultation-stockport.html": {
-    "mtime": 1785917531.595066,
-    "ast_hash": "f61b70ae78b65fbb67b53c8030ccdc03",
+    "mtime": 1785944513.481857,
+    "ast_hash": "74db160cb9751c5452e5a879a16f194b",
     "semantic_hash": ""
   },
   "dist_wp/aqualyx-fat-dissolving-stockport.html": {
-    "mtime": 1785917531.5885231,
-    "ast_hash": "3acd33a25b52b8ae75c1b56a799cdf9e",
+    "mtime": 1785944513.4771566,
+    "ast_hash": "6da2292b9f15d114e4b7460acd9f67b1",
     "semantic_hash": ""
   },
   "dist_wp/chemical-peel-stockport.html": {
-    "mtime": 1785917531.5282683,
-    "ast_hash": "a6113953a416e7908d330aea516c5ba3",
+    "mtime": 1785944513.4414802,
+    "ast_hash": "5f709b6986ee7360e4bb8fe8ede3e4e9",
     "semantic_hash": ""
   },
   "dist_wp/cosmetic-injectables-and-treatments-stockport.html": {
-    "mtime": 1785917531.5688598,
-    "ast_hash": "4bd81f8ddc2822a24c795b61c08d7d38",
+    "mtime": 1785944513.4656866,
+    "ast_hash": "39ac5fbec8b5bec9a62503b9d1a5ea7a",
     "semantic_hash": ""
   },
   "dist_wp/cosmetic-injectables-stockport.html": {
-    "mtime": 1785917531.5547254,
-    "ast_hash": "5f1f2dc05fad0c274694024e35ac58a8",
+    "mtime": 1785944513.4560106,
+    "ast_hash": "211b1133c24734fec0f1afb545b1a5c2",
     "semantic_hash": ""
   },
   "dist_wp/dermaplaning-stockport.html": {
-    "mtime": 1785917531.5826967,
-    "ast_hash": "6fdd7ce9ac2712027e530bed46a7f624",
+    "mtime": 1785944513.4745255,
+    "ast_hash": "e68e3688a018dbf5afb41a6798afb046",
     "semantic_hash": ""
   },
   "dist_wp/jalupro-stockport.html": {
-    "mtime": 1785917531.549487,
-    "ast_hash": "4640844cc83eef33a8f42be8f80280c0",
+    "mtime": 1785944513.4527771,
+    "ast_hash": "188310af59399a2b38438c2a263389cb",
     "semantic_hash": ""
   },
   "dist_wp/microneedling-stockport.html": {
-    "mtime": 1785917531.540557,
-    "ast_hash": "32c926d8a9c1f70bc3a255fe9b6dc55f",
+    "mtime": 1785944513.4458146,
+    "ast_hash": "5a770c63916897ee0a6cdf6b9cb9d145",
     "semantic_hash": ""
   },
   "dist_wp/plasma-pen-stockport.html": {
-    "mtime": 1785917531.535469,
-    "ast_hash": "806d0d301126a6f8feced370d15a7663",
+    "mtime": 1785944513.4436438,
+    "ast_hash": "61c0c7e62526511dfb8ec95ef8bd1d22",
     "semantic_hash": ""
   },
   "dist_wp/prp-vampire-facial-stockport.html": {
-    "mtime": 1785917531.5595038,
-    "ast_hash": "1bbe09f876d1c4e3288c919f9e0d643d",
+    "mtime": 1785944513.4592113,
+    "ast_hash": "8c6f2266fd85daec1ba478412e7bbb39",
     "semantic_hash": ""
   },
   "dist_wp/sunekos-stockport.html": {
-    "mtime": 1785917531.5779068,
-    "ast_hash": "1f21cb8ad58f0493fc5016ee9af33d4b",
+    "mtime": 1785944513.4710367,
+    "ast_hash": "d1cbb1ad7d1ae7bf88d48595c574992a",
     "semantic_hash": ""
   },
   "dist_wp/vampire-face-lift-stockport.html": {
-    "mtime": 1785917531.5992618,
-    "ast_hash": "a9818602651d6cfc038b3aecde7da428",
+    "mtime": 1785944513.4884582,
+    "ast_hash": "4f4586117f04fd5eea43f39c347f5d2d",
     "semantic_hash": ""
   },
   "assets/images/services/chemical_peel_hero_1785906188642.png": {
@@ -4385,8 +4385,8 @@
     "semantic_hash": ""
   },
   "replace_clinic.py": {
-    "mtime": 1785938696.6948419,
-    "ast_hash": "7bcf2d0426eaf12eea687622b5df048e",
+    "mtime": 1785940479.1501184,
+    "ast_hash": "eafd18cf356f1d6fc1d06542eadc7bd3",
     "semantic_hash": ""
   },
   "replace_treatments.py": {
@@ -4400,8 +4400,8 @@
     "semantic_hash": ""
   },
   "temp.html": {
-    "mtime": 1785917531.4167519,
-    "ast_hash": "00977425e6b87496ff112e6104595d7d",
+    "mtime": 1785944513.413886,
+    "ast_hash": "4128b949cc4642fafade767c1a7e4fe6",
     "semantic_hash": ""
   },
   "tmp_clinic.html": {
@@ -4410,188 +4410,188 @@
     "semantic_hash": ""
   },
   "_localhost_preview/neo/a11y-init.js": {
-    "mtime": 1785699177.171638,
+    "mtime": 1785936510.2145455,
     "ast_hash": "eaf2c52bdfb5d4f74fb98dddcc9b7d6f",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/a11y-toolbar.js": {
-    "mtime": 1785699177.1721456,
-    "ast_hash": "26070ba29709906ba6d95dd2a851b8c9",
+    "mtime": 1785944638.1398659,
+    "ast_hash": "c1f2458bf4d28affae06d93295a60ae2",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/analytics.js": {
-    "mtime": 1785699177.172684,
+    "mtime": 1785936510.2203162,
     "ast_hash": "f04e142e81be03a8bd1bb45002b82e56",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/book-form-demo.js": {
-    "mtime": 1785699177.1822634,
+    "mtime": 1785936510.2384827,
     "ast_hash": "d4214b3d8f8eb03be63b28475432aae6",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/cart-ui.js": {
-    "mtime": 1785744058.1957638,
-    "ast_hash": "bb12443f5b0828e8e941541f7da0a000",
+    "mtime": 1785936735.1254377,
+    "ast_hash": "b5064f26f29366a34017ef51c49f28b4",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/cookie-consent.js": {
-    "mtime": 1785699177.19033,
+    "mtime": 1785936510.262806,
     "ast_hash": "84dc0f422f105d52083bb64e86bca64d",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/craft-audit.sh": {
-    "mtime": 1785699177.190655,
+    "mtime": 1785936510.2642546,
     "ast_hash": "9e8490caa6068b1a73a15037c5480c4d",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/form-validation.js": {
-    "mtime": 1785699177.1909544,
+    "mtime": 1785936510.265454,
     "ast_hash": "dc588931b71d84d3f292afa5dac50453",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/gallery-lightbox.js": {
-    "mtime": 1785699177.1911888,
+    "mtime": 1785936510.2663536,
     "ast_hash": "fa6f9c9e9690d40ab06e19b4fe0c0d87",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/mobile-nav.js": {
-    "mtime": 1785699177.1920712,
+    "mtime": 1785936510.2696626,
     "ast_hash": "a55018312f5e41b5a3e2a157850e9aa0",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/neo-wp-boot.js": {
-    "mtime": 1785699177.1932442,
+    "mtime": 1785936510.2723184,
     "ast_hash": "6210258bb558fb9efd02972008e91423",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/palettes.json": {
-    "mtime": 1785699177.1948907,
+    "mtime": 1785936510.2755651,
     "ast_hash": "9b436171bae2b5d66e8897acf6f3d8c6",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/savvi-booking.js": {
-    "mtime": 1785699177.1956587,
-    "ast_hash": "934c8b9c3a4381550d7e0500faeaf085",
+    "mtime": 1785936510.2773328,
+    "ast_hash": "1001e0fc8aa5334ae51a36f90a968f47",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/savvi-shop.js": {
-    "mtime": 1785699177.1963494,
+    "mtime": 1785936510.2797682,
     "ast_hash": "a0a3f191eadfdb517b5c96e4152c2317",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/scroll-reveal.js": {
-    "mtime": 1785699177.1966293,
+    "mtime": 1785936510.2804651,
     "ast_hash": "d3bf3889bec0234fab4d848f9a2a5525",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/social-media-card.js": {
-    "mtime": 1785699177.1969953,
+    "mtime": 1785936510.281285,
     "ast_hash": "f962a029ecd339489a330eb6034a80c7",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/social-media-card.schema.json": {
-    "mtime": 1785699177.1975756,
+    "mtime": 1785936510.2825089,
     "ast_hash": "842ff6e8d08bdef9923e8ba067e33bc3",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/theme-init.js": {
-    "mtime": 1785699177.1980782,
-    "ast_hash": "b30095a697952bd9c8e325d6e96022e3",
+    "mtime": 1785943071.9130185,
+    "ast_hash": "790192737523a04304ecaaf3bf7d1bd8",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/theme-toggle.js": {
-    "mtime": 1785699177.198403,
-    "ast_hash": "8f87a7b971bd56d9fa3d8facc06d8504",
+    "mtime": 1785943084.1879103,
+    "ast_hash": "58e9e431d506ef73abd32e6b093ae021",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/visual_qa.py": {
-    "mtime": 1785699177.2001796,
+    "mtime": 1785936510.29102,
     "ast_hash": "dfc3148de2c1147b1a202db0759c396b",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/WP_DELIVERY.md": {
-    "mtime": 1785699177.1713614,
+    "mtime": 1785936510.2137623,
     "ast_hash": "4776e1bfad5b4a4ae5c07b7565deab50",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/a11y-toolbar.html": {
-    "mtime": 1785917531.4707763,
+    "mtime": 1785936510.2161043,
     "ast_hash": "d919f89a5f1cff571c56444c8289cbae",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/components/social-media-card.html": {
-    "mtime": 1785917531.472234,
-    "ast_hash": "ef2d11ec98cbee1806af09d40e038356",
+    "mtime": 1785951449.1473856,
+    "ast_hash": "8f6c0a90014524112c236cd16c4d5668",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/components/social-media-card.md": {
-    "mtime": 1785699177.189246,
+    "mtime": 1785936510.2527387,
     "ast_hash": "055159195dc98a89501fc8b4950fae86",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/palette-catalog.md": {
-    "mtime": 1785699177.1941905,
+    "mtime": 1785936510.2735162,
     "ast_hash": "39d23f11ac041410b3c649b91a42a795",
     "semantic_hash": ""
   },
   "_localhost_preview/services/aesthetic-clinic-consultation-stockport.html": {
-    "mtime": 1785917532.6555176,
-    "ast_hash": "cccde1618875c480716c914661411b1a",
+    "mtime": 1785944513.6770613,
+    "ast_hash": "089fb8899d8ded8f9b34f36b05cea3df",
     "semantic_hash": ""
   },
   "_localhost_preview/services/aqualyx-fat-dissolving-stockport.html": {
-    "mtime": 1785917532.654228,
-    "ast_hash": "af46051382716dbb52e17f8db8ccc9f3",
+    "mtime": 1785944513.6761024,
+    "ast_hash": "9d2ba299b4e473d4950d740e83d245bc",
     "semantic_hash": ""
   },
   "_localhost_preview/services/chemical-peel-stockport.html": {
-    "mtime": 1785917532.6259527,
-    "ast_hash": "38be59497f19a7c7c4d80f9efd81cc44",
+    "mtime": 1785944513.6653922,
+    "ast_hash": "84b2e3e199a46fea1e844d4e4ff83103",
     "semantic_hash": ""
   },
   "_localhost_preview/services/cosmetic-injectables-and-treatments-stockport.html": {
-    "mtime": 1785917532.636525,
-    "ast_hash": "0b0831869213b5ff070c9a2fbb1de052",
+    "mtime": 1785944513.672929,
+    "ast_hash": "405b0da1bcdac27534c50067d44463af",
     "semantic_hash": ""
   },
   "_localhost_preview/services/cosmetic-injectables-stockport.html": {
-    "mtime": 1785917532.6342933,
-    "ast_hash": "b6625bd28d8432a42a6b38e6a7b063ca",
+    "mtime": 1785944513.6707256,
+    "ast_hash": "5b58fb0ed70e96f15cdd2560a456ea94",
     "semantic_hash": ""
   },
   "_localhost_preview/services/dermaplaning-stockport.html": {
-    "mtime": 1785917532.64102,
-    "ast_hash": "39d4a5e1780ab2a9b23d8e27b5dd6531",
+    "mtime": 1785944513.6748421,
+    "ast_hash": "22b0f5622e7016975253c9f9d7742cb5",
     "semantic_hash": ""
   },
   "_localhost_preview/services/jalupro-stockport.html": {
-    "mtime": 1785917532.6329145,
-    "ast_hash": "2389e4ae926eed1ecbcb897248860407",
+    "mtime": 1785944513.6690333,
+    "ast_hash": "9314f6a02aa1edc1e2975f4deaf116fb",
     "semantic_hash": ""
   },
   "_localhost_preview/services/microneedling-stockport.html": {
-    "mtime": 1785917532.6319785,
-    "ast_hash": "0321f1ff03803131036e82f409d7bbbc",
+    "mtime": 1785944513.6676817,
+    "ast_hash": "90e94b2fcec9cb2981885385ce57a5c0",
     "semantic_hash": ""
   },
   "_localhost_preview/services/plasma-pen-stockport.html": {
-    "mtime": 1785917532.6270015,
-    "ast_hash": "2e816d735336f2bb6b76833144b5d99a",
+    "mtime": 1785944513.6665976,
+    "ast_hash": "87ffffd2de242b7e8c49ea04c6c67637",
     "semantic_hash": ""
   },
   "_localhost_preview/services/prp-vampire-facial-stockport.html": {
-    "mtime": 1785917532.635445,
-    "ast_hash": "89a5f29a51b13e0261c3fb523d5437a4",
+    "mtime": 1785944513.671637,
+    "ast_hash": "e0a2753e9e027c885f04950792dbdbde",
     "semantic_hash": ""
   },
   "_localhost_preview/services/sunekos-stockport.html": {
-    "mtime": 1785917532.6373794,
-    "ast_hash": "5320d38645bc8e996c2c9a68ad9c392d",
+    "mtime": 1785944513.6739872,
+    "ast_hash": "9d642363aecea59c6871a71e76aab512",
     "semantic_hash": ""
   },
   "_localhost_preview/services/vampire-face-lift-stockport.html": {
-    "mtime": 1785917532.6567955,
-    "ast_hash": "8568ee3eb2ca567840ef29421f22ff0f",
+    "mtime": 1785944513.6780493,
+    "ast_hash": "a01f5f75cc94095576eb7bf0b18ebbee",
     "semantic_hash": ""
   },
   "_localhost_preview/images/cosmetic-injectables-stockport-hero.jpg": {
@@ -4610,53 +4610,53 @@
     "semantic_hash": ""
   },
   "_localhost_preview/neo/assets/palettes/crimson.png": {
-    "mtime": 1785699177.175315,
+    "mtime": 1785936510.2354498,
     "ast_hash": "8f8a8ff7afd37e25c3ea17862f7b1c84",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/assets/palettes/luca-davincci.png": {
-    "mtime": 1785699177.1759067,
+    "mtime": 1785936510.229099,
     "ast_hash": "88959d6e7fedb5a461281be1aa264669",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/assets/palettes/moon.png": {
-    "mtime": 1785699177.1765268,
+    "mtime": 1785936510.2375946,
     "ast_hash": "ea4f73eabf1ec5dfc007ecb70954d699",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/assets/palettes/ocean-depth.png": {
-    "mtime": 1785699177.1791615,
+    "mtime": 1785936510.2317562,
     "ast_hash": "9ff674fc7f491307fb52b5e7a50b1e1f",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/assets/palettes/sapphire.png": {
-    "mtime": 1785699177.180331,
+    "mtime": 1785936510.2337172,
     "ast_hash": "9f214c9a139f6ffc16c894af1535b7f1",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/assets/social/facebook.svg": {
-    "mtime": 1785699177.1808887,
-    "ast_hash": "065493d7b21aad9bc03b383c93b105db",
+    "mtime": 1785951395.1949325,
+    "ast_hash": "0dfc15baefc7555f326cc6249254659c",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/assets/social/google.svg": {
-    "mtime": 1785699177.1811388,
-    "ast_hash": "5a5f6f8f895c5bed6eeff07eed706bc8",
+    "mtime": 1785951395.686396,
+    "ast_hash": "cd4b9b246510f4cabeb52db42380faf9",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/assets/social/instagram.svg": {
-    "mtime": 1785699177.1813889,
-    "ast_hash": "ab61e74556f04f930eb91ff78c66a91c",
+    "mtime": 1785951398.2213666,
+    "ast_hash": "54aba56856fb96ec0fb2b52073552e85",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/assets/social/tiktok.svg": {
-    "mtime": 1785699177.181757,
-    "ast_hash": "2b2c973cfd97e899dc702c8d6a0845a3",
+    "mtime": 1785951400.3608658,
+    "ast_hash": "7f079654ab55c2702aebb56aea903ba8",
     "semantic_hash": ""
   },
   "_localhost_preview/neo/assets/social/youtube.svg": {
-    "mtime": 1785699177.1820042,
-    "ast_hash": "d538d97a29ae95f65632eecbe939c25a",
+    "mtime": 1785951395.6126616,
+    "ast_hash": "8f36363fde49da606fa8167ac6cf763c",
     "semantic_hash": ""
   },
   "fix_images.py": {
@@ -4695,8 +4695,313 @@
     "semantic_hash": ""
   },
   "scripts/fix_icons.py": {
-    "mtime": 1785939964.5773945,
-    "ast_hash": "4ab5fb24de370862ca156850342cfdee",
+    "mtime": 1785940072.9799333,
+    "ast_hash": "c01338c2421db4a3074e5fc6321c953d",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/savvi-dynamic-pricing.js": {
+    "mtime": 1785936510.2780974,
+    "ast_hash": "4461c70f463b0051b2402de8ca5e333b",
+    "semantic_hash": ""
+  },
+  "scripts/fix_price_links.py": {
+    "mtime": 1785940502.127594,
+    "ast_hash": "cbd8348c2c3a700668015b2872968d48",
+    "semantic_hash": ""
+  },
+  "scripts/fix_service_pages.py": {
+    "mtime": 1785941748.4670496,
+    "ast_hash": "4e2938725b76872e9d36dd18d0b05fa4",
+    "semantic_hash": ""
+  },
+  ".agents/skills/radiance-page-builder/SKILL.md": {
+    "mtime": 1785950174.5012794,
+    "ast_hash": "35e3fd62ef53b3756561549e73773355",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/about.html": {
+    "mtime": 1785951586.7088654,
+    "ast_hash": "50643d733348dfd378d93ab47ab03c96",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/gift-cards.html": {
+    "mtime": 1785951586.7398214,
+    "ast_hash": "eee9896ed66695bd01d24a7cf4a2c560",
+    "semantic_hash": ""
+  },
+  "about.html": {
+    "mtime": 1785950811.605916,
+    "ast_hash": "e5ae0401689fe22c9ef0318aa4713afe",
+    "semantic_hash": ""
+  },
+  "gift-cards.html": {
+    "mtime": 1785949402.5231938,
+    "ast_hash": "9e3a028f01b121f3b81762b023c47d35",
+    "semantic_hash": ""
+  },
+  "mobile_menu_snapshot.txt": {
+    "mtime": 1785941648.050421,
+    "ast_hash": "9a26115d07ba8a42f05fff31bb1b055f",
+    "semantic_hash": ""
+  },
+  "pages/about.html": {
+    "mtime": 1785951586.0893989,
+    "ast_hash": "b579f23dc1b17ceab29d6727c4a96ffe",
+    "semantic_hash": ""
+  },
+  "pages/gift-cards.html": {
+    "mtime": 1785951586.0280612,
+    "ast_hash": "9d184204520531123264f89701377b3d",
+    "semantic_hash": ""
+  },
+  "production_site/about.html": {
+    "mtime": 1785951578.777403,
+    "ast_hash": "eb7bb511876a6c204cf8d616a88b4c2c",
+    "semantic_hash": ""
+  },
+  "production_site/gift-cards.html": {
+    "mtime": 1785951578.781104,
+    "ast_hash": "cfc76c50b1b517bb3111eeefbf828ae3",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/arc.svg": {
+    "mtime": 1785951396.7677507,
+    "ast_hash": "b6304a832e6d20aec241e82b47b41b61",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/behance.svg": {
+    "mtime": 1785951400.6118479,
+    "ast_hash": "a33cdebadbe31bfed2384f7896f30eca",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/bluesky.svg": {
+    "mtime": 1785951401.092505,
+    "ast_hash": "678b830df030dc475d677c23346f1eb7",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/carrd.svg": {
+    "mtime": 1785951400.852193,
+    "ast_hash": "eb61e8d2e4dc9beab04b815698770d30",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/daily-dev-ligth.svg": {
+    "mtime": 1785951401.3197937,
+    "ast_hash": "515b6603a276c41bf3bca2480c000dfe",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/hashnode.svg": {
+    "mtime": 1785951398.9147568,
+    "ast_hash": "ac2c7c18a94d4aa26fb2f5153574edb7",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/infojobs-logo.svg": {
+    "mtime": 1785951397.541461,
+    "ast_hash": "cca0225c23afd5d404950a2979a44a9f",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/linkedin.svg": {
+    "mtime": 1785951395.9025218,
+    "ast_hash": "24222e5d0f54ce500026b0720b6dd0bd",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/mastodon.svg": {
+    "mtime": 1785951397.0336542,
+    "ast_hash": "17e24bdbdac9cc28149e82fdf11e9ac7",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/matrix-light.svg": {
+    "mtime": 1785951396.34739,
+    "ast_hash": "7666ce5521ce396b3605af3d50e27309",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/messenger.svg": {
+    "mtime": 1785951397.2800992,
+    "ast_hash": "9f69f87767372d3a4ede371a0da26a60",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/meta.svg": {
+    "mtime": 1785951400.1488752,
+    "ast_hash": "d02bf07028f0170c44cf97842681d797",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/patreon.svg": {
+    "mtime": 1785951399.202731,
+    "ast_hash": "ca93a5210c8c9dbb2056672a72a506b2",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/peerlist.svg": {
+    "mtime": 1785951399.4269664,
+    "ast_hash": "ad83743f335a539a9cbc6bc7f1143f97",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/pinterest.svg": {
+    "mtime": 1785951399.7338898,
+    "ast_hash": "a9c03a664f1c63eeca6c778c43437973",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/reddit.svg": {
+    "mtime": 1785951399.9388847,
+    "ast_hash": "e02f5fba5a656c4d80ebcb1f2d8a43c2",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/skype.svg": {
+    "mtime": 1785951397.7831411,
+    "ast_hash": "67b93830ff7bfdb760dca3a579e42d13",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/telegram.svg": {
+    "mtime": 1785951396.1290033,
+    "ast_hash": "1e6062a33d0aea474085404e7f9236a4",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/threads.svg": {
+    "mtime": 1785951397.9950967,
+    "ast_hash": "1baee7c7afd5ac776c06ac03a22dbf71",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/twitter.svg": {
+    "mtime": 1785951395.4071789,
+    "ast_hash": "eeb8bc549b1221e4396b0cc2de6ffbfb",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/vk.svg": {
+    "mtime": 1785951398.6748042,
+    "ast_hash": "7d84be0ceef02736931c36b12bfc0352",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/whatsapp-icon.svg": {
+    "mtime": 1785951396.563863,
+    "ast_hash": "822dd3f4b4ef011e6b82d5350382b7ad",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/x.svg": {
+    "mtime": 1785951398.433362,
+    "ast_hash": "3111699ba60e39af93b892850bfb6431",
+    "semantic_hash": ""
+  },
+  "_localhost_preview/neo/assets/social/zulip.svg": {
+    "mtime": 1785951401.5520248,
+    "ast_hash": "910c42cf26ea185d4153f2c06a5b72e3",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/arc.svg": {
+    "mtime": 1785951396.7677507,
+    "ast_hash": "b6304a832e6d20aec241e82b47b41b61",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/behance.svg": {
+    "mtime": 1785951400.6118479,
+    "ast_hash": "a33cdebadbe31bfed2384f7896f30eca",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/bluesky.svg": {
+    "mtime": 1785951401.092505,
+    "ast_hash": "678b830df030dc475d677c23346f1eb7",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/carrd.svg": {
+    "mtime": 1785951400.852193,
+    "ast_hash": "eb61e8d2e4dc9beab04b815698770d30",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/daily-dev-ligth.svg": {
+    "mtime": 1785951401.3197937,
+    "ast_hash": "515b6603a276c41bf3bca2480c000dfe",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/hashnode.svg": {
+    "mtime": 1785951398.9147568,
+    "ast_hash": "ac2c7c18a94d4aa26fb2f5153574edb7",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/infojobs-logo.svg": {
+    "mtime": 1785951397.541461,
+    "ast_hash": "cca0225c23afd5d404950a2979a44a9f",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/linkedin.svg": {
+    "mtime": 1785951395.9025218,
+    "ast_hash": "24222e5d0f54ce500026b0720b6dd0bd",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/mastodon.svg": {
+    "mtime": 1785951397.0336542,
+    "ast_hash": "17e24bdbdac9cc28149e82fdf11e9ac7",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/matrix-light.svg": {
+    "mtime": 1785951396.34739,
+    "ast_hash": "7666ce5521ce396b3605af3d50e27309",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/messenger.svg": {
+    "mtime": 1785951397.2800992,
+    "ast_hash": "9f69f87767372d3a4ede371a0da26a60",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/meta.svg": {
+    "mtime": 1785951400.1488752,
+    "ast_hash": "d02bf07028f0170c44cf97842681d797",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/patreon.svg": {
+    "mtime": 1785951399.202731,
+    "ast_hash": "ca93a5210c8c9dbb2056672a72a506b2",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/peerlist.svg": {
+    "mtime": 1785951399.4269664,
+    "ast_hash": "ad83743f335a539a9cbc6bc7f1143f97",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/pinterest.svg": {
+    "mtime": 1785951399.7338898,
+    "ast_hash": "a9c03a664f1c63eeca6c778c43437973",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/reddit.svg": {
+    "mtime": 1785951399.9388847,
+    "ast_hash": "e02f5fba5a656c4d80ebcb1f2d8a43c2",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/skype.svg": {
+    "mtime": 1785951397.7831411,
+    "ast_hash": "67b93830ff7bfdb760dca3a579e42d13",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/telegram.svg": {
+    "mtime": 1785951396.1290033,
+    "ast_hash": "1e6062a33d0aea474085404e7f9236a4",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/threads.svg": {
+    "mtime": 1785951397.9950967,
+    "ast_hash": "1baee7c7afd5ac776c06ac03a22dbf71",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/twitter.svg": {
+    "mtime": 1785951395.4071789,
+    "ast_hash": "eeb8bc549b1221e4396b0cc2de6ffbfb",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/vk.svg": {
+    "mtime": 1785951398.6748042,
+    "ast_hash": "7d84be0ceef02736931c36b12bfc0352",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/whatsapp-icon.svg": {
+    "mtime": 1785951396.563863,
+    "ast_hash": "822dd3f4b4ef011e6b82d5350382b7ad",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/x.svg": {
+    "mtime": 1785951398.433362,
+    "ast_hash": "3111699ba60e39af93b892850bfb6431",
+    "semantic_hash": ""
+  },
+  "neo/assets/social/zulip.svg": {
+    "mtime": 1785951401.5520248,
+    "ast_hash": "910c42cf26ea185d4153f2c06a5b72e3",
     "semantic_hash": ""
   }
 }

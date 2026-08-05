@@ -234,11 +234,8 @@
       media.avatar || media.background,
       media.avatarPosition || media.backgroundPosition
     );
-    setImg(
-      card.querySelector("[data-neo-social-img='avatar-disc']"),
-      media.avatar || media.background,
-      media.avatarPosition || media.backgroundPosition
-    );
+    // avatar-disc setImg disabled to preserve google review SVG
+
 
     SOCIAL_KEYS.forEach(function (key) {
       var url = social[key];
