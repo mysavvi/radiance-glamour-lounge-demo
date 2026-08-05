@@ -25,7 +25,7 @@ get_header();
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--neo-text-secondary);"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
             <span class="neo-body" style="margin: 0; font-size: 0.875rem; color: var(--neo-text-primary);">Already a member?</span>
           </div>
-          <a href="/login.html?redirect=checkout/" class="neo-btn neo-btn--secondary neo-btn--sm" style="border-radius: var(--neo-radius-full); padding: 0.5rem 1rem;">Sign in for faster checkout</a>
+          <a href="/login/?redirect=checkout/" class="neo-btn neo-btn--secondary neo-btn--sm" style="border-radius: var(--neo-radius-full); padding: 0.5rem 1rem;">Sign in for faster checkout</a>
         </div>
 
         <form action="book-success.html" method="GET">

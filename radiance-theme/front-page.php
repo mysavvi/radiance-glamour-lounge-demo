@@ -38,7 +38,7 @@ get_header();
                   Discover Stockport&rsquo;s premier destination for luxury aesthetics and bespoke beauty treatments. Relax, unwind, and let our expert team enhance your natural glow in a truly welcoming sanctuary.
                 </p>
                 <div class="rb-cta-row rb-hero-scroll__cta">
-                  <a href="/book/" class="neo-btn neo-btn--primary">Book your consultation</a>
+                  <a href="/request-appointment/" class="neo-btn neo-btn--primary">Book your consultation</a>
                   <a href="#gallery" class="neo-btn neo-btn--secondary rb-hero-scroll__btn-secondary">Browse treatments</a>
                 </div>
               </div>
@@ -71,7 +71,7 @@ get_header();
                 Our team takes time to understand what you need, then enhances your natural glow with precision and ease. Complimentary refreshments, unhurried appointments, and a relaxed atmosphere from the moment you arrive.
               </p>
               <p class="rb-about__note">Rated 4.4 from 322 client reviews on Treatwell.</p>
-              <a href="/book/" class="neo-btn neo-btn--secondary rb-about__cta">Book your consultation</a>
+              <a href="/request-appointment/" class="neo-btn neo-btn--secondary rb-about__cta">Book your consultation</a>
             </div>
           </div>
         </div>
@@ -104,35 +104,35 @@ get_header();
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery-nails.jpg" alt="Hair styling at Radiance Glamour Lounge" width="800" height="1000" loading="lazy" decoding="async">
                   <figcaption class="rb-folder-gallery__photo-cap">
                     <span class="rb-folder-gallery__photo-label">Hair</span>
-                    <a href="treatments.html#hair" class="neo-btn neo-btn--primary rb-folder-gallery__photo-btn">View treatments</a>
+                    <a href="/treatments/#hair" class="neo-btn neo-btn--primary rb-folder-gallery__photo-btn">View treatments</a>
                   </figcaption>
                 </figure>
                 <figure class="rb-folder-gallery__photo">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery-facial.jpg" alt="Facial skincare treatment at Radiance Glamour Lounge" width="800" height="1000" loading="lazy" decoding="async">
                   <figcaption class="rb-folder-gallery__photo-cap">
                     <span class="rb-folder-gallery__photo-label">Face &amp; skin</span>
-                    <a href="treatments.html#face" class="neo-btn neo-btn--primary rb-folder-gallery__photo-btn">View treatments</a>
+                    <a href="/treatments/#face" class="neo-btn neo-btn--primary rb-folder-gallery__photo-btn">View treatments</a>
                   </figcaption>
                 </figure>
                 <figure class="rb-folder-gallery__photo">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nails-manicure.jpg" alt="Manicure and nail art" width="800" height="1000" loading="lazy" decoding="async">
                   <figcaption class="rb-folder-gallery__photo-cap">
                     <span class="rb-folder-gallery__photo-label">Nails</span>
-                    <a href="treatments.html#nails" class="neo-btn neo-btn--primary rb-folder-gallery__photo-btn">View treatments</a>
+                    <a href="/treatments/#nails" class="neo-btn neo-btn--primary rb-folder-gallery__photo-btn">View treatments</a>
                   </figcaption>
                 </figure>
                 <figure class="rb-folder-gallery__photo">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery-wax-laser.jpg" alt="Waxing and laser hair removal treatment room" width="800" height="1000" loading="lazy" decoding="async">
                   <figcaption class="rb-folder-gallery__photo-cap">
                     <span class="rb-folder-gallery__photo-label">Waxing &amp; laser</span>
-                    <a href="treatments.html#waxing" class="neo-btn neo-btn--primary rb-folder-gallery__photo-btn">View treatments</a>
+                    <a href="/treatments/#waxing" class="neo-btn neo-btn--primary rb-folder-gallery__photo-btn">View treatments</a>
                   </figcaption>
                 </figure>
                 <figure class="rb-folder-gallery__photo">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery-massage.jpg" alt="Relaxing back massage" width="800" height="1000" loading="lazy" decoding="async">
                   <figcaption class="rb-folder-gallery__photo-cap">
                     <span class="rb-folder-gallery__photo-label">Massage &amp; body</span>
-                    <a href="treatments.html#massage" class="neo-btn neo-btn--primary rb-folder-gallery__photo-btn">View treatments</a>
+                    <a href="/treatments/#massage" class="neo-btn neo-btn--primary rb-folder-gallery__photo-btn">View treatments</a>
                   </figcaption>
                 </figure>
               </div>
@@ -146,23 +146,23 @@ get_header();
             </div>
 
             <div class="rb-folder-gallery__static" id="rb-gallery-photos" aria-label="Treatment gallery">
-              <a href="treatments.html#hair" class="rb-folder-gallery__static-item">
+              <a href="/treatments/#hair" class="rb-folder-gallery__static-item">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery-nails.jpg" alt="Hair styling" width="800" height="600" loading="lazy">
                 <span class="rb-folder-gallery__static-label">Hair</span>
               </a>
-              <a href="treatments.html#face" class="rb-folder-gallery__static-item">
+              <a href="/treatments/#face" class="rb-folder-gallery__static-item">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery-facial.jpg" alt="Facial skincare at Radiance Glamour Lounge" width="800" height="600" loading="lazy" decoding="async">
                 <span class="rb-folder-gallery__static-label">Face &amp; skin</span>
               </a>
-              <a href="treatments.html#nails" class="rb-folder-gallery__static-item">
+              <a href="/treatments/#nails" class="rb-folder-gallery__static-item">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nails-manicure.jpg" alt="Manicure and nail art" width="800" height="600" loading="lazy">
                 <span class="rb-folder-gallery__static-label">Nails</span>
               </a>
-              <a href="treatments.html#waxing" class="rb-folder-gallery__static-item">
+              <a href="/treatments/#waxing" class="rb-folder-gallery__static-item">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery-wax-laser.jpg" alt="Waxing and laser treatment room" width="800" height="600" loading="lazy">
                 <span class="rb-folder-gallery__static-label">Waxing &amp; laser</span>
               </a>
-              <a href="treatments.html#massage" class="rb-folder-gallery__static-item">
+              <a href="/treatments/#massage" class="rb-folder-gallery__static-item">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery-massage.jpg" alt="Relaxing back massage" width="800" height="600" loading="lazy">
                 <span class="rb-folder-gallery__static-label">Massage &amp; body</span>
               </a>
@@ -204,7 +204,7 @@ get_header();
                 </dl>
                 <div class="rb-cta-row rb-clinic-teaser__actions">
                   <a href="/clinic/" class="neo-btn neo-btn--primary">Explore the clinic</a>
-                  <a href="/book/?treatment=clinic-consultation" class="neo-btn neo-btn--secondary">Book consultation</a>
+                  <a href="/request-appointment/?treatment=clinic-consultation" class="neo-btn neo-btn--secondary">Book consultation</a>
                 </div>
               </div>
             </div>
@@ -237,7 +237,7 @@ get_header();
                   <li>Tutor, assessor &amp; IQA</li>
                 </ul>
                 <div class="rb-team-spotlight__actions">
-                  <a href="/book/?treatment=consultation-nabila" class="neo-btn neo-btn--primary">Book a consultation with Nabila</a>
+                  <a href="/request-appointment/?treatment=consultation-nabila" class="neo-btn neo-btn--primary">Book a consultation with Nabila</a>
                 </div>
               </div>
             </article>
@@ -264,7 +264,7 @@ get_header();
                     <p class="rb-reviews__meta">322 verified reviews on Treatwell</p>
                   </div>
                 </div>
-                <a href="/testimonials/" class="rb-reviews__link">Read all reviews</a>
+                <a href="/reviews/" class="rb-reviews__link">Read all reviews</a>
               </header>
 
               <div class="rb-reviews__quotes">
@@ -545,7 +545,7 @@ get_header();
                 <div class="rb-social-presence__ticket-zone rb-social-presence__ticket-zone--reviews rb-social-presence__reviews">
                   <h3 class="rb-social-presence__reviews-title">Client reviews</h3>
                   <div class="rb-social-presence__review-grid">
-                    <a class="rb-social-presence__review-card" href="/testimonials/" data-neo-social-review="treatwell" aria-label="Rated 4.4 out of 5 from 322 Treatwell reviews">
+                    <a class="rb-social-presence__review-card" href="/reviews/" data-neo-social-review="treatwell" aria-label="Rated 4.4 out of 5 from 322 Treatwell reviews">
                       <span class="rb-social-presence__review-brand">Treatwell</span>
                       <div class="rb-social-presence__review-score-row">
                         <span class="rb-social-presence__review-score" data-neo-social-review-score="treatwell">4.4</span>

@@ -22,32 +22,25 @@ get_header();
         <p class="neo-body rb-muted rb-page-hero__lead">Verified reviews from Treatwell clients. These are real quotes from recent appointments at Radiance Glamour Lounge.</p>
 
         <div class="rb-reviews-grid" id="reviews-container" data-neo-reveal>
-          <!-- Reviews will be loaded here dynamically -->
+          <?php
+          $reviews = [
+            ["name" => "Marie", "text" => "Fantastic service, always get an appointment when needed"],
+            ["name" => "Elaine", "text" => "So happy with my microneedling, definitely going back"],
+            ["name" => "Laura", "text" => "Lovely massage, good pressure, friendly therapist"],
+            ["name" => "Almariya", "text" => "Loved my brows, beautiful attention to detail"],
+            ["name" => "Whitney", "text" => "Got the lash lift results I wanted"]
+          ];
+          
+          foreach ($reviews as $review) {
+            echo '<article class="rb-review-card">';
+            echo '<blockquote cite="https://www.treatwell.co.uk/place/radiance-glamour-lounge-ladies-only-salon/">';
+            echo '<p>&ldquo;' . esc_html($review['text']) . '&rdquo;</p>';
+            echo '</blockquote>';
+            echo '<footer>' . esc_html($review['name']) . ' &middot; Verified on Treatwell</footer>';
+            echo '</article>';
+          }
+          ?>
         </div>
-        <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            fetch('client-reviews.json')
-              .then(response => response.json())
-              .then(data => {
-                const container = document.getElementById('reviews-container');
-                if (!container) return;
-                
-                let html = '';
-                data.forEach(review => {
-                  html += `
-                    <article class="rb-review-card">
-                      <blockquote cite="https://www.treatwell.co.uk/place/radiance-glamour-lounge-ladies-only-salon/">
-                        <p>&ldquo;${review.text}&rdquo;</p>
-                      </blockquote>
-                      <footer>${review.name} &middot; Verified on Treatwell</footer>
-                    </article>
-                  `;
-                });
-                container.innerHTML = html;
-              })
-              .catch(error => console.error('Error loading reviews:', error));
-          });
-        </script>
 
         <section class="neo-section neo-section--inset" style="margin-top: var(--neo-space-8);" data-neo-reveal>
           <h2 class="neo-h3">Book your visit</h2>

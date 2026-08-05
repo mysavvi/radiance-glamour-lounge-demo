@@ -83,7 +83,7 @@
       /* Keep rb-hero-nav-over for the whole homepage so padding never jumps. */
       html.classList.add("rb-hero-nav-over");
       if (embed) embed.classList.add("rb-hero-nav-over");
-      var navSolid = sticky.getBoundingClientRect().bottom <= 12;
+      var navSolid = sticky.getBoundingClientRect().bottom <= 50;
       if (navSolid === lastNavSolid) return;
       html.classList.toggle("rb-hero-nav-solid", navSolid);
       if (embed) embed.classList.toggle("rb-hero-nav-solid", navSolid);

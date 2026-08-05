@@ -24,8 +24,8 @@ get_header();
                 Advanced skin and facial treatments sit alongside our salon services. Every clinic appointment starts with a proper consultation so we understand your goals, skin, and medical history before we recommend anything.
               </p>
               <div class="rb-cta-row">
-                <a href="/book/?treatment=clinic-consultation" class="neo-btn neo-btn--primary">Book a clinic consultation</a>
-                <a href="treatments.html#clinic" class="neo-btn neo-btn--secondary">View clinic prices</a>
+                <a href="/request-appointment/?treatment=clinic-consultation" class="neo-btn neo-btn--primary">Book a clinic consultation</a>
+                <a href="/treatments/#clinic" class="neo-btn neo-btn--secondary">View clinic prices</a>
               </div>
             </div>
             <figure class="rb-clinic-hero__visual">
@@ -98,7 +98,7 @@ get_header();
               <div class="neo-price-row neo-price-row--bookable">
                 <p class="neo-price-row__name">Aesthetic clinic consultation</p>
                 <span class="neo-price-row__price">Consult</span>
-                <a class="neo-price-row__book neo-btn neo-btn--secondary neo-btn--sm" href="/book/?treatment=clinic-consultation">Book</a>
+                <a class="neo-price-row__book neo-btn neo-btn--secondary neo-btn--sm" href="/request-appointment/?treatment=clinic-consultation">Book</a>
                 <p class="neo-price-row__desc">Book to discuss your goals and suitability.</p>
               </div>
               <div class="neo-price-row neo-price-row--bookable">
@@ -148,7 +148,7 @@ get_header();
             <h3 class="rb-treat-aside__title neo-h4" id="rb-clinic-aside-plasma-title">Fibroblast skin tightening</h3>
             <p class="rb-treat-aside__body">Plasma pen uses controlled plasma energy to tighten loose skin and soften scarring. It is often chosen for eyelids, lines around the mouth, and selected scar areas.</p>
             <p class="rb-treat-aside__body">You may have redness and small carbon dots after treatment. Downtime varies by area treated. We confirm suitability, pricing and aftercare at your clinic consultation.</p>
-            <a href="/book/?treatment=clinic-consultation" class="rb-treat-aside__link">Book a clinic consultation</a>
+            <a href="/request-appointment/?treatment=clinic-consultation" class="rb-treat-aside__link">Book a clinic consultation</a>
           </aside>
           </div>
 
@@ -156,7 +156,7 @@ get_header();
             <h2 class="neo-price-card__title neo-h4">Skin rejuvenation &amp; body</h2>
             <p class="neo-price-card__intro">Microneedling, hand and foot care. Full face menu on our treatments page.</p>
             <div class="neo-price-card__cta">
-              <a href="treatments.html#face" class="neo-price-card__cta-btn">View face &amp; skin menu</a>
+              <a href="/treatments/#face" class="neo-price-card__cta-btn">View face &amp; skin menu</a>
             </div>
             <div class="neo-price-card__body">
               <div class="neo-price-row neo-price-row--bookable">
@@ -227,8 +227,8 @@ get_header();
               <p class="neo-body rb-muted">Nabila founded Radiance Glamour Lounge and leads medical aesthetics alongside the wider salon team. For complex goals or your first injectable visit, book a consultation with her directly.</p>
             </div>
             <div class="rb-clinic-consult__cta">
-              <a href="/book/?treatment=consultation-nabila" class="neo-btn neo-btn--primary">Consultation with Nabila</a>
-              <a href="index.html#nabila" class="neo-btn neo-btn--secondary">About Nabila</a>
+              <a href="/request-appointment/?treatment=consultation-nabila" class="neo-btn neo-btn--primary">Consultation with Nabila</a>
+              <a href="/#nabila" class="neo-btn neo-btn--secondary">About Nabila</a>
             </div>
           </div>
         </div>

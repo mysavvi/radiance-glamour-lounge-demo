@@ -198,7 +198,7 @@
       container.innerHTML = `
         <div style="padding: 2rem; text-align: center; background: var(--neo-bg-surface); border-radius: var(--neo-radius-2xl);">
           <p class="neo-h3" style="margin-bottom: 1rem;">Your cart is empty</p>
-          <a href="shop.html" class="neo-btn neo-btn--primary" style="display: inline-flex;">Continue Shopping</a>
+          <a href="/shop/" class="neo-btn neo-btn--primary" style="display: inline-flex;">Continue Shopping</a>
         </div>
       `;
       return;
@@ -230,13 +230,13 @@
         // Full Cart layout
         html += `
           <article class="neo-card neo-surface-raised" style="display: flex; gap: 1.5rem; border-radius: var(--neo-radius-2xl); margin-bottom: 1rem;">
-            <a href="product.html" style="flex-shrink: 0; width: 6rem; aspect-ratio: 4/5; border-radius: var(--neo-radius-xl); overflow: hidden; background: var(--neo-bg-inset); padding: 0.5rem; border: var(--neo-border-1) solid var(--neo-border-subtle);">
+            <a href="/product/" style="flex-shrink: 0; width: 6rem; aspect-ratio: 4/5; border-radius: var(--neo-radius-xl); overflow: hidden; background: var(--neo-bg-inset); padding: 0.5rem; border: var(--neo-border-1) solid var(--neo-border-subtle);">
               <img src="${item.image}" alt="${item.title}" style="width: 100%; height: 100%; object-fit: contain;">
             </a>
             <div style="flex: 1; display: flex; flex-direction: column; min-width: 0;">
               <div style="display: flex; justify-content: space-between; gap: 1rem;">
                 <div style="min-width: 0;">
-                  <a href="product.html" class="neo-body" style="font-weight: 600; color: var(--neo-text-primary); text-decoration: none;">${item.title}</a>
+                  <a href="/product/" class="neo-body" style="font-weight: 600; color: var(--neo-text-primary); text-decoration: none;">${item.title}</a>
                   <p class="neo-body rb-muted" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.25rem;">${item.category} &middot; ${item.size}</p>
                 </div>
                 <button type="button" aria-label="Remove item" class="remove-btn" data-id="${item.id}" style="flex-shrink: 0; padding: 0.5rem; background: transparent; border: none; color: var(--neo-text-muted); cursor: pointer;">

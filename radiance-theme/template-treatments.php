@@ -62,7 +62,7 @@ get_header();
             <h3 class="rb-treat-aside__title neo-h4" id="rb-treat-aside-hair-title">Hair colour &amp; cuts in Stockport</h3>
             <p class="rb-treat-aside__body">Our stylists on Prince&rsquo;s Street offer ladies&rsquo; cuts, colour and highlights. A patch test is required before colour services if you are new or changing formula.</p>
             <p class="rb-treat-aside__body">Radiance Glamour Lounge is in Merseyway Shopping Centre, Stockport SK1 1SE.</p>
-            <a href="/testimonials/" class="rb-treat-aside__link">Read client reviews</a>
+            <a href="/reviews/" class="rb-treat-aside__link">Read client reviews</a>
           </aside>
 
           <div class="neo-price-card neo-price-card--spotlight" id="clinic">
@@ -75,7 +75,7 @@ get_header();
               <div class="neo-price-row neo-price-row--bookable">
                 <p class="neo-price-row__name">Clinic consultation</p>
                 <span class="neo-price-row__price">Consult</span>
-                <a class="neo-price-row__book neo-btn neo-btn--secondary neo-btn--sm" href="/book/?treatment=clinic-consultation">Book</a>
+                <a class="neo-price-row__book neo-btn neo-btn--secondary neo-btn--sm" href="/request-appointment/?treatment=clinic-consultation">Book</a>
               </div>
               <div class="neo-price-row neo-price-row--bookable">
                 <p class="neo-price-row__name">Cosmetic injectables</p>
@@ -141,7 +141,7 @@ get_header();
             <h3 class="rb-treat-aside__title neo-h4" id="rb-treat-aside-nails-title">Manicures &amp; gel nails</h3>
             <p class="rb-treat-aside__body">Classic manicures, gel polish and nail art, with pedicures for a full finish. Allow extra time for gel removals, infills or detailed nail art when you book.</p>
             <p class="rb-treat-aside__body">Browse our gallery for recent nail work, or send a booking request with the look you have in mind.</p>
-            <a href="index.html#gallery" class="rb-treat-aside__link">See our gallery</a>
+            <a href="/#gallery" class="rb-treat-aside__link">See our gallery</a>
           </aside>
           </div>
 

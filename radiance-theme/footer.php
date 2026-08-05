@@ -3,9 +3,15 @@
       <div class="neo-footer__inner">
         <div class="neo-footer__grid">
           <div class="neo-footer__brand">
-            <a href="index.html" class="neo-footer__logo" aria-label="Radiance Glamour Lounge">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo1.png" alt="Radiance Glamour Lounge" class="neo-footer__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">
-            </a>
+            <?php
+if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
+    the_custom_logo();
+} else {
+    echo '<a href="' . esc_url( home_url( '/' ) ) . '" class="neo-mobile-header__brand neo-footer__logo" aria-label="' . get_bloginfo( 'name' ) . '">';
+    echo '<img src="' . get_template_directory_uri() . '/assets/images/logo1.png" alt="' . get_bloginfo( 'name' ) . '" class="neo-header__logo-img neo-footer__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">';
+    echo '</a>';
+}
+?>
             <div class="neo-footer__social" aria-label="Social media">
               <a href="https://www.facebook.com/p/Radiance-glamour-loungeAesthetic-clinic-100083286131948/" target="_blank" rel="noopener noreferrer" aria-label="Radiance Glamour Lounge on Facebook">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
@@ -22,13 +28,13 @@
           <nav class="neo-footer__col neo-footer__col--explore" aria-label="Footer">
             <h2 class="neo-footer__heading">Explore</h2>
             <ul class="neo-footer__links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="treatments.html">Treatments</a></li>
-              <li><a href="clinic.html">Clinic</a></li>
-              <li><a href="testimonials.html">Reviews</a></li>
-              <li><a href="shop.html">Shop</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/treatments/">Treatments</a></li>
+              <li><a href="/clinic/">Clinic</a></li>
+              <li><a href="/reviews/">Reviews</a></li>
+              <li><a href="/shop/">Shop</a></li>
               <li><a href="/book/">Book</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/contact/">Contact</a></li>
             </ul>
           </nav>
           <div class="neo-footer__col neo-footer__col--contact">
@@ -47,7 +53,7 @@
         </div>
         <div class="neo-footer__bottom">
           <div class="neo-footer__bottom-left">
-            <p class="neo-footer__copyright">&copy; 2026 Radiance Glamour Lounge. All rights reserved.</p>
+            <p class="neo-footer__copyright">&copy; <?php echo date('Y'); ?> Radiance Glamour Lounge. All rights reserved.</p>
             <a class="neo-footer__credit" href="https://savviweb.com" target="_blank" rel="noopener noreferrer">
               <span>Designed by</span>
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/savviweb-logo.png" alt="" width="18" height="18">
@@ -55,10 +61,10 @@
             </a>
           </div>
           <div class="neo-footer__legal">
-            <a href="privacy-policy.html">Privacy</a>
-            <a href="terms.html">Terms</a>
+            <a href="/privacy/">Privacy</a>
+            <a href="/terms/">Terms</a>
             <button type="button" class="neo-a11y-footer-btn" data-neo-a11y-open aria-haspopup="dialog">
-              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4" r="2"></circle><path d="M12 6v7"></path><path d="M5 8h14"></path><path d="M12 13l-4 8"></path><path d="M12 13l4 8"></path></svg>
               <span>Accessibility</span>
             </button>
           </div>
@@ -68,11 +74,11 @@
 
     <nav class="neo-bottom-nav" aria-label="Mobile">
       <div class="neo-bottom-nav__inner">
-        <a href="index.html" class="neo-bottom-nav__tab neo-bottom-nav__tab--active" aria-current="page">
+        <a href="/" class="neo-bottom-nav__tab neo-bottom-nav__tab--active" aria-current="page">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/></svg>
           <span>Home</span>
         </a>
-        <a href="treatments.html" class="neo-bottom-nav__tab">
+        <a href="/treatments/" class="neo-bottom-nav__tab">
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
           <span>Treatments</span>
         </a>
@@ -84,7 +90,7 @@
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           <span>Book</span>
         </a>
-        <a href="shop.html" class="neo-bottom-nav__tab">
+        <a href="/shop/" class="neo-bottom-nav__tab">
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
           <span>Shop</span>
         </a>
@@ -92,7 +98,7 @@
     </nav>
 
     <div id="neo-cookie-banner" class="neo-cookie-banner neo-cookie-banner--with-bottom-nav" role="region" aria-label="Cookie consent">
-      <p class="neo-cookie-banner__text">We use essential cookies to run this site. With your consent we may also use analytics and embedded content such as maps. See our <a href="privacy-policy.html">Privacy Policy</a> for details.</p>
+      <p class="neo-cookie-banner__text">We use essential cookies to run this site. With your consent we may also use analytics and embedded content such as maps. See our <a href="/privacy/">Privacy Policy</a> for details.</p>
       <div class="neo-cookie-banner__actions">
         <button type="button" class="neo-btn neo-btn--secondary" data-neo-cookie-decline>Decline optional</button>
         <button type="button" class="neo-btn neo-btn--primary" data-neo-cookie-accept>Accept all</button>
@@ -106,9 +112,6 @@
   
   
   
-  
-  
-
 </div> <!-- end neo-page wp-html-module -->
 <?php wp_footer(); ?>
 </body>
