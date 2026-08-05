@@ -26,7 +26,10 @@ def main():
         return
 
     print("Fetching page mapping from WordPress...")
-    resp = requests.get(f"{url_base}?per_page=100", auth=(username, password))
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+    resp = requests.get(f"{url_base}?per_page=100", auth=(username, password), headers=headers)
     if resp.status_code != 200:
         print("Failed to get pages:", resp.text)
         return
@@ -60,7 +63,8 @@ def main():
         update_resp = requests.post(
             f"{url_base}/{page_id}",
             auth=(username, password),
-            json={"content": wrapped_content}
+            json={"content": wrapped_content},
+            headers=headers
         )
         
         if update_resp.status_code == 200:

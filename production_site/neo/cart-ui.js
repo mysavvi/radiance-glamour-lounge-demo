@@ -427,7 +427,7 @@
   }
 
   // Boot
-  document.addEventListener("DOMContentLoaded", function() {
+  function boot() {
     updateBadges();
     initProductPage();
     initShopPage();
@@ -439,6 +439,12 @@
     window.addEventListener('cart_config_loaded', () => {
       updateTotals(!!document.getElementById('checkout-items-container'));
     });
-  });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
 
 })();

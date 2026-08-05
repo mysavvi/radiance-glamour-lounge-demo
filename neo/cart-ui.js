@@ -16,6 +16,30 @@
     }
   }
 
+  // Shop Configuration
+  let shopConfig = {
+    vat_enabled: true,
+    prices_include_vat: true,
+    vat_rate: 20,
+    show_checkout_tax: true
+  };
+
+  async function loadConfig() {
+    try {
+      const res = await fetch('/wp-json/savvi-pos/v1/public/config');
+      if (res.ok) {
+        const json = await res.json();
+        if (json.success && json.data) {
+          shopConfig = json.data;
+        }
+      }
+    } catch (e) {
+      console.warn('Could not load shop config, using defaults.');
+    }
+    // Dispatch event so UI can re-render totals once config is loaded
+    window.dispatchEvent(new Event('cart_config_loaded'));
+  }
+
   function saveCart(cart) {
     localStorage.setItem(CART_KEY, JSON.stringify(cart));
     updateBadges();
@@ -31,8 +55,8 @@
     // Update any badge with class neo-cart-badge
     const badges = document.querySelectorAll('.neo-cart-badge, [data-cart-badge]');
     badges.forEach(badge => {
-      badge.textContent = totalItems;
-      badge.style.display = totalItems > 0 ? 'inline-flex' : 'none'; // or just rely on CSS
+      badge.textContent = totalItems > 0 ? totalItems : '0';
+      badge.style.display = totalItems > 0 ? 'inline-flex' : 'none';
     });
   }
 
@@ -49,24 +73,25 @@
       } else {
         cart.push(product);
       }
-      saveCart(cart); window.dispatchEvent(new Event("cartUpdated"));
+      saveCart(cart);
     },
     updateQty: function(id, qty) {
       let cart = getCart();
       const existing = cart.find(i => i.id === id);
       if (existing) {
-        if (qty <= 0) {
+        const newQty = parseInt(qty, 10);
+        if (newQty <= 0) {
           cart = cart.filter(i => i.id !== id);
         } else {
-          existing.qty = qty;
+          existing.qty = newQty;
         }
-        saveCart(cart); window.dispatchEvent(new Event("cartUpdated"));
+        saveCart(cart);
       }
     },
     removeItem: function(id) {
       let cart = getCart();
       cart = cart.filter(i => i.id !== id);
-      saveCart(cart); window.dispatchEvent(new Event("cartUpdated"));
+      saveCart(cart);
     }
   };
 
@@ -82,31 +107,70 @@
 
     if (!minusBtn || !plusBtn || !qtyDisplay || !addBtn) return;
 
+    // Read product data from the add-to-cart button's data attributes
+    // Fallback to DOM price display if not set
+    const productId    = addBtn.getAttribute('data-id')    || 'radiance-beauty-serum';
+    const productTitle = addBtn.getAttribute('data-title') || 'Radiance Beauty Serum';
+    const productImage = addBtn.getAttribute('data-image') || 'images/logo1.png';
+    const productCat   = addBtn.getAttribute('data-category') || 'Skincare';
+    const productSize  = addBtn.getAttribute('data-size')  || '';
+
+    // Read base price from the DOM price display element so it stays in sync
+    const priceDisplay = document.getElementById('product-price-display');
+    const pointsText = document.getElementById('product-points-text');
+    
+    let basePrice = parseFloat(
+      priceDisplay
+        ? priceDisplay.getAttribute('data-unit-price')
+        : (addBtn.getAttribute('data-price') || '0')
+    );
+    if (isNaN(basePrice) || basePrice <= 0) basePrice = parseFloat(addBtn.getAttribute('data-price')) || 45.00;
+
+    let pointsPerUnit = 45;
+    if (pointsText && pointsText.parentElement.getAttribute('data-points-per-unit')) {
+      pointsPerUnit = parseInt(pointsText.parentElement.getAttribute('data-points-per-unit'), 10) || 45;
+    }
+
     let qty = 1;
+
+    function updatePrice() {
+      if (priceDisplay) {
+        const totalPrice = (basePrice * qty).toFixed(2);
+        if (qty > 1) {
+          priceDisplay.innerHTML = `&pound;${totalPrice} <span style="font-size: 0.65em; font-weight: normal; color: var(--neo-text-muted);">(&pound;${basePrice.toFixed(2)} each)</span>`;
+        } else {
+          priceDisplay.innerHTML = `&pound;${totalPrice}`;
+        }
+      }
+      if (pointsText) {
+        pointsText.textContent = `Earn ${pointsPerUnit * qty} Glamour Points`;
+      }
+    }
 
     minusBtn.addEventListener('click', () => {
       if (qty > 1) {
         qty--;
         qtyDisplay.textContent = qty;
+        updatePrice();
       }
     });
 
     plusBtn.addEventListener('click', () => {
       qty++;
       qtyDisplay.textContent = qty;
+      updatePrice();
     });
 
     addBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      // Hardcoded product details for the prototype
       const product = {
-        id: 'radiance-beauty-serum',
-        title: 'Radiance Beauty Serum',
-        price: 45.00,
+        id: productId,
+        title: productTitle,
+        price: basePrice,
         qty: qty,
-        image: 'images/logo1.png',
-        category: 'Skincare',
-        size: '50ml'
+        image: productImage,
+        category: productCat,
+        size: productSize
       };
       
       window.CartAPI.addItem(product);
@@ -114,13 +178,12 @@
       // Visual feedback
       const originalText = addBtn.textContent;
       addBtn.textContent = 'Added to Cart!';
-      addBtn.style.backgroundColor = 'var(--neo-accent)';
-      addBtn.style.color = '#fff';
+      addBtn.style.transition = 'all 0.3s ease';
+      addBtn.style.opacity = '0.85';
       
       setTimeout(() => {
         addBtn.textContent = originalText;
-        addBtn.style.backgroundColor = '';
-        addBtn.style.color = '';
+        addBtn.style.opacity = '';
       }, 2000);
     });
   }
@@ -231,10 +294,25 @@
     const cart = getCart();
     const subtotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
     
-    // Default flat shipping and taxes for prototype
+    // Default flat shipping
     const shipping = cart.length > 0 ? 5.00 : 0;
-    const taxes = cart.length > 0 ? 7.00 : 0; // Simplified static tax mimicking original HTML
-    const total = subtotal + shipping + taxes;
+    
+    let taxes = 0;
+    let total = subtotal + shipping;
+    let taxLabel = shopConfig.checkout_tax_text ? shopConfig.checkout_tax_text : 'Taxes';
+
+    if (shopConfig.vat_enabled && shopConfig.show_checkout_tax && cart.length > 0) {
+      if (shopConfig.prices_include_vat) {
+        // Tax is already in the subtotal and shipping
+        taxes = total - (total / (1 + (shopConfig.vat_rate / 100)));
+        if (!shopConfig.checkout_tax_text) taxLabel = `Tax (Included)`;
+      } else {
+        // Tax needs to be added on top
+        taxes = total * (shopConfig.vat_rate / 100);
+        total += taxes;
+        if (!shopConfig.checkout_tax_text) taxLabel = `Tax (${shopConfig.vat_rate}%)`;
+      }
+    }
 
     // Update Subtotal element (for cart page)
     const subtotalEl = document.getElementById('cart-subtotal');
@@ -254,11 +332,23 @@
       const checkoutSubtotalEl = document.getElementById('checkout-subtotal');
       const checkoutShippingEl = document.getElementById('checkout-shipping');
       const checkoutTaxesEl = document.getElementById('checkout-taxes');
+      const checkoutTaxesLabel = document.getElementById('checkout-taxes-label');
+      const checkoutTaxesRow = document.getElementById('checkout-taxes-row');
       const checkoutPayBtn = document.getElementById('checkout-pay-btn');
 
       if (checkoutSubtotalEl) checkoutSubtotalEl.innerHTML = `&pound;${subtotal.toFixed(2)}`;
       if (checkoutShippingEl) checkoutShippingEl.innerHTML = `&pound;${shipping.toFixed(2)}`;
-      if (checkoutTaxesEl) checkoutTaxesEl.innerHTML = `&pound;${taxes.toFixed(2)}`;
+      
+      if (checkoutTaxesRow) {
+        if (shopConfig.vat_enabled && shopConfig.show_checkout_tax && cart.length > 0) {
+          checkoutTaxesRow.style.display = '';
+          if (checkoutTaxesEl) checkoutTaxesEl.innerHTML = `&pound;${taxes.toFixed(2)}`;
+          if (checkoutTaxesLabel) checkoutTaxesLabel.textContent = taxLabel;
+        } else {
+          checkoutTaxesRow.style.display = 'none';
+        }
+      }
+
       checkoutTotalEls.forEach(el => el.innerHTML = `&pound;${total.toFixed(2)}`);
       
       if (checkoutPayBtn) {
@@ -271,6 +361,11 @@
           checkoutPayBtn.style.opacity = '1';
           checkoutPayBtn.style.cursor = 'pointer';
         }
+      }
+      
+      const checkoutEarnPoints = document.getElementById('checkout-earn-points');
+      if (checkoutEarnPoints) {
+        checkoutEarnPoints.textContent = `You will earn ${Math.floor(subtotal)} Glamour Points with this purchase`;
       }
     }
   }
@@ -299,23 +394,57 @@
     });
   }
 
+  function initShopPage() {
+    const shopAddBtns = document.querySelectorAll('.shop-add-to-cart');
+    shopAddBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const product = {
+          id: btn.getAttribute('data-id'),
+          title: btn.getAttribute('data-title'),
+          price: parseFloat(btn.getAttribute('data-price')),
+          qty: 1,
+          image: btn.getAttribute('data-image'),
+          category: btn.getAttribute('data-category'),
+          size: btn.getAttribute('data-size')
+        };
+        
+        window.CartAPI.addItem(product);
+        
+        // Visual feedback
+        const originalText = btn.textContent;
+        btn.textContent = 'Added!';
+        btn.style.backgroundColor = 'var(--neo-accent)';
+        btn.style.color = '#fff';
+        
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.backgroundColor = '';
+          btn.style.color = '';
+        }, 2000);
+      });
+    });
+  }
+
   // Boot
-  document.addEventListener("DOMContentLoaded", function() {
+  function boot() {
     updateBadges();
     initProductPage();
+    initShopPage();
     initCartPage();
     initCheckoutPage();
-  });
+    
+    // Load config and update
+    loadConfig();
+    window.addEventListener('cart_config_loaded', () => {
+      updateTotals(!!document.getElementById('checkout-items-container'));
+    });
+  }
 
-  window.addEventListener("cartUpdated", () => {
-    if (document.getElementById("cart-items-container")) {
-      renderCartItems("cart-items-container", false);
-      updateTotals(false);
-    }
-    if (document.getElementById("checkout-items-container")) {
-      renderCartItems("checkout-items-container", true);
-      updateTotals(true);
-    }
-  });
+  if (document.readyState === 'loading') {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+
 })();
-
