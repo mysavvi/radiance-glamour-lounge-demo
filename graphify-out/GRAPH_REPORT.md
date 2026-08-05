@@ -1,16 +1,16 @@
-# Graph Report - Radiance Glamour Lounge  (2026-08-04)
+# Graph Report - Radiance Glamour Lounge  (2026-08-05)
 
 ## Corpus Check
-- 529 files · ~2,840,547 words
+- 552 files · ~3,652,756 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5638 nodes · 7302 edges · 541 communities (490 shown, 51 thin omitted)
+- 5664 nodes · 7326 edges · 552 communities (501 shown, 51 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 112 edges (avg confidence: 0.6)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `25140de4`
+- Built from commit: `acbd2f40`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -22,7 +22,7 @@
 - social-media-card.js
 - test_schema_v2.py
 - test_manifest_consistency.py
-- pagespeed_check.py
+- lcp_subparts.py
 - Claude SEO: SEO Skill for Claude Code
 - test_sync_flow.py
 - test_lazy_detection.py
@@ -41,7 +41,7 @@
 - test_bing_webmaster.py
 - test_gsc_pagination.py
 - test_render_page.py
-- verify_backlinks.py
+- fetch_page.py
 - test_portability.py
 - sitemap_discovery.py
 - buildUI
@@ -83,16 +83,16 @@
 - agent_ux_check.py
 - domain_history.py
 - E-commerce SEO Analysis
-- test_gsc_totals_aggregate.py
+- pagespeed_check.py
 - toggle
 - items
 - buildUI
 - temp.js
-- render_page.py
-- test_gbp_lint_and_polish.py
+- safe_requests_get
+- bundle_wordpress.py
 - properties
 - neo/social-media-card.js
-- youtube_search.py
+- get_api_key
 - inject
 - Widget
 - indexnow_submit.py
@@ -104,7 +104,6 @@
 - marketplace.json
 - validate-schema.py
 - _build_gsc_section
-- make_safe_playwright_route_handler
 - test_agent_mcp_permissions.py
 - test_cross_platform_hooks.py
 - test_google_report_full_audit.py
@@ -174,8 +173,8 @@
 - fix_overflow.py
 - inject_css.py
 - craft-audit.sh
-- Conversion Audit Prompt
-- Dual-Surface Content Scorecard
+- BOFU Page Brief Generator
+- validate_url
 - inject
 - setMenuOpen
 - js/neo-wp-boot.js
@@ -192,7 +191,7 @@
 - Checks
 - E-E-A-T Evaluation Framework
 - Agent Skill: Raw HTML → WordPress (Universal · Pixel-Perfect · Zero Hallucination)
-- BOFU Page Brief Generator
+- Deprecated Schema.org rich result types (2024–2026)
 - Google-Supported LocalBusiness Subtypes
 - Maps Intelligence (March 2026)
 - Local SEO Ranking Signals & Benchmarks (March 2026)
@@ -234,7 +233,7 @@
 - Installation Guide
 - Execution Workflow
 - Hub-and-Spoke Content Architecture
-- Orchestration Logic
+- flow-framework.md
 - Google Search Console API Reference
 - GBP Profile Completeness Checklist (Via API)
 - Changelog
@@ -269,7 +268,7 @@
 - claude-seo/README.md
 - seo-performance.md
 - Contributors
-- fetch_page.py
+- [1.6.0] - 2026-03-23
 - Prompt: Generating a Title Tag
 - Free Backlink Data Sources
 - Claude SEO: Multi-Platform Agent Instructions
@@ -307,7 +306,7 @@
 - Prompt: Rewriting Existing Homepage
 - Prompt : Rewriting Existing Service Page
 - AI detector test follow-up Prompt
-- AI Supporting Pages Rewrite Prompt
+- prompts/README.md
 - Basic Prompt
 - Blog Post Outline Prompt
 - Blog Post Writing Prompt
@@ -350,7 +349,7 @@
 - Google Cloud Natural Language API Reference
 - Content Parity Audit for Multi-Language Sites
 - Cultural Adaptation Profiles for International SEO
-- safe_requests_get
+- Banana Extension Setup Guide
 - seo-cluster.md
 - seo-drift.md
 - seo-ecommerce.md
@@ -402,7 +401,6 @@
 - PULL_REQUEST_TEMPLATE.md
 - [1.0.0] - 2026-02-07
 - [1.2.1] - 2026-02-28
-- [1.6.0] - 2026-03-23
 - [1.7.1] - 2026-03-30
 - Widget
 - [1.9.5] - 2026-04-26
@@ -416,11 +414,11 @@
 - Neo Design — Palette Catalog
 - properties
 - neo/theme-toggle.js
-- validate_url
+- indexing_notify.py
 - items
 - properties
 - production_site/neo/cart-ui.js
-- prompts/README.md
+- render_page.py
 - price-card-glow.js
 - neo/cart-ui.js
 - neo/social-media-card.schema.json
@@ -437,6 +435,12 @@
 - .agents/AGENTS.md
 - check_js.js
 - neo/craft-audit.sh
+- make_safe_playwright_route_handler
+- savvi-dynamic-pricing.js
+- test_gbp_lint_and_polish.py
+- parasite_risk.py
+- test_fetch_page_decoding.py
+- bibliography.md
 
 ## God Nodes (most connected - your core abstractions)
 1. `Command List` - 34 edges
@@ -465,11 +469,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (541 total, 51 thin omitted)
+## Communities (552 total, 51 thin omitted)
 
 ### Community 0 - "gsc_query.py"
-Cohesion: 0.18
-Nodes (18): _build_gsc_service(), _date_range_overlaps(), list_sitemaps(), list_sites(), main(), _parse_dimensions(), query_search_analytics(), _query_site_totals() (+10 more)
+Cohesion: 0.10
+Nodes (24): _build_gsc_service(), _date_range_overlaps(), list_sitemaps(), list_sites(), main(), _parse_dimensions(), query_search_analytics(), _query_site_totals() (+16 more)
 
 ### Community 1 - "test_content_quality.py"
 Cohesion: 0.05
@@ -480,8 +484,8 @@ Cohesion: 0.06
 Nodes (65): capture_baseline(), fetch_cwv_data(), fetch_page_data(), hash_content(), init_db(), main(), normalize_url(), Connection (+57 more)
 
 ### Community 3 - "sync_flow.py"
-Cohesion: 0.05
-Nodes (70): ArgumentParser, build_parser(), command_doctor(), command_run(), command_setup(), _configure_utf8(), _configured_data_dir(), _data_dir() (+62 more)
+Cohesion: 0.07
+Nodes (55): ArgumentParser, build_parser(), command_doctor(), command_run(), command_setup(), _configure_utf8(), _configured_data_dir(), _data_dir() (+47 more)
 
 ### Community 4 - "social-media-card.js"
 Cohesion: 0.11
@@ -495,9 +499,9 @@ Nodes (30): _all_types(), _has_type(), _iter_typed(), main(), Yield every dict i
 Cohesion: 0.06
 Nodes (41): _count_agent_files(), _count_skill_dirs(), _extract_count(), _extract_frontmatter(), _extract_section(), Tests that ensure the plugin's manifest and user-visible docs claim counts that…, README, CLAUDE.md, AGENTS.md must reference the canonical sub-skills count., plugin.json version must equal CITATION.cff version. (+33 more)
 
-### Community 7 - "pagespeed_check.py"
-Cohesion: 0.11
-Nodes (33): detect_trends(), main(), query_history(), Analyze p75 timeseries to detect trends. Compares the average of the last 4…, Query CrUX History API for weekly CWV trends. Args: url_or_origin: Full URL or…, get_api_key(), google_api_key_headers(), Get the Google API key from config or environment. Returns: API key string, or… (+25 more)
+### Community 7 - "lcp_subparts.py"
+Cohesion: 0.18
+Nodes (18): detect_trends(), main(), query_history(), Analyze p75 timeseries to detect trends. Compares the average of the last 4…, Query CrUX History API for weekly CWV trends. Args: url_or_origin: Full URL or…, google_api_key_headers(), Return the canonical header form for Google API key auth., Remove Google API keys from exception/output strings. (+10 more)
 
 ### Community 8 - "Claude SEO: SEO Skill for Claude Code"
 Cohesion: 0.04
@@ -544,8 +548,8 @@ Cohesion: 0.07
 Nodes (12): audit(), _cli(), exiftool_available(), inject(), _iter_images(), Path, Inject XMP-iptcExt:DigitalSourceType into a single image., Return True iff ``exiftool`` is on PATH. (+4 more)
 
 ### Community 19 - "sendGift"
-Cohesion: 0.13
-Nodes (20): bindScrollPause(), bumpRailCount(), burstLikes(), formatCount(), parseRailCount(), pick(), pickGift(), pulseHeartButton() (+12 more)
+Cohesion: 0.15
+Nodes (17): bumpRailCount(), burstLikes(), formatCount(), parseRailCount(), pick(), pickGift(), pulseHeartButton(), pulseRailAction() (+9 more)
 
 ### Community 20 - "a11y-toolbar.js"
 Cohesion: 0.21
@@ -571,17 +575,17 @@ Nodes (12): _Exec, GSC total-limit and blank-dimension regressions for issues #1
 Cohesion: 0.06
 Nodes (34): Render or fetch ``url`` per the chosen mode. See module docstring.…, render_page(), _fake_response(), _FakeBrowserPage, _FakeBrowserResponse, _FakePlaywrightManager, _mock_validate_strict(), parametrize (+26 more)
 
-### Community 26 - "verify_backlinks.py"
-Cohesion: 0.19
-Nodes (14): ``requests.head`` with DNS-rebinding protection. The request's hostname is…, safe_requests_head(), _head_check(), main(), _normalize_url(), _polite_delay(), Verify a batch of backlinks. Args: target_url: The URL that should be linked…, Wait between requests to the same domain to be a polite crawler. (+6 more)
+### Community 26 - "fetch_page.py"
+Cohesion: 0.26
+Nodes (11): _decode_bytes(), _decode_response_content(), _extract_charset_from_content_type(), _extract_meta_charset(), fetch_page(), main(), Fetch a web page and return response details. SSRF protection is delegated to…, Decode HTTP bytes deterministically for stable SEO snapshots. (+3 more)
 
 ### Community 27 - "test_portability.py"
 Cohesion: 0.11
 Nodes (10): check_one(), _find_skill_files(), main(), _parse_frontmatter(), Path, Every SKILL.md under skills/ and extensions/., Light YAML-ish parser. Doesn't require PyYAML — we accept the documented subset…, Tests for v2 Checkpoint 7 (Phase G + I): scripts/portability_check.py —… (+2 more)
 
 ### Community 28 - "sitemap_discovery.py"
-Cohesion: 0.21
-Nodes (14): _bounded_fetch(), discover_sitemaps(), _display_url(), main(), _origin(), Check a text-sitemap entry without resolving or connecting to its host., Return a safe-to-display URL with userinfo, query, and fragment removed., Fetch at most max_bytes after decompression without exposing response text. (+6 more)
+Cohesion: 0.27
+Nodes (11): _bounded_fetch(), discover_sitemaps(), _display_url(), main(), _origin(), Check a text-sitemap entry without resolving or connecting to its host., Return a safe-to-display URL with userinfo, query, and fragment removed., Fetch at most max_bytes after decompression without exposing response text. (+3 more)
 
 ### Community 29 - "buildUI"
 Cohesion: 0.15
@@ -656,8 +660,8 @@ Cohesion: 0.22
 Nodes (15): cmd_create(), cmd_delete(), cmd_list(), cmd_show(), _ensure_dir(), _load_preset(), main(), _preset_path() (+7 more)
 
 ### Community 48 - "url_safety.py"
-Cohesion: 0.11
-Nodes (31): audit_site(), _cli(), discovery_url_for(), parse_profile(), probe_endpoint(), HEAD-probe a declared capability endpoint via url_safety., Fetch and audit a site's UCP profile. Returns a JSON-serializable dict., Return the canonical UCP discovery URL for a site root. (+23 more)
+Cohesion: 0.14
+Nodes (24): _check_node(), main(), Return None if Node is OK, else an error message., run(), _cli(), is_safe_ip(), normalize_hostname(), _pin_dns() (+16 more)
 
 ### Community 49 - "moz_api.py"
 Cohesion: 0.21
@@ -700,8 +704,8 @@ Cohesion: 0.20
 Nodes (8): _dump(), _ErrorResponse, Regression tests for Google API key handling. These tests ensure API keys are…, test_crux_history_uses_header_and_redacts_errors(), test_crux_uses_header_and_redacts_errors(), test_lcp_subparts_uses_header_not_query_key(), test_nlp_uses_header_and_redacts_errors(), test_pagespeed_uses_header_and_redacts_errors()
 
 ### Community 59 - "start"
-Cohesion: 0.20
-Nodes (17): boot(), applyMotionPreference(), bindMotionPreference(), canRun(), clearTimer(), enabled(), initLive(), onScroll() (+9 more)
+Cohesion: 0.17
+Nodes (20): boot(), applyMotionPreference(), bindMotionPreference(), bindScrollPause(), canRun(), clearTimer(), enabled(), initLive() (+12 more)
 
 ### Community 60 - "initLive"
 Cohesion: 0.13
@@ -731,9 +735,9 @@ Nodes (11): assess_risk(), _extract(), lookup(), main(), _parse_date(), Fallback
 Cohesion: 0.05
 Nodes (37): 1. Product Page Analysis (No DataForSEO Needed), 2. Google Shopping Intelligence (DataForSEO Merchant API), 3. Amazon Marketplace (DataForSEO), 4. Marketplace Keyword Gaps, 5. Product Schema Enhancement, Analysis Outputs, Audit command, Commands (+29 more)
 
-### Community 68 - "test_gsc_totals_aggregate.py"
-Cohesion: 0.21
-Nodes (6): _Exec, Regression for issue #130: GSC site totals must come from a dimensionless…, Query-dimension rows hide clicks (anonymized); the dimensionless aggregate…, _SearchAnalytics, _Service, test_totals_use_aggregate_not_query_sum()
+### Community 68 - "pagespeed_check.py"
+Cohesion: 0.23
+Nodes (13): combined_check(), main(), _print_crux_summary(), _print_psi_summary(), query_crux(), rate_metric(), Query the CrUX API for field data (28-day rolling average). Args:…, Run combined PSI + CrUX check. Args: url: URL to analyze. api_key: Google API… (+5 more)
 
 ### Community 69 - "toggle"
 Cohesion: 0.21
@@ -751,13 +755,13 @@ Nodes (21): announce(), applyAll(), applyTextScale(), buildUI(), clearContrastMo
 Cohesion: 0.19
 Nodes (19): applyConfig(), applyReviewPlatforms(), clearExit(), createChatItem(), fetchJson(), goTo(), loadData(), pickReview() (+11 more)
 
-### Community 73 - "render_page.py"
-Cohesion: 0.24
-Nodes (10): _cli(), _extract_json_ld(), _is_spa(), Collect bounded @type values without recursive attacker-controlled calls., Extract full-page JSON-LD with strict block, byte, and traversal bounds., Heuristic SPA detector. Conservative: any positive signal flips True., Wait up to five seconds for meaningful body text and a stable DOM., _schema_types() (+2 more)
+### Community 73 - "safe_requests_get"
+Cohesion: 0.14
+Nodes (19): main(), Find every deprecated GBP feature reference in the HTML., scan(), analyse(), _extract_speculation_actions(), main(), Pull the unique 'action' field values out of a speculationrules JSON., audit_site() (+11 more)
 
-### Community 74 - "test_gbp_lint_and_polish.py"
-Cohesion: 0.18
-Nodes (3): Tests for v2 Checkpoint 6 (Phase F — local + international + privacy polish):…, Intercom / drift / custom chat widgets are fine — we only flag GBP-chat., test_does_not_flag_generic_chat_widget()
+### Community 74 - "bundle_wordpress.py"
+Cohesion: 0.14
+Nodes (19): assert_no_data_uri_pastes(), bundle_one(), extract_local_scripts(), main(), parse_attr(), Path, Remove <script src="..."> tags that point at local files and return their…, Return (external_font_links, body_inner, attrs, json_ld_blocks). (+11 more)
 
 ### Community 75 - "properties"
 Cohesion: 0.18
@@ -767,9 +771,9 @@ Nodes (11): type, type, type, type, properties, type, avatar, avatarPosition (+3
 Cohesion: 0.11
 Nodes (44): applyConfig(), applyMotionPreference(), applyReviewPlatforms(), bindMotionPreference(), bindScrollPause(), bumpRailCount(), burstLikes(), createChatItem() (+36 more)
 
-### Community 77 - "youtube_search.py"
-Cohesion: 0.33
-Nodes (9): _build_youtube_service(), get_channel_info(), get_video_details(), main(), Get detailed information about a specific YouTube video. Args: video_id:…, Get channel information. Args: channel_id: YouTube channel ID. api_key:…, Build the YouTube Data API v3 service., Search YouTube for videos matching a query. Args: query: Search query string.… (+1 more)
+### Community 77 - "get_api_key"
+Cohesion: 0.27
+Nodes (11): get_api_key(), Get the Google API key from config or environment. Returns: API key string, or…, _build_youtube_service(), get_channel_info(), get_video_details(), main(), Get detailed information about a specific YouTube video. Args: video_id:…, Get channel information. Args: channel_id: YouTube channel ID. api_key:… (+3 more)
 
 ### Community 78 - "inject"
 Cohesion: 0.24
@@ -814,10 +818,6 @@ Nodes (7): main(), File path from argv (exec-form template) or the stdin hook-ev
 ### Community 88 - "_build_gsc_section"
 Cohesion: 0.25
 Nodes (8): _build_gsc_section(), _build_indexation_section(), _date_range_overlaps(), _gsc_anomaly_warning(), _metric_card(), Build the GSC Search Performance section., Build the Indexation Status section., Build a metric card HTML block.
-
-### Community 89 - "make_safe_playwright_route_handler"
-Cohesion: 0.18
-Nodes (14): analyze_visual(), main(), normalize_url(), ParseResult, Normalize URL and return (url, parsed_url)., Analyze visual aspects of a web page. Args: url: URL to analyze timeout: Page…, capture_screenshot(), main() (+6 more)
 
 ### Community 90 - "test_agent_mcp_permissions.py"
 Cohesion: 0.39
@@ -927,13 +927,13 @@ Nodes (12): applyMetrics(), clearFocus(), closeGallery(), endDrag(), focusPhoto(
 Cohesion: 0.33
 Nodes (7): getCart(), initCartPage(), initCheckoutPage(), renderCartItems(), saveCart(), updateBadges(), updateTotals()
 
-### Community 172 - "Conversion Audit Prompt"
-Cohesion: 0.20
-Nodes (9): AI Compatibility, Conversion Audit Prompt, Example, Inputs, Output, Prompt, See Also, Source Note (+1 more)
+### Community 172 - "BOFU Page Brief Generator"
+Cohesion: 0.06
+Nodes (27): AI Compatibility, BOFU Page Brief Generator, Example, Inputs, Output, Prompt, See Also, Source Note (+19 more)
 
-### Community 173 - "Dual-Surface Content Scorecard"
-Cohesion: 0.20
-Nodes (9): AI Compatibility, Dual-Surface Content Scorecard, Example, Inputs, Output, Prompt, See Also, Source Note (+1 more)
+### Community 173 - "validate_url"
+Cohesion: 0.18
+Nodes (16): Validate a URL for use with Google APIs. Rejects private/loopback addresses.…, validate_url(), main(), parse_html(), Parse HTML and extract SEO-relevant elements. Args: html: HTML content to parse…, _head_check(), main(), _normalize_url() (+8 more)
 
 ### Community 174 - "inject"
 Cohesion: 0.24
@@ -995,9 +995,9 @@ Nodes (30): 0-29 (Critical), 30-49 (Major), 50-69 (Moderate), 70-89 (Minor), 90-
 Cohesion: 0.06
 Nodes (30): A. External Resources, Agent Skill: Raw HTML → WordPress (Universal · Pixel-Perfect · Zero Hallucination), 🟢 ALWAYS (every single conversion), Anti-Hallucination Rules, ⚡ AUTO-TRIGGER, B. Configuration Scripts, C. Style Blocks, Capability Matrix — What This Skill Handles (+22 more)
 
-### Community 199 - "BOFU Page Brief Generator"
-Cohesion: 0.20
-Nodes (9): AI Compatibility, BOFU Page Brief Generator, Example, Inputs, Output, Prompt, See Also, Source Note (+1 more)
+### Community 199 - "Deprecated Schema.org rich result types (2024–2026)"
+Cohesion: 0.25
+Nodes (7): Deprecated Schema.org rich result types (2024–2026), Earlier (pre-v2 baseline) retirements, Primary sources, Replacement decision table, Retired July 31, 2025, Retired June 12, 2025, Tooling-removal timeline (don't send users to dead validators)
 
 ### Community 200 - "Google-Supported LocalBusiness Subtypes"
 Cohesion: 0.07
@@ -1040,8 +1040,8 @@ Cohesion: 0.08
 Nodes (23): 1. GBP Signals (25%), 2. Reviews & Reputation (20%), 3. Local On-Page SEO (20%), 4. NAP Consistency & Citations (15%), 5. Local Schema Markup (10%), 6. Local Link & Authority Signals (10%), AI Search Impact on Local, Analysis Dimensions (+15 more)
 
 ### Community 211 - "Banana Image Generation Extension for Claude SEO"
-Cohesion: 0.09
-Nodes (21): Banana Extension Setup Guide, Common Issues, Generated images not appearing, Google AI API Key, "IMAGE_SAFETY" error, ImageMagick (Optional), MCP Server Configuration, "MCP tools not available" (+13 more)
+Cohesion: 0.17
+Nodes (10): Audit Integration, Banana Image Generation Extension for Claude SEO, Commands, How It Works, Installation, Post-Generation SEO Checklist, Prerequisites, Troubleshooting (+2 more)
 
 ### Community 212 - "AI Search / GEO Optimization (May 2026)"
 Cohesion: 0.09
@@ -1163,7 +1163,7 @@ Nodes (16): Backward Link Injection, Cluster Context Injection, Context Fields E
 Cohesion: 0.12
 Nodes (16): Cannibalization Prevention, Cluster Constraints, cluster-plan.json Schema, Hub-and-Spoke Content Architecture, Internal Link Rules, JSON-LD Schema Templates, Mandatory Links, Minimum Link Requirements (+8 more)
 
-### Community 242 - "Orchestration Logic"
+### Community 242 - "flow-framework.md"
 Cohesion: 0.12
 Nodes (15): Attribution, Commands, Context Matching (Optimize stage), Error Handling, FLOW Framework: Find · Leverage · Optimize · Win, On `/seo flow find [url|topic]`, On `/seo flow leverage [url]`, On `/seo flow local [url]` (+7 more)
 
@@ -1292,8 +1292,8 @@ Cohesion: 0.15
 Nodes (12): 1. Neo Classic, 2. Moon, 3. Sapphire, 4. Crimson, 5. Luca Davincci, 6. Ocean Depth, Branding accent warning, Build-time choices (CEO) (+4 more)
 
 ### Community 274 - "claude-seo/README.md"
-Cohesion: 0.12
-Nodes (10): Commands Reference, Overview, Quick Reference, Deprecated Schema.org rich result types (2024–2026), Earlier (pre-v2 baseline) retirements, Primary sources, Replacement decision table, Retired July 31, 2025 (+2 more)
+Cohesion: 0.23
+Nodes (3): Commands Reference, Overview, Quick Reference
 
 ### Community 275 - "seo-performance.md"
 Cohesion: 0.17
@@ -1303,9 +1303,9 @@ Nodes (11): Common CLS Issues, Common INP Issues, Common LCP Issues, Current Met
 Cohesion: 0.17
 Nodes (12): 2026 maintenance review cycle, 2026 maintenance review cycle, Community Issue Reports, Community Pull Requests, Contributors, Framework Integration (v1.9.5), How to Contribute, Pro Hub Challenge (v1.9.0) (+4 more)
 
-### Community 277 - "fetch_page.py"
-Cohesion: 0.18
-Nodes (14): _decode_bytes(), _decode_response_content(), _extract_charset_from_content_type(), _extract_meta_charset(), fetch_page(), main(), Fetch a web page and return response details. SSRF protection is delegated to…, Decode HTTP bytes deterministically for stable SEO snapshots. (+6 more)
+### Community 277 - "[1.6.0] - 2026-03-23"
+Cohesion: 0.67
+Nodes (3): [1.6.0] - 2026-03-23, Added, Changed
 
 ### Community 278 - "Prompt: Generating a Title Tag"
 Cohesion: 0.20
@@ -1404,11 +1404,11 @@ Cohesion: 0.20
 Nodes (9): AI Compatibility, Example, Inputs, Keyword variations for topical relevance prompt, Output, Prompt, See Also, Source Note (+1 more)
 
 ### Community 302 - "Prompt: Audience Avatar"
-Cohesion: 0.22
+Cohesion: 0.20
 Nodes (9): AI Compatibility, Example, Inputs, Output, Prompt, Prompt: Audience Avatar, See Also, Source Note (+1 more)
 
 ### Community 303 - "Backlink competition prompt"
-Cohesion: 0.22
+Cohesion: 0.20
 Nodes (9): AI Compatibility, Backlink competition prompt, Example, Inputs, Output, Prompt, See Also, Source Note (+1 more)
 
 ### Community 304 - "AI Homepage Rewrite Prompt"
@@ -1416,7 +1416,7 @@ Cohesion: 0.20
 Nodes (9): AI Compatibility, AI Homepage Rewrite Prompt, Example, Inputs, Output, Prompt, See Also, Source Note (+1 more)
 
 ### Community 305 - "Claude 'Deep Research' Prompt"
-Cohesion: 0.22
+Cohesion: 0.20
 Nodes (9): AI Compatibility, Claude 'Deep Research' Prompt, Example, Inputs, Output, Prompt, See Also, Source Note (+1 more)
 
 ### Community 306 - "GBP Categories Prompt"
@@ -1436,11 +1436,11 @@ Cohesion: 0.20
 Nodes (9): AI Compatibility, Example, GBP Description Claude Prompt 3, Inputs, Output, Prompt, See Also, Source Note (+1 more)
 
 ### Community 310 - "GBP Services Prompt"
-Cohesion: 0.22
+Cohesion: 0.20
 Nodes (9): AI Compatibility, Example, GBP Services Prompt, Inputs, Output, Prompt, See Also, Source Note (+1 more)
 
 ### Community 311 - "Prompt: Generating a Meta Description"
-Cohesion: 0.22
+Cohesion: 0.20
 Nodes (9): AI Compatibility, Example, Inputs, Output, Prompt, Prompt: Generating a Meta Description, See Also, Source Note (+1 more)
 
 ### Community 312 - "Prompt: Rewriting Existing Homepage"
@@ -1455,12 +1455,12 @@ Nodes (9): AI Compatibility, Example, Inputs, Output, Prompt, Prompt : Rewriting
 Cohesion: 0.20
 Nodes (9): AI Compatibility, AI detector test follow-up Prompt, Example, Inputs, Output, Prompt, See Also, Source Note (+1 more)
 
-### Community 315 - "AI Supporting Pages Rewrite Prompt"
-Cohesion: 0.22
-Nodes (9): AI Compatibility, AI Supporting Pages Rewrite Prompt, Example, Inputs, Output, Prompt, See Also, Source Note (+1 more)
+### Community 315 - "prompts/README.md"
+Cohesion: 0.17
+Nodes (10): AI Compatibility, AI Supporting Pages Rewrite Prompt, Example, Inputs, Output, Prompt, See Also, Source Note (+2 more)
 
 ### Community 316 - "Basic Prompt"
-Cohesion: 0.22
+Cohesion: 0.20
 Nodes (9): AI Compatibility, Basic Prompt, Example, Inputs, Output, Prompt, See Also, Source Note (+1 more)
 
 ### Community 317 - "Blog Post Outline Prompt"
@@ -1488,7 +1488,7 @@ Cohesion: 0.20
 Nodes (9): AI Compatibility, Example, Follow-up Prompt, Inputs, Output, Prompt, See Also, Source Note (+1 more)
 
 ### Community 323 - "Follow-up Prompt 1"
-Cohesion: 0.22
+Cohesion: 0.20
 Nodes (9): AI Compatibility, Example, Follow-up Prompt 1, Inputs, Output, Prompt, See Also, Source Note (+1 more)
 
 ### Community 324 - "Follow-up Prompt 2"
@@ -1627,9 +1627,9 @@ Nodes (7): Content Parity Audit for Multi-Language Sites, Content Parity Matrix,
 Cohesion: 0.25
 Nodes (7): Cultural Adaptation Profiles for International SEO, DACH Region (DE, AT, CH), Default Profile (Unlisted Languages), Francophone (FR, BE, CA-FR, CH-FR), Hispanic (ES, LATAM), How to Use in Analysis, Japanese (JA)
 
-### Community 358 - "safe_requests_get"
-Cohesion: 0.13
-Nodes (19): main(), Find every deprecated GBP feature reference in the HTML., scan(), _audit_page(), _classify(), main(), Aggregate signals per subfolder and emit a risk label., Return the first path segment of a URL as the section key. (+11 more)
+### Community 358 - "Banana Extension Setup Guide"
+Cohesion: 0.18
+Nodes (11): Banana Extension Setup Guide, Common Issues, Generated images not appearing, Google AI API Key, "IMAGE_SAFETY" error, ImageMagick (Optional), MCP Server Configuration, "MCP tools not available" (+3 more)
 
 ### Community 360 - "seo-cluster.md"
 Cohesion: 0.29
@@ -1835,10 +1835,6 @@ Nodes (3): [1.0.0] - 2026-02-07, Added, Architecture
 Cohesion: 0.67
 Nodes (3): [1.2.1] - 2026-02-28, Added, Fixed
 
-### Community 411 - "[1.6.0] - 2026-03-23"
-Cohesion: 0.67
-Nodes (3): [1.6.0] - 2026-03-23, Added, Changed
-
 ### Community 412 - "[1.7.1] - 2026-03-30"
 Cohesion: 0.67
 Nodes (3): [1.7.1] - 2026-03-30, Changed, Fixed
@@ -1879,9 +1875,9 @@ Nodes (13): type, type, type, number, string, bookmarks, comments, hearts (+5 mo
 Cohesion: 0.36
 Nodes (12): apply(), currentTheme(), init(), inject(), injectIntoDrawer(), injectIntoFooter(), injectIntoHeader(), makeButton() (+4 more)
 
-### Community 437 - "validate_url"
-Cohesion: 0.29
-Nodes (11): Validate a URL for use with Google APIs. Rejects private/loopback addresses.…, validate_url(), batch_notify(), _build_indexing_service(), get_notification_metadata(), main(), notify_url(), Get the latest notification metadata for a URL. Args: url: The URL to check.… (+3 more)
+### Community 437 - "indexing_notify.py"
+Cohesion: 0.33
+Nodes (9): batch_notify(), _build_indexing_service(), get_notification_metadata(), main(), notify_url(), Get the latest notification metadata for a URL. Args: url: The URL to check.…, Batch notify multiple URLs with quota awareness. Args: urls: List of URLs.…, Build the Indexing API v3 service. (+1 more)
 
 ### Community 438 - "items"
 Cohesion: 0.17
@@ -1895,9 +1891,9 @@ Nodes (11): type, type, type, type, properties, type, avatar, avatarPosition (+3
 Cohesion: 0.33
 Nodes (7): getCart(), initCartPage(), initCheckoutPage(), renderCartItems(), saveCart(), updateBadges(), updateTotals()
 
-### Community 441 - "prompts/README.md"
-Cohesion: 0.25
-Nodes (5): Bibliography, PDF Sources, Source Policy, Web Sources, Flow Prompt Index
+### Community 441 - "render_page.py"
+Cohesion: 0.24
+Nodes (10): _cli(), _extract_json_ld(), _is_spa(), Collect bounded @type values without recursive attacker-controlled calls., Extract full-page JSON-LD with strict block, byte, and traversal bounds., Heuristic SPA detector. Conservative: any positive signal flips True., Wait up to five seconds for meaningful body text and a stable DOM., _schema_types() (+2 more)
 
 ### Community 443 - "price-card-glow.js"
 Cohesion: 0.38
@@ -1951,6 +1947,30 @@ Nodes (3): boot(), initLedFrames(), revealAll()
 Cohesion: 0.83
 Nodes (3): find_repo_root(), main(), Path
 
+### Community 542 - "make_safe_playwright_route_handler"
+Cohesion: 0.18
+Nodes (14): analyze_visual(), main(), normalize_url(), ParseResult, Normalize URL and return (url, parsed_url)., Analyze visual aspects of a web page. Args: url: URL to analyze timeout: Page…, capture_screenshot(), main() (+6 more)
+
+### Community 547 - "savvi-dynamic-pricing.js"
+Cohesion: 0.83
+Nodes (3): formatPrice(), initDynamicPricing(), slugify()
+
+### Community 548 - "test_gbp_lint_and_polish.py"
+Cohesion: 0.18
+Nodes (3): Tests for v2 Checkpoint 6 (Phase F — local + international + privacy polish):…, Intercom / drift / custom chat widgets are fine — we only flag GBP-chat., test_does_not_flag_generic_chat_widget()
+
+### Community 549 - "parasite_risk.py"
+Cohesion: 0.39
+Nodes (7): _audit_page(), _classify(), main(), Aggregate signals per subfolder and emit a risk label., Return the first path segment of a URL as the section key., scan(), _subfolder()
+
+### Community 550 - "test_fetch_page_decoding.py"
+Cohesion: 0.39
+Nodes (6): FakeResponse, Deterministic response decoding for fetch_page.py., test_explicit_charset_from_content_type_wins(), test_invalid_bytes_are_replaced_not_dropped(), test_meta_charset_is_used_when_header_has_no_charset(), test_no_charset_defaults_to_utf8_with_replacement()
+
+### Community 551 - "bibliography.md"
+Cohesion: 0.40
+Nodes (4): Bibliography, PDF Sources, Source Policy, Web Sources
+
 ## Knowledge Gaps
 - **2451 isolated node(s):** `{ JSDOM }`, `$schema`, `name`, `name`, `description` (+2446 more)
   These have ≤1 connection - possible missing edges or undocumented components.
@@ -1959,17 +1979,17 @@ Nodes (3): find_repo_root(), main(), Path
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `URLSafetyError` connect `url_safety.py` to `sync_flow.py`, `safe_requests_get`, `pagespeed_check.py`, `render_page.py`, `indexnow_submit.py`, `fetch_page.py`, `make_safe_playwright_route_handler`, `verify_backlinks.py`, `sitemap_discovery.py`?**
+- **Why does `URLSafetyError` connect `url_safety.py` to `sync_flow.py`, `parasite_risk.py`, `lcp_subparts.py`, `safe_requests_get`, `validate_url`, `indexnow_submit.py`, `render_page.py`, `fetch_page.py`, `sitemap_discovery.py`, `make_safe_playwright_route_handler`?**
+  _High betweenness centrality (0.005) - this node is a cross-community bridge._
+- **Why does `Changelog` connect `Changelog` to `[1.1.0] - 2026-02-07`, `[1.4.0] - 2026-03-12`, `[1.9.7] - 2026-05-09`, `[1.2.0] - 2026-02-19`, `[1.3.0] - 2026-03-06`, `[1.5.0] - 2026-03-19`, `[1.8.1] - 2026-04-06`, `[1.8.2] - 2026-04-10`, `[1.9.0] - 2026-04-14`, `[1.6.0] - 2026-03-23`, `[1.9.8] - 2026-05-09`, `[2.2.4] - 2026-07-20`, `[1.0.0] - 2026-02-07`, `[1.2.1] - 2026-02-28`, `[1.7.1] - 2026-03-30`, `[1.9.5] - 2026-04-26`, `[1.6.1] - 2026-03-27`, `Migrating from claude-seo v1.x to v2.0.0`, `[1.9.9] - 2026-05-11`, `[2.0.0] - 2026-05-17`, `[2.2.0] - 2026-06-12`, `[2.2.1] - 2026-06-22`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **Why does `Commands Reference` connect `claude-seo/README.md` to `Command List`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `Command List` connect `Command List` to `claude-seo/README.md`?**
+- **Why does `Architecture` connect `Architecture` to `claude-seo/README.md`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `{ JSDOM }`, `$schema`, `name` to the rest of the system?**
   _2451 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `gsc_query.py` be split into smaller, more focused modules?**
+  _Cohesion score 0.0989247311827957 - nodes in this community are weakly interconnected._
 - **Should `test_content_quality.py` be split into smaller, more focused modules?**
   _Cohesion score 0.04846938775510204 - nodes in this community are weakly interconnected._
 - **Should `drift_compare.py` be split into smaller, more focused modules?**
   _Cohesion score 0.056314699792960665 - nodes in this community are weakly interconnected._
-- **Should `sync_flow.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.05365686944634313 - nodes in this community are weakly interconnected._

@@ -32,7 +32,7 @@ Theme URI: https://radianceglamourlounge.com/
 Author: Antigravity Custom Build
 Author URI: https://radianceglamourlounge.com/
 Description: Custom theme for Radiance Glamour Lounge providing standalone templates.
-Version: 1.0.3
+Version: 1.0.11
 Text Domain: radiance-theme
 */
 
@@ -66,6 +66,8 @@ try:
         import_pattern = re.compile(r'@import url\([\'"]?(.*?)[\'"]?\);|@import [\'"](.*?)[\'"];')
         def resolve_import(match):
             import_file = match.group(1) or match.group(2)
+            # Strip query parameters for local file lookup
+            import_file = import_file.split('?')[0]
             import_path = os.path.join(prod_dir, "neo", import_file)
             if os.path.exists(import_path):
                 with open(import_path, "r") as inf:
@@ -88,6 +90,16 @@ with open(os.path.join(theme_name, "style.css"), "w") as f:
 # --- 3. Create functions.php ---
 functions_php = """<?php
 add_theme_support( 'title-tag' );
+
+function radiance_theme_setup() {
+    add_theme_support('custom-logo', array(
+        'height'      => 72,
+        'width'       => 200,
+        'flex-width'  => true,
+        'flex-height' => true,
+    ));
+}
+add_action('after_setup_theme', 'radiance_theme_setup');
 
 function radiance_theme_enqueue_styles() {
     // Fonts
@@ -136,6 +148,17 @@ function radiance_body_classes($classes) {
     return $classes;
 }
 add_filter('body_class', 'radiance_body_classes');
+
+// Disable wpautop so it doesn't break old raw HTML if the template isn't assigned
+remove_filter( 'the_content', 'wpautop' );
+
+// Add classes to custom logo
+function radiance_custom_logo_classes( $html ) {
+    $html = str_replace( 'class="custom-logo-link"', 'class="custom-logo-link neo-mobile-header__brand neo-footer__logo"', $html );
+    $html = str_replace( 'class="custom-logo"', 'class="custom-logo neo-header__logo-img neo-footer__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;"', $html );
+    return $html;
+}
+add_filter( 'get_custom_logo', 'radiance_custom_logo_classes' );
 """
 with open(os.path.join(theme_name, "functions.php"), "w") as f:
     f.write(functions_php)
@@ -144,8 +167,8 @@ with open(os.path.join(theme_name, "functions.php"), "w") as f:
 with open(os.path.join(prod_dir, "index.html"), "r") as f:
     index_html = f.read()
 
-# Extract from <header id="neo-mobile-header"> to </nav> + mobile menu
-header_match = re.search(r'(<header class="neo-mobile-header".*?</button>\s*</div>\s*</div>\s*</div>)', index_html, re.DOTALL)
+# Extract from <header id="neo-mobile-header"> to just before <main id="neo-main">
+header_match = re.search(r'(<header class="neo-mobile-header".*?)\s*<main id="neo-main"', index_html, re.DOTALL)
 header_html = header_match.group(1) if header_match else "<!-- Header not found -->"
 
 # Extract from <footer to end
@@ -168,7 +191,7 @@ header_php = f"""<!DOCTYPE html>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 {skip_link_html}
-<div class="neo-page" class="wp-html-module" data-neo-wp-embed data-neo-palette="moon" data-neo-theme="light">
+<div class="neo-page wp-html-module" data-neo-wp-embed data-neo-palette="moon" data-neo-theme="light">
 {header_html}
 """
 with open(os.path.join(theme_name, "header.php"), "w") as f:
@@ -231,18 +254,124 @@ for file_path in html_files:
     with open(os.path.join(theme_name, php_filename), "w") as f:
         f.write(php_content)
 
-# Fix image paths in header and footer
+# Fix image paths and internal links in header and footer
 with open(os.path.join(theme_name, "header.php"), "r") as f:
-    h = f.read().replace('src="images/', 'src="<?php echo get_template_directory_uri(); ?>/assets/images/')
+    header_inner = f.read()
+    h = header_inner.replace('src="images/', 'src="<?php echo get_template_directory_uri(); ?>/assets/images/')
+    h = h.replace('href="index.html"', 'href="/"')
+    h = re.sub(r'href="([^"]+)\.html"', r'href="/\1/"', h)
+    h = h.replace('href="/privacy-policy/"', 'href="/privacy/"')
+    
+    # Custom logo PHP snippet to replace the static image
+    logo_php = """
+<?php
+if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) {
+    the_custom_logo();
+} else {
+    echo '<a href="' . esc_url( home_url( '/' ) ) . '" class="neo-mobile-header__brand neo-footer__logo" aria-label="' . get_bloginfo( 'name' ) . '">';
+    echo '<img src="' . get_template_directory_uri() . '/assets/images/logo1.png" alt="' . get_bloginfo( 'name' ) . '" class="neo-header__logo-img neo-footer__logo-img" style="height: 72px; width: auto; max-width: 100%; object-fit: contain;">';
+    echo '</a>';
+}
+?>
+"""
+    
+    # Replace the mobile header brand link
+    h = re.sub(
+        r'<a href="/" class="neo-mobile-header__brand">.*?</a>',
+        logo_php.strip(),
+        h,
+        flags=re.DOTALL
+    )
+    
+    # Replace the desktop header brand link
+    h = re.sub(
+        r'<a href="/" class="neo-desktop-nav__brand">.*?</a>',
+        logo_php.strip(),
+        h,
+        flags=re.DOTALL
+    )
+
+    # Insert user SVG into the Sign In link (desktop and mobile)
+    user_svg_html = """<a href="/login/" aria-label="Sign in" style="display: flex; align-items: center; justify-content: center; color: var(--neo-accent); transition: color var(--neo-duration-fast); width: 40px; height: 40px; border-radius: 50%; margin-left: 0.5rem;" onmouseover="this.style.color='var(--neo-accent-hover)';" onmouseout="this.style.color='var(--neo-accent)';">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </a>"""
+    user_svg_html_mobile = """<a href="/login/" aria-label="Sign in" style="display: flex; align-items: center; justify-content: center; color: var(--neo-accent); transition: color var(--neo-duration-fast); width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--neo-border-base); background: var(--neo-bg-base);" onmouseover="this.style.color='var(--neo-accent-hover)'; this.style.borderColor='var(--neo-accent)';" onmouseout="this.style.color='var(--neo-accent)'; this.style.borderColor='var(--neo-border-base)';">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </a>"""
+
+    # Remove the text links in ul
+    h = re.sub(r'<li><a href="/login/">Sign in</a></li>', '', h)
+    
+    # Add SVG to desktop CTA
+    h = re.sub(
+        r'(<a href="/book/" class="neo-btn neo-btn--primary">Book now</a>)',
+        r'\1\n        ' + user_svg_html,
+        h
+    )
+
+    # Add SVG to mobile CTA
+    h = re.sub(
+        r'(<a href="/book/" class="neo-btn neo-btn--primary" data-neo-menu-close style="flex: 1; text-align: center;">Book now</a>)',
+        r'\1\n          ' + user_svg_html_mobile,
+        h
+    )
+    # Also handle the original fallback for mobile CTA just in case
+    h = re.sub(
+        r'(<a href="/book/" class="neo-btn neo-btn--primary" data-neo-menu-close>Book now</a>)',
+        r'<a href="/book/" class="neo-btn neo-btn--primary" data-neo-menu-close style="flex: 1; text-align: center;">Book now</a>\n          ' + user_svg_html_mobile,
+        h
+    )
+    # Add SVG to the specific mobile header CTA
+    h = re.sub(
+        r'(<a href="/book/" class="neo-btn neo-btn--primary neo-btn--sm rb-mobile-header-cta">Book</a>)',
+        r'\1\n          ' + user_svg_html_mobile,
+        h
+    )
+
 with open(os.path.join(theme_name, "header.php"), "w") as f: f.write(h)
 
 with open(os.path.join(theme_name, "footer.php"), "r") as f:
-    f_ = f.read().replace('src="images/', 'src="<?php echo get_template_directory_uri(); ?>/assets/images/')
+    footer_inner = f.read()
+    f_ = footer_inner.replace('src="images/', 'src="<?php echo get_template_directory_uri(); ?>/assets/images/')
+    f_ = f_.replace('href="index.html"', 'href="/"')
+    f_ = re.sub(r'href="([^"]+)\.html"', r'href="/\1/"', f_)
+    f_ = f_.replace('href="/privacy-policy/"', 'href="/privacy/"')
+    
+    # Replace the footer brand link
+    f_ = re.sub(
+        r'<a href="(?:/|index\.html)" class="neo-footer__logo"[^>]*>.*?</a>',
+        logo_php.strip(),
+        f_,
+        flags=re.DOTALL
+    )
+
+    # Fix the accessibility SVG
+    new_a11y_svg = '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4" r="2"></circle><path d="M12 6v7"></path><path d="M5 8h14"></path><path d="M12 13l-4 8"></path><path d="M12 13l4 8"></path></svg>'
+    f_ = re.sub(
+        r'<svg viewBox="0 0 24 24" aria-hidden="true"[^>]*>.*?<circle cx="12" cy="12" r="3"/>\s*</svg>',
+        new_a11y_svg,
+        f_,
+        flags=re.DOTALL
+    )
 with open(os.path.join(theme_name, "footer.php"), "w") as f: f.write(f_)
+
+# Replace the accessibility icon in a11y-toolbar.js
+a11y_js_path = os.path.join(theme_name, "assets", "js", "a11y-toolbar.js")
+if os.path.exists(a11y_js_path):
+    with open(a11y_js_path, "r") as f:
+        a11y_js = f.read()
+    
+    # Replace the eye SVG with the person SVG
+    a11y_js = a11y_js.replace(
+        '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>',
+        '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4" r="2"></circle><path d="M12 6v7"></path><path d="M5 8h14"></path><path d="M12 13l-4 8"></path><path d="M12 13l4 8"></path></svg>'
+    )
+    with open(a11y_js_path, "w") as f:
+        f.write(a11y_js)
 
 # --- 6. Fallback index.php ---
 index_php = """<?php get_header(); ?>
-<main id="primary" class="site-main">
+<main id="neo-main" class="neo-page__main" tabindex="-1">
     <?php
     if ( have_posts() ) :
         while ( have_posts() ) :

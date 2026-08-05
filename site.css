@@ -84,9 +84,7 @@ body.neo-body,
    Skill mapping: mobile header + drawer + bottom nav below 1024px;
    desktop top nav at 1024px+. Five nav links + brand + CTA need the lg breakpoint. ── */
 @media (min-width: 768px) and (max-width: 1023.98px) {
-  .neo-desktop-nav {
-    display: none !important;
-  }
+  
 
   .neo-mobile-header {
     display: flex !important;

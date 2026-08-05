@@ -17,6 +17,19 @@
 | Create Account | `/register/` | `pages/register.html` | `register.html` |
 | Privacy Policy | `/privacy-policy/` | `pages/privacy.html` | `privacy-policy.html` |
 | Terms and Conditions | `/terms/` | `pages/terms.html` | `terms.html` |
+| Expert Aesthetic Clinic Consultation in Stockport | `/services/aesthetic-clinic-consultation-stockport/` | `services/aesthetic-clinic-consultation-stockport.html` | `services/aesthetic-clinic-consultation-stockport.html` |
+| Aqualyx Fat Dissolving Injections in Stockport | `/services/aqualyx-fat-dissolving-stockport/` | `services/aqualyx-fat-dissolving-stockport.html` | `services/aqualyx-fat-dissolving-stockport.html` |
+| Advanced Chemical Peels in Stockport | `/services/chemical-peel-stockport/` | `services/chemical-peel-stockport.html` | `services/chemical-peel-stockport.html` |
+| Comprehensive Cosmetic Injectables & Skin Treatments in Stockport | `/services/cosmetic-injectables-and-treatments-stockport/` | `services/cosmetic-injectables-and-treatments-stockport.html` | `services/cosmetic-injectables-and-treatments-stockport.html` |
+| Premium Cosmetic Injectables in Stockport | `/services/cosmetic-injectables-stockport/` | `services/cosmetic-injectables-stockport.html` | `services/cosmetic-injectables-stockport.html` |
+| Luxury Dermaplaning in Stockport | `/services/dermaplaning-stockport/` | `services/dermaplaning-stockport.html` | `services/dermaplaning-stockport.html` |
+| Jalupro Skin Biorevitalization in Stockport | `/services/jalupro-stockport/` | `services/jalupro-stockport.html` | `services/jalupro-stockport.html` |
+| Professional Microneedling in Stockport | `/services/microneedling-stockport/` | `services/microneedling-stockport.html` | `services/microneedling-stockport.html` |
+| Plasma Pen Treatments in Stockport | `/services/plasma-pen-stockport/` | `services/plasma-pen-stockport.html` | `services/plasma-pen-stockport.html` |
+| PRP Vampire Facial in Stockport | `/services/prp-vampire-facial-stockport/` | `services/prp-vampire-facial-stockport.html` | `services/prp-vampire-facial-stockport.html` |
+| Sunekos Bio-Revitalization in Stockport | `/services/sunekos-stockport/` | `services/sunekos-stockport.html` | `services/sunekos-stockport.html` |
+| Vampire Face Lift in Stockport | `/services/vampire-face-lift-stockport/` | `services/vampire-face-lift-stockport.html` | `services/vampire-face-lift-stockport.html` |
+
 
 ## SEO — title and meta description per page
 
@@ -42,3 +55,16 @@ in Yoast / Rank Math / All in One SEO for each page instead:
 | Create Account | Create Account \| Radiance Glamour Lounge, Stockport | Register for a new member account to earn Glamour Points on every purchase. |
 | Privacy Policy | Privacy Policy \| Radiance Glamour Lounge, Stockport | Privacy policy for Radiance Glamour Lounge. How we collect, use and protect your personal data when you book beauty treatments in Stockport. |
 | Terms and Conditions | Terms and Conditions \| Radiance Glamour Lounge, Stockport | Terms and conditions for booking beauty treatments at Radiance Glamour Lounge, Stockport. Ladies-only salon. Request an appointment on our website or call 07857 579631. |
+
+| Expert Aesthetic Clinic Consultation in Stockport | Expert Aesthetic Clinic Consultation in Stockport \| Radiance Glamour Lounge | Your journey to flawless skin and enhanced beauty begins with a comprehensive, medically-led consultation at our luxury ladies-only clinic. |
+| Aqualyx Fat Dissolving Injections in Stockport | Aqualyx Fat Dissolving Injections in Stockport \| Radiance Glamour Lounge | Target and eliminate stubborn pockets of fat permanently with this non-surgical contouring treatment. |
+| Advanced Chemical Peels in Stockport | Advanced Chemical Peels in Stockport \| Radiance Glamour Lounge | Reveal a brighter, smoother, and more youthful complexion by removing dead skin cells with our medical-grade chemical peels. |
+| Comprehensive Cosmetic Injectables & Skin Treatments in Stockport | Comprehensive Cosmetic Injectables & Skin Treatments in Stockport \| Radiance Glamour Lounge | A holistic approach to facial rejuvenation, combining the power of injectables with advanced dermal therapies for unparalleled radiance. |
+| Premium Cosmetic Injectables in Stockport | Premium Cosmetic Injectables in Stockport \| Radiance Glamour Lounge | Restore volume, smooth fine lines, and enhance your natural contours with our industry-leading cosmetic injectable treatments. |
+| Luxury Dermaplaning in Stockport | Luxury Dermaplaning in Stockport \| Radiance Glamour Lounge | Achieve instantly smooth, glowing skin with our professional physical exfoliation treatment. |
+| Jalupro Skin Biorevitalization in Stockport | Jalupro Skin Biorevitalization in Stockport \| Radiance Glamour Lounge | Deeply hydrate and feed your skin with the precise amino acids needed for ultimate collagen synthesis. |
+| Professional Microneedling in Stockport | Professional Microneedling in Stockport \| Radiance Glamour Lounge | Stimulate your skin's healing process for unparalleled collagen production and texture refinement. |
+| Plasma Pen Treatments in Stockport | Plasma Pen Treatments in Stockport \| Radiance Glamour Lounge | Non-surgical skin tightening and lifting using advanced fibroblasting technology. |
+| PRP Vampire Facial in Stockport | PRP Vampire Facial in Stockport \| Radiance Glamour Lounge | Harness your body's natural healing power for unparalleled skin rejuvenation with Platelet-Rich Plasma therapy. |
+| Sunekos Bio-Revitalization in Stockport | Sunekos Bio-Revitalization in Stockport \| Radiance Glamour Lounge | Restore your skin's natural elasticity and volume with this advanced amino acid and hyaluronic acid skin booster. |
+| Vampire Face Lift in Stockport | Vampire Face Lift in Stockport \| Radiance Glamour Lounge | A non-surgical structural rejuvenation combining dermal fillers with Platelet-Rich Plasma for the ultimate lift and glow. |
