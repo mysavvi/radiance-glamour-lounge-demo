@@ -1,16 +1,16 @@
 # Graph Report - Radiance Glamour Lounge  (2026-08-06)
 
 ## Corpus Check
-- 498 files · ~1,230,360 words
+- 501 files · ~1,231,116 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5366 nodes · 6750 edges · 495 communities (444 shown, 51 thin omitted)
+- 5369 nodes · 6750 edges · 498 communities (447 shown, 51 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 91 edges (avg confidence: 0.61)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e4bc6f4e`
+- Built from commit: `ecf96428`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -22,7 +22,7 @@
 - social-media-card.js
 - test_schema_v2.py
 - test_manifest_consistency.py
-- pagespeed_check.py
+- validate_url
 - Claude SEO: SEO Skill for Claude Code
 - test_sync_flow.py
 - test_lazy_detection.py
@@ -260,7 +260,7 @@
 - claude-seo/README.md
 - seo-performance.md
 - Contributors
-- [1.9.6] - 2026-04-26
+- [1.6.0] - 2026-03-23
 - Prompt: Generating a Title Tag
 - Free Backlink Data Sources
 - Claude SEO: Multi-Platform Agent Instructions
@@ -406,7 +406,7 @@
 - Neo Design — Palette Catalog
 - properties
 - neo/theme-toggle.js
-- validate_url
+- indexing_notify.py
 - items
 - properties
 - production_site/neo/cart-ui.js
@@ -460,7 +460,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (495 total, 51 thin omitted)
+## Communities (498 total, 51 thin omitted)
 
 ### Community 0 - "gsc_query.py"
 Cohesion: 0.18
@@ -490,9 +490,9 @@ Nodes (30): _all_types(), _has_type(), _iter_typed(), main(), Yield every dict i
 Cohesion: 0.06
 Nodes (41): _count_agent_files(), _count_skill_dirs(), _extract_count(), _extract_frontmatter(), _extract_section(), Tests that ensure the plugin's manifest and user-visible docs claim counts that…, README, CLAUDE.md, AGENTS.md must reference the canonical sub-skills count., plugin.json version must equal CITATION.cff version. (+33 more)
 
-### Community 7 - "pagespeed_check.py"
+### Community 7 - "validate_url"
 Cohesion: 0.11
-Nodes (33): detect_trends(), main(), query_history(), Analyze p75 timeseries to detect trends. Compares the average of the last 4…, Query CrUX History API for weekly CWV trends. Args: url_or_origin: Full URL or…, get_api_key(), google_api_key_headers(), Get the Google API key from config or environment. Returns: API key string, or… (+25 more)
+Nodes (35): detect_trends(), main(), query_history(), Analyze p75 timeseries to detect trends. Compares the average of the last 4…, Query CrUX History API for weekly CWV trends. Args: url_or_origin: Full URL or…, get_api_key(), google_api_key_headers(), Validate a URL for use with Google APIs. Rejects private/loopback addresses.… (+27 more)
 
 ### Community 8 - "Claude SEO: SEO Skill for Claude Code"
 Cohesion: 0.07
@@ -1148,7 +1148,7 @@ Nodes (16): Automotive, Critical Fields (Direct Ranking Impact), Data Mapping (D
 
 ### Community 245 - "Changelog"
 Cohesion: 0.11
-Nodes (18): [1.6.0] - 2026-03-23, [1.7.0] - 2026-03-28, [1.7.2] - 2026-03-30, [2.1.0] - 2026-05-25, [2.2.2] - 2026-07-10, [2.2.3] - 2026-07-14, Added, Added (+10 more)
+Nodes (18): [1.7.0] - 2026-03-28, [1.7.2] - 2026-03-30, [1.9.6] - 2026-04-26, [2.1.0] - 2026-05-25, [2.2.2] - 2026-07-10, [2.2.3] - 2026-07-14, Added, Added (+10 more)
 
 ### Community 246 - "Google SEO Quick Reference (July 2026)"
 Cohesion: 0.12
@@ -1270,9 +1270,9 @@ Nodes (11): Common CLS Issues, Common INP Issues, Common LCP Issues, Current Met
 Cohesion: 0.17
 Nodes (12): 2026 maintenance review cycle, 2026 maintenance review cycle, Community Issue Reports, Community Pull Requests, Contributors, Framework Integration (v1.9.5), How to Contribute, Pro Hub Challenge (v1.9.0) (+4 more)
 
-### Community 277 - "[1.9.6] - 2026-04-26"
+### Community 277 - "[1.6.0] - 2026-03-23"
 Cohesion: 0.67
-Nodes (3): [1.9.6] - 2026-04-26, Security, Tests
+Nodes (3): [1.6.0] - 2026-03-23, Added, Changed
 
 ### Community 278 - "Prompt: Generating a Title Tag"
 Cohesion: 0.20
@@ -1842,9 +1842,9 @@ Nodes (13): type, type, type, number, string, bookmarks, comments, hearts (+5 mo
 Cohesion: 0.36
 Nodes (12): apply(), currentTheme(), init(), inject(), injectIntoDrawer(), injectIntoFooter(), injectIntoHeader(), makeButton() (+4 more)
 
-### Community 437 - "validate_url"
-Cohesion: 0.29
-Nodes (11): Validate a URL for use with Google APIs. Rejects private/loopback addresses.…, validate_url(), batch_notify(), _build_indexing_service(), get_notification_metadata(), main(), notify_url(), Get the latest notification metadata for a URL. Args: url: The URL to check.… (+3 more)
+### Community 437 - "indexing_notify.py"
+Cohesion: 0.33
+Nodes (9): batch_notify(), _build_indexing_service(), get_notification_metadata(), main(), notify_url(), Get the latest notification metadata for a URL. Args: url: The URL to check.…, Batch notify multiple URLs with quota awareness. Args: urls: List of URLs.…, Build the Indexing API v3 service. (+1 more)
 
 ### Community 438 - "items"
 Cohesion: 0.17
@@ -1934,12 +1934,12 @@ Nodes (3): [1.9.5] - 2026-04-26, Added, License
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `URLSafetyError` connect `url_safety.py` to `test_technical_depth.py`, `verify_backlinks.py`, `sync_flow.py`, `pagespeed_check.py`, `fetch_page.py`, `parasite_risk.py`, `safe_requests_get`, `sitemap_discovery.py`, `ucp_check.py`, `indexnow_submit.py`, `render_page.py`?**
+- **Why does `URLSafetyError` connect `url_safety.py` to `test_technical_depth.py`, `verify_backlinks.py`, `sync_flow.py`, `validate_url`, `fetch_page.py`, `parasite_risk.py`, `safe_requests_get`, `sitemap_discovery.py`, `ucp_check.py`, `indexnow_submit.py`, `render_page.py`?**
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
-- **Why does `validate_url()` connect `validate_url` to `drift_compare.py`, `pagespeed_check.py`, `bing_webmaster.py`, `url_safety.py`, `google_auth.py`, `moz_api.py`, `commoncrawl_graph.py`, `verify_backlinks.py`, `get_oauth_credentials`?**
+- **Why does `validate_url()` connect `validate_url` to `drift_compare.py`, `bing_webmaster.py`, `url_safety.py`, `google_auth.py`, `moz_api.py`, `indexing_notify.py`, `commoncrawl_graph.py`, `verify_backlinks.py`, `get_oauth_credentials`?**
   _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **Why does `strip_head_noise()` connect `bundle_wordpress.py` to `sync_flow.py`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
+  _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **What connects `$schema`, `name`, `name` to the rest of the system?**
   _2434 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `test_content_quality.py` be split into smaller, more focused modules?**

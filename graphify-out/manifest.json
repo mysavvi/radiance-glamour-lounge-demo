@@ -2090,7 +2090,7 @@
     "semantic_hash": ""
   },
   "production_site/404.html": {
-    "mtime": 1786050130.9181995,
+    "mtime": 1786050743.541315,
     "ast_hash": "f920d6515d507ca99b383b749fb7e4c6",
     "semantic_hash": ""
   },
@@ -2100,43 +2100,43 @@
     "semantic_hash": ""
   },
   "production_site/book-success.html": {
-    "mtime": 1786050130.9115996,
-    "ast_hash": "784e85df945b33557a52053a76af839e",
+    "mtime": 1786050743.5275645,
+    "ast_hash": "515dcec7c21548228e7846c910dd4f91",
     "semantic_hash": ""
   },
   "production_site/book.html": {
-    "mtime": 1786050130.9228854,
-    "ast_hash": "a46a0f237fd18adddac2e3ee8c0d806f",
+    "mtime": 1786050743.5478354,
+    "ast_hash": "6d34c84b5f69d92b53b2dca529825a53",
     "semantic_hash": ""
   },
   "production_site/cart.html": {
-    "mtime": 1786050130.925506,
-    "ast_hash": "51d12bc430dfb01e3ff1fec5b394b67c",
+    "mtime": 1786050743.551196,
+    "ast_hash": "103e75bffcb4c41b6632da854463c241",
     "semantic_hash": ""
   },
   "production_site/checkout.html": {
-    "mtime": 1786050130.9242475,
+    "mtime": 1786050743.5489736,
     "ast_hash": "0829020f9a7506cc59a3567c74ec6ba2",
     "semantic_hash": ""
   },
   "production_site/clinic.html": {
-    "mtime": 1786050130.9202719,
-    "ast_hash": "09b487bdf1f95488dfca6b1d20adc45e",
+    "mtime": 1786050743.545085,
+    "ast_hash": "46697d6032ad1e498c6a5db71998c8f3",
     "semantic_hash": ""
   },
   "production_site/contact.html": {
-    "mtime": 1786050130.9149618,
-    "ast_hash": "ff6cb778b549767e4ac0a16729e9441b",
+    "mtime": 1786050743.5365427,
+    "ast_hash": "f21d09becea831ef038dc2f7f01edf9d",
     "semantic_hash": ""
   },
   "production_site/index.html": {
-    "mtime": 1786050130.9084804,
-    "ast_hash": "44d0ab2920cd12268668ac7be28ba0c6",
+    "mtime": 1786050743.5235245,
+    "ast_hash": "d9e582e19f86cf8bcdd83c7d8660e5ad",
     "semantic_hash": ""
   },
   "production_site/login.html": {
-    "mtime": 1786050130.9189472,
-    "ast_hash": "d68eac014f947dfbf82a861be4a1bff2",
+    "mtime": 1786050743.5424104,
+    "ast_hash": "275b9399ce99fb071d91ce12e9ea7e23",
     "semantic_hash": ""
   },
   "production_site/neo/WP_DELIVERY.md": {
@@ -2145,12 +2145,12 @@
     "semantic_hash": ""
   },
   "production_site/neo/a11y-toolbar.html": {
-    "mtime": 1786050130.9275298,
+    "mtime": 1786050743.5535197,
     "ast_hash": "d919f89a5f1cff571c56444c8289cbae",
     "semantic_hash": ""
   },
   "production_site/neo/components/social-media-card.html": {
-    "mtime": 1786050130.928678,
+    "mtime": 1786050743.5542843,
     "ast_hash": "ef2d11ec98cbee1806af09d40e038356",
     "semantic_hash": ""
   },
@@ -2165,38 +2165,38 @@
     "semantic_hash": ""
   },
   "production_site/privacy-policy.html": {
-    "mtime": 1786050130.9141974,
-    "ast_hash": "17d614cd8d2b81d506e712ca30068bbe",
+    "mtime": 1786050743.5352921,
+    "ast_hash": "ba0e60ee38a73e05712431cb44c8ae5a",
     "semantic_hash": ""
   },
   "production_site/product.html": {
-    "mtime": 1786050130.910423,
-    "ast_hash": "c0fdf4f5fe854bc5051f82ddb6979272",
+    "mtime": 1786050743.5256953,
+    "ast_hash": "947c2a43d679874da2d7f187c3337f52",
     "semantic_hash": ""
   },
   "production_site/register.html": {
-    "mtime": 1786050130.9176495,
-    "ast_hash": "b4fcdb1e54b1992ffea109dbf98505f5",
+    "mtime": 1786050743.5409925,
+    "ast_hash": "284aa9f53036b899338b1e70ad035342",
     "semantic_hash": ""
   },
   "production_site/shop.html": {
-    "mtime": 1786050130.9215896,
-    "ast_hash": "cac1c6388e77151561ed1966837d746b",
+    "mtime": 1786050757.9857814,
+    "ast_hash": "b7509c4088109057be0436b47db86cc1",
     "semantic_hash": ""
   },
   "production_site/terms.html": {
-    "mtime": 1786050130.9168336,
-    "ast_hash": "6b763ad83fe0596a40849887d58fdc99",
+    "mtime": 1786050743.5397131,
+    "ast_hash": "5ae2fa5c10796e4e43ea3976634c7781",
     "semantic_hash": ""
   },
   "production_site/testimonials.html": {
-    "mtime": 1786050130.9122803,
-    "ast_hash": "9938cf6a34581c798faf31d937e830ff",
+    "mtime": 1786050743.5316248,
+    "ast_hash": "cbfd390408d9c79fbdf0e29665bbdc1a",
     "semantic_hash": ""
   },
   "production_site/treatments.html": {
-    "mtime": 1786050130.926639,
-    "ast_hash": "248bddef7aa520c2c18e9723253345fe",
+    "mtime": 1786050743.5531552,
+    "ast_hash": "7aba8a91e9b78f691750d9d90a8d697f",
     "semantic_hash": ""
   },
   "wp-conversion-prompt.md": {
@@ -3280,13 +3280,13 @@
     "semantic_hash": ""
   },
   "production_site/about.html": {
-    "mtime": 1786050130.9134011,
-    "ast_hash": "ef7f763d7a0ee2ea19239f42f855bc0a",
+    "mtime": 1786050743.5335755,
+    "ast_hash": "c775eeab640ca286767973eb8e2f4ec3",
     "semantic_hash": ""
   },
   "production_site/gift-cards.html": {
-    "mtime": 1786050130.9160125,
-    "ast_hash": "06179c70f27d8b6ca54d4b1acd6da4b8",
+    "mtime": 1786050743.5385592,
+    "ast_hash": "fb1d2da60736748354f0249e2822275a",
     "semantic_hash": ""
   },
   "neo/assets/social/arc.svg": {
@@ -3470,63 +3470,63 @@
     "semantic_hash": ""
   },
   "production_site/services/aesthetic-clinic-consultation-stockport.html": {
-    "mtime": 1786050130.937998,
-    "ast_hash": "aea06452a19093a13699e2d93d001396",
+    "mtime": 1786050743.5720205,
+    "ast_hash": "d726f5710619f5e41df7d27071462f47",
     "semantic_hash": ""
   },
   "production_site/services/aqualyx-fat-dissolving-stockport.html": {
-    "mtime": 1786050130.9369187,
-    "ast_hash": "86903409306cea00ddf38db62adacd17",
+    "mtime": 1786050743.5697932,
+    "ast_hash": "a8b5f67b8c50d23f0c62f65ebc226ad0",
     "semantic_hash": ""
   },
   "production_site/services/chemical-peel-stockport.html": {
-    "mtime": 1786050130.9293528,
-    "ast_hash": "5026e7352d41e229cd1651f783230232",
+    "mtime": 1786050743.555383,
+    "ast_hash": "c1307c835c214b1604076ddbc8437f54",
     "semantic_hash": ""
   },
   "production_site/services/cosmetic-injectables-and-treatments-stockport.html": {
-    "mtime": 1786050130.9339068,
-    "ast_hash": "00b0ead7c4ba6998415b35ea15ae6fce",
+    "mtime": 1786050743.5635557,
+    "ast_hash": "b04ee3d61011feb6f598594e396ae107",
     "semantic_hash": ""
   },
   "production_site/services/cosmetic-injectables-stockport.html": {
-    "mtime": 1786050130.9324298,
-    "ast_hash": "62cf70cd8c8e2be3b8f2d68f1de530e5",
+    "mtime": 1786050743.5605903,
+    "ast_hash": "090b00311d00643d3369f01ad7aaee12",
     "semantic_hash": ""
   },
   "production_site/services/dermaplaning-stockport.html": {
-    "mtime": 1786050130.9359539,
-    "ast_hash": "61a68e2ec5c3f0a934314baef3759ae1",
+    "mtime": 1786050743.567727,
+    "ast_hash": "1dd7c5d7b2fc751727d1d2aeb960f8ce",
     "semantic_hash": ""
   },
   "production_site/services/jalupro-stockport.html": {
-    "mtime": 1786050130.931662,
-    "ast_hash": "69bc75ed1a18e428a72c64760dc942d4",
+    "mtime": 1786050743.5591774,
+    "ast_hash": "6bd82f3cec655264b28e29250ce52cc8",
     "semantic_hash": ""
   },
   "production_site/services/microneedling-stockport.html": {
-    "mtime": 1786050130.9311426,
-    "ast_hash": "920d79ad52397a8d642aeb73572bd7ec",
+    "mtime": 1786050743.5576084,
+    "ast_hash": "0b0bfec817585332fbad8cf4843ed3ef",
     "semantic_hash": ""
   },
   "production_site/services/plasma-pen-stockport.html": {
-    "mtime": 1786050130.9302332,
-    "ast_hash": "e43c290cd9c1b8efb14f90fd3202e57e",
+    "mtime": 1786050743.5564897,
+    "ast_hash": "d6b6ad2a0a2954ee3ea2abe6785ecb99",
     "semantic_hash": ""
   },
   "production_site/services/prp-vampire-facial-stockport.html": {
-    "mtime": 1786050130.9331346,
-    "ast_hash": "88261f2ca089f389356718c73aee9049",
+    "mtime": 1786050743.5619464,
+    "ast_hash": "1f6def24f81719ad4fa2cbc51125a1ba",
     "semantic_hash": ""
   },
   "production_site/services/sunekos-stockport.html": {
-    "mtime": 1786050130.9349787,
-    "ast_hash": "68fb6d0b39cfb86ae49687d948c5d9fc",
+    "mtime": 1786050743.5656276,
+    "ast_hash": "8571a4a46265fdb02e7a9aa6b454d412",
     "semantic_hash": ""
   },
   "production_site/services/vampire-face-lift-stockport.html": {
-    "mtime": 1786050130.9397588,
-    "ast_hash": "c09d3c31268aeab546000d9c113262e8",
+    "mtime": 1786050743.5735326,
+    "ast_hash": "e008362fe70a46cd368f17e2414a7bc6",
     "semantic_hash": ""
   },
   "scripts/add_palette_to_pages.py": {
@@ -3585,8 +3585,23 @@
     "semantic_hash": ""
   },
   "fix_nav_bar.py": {
-    "mtime": 1786050130.8199935,
-    "ast_hash": "4bc7d705cae700d12701cec50f3b66eb",
+    "mtime": 1786050637.1681185,
+    "ast_hash": "fea0e81f9e75d9500d9f7357fabd499a",
+    "semantic_hash": ""
+  },
+  "fix_forgot_pwd.py": {
+    "mtime": 1786050435.3995078,
+    "ast_hash": "3396a7496e58645a2807e3a2a95f42df",
+    "semantic_hash": ""
+  },
+  "fix_forgot_pwd2.py": {
+    "mtime": 1786050534.000237,
+    "ast_hash": "1e2b4c26a752cce6c5014c6bd0a11e79",
+    "semantic_hash": ""
+  },
+  "fix_nav_bar2.py": {
+    "mtime": 1786050743.4175682,
+    "ast_hash": "ebb5819a3cd1532f7e15f0c5c00837d3",
     "semantic_hash": ""
   }
 }

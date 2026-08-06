@@ -5,6 +5,7 @@ desktop_nav_template = """        <ul class="neo-desktop-nav__links">
           <li><a href="{prefix}treatments.html" {treatments_attrs}>Treatments</a></li>
           <li><a href="{prefix}clinic.html" {clinic_attrs}>Clinic</a></li>
           <li><a href="{prefix}shop.html" {shop_attrs}>Shop</a></li>
+          <li><a href="{prefix}gift-cards.html" {gift_attrs}>Gift Cards</a></li>
           <li><a href="{prefix}about.html" {about_attrs}>About Us</a></li>
           <li><a href="{prefix}contact.html" {contact_attrs}>Contact</a></li>
         </ul>"""
@@ -14,6 +15,7 @@ mobile_nav_template = """        <ul class="neo-mobile-menu__links">
           <li><a href="{prefix}treatments.html" {treatments_attrs_mob}>Treatments</a></li>
           <li><a href="{prefix}clinic.html" {clinic_attrs_mob}>Clinic</a></li>
           <li><a href="{prefix}shop.html" {shop_attrs_mob}>Shop</a></li>
+          <li><a href="{prefix}gift-cards.html" {gift_attrs_mob}>Gift Cards</a></li>
           <li><a href="{prefix}about.html" {about_attrs_mob}>About Us</a></li>
           <li><a href="{prefix}contact.html" {contact_attrs_mob}>Contact</a></li>
         </ul>"""
@@ -28,13 +30,13 @@ for filepath in glob.glob("production_site/**/*.html", recursive=True):
     
     # default all to empty
     attrs = {k: "" for k in [
-        "home_attrs", "treatments_attrs", "clinic_attrs", "shop_attrs", "about_attrs", "contact_attrs"
+        "home_attrs", "treatments_attrs", "clinic_attrs", "shop_attrs", "gift_attrs", "about_attrs", "contact_attrs"
     ]}
     
     # default all mobile to data-neo-menu-close
     attrs_mob = {k: 'data-neo-menu-close' for k in [
         "home_attrs_mob", "treatments_attrs_mob", "clinic_attrs_mob", 
-        "shop_attrs_mob", "about_attrs_mob", "contact_attrs_mob"
+        "shop_attrs_mob", "gift_attrs_mob", "about_attrs_mob", "contact_attrs_mob"
     ]}
     
     active_attr = 'class="neo-nav-link--active" aria-current="page"'
@@ -52,6 +54,9 @@ for filepath in glob.glob("production_site/**/*.html", recursive=True):
     elif basename == "shop.html":
         attrs["shop_attrs"] = active_attr
         attrs_mob["shop_attrs_mob"] = active_attr_mob
+    elif basename == "gift-cards.html":
+        attrs["gift_attrs"] = active_attr
+        attrs_mob["gift_attrs_mob"] = active_attr_mob
     elif basename == "about.html":
         attrs["about_attrs"] = active_attr
         attrs_mob["about_attrs_mob"] = active_attr_mob
@@ -67,6 +72,13 @@ for filepath in glob.glob("production_site/**/*.html", recursive=True):
     
     # Replace mobile nav
     content = re.sub(r'<ul class="neo-mobile-menu__links">.*?</ul>', mobile_nav_html, content, flags=re.DOTALL)
+    
+    # Add to footer if not there
+    content = re.sub(
+        r'(<li><a href="([^"]*)shop\.html">Shop</a></li>)(\s*)(<li><a href="([^"]*)book\.html">)',
+        r'\1\n              <li><a href="\2gift-cards.html">Gift Cards</a></li>\3\4',
+        content
+    )
     
     with open(filepath, "w") as f:
         f.write(content)

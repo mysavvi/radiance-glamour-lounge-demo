@@ -1,16 +1,16 @@
 # Graph Report - Radiance Glamour Lounge  (2026-08-06)
 
 ## Corpus Check
-- 499 files · ~1,230,641 words
+- 502 files · ~1,231,199 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5367 nodes · 6750 edges · 496 communities (445 shown, 51 thin omitted)
+- 5370 nodes · 6750 edges · 499 communities (448 shown, 51 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 91 edges (avg confidence: 0.61)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e4bc6f4e`
+- Built from commit: `ecf96428`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -460,7 +460,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (496 total, 51 thin omitted)
+## Communities (499 total, 51 thin omitted)
 
 ### Community 0 - "gsc_query.py"
 Cohesion: 0.18
@@ -1939,7 +1939,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `validate_url()` connect `validate_url` to `drift_compare.py`, `pagespeed_check.py`, `bing_webmaster.py`, `url_safety.py`, `google_auth.py`, `moz_api.py`, `commoncrawl_graph.py`, `verify_backlinks.py`, `get_oauth_credentials`?**
   _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **Why does `strip_head_noise()` connect `bundle_wordpress.py` to `sync_flow.py`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
+  _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **What connects `$schema`, `name`, `name` to the rest of the system?**
   _2434 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `test_content_quality.py` be split into smaller, more focused modules?**
