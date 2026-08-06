@@ -344,98 +344,491 @@
         </div>
       </section>
 
-      <section class="rb-section" aria-labelledby="rb-clinic-pillars-title">
+      <section class="rb-section rb-clinic-services-marquee-section" aria-labelledby="rb-clinic-pillars-title">
         <div class="neo-container">
           <p class="rb-eyebrow">Treatment menu</p>
           <h2 class="neo-h2" id="rb-clinic-pillars-title">Clinic Services</h2>
           <p class="neo-body rb-muted rb-clinic-pillars__intro">Click a service to learn more about the procedure, benefits, and to book your consultation with Nabila Salman.</p>
+        </div>
 
-          <ul class="neo-grid" style="margin-top: 32px; padding: 0;">
-            <li class="neo-grid-item" style="list-style: none;">
-              <a href="/services/aesthetic-clinic-consultation-stockport/" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                <img src="/wp-content/uploads/2026/08/consultation_hero_1785906262133.png" alt="Aesthetic Clinic Consultation" style="width:100%; border-radius: var(--neo-radius-md); aspect-ratio: 16/9; object-fit: cover; margin-bottom: 12px; box-shadow: var(--neo-shadow-raised);">
-                <h3 class="neo-h4" style="text-align: center; margin-bottom: 4px;">Clinic Consultation</h3>
-                <p class="neo-body rb-muted" style="text-align: center; font-size: 0.9rem;">Discuss your goals and suitability</p>
+        <style>
+          .rb-clinic-marquee-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding: 32px 0 24px 0;
+            mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+            touch-action: pan-y;
+          }
+          .rb-clinic-marquee-track {
+            display: flex;
+            width: max-content;
+            gap: 18px;
+            animation: clinicMarqueeL2R 45s linear infinite;
+            will-change: transform;
+          }
+          @media (hover: hover) {
+            .rb-clinic-marquee-wrapper:hover .rb-clinic-marquee-track {
+              animation-play-state: paused;
+            }
+          }
+          @keyframes clinicMarqueeL2R {
+            0% {
+              transform: translate3d(-50%, 0, 0);
+            }
+            100% {
+              transform: translate3d(0, 0, 0);
+            }
+          }
+          .rb-clinic-marquee-group {
+            display: flex;
+            gap: 18px;
+            align-items: stretch;
+          }
+          .rb-clinic-card {
+            width: 230px;
+            flex-shrink: 0;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            background: var(--neo-bg-raised, rgba(255, 255, 255, 0.92));
+            border: 1px solid var(--neo-border-subtle, rgba(0, 0, 0, 0.08));
+            border-top: 3.5px solid var(--shade-color, var(--neo-accent, #c99360));
+            border-radius: 16px;
+            padding: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+            position: relative;
+            z-index: 1;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+          }
+          @media (hover: hover) {
+            .rb-clinic-card:hover {
+              transform: translateY(-8px) scale(1.04);
+              z-index: 25;
+              box-shadow: 0 16px 36px rgba(40, 10, 30, 0.12), 0 0 0 1.5px var(--shade-color, var(--neo-accent, #c99360));
+              border-color: var(--shade-color, var(--neo-accent, #c99360));
+            }
+          }
+          .rb-clinic-card:active {
+            transform: scale(0.98);
+          }
+          .rb-clinic-card__shade-tag {
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-bottom: 8px;
+            display: inline-block;
+            align-self: center;
+            background: rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+          }
+          .rb-clinic-card__img-box {
+            width: 100%;
+            height: 130px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: var(--neo-bg-inset, #f8f4f6);
+            flex-shrink: 0;
+            position: relative;
+          }
+          .rb-clinic-card__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+          }
+          @media (hover: hover) {
+            .rb-clinic-card:hover .rb-clinic-card__img {
+              transform: scale(1.05);
+            }
+          }
+          .rb-clinic-card__body {
+            padding: 10px 2px 2px 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex-grow: 1;
+            justify-content: space-between;
+          }
+          .rb-clinic-card__title {
+            font-family: var(--neo-font-display, serif);
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--neo-text-primary, #2d1828);
+            margin: 0 0 4px 0;
+            line-height: 1.3;
+            min-height: 2.6em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          }
+          .rb-clinic-card__desc {
+            font-size: 0.82rem;
+            color: var(--neo-text-muted, #765e70);
+            margin: 0;
+            line-height: 1.35;
+            min-height: 2.4em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          }
+          .rb-clinic-card__cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            margin-top: 10px;
+            padding: 6px 14px;
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            border-radius: 20px;
+            background: var(--shade-color, var(--neo-accent, #c99360));
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            opacity: 0;
+            transform: translateY(6px);
+          }
+          @media (hover: hover) {
+            .rb-clinic-card:hover .rb-clinic-card__cta {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          @media (hover: none) {
+            .rb-clinic-card__cta {
+              opacity: 1;
+              transform: translateY(0);
+              padding: 4px 10px;
+              font-size: 0.72rem;
+              margin-top: 8px;
+            }
+          }
+
+          /* Responsive Tweaks */
+          @media (max-width: 640px) {
+            .rb-clinic-card {
+              width: 190px;
+              padding: 10px;
+              border-radius: 14px;
+            }
+            .rb-clinic-card__img-box {
+              height: 110px;
+              border-radius: 10px;
+            }
+            .rb-clinic-card__title {
+              font-size: 0.95rem;
+            }
+            .rb-clinic-card__desc {
+              font-size: 0.78rem;
+            }
+            .rb-clinic-marquee-track {
+              gap: 12px;
+              animation-duration: 35s;
+            }
+            .rb-clinic-marquee-group {
+              gap: 12px;
+            }
+          }
+
+          @media (prefers-reduced-motion: reduce) {
+            .rb-clinic-marquee-track {
+              animation: none;
+              flex-wrap: wrap;
+              width: 100%;
+            }
+          }
+        </style>
+
+        <div class="rb-clinic-marquee-wrapper">
+          <div class="rb-clinic-marquee-track">
+            <!-- Group 1 -->
+            <div class="rb-clinic-marquee-group">
+              <a href="services/aesthetic-clinic-consultation-stockport.html" class="rb-clinic-card" title="Aesthetic Clinic Consultation - Inspired by Pillow Talk Rose" style="--shade-color: #D48C95;">
+                <span class="rb-clinic-card__shade-tag" style="color: #D48C95;"><span class="neo-sr-only">Luxury Shade Match: </span>Pillow Talk Rose</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/consultation_hero_1785906262133.png" alt="Aesthetic Clinic Consultation (Inspired by Pillow Talk Rose)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Clinic Consultation</h3>
+                  <p class="rb-clinic-card__desc">Discuss your goals and suitability</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
               </a>
-            </li>
-            <li class="neo-grid-item" style="list-style: none;">
-              <a href="/services/cosmetic-injectables-stockport/" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                <img src="/wp-content/uploads/2026/08/injectables_hero_1785862416413.png" alt="Cosmetic Injectables" style="width:100%; border-radius: var(--neo-radius-md); aspect-ratio: 16/9; object-fit: cover; margin-bottom: 12px; box-shadow: var(--neo-shadow-raised);">
-                <h3 class="neo-h4" style="text-align: center; margin-bottom: 4px;">Cosmetic Injectables</h3>
-                <p class="neo-body rb-muted" style="text-align: center; font-size: 0.9rem;">Targeted volume and smoothness</p>
+              <a href="services/cosmetic-injectables-stockport.html" class="rb-clinic-card" title="Cosmetic Injectables - Inspired by Dior 999 Red" style="--shade-color: #C82333;">
+                <span class="rb-clinic-card__shade-tag" style="color: #C82333;"><span class="neo-sr-only">Luxury Shade Match: </span>Dior 999 Red</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/injectables_hero_1785862416413.png" alt="Cosmetic Injectables (Inspired by Dior 999 Red)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Cosmetic Injectables</h3>
+                  <p class="rb-clinic-card__desc">Targeted volume and smoothness</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
               </a>
-            </li>
-            <li class="neo-grid-item" style="list-style: none;">
-              <a href="/services/prp-vampire-facial-stockport/" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                <img src="/wp-content/uploads/2026/08/vampire_facial_hero_1785906212658.png" alt="PRP Vampire Facial" style="width:100%; border-radius: var(--neo-radius-md); aspect-ratio: 16/9; object-fit: cover; margin-bottom: 12px; box-shadow: var(--neo-shadow-raised);">
-                <h3 class="neo-h4" style="text-align: center; margin-bottom: 4px;">PRP Vampire Facial</h3>
-                <p class="neo-body rb-muted" style="text-align: center; font-size: 0.9rem;">Natural collagen stimulation</p>
+              <a href="services/prp-vampire-facial-stockport.html" class="rb-clinic-card" title="PRP Vampire Facial - Inspired by Velvet Cherry" style="--shade-color: #8B1E3F;">
+                <span class="rb-clinic-card__shade-tag" style="color: #8B1E3F;"><span class="neo-sr-only">Luxury Shade Match: </span>Velvet Cherry</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/vampire_facial_hero_1785906212658.png" alt="PRP Vampire Facial (Inspired by Velvet Cherry)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">PRP Vampire Facial</h3>
+                  <p class="rb-clinic-card__desc">Natural collagen stimulation</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
               </a>
-            </li>
-            <li class="neo-grid-item" style="list-style: none;">
-              <a href="/services/vampire-face-lift-stockport/" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                <img src="/wp-content/uploads/2026/08/vampire_facelift_hero_1785906269162.png" alt="Vampire Face Lift" style="width:100%; border-radius: var(--neo-radius-md); aspect-ratio: 16/9; object-fit: cover; margin-bottom: 12px; box-shadow: var(--neo-shadow-raised);">
-                <h3 class="neo-h4" style="text-align: center; margin-bottom: 4px;">Vampire Face Lift</h3>
-                <p class="neo-body rb-muted" style="text-align: center; font-size: 0.9rem;">Advanced rejuvenation</p>
+              <a href="services/vampire-face-lift-stockport.html" class="rb-clinic-card" title="Vampire Face Lift - Inspired by Rouge Noir" style="--shade-color: #5C1525;">
+                <span class="rb-clinic-card__shade-tag" style="color: #5C1525;"><span class="neo-sr-only">Luxury Shade Match: </span>Rouge Noir</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/vampire_facelift_hero_1785906269162.png" alt="Vampire Face Lift (Inspired by Rouge Noir)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Vampire Face Lift</h3>
+                  <p class="rb-clinic-card__desc">Advanced rejuvenation</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
               </a>
-            </li>
-            <li class="neo-grid-item" style="list-style: none;">
-              <a href="/services/plasma-pen-stockport/" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                <img src="/wp-content/uploads/2026/08/plasma_pen_hero_1785862425813.png" alt="Plasma Pen" style="width:100%; border-radius: var(--neo-radius-md); aspect-ratio: 16/9; object-fit: cover; margin-bottom: 12px; box-shadow: var(--neo-shadow-raised);">
-                <h3 class="neo-h4" style="text-align: center; margin-bottom: 4px;">Plasma Pen</h3>
-                <p class="neo-body rb-muted" style="text-align: center; font-size: 0.9rem;">Fibroblast skin tightening</p>
+              <a href="services/plasma-pen-stockport.html" class="rb-clinic-card" title="Plasma Pen - Inspired by Nude Bronze" style="--shade-color: #B87333;">
+                <span class="rb-clinic-card__shade-tag" style="color: #B87333;"><span class="neo-sr-only">Luxury Shade Match: </span>Nude Bronze</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/plasma_pen_hero_1785862425813.png" alt="Plasma Pen (Inspired by Nude Bronze)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Plasma Pen</h3>
+                  <p class="rb-clinic-card__desc">Fibroblast skin tightening</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
               </a>
-            </li>
-            <li class="neo-grid-item" style="list-style: none;">
-              <a href="/services/microneedling-stockport/" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                <img src="/wp-content/uploads/2026/08/microneedling_hero_1785906196548.png" alt="Microneedling" style="width:100%; border-radius: var(--neo-radius-md); aspect-ratio: 16/9; object-fit: cover; margin-bottom: 12px; box-shadow: var(--neo-shadow-raised);">
-                <h3 class="neo-h4" style="text-align: center; margin-bottom: 4px;">Microneedling</h3>
-                <p class="neo-body rb-muted" style="text-align: center; font-size: 0.9rem;">Skin texture & tone</p>
+              <a href="services/microneedling-stockport.html" class="rb-clinic-card" title="Microneedling - Inspired by Ruby Woo" style="--shade-color: #A6192E;">
+                <span class="rb-clinic-card__shade-tag" style="color: #A6192E;"><span class="neo-sr-only">Luxury Shade Match: </span>Ruby Woo</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/microneedling_hero_1785906196548.png" alt="Microneedling (Inspired by Ruby Woo)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Microneedling</h3>
+                  <p class="rb-clinic-card__desc">Skin texture &amp; tone</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
               </a>
-            </li>
-            <li class="neo-grid-item" style="list-style: none;">
-              <a href="/services/jalupro-stockport/" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                <img src="/wp-content/uploads/2026/08/jalupro_hero_1785906205941.png" alt="Jalupro" style="width:100%; border-radius: var(--neo-radius-md); aspect-ratio: 16/9; object-fit: cover; margin-bottom: 12px; box-shadow: var(--neo-shadow-raised);">
-                <h3 class="neo-h4" style="text-align: center; margin-bottom: 4px;">Jalupro</h3>
-                <p class="neo-body rb-muted" style="text-align: center; font-size: 0.9rem;">Amino acid skin boosting</p>
+              <a href="services/jalupro-stockport.html" class="rb-clinic-card" title="Jalupro - Inspired by Pearl Coral" style="--shade-color: #E88E8A;">
+                <span class="rb-clinic-card__shade-tag" style="color: #E88E8A;"><span class="neo-sr-only">Luxury Shade Match: </span>Pearl Coral</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/jalupro_hero_1785906205941.png" alt="Jalupro (Inspired by Pearl Coral)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Jalupro</h3>
+                  <p class="rb-clinic-card__desc">Amino acid skin boosting</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
               </a>
-            </li>
-            <li class="neo-grid-item" style="list-style: none;">
-              <a href="/services/sunekos-stockport/" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                <img src="/wp-content/uploads/2026/08/sunekos_hero_1785906236540.png" alt="Sunekos" style="width:100%; border-radius: var(--neo-radius-md); aspect-ratio: 16/9; object-fit: cover; margin-bottom: 12px; box-shadow: var(--neo-shadow-raised);">
-                <h3 class="neo-h4" style="text-align: center; margin-bottom: 4px;">Sunekos</h3>
-                <p class="neo-body rb-muted" style="text-align: center; font-size: 0.9rem;">Restore elasticity & hydration</p>
+              <a href="services/sunekos-stockport.html" class="rb-clinic-card" title="Sunekos - Inspired by Ballet Slipper" style="--shade-color: #D98299;">
+                <span class="rb-clinic-card__shade-tag" style="color: #D98299;"><span class="neo-sr-only">Luxury Shade Match: </span>Ballet Slipper</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/sunekos_hero_1785906236540.png" alt="Sunekos (Inspired by Ballet Slipper)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Sunekos</h3>
+                  <p class="rb-clinic-card__desc">Restore elasticity &amp; hydration</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
               </a>
-            </li>
-            <li class="neo-grid-item" style="list-style: none;">
-              <a href="/services/aqualyx-fat-dissolving-stockport/" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                <img src="/wp-content/uploads/2026/08/fat_dissolving_hero_1785906253996.png" alt="Aqualyx Fat Dissolving" style="width:100%; border-radius: var(--neo-radius-md); aspect-ratio: 16/9; object-fit: cover; margin-bottom: 12px; box-shadow: var(--neo-shadow-raised);">
-                <h3 class="neo-h4" style="text-align: center; margin-bottom: 4px;">Fat Dissolving</h3>
-                <p class="neo-body rb-muted" style="text-align: center; font-size: 0.9rem;">Targeted contouring</p>
+              <a href="services/aqualyx-fat-dissolving-stockport.html" class="rb-clinic-card" title="Aqualyx Fat Dissolving - Inspired by Fenty Glow" style="--shade-color: #B5724C;">
+                <span class="rb-clinic-card__shade-tag" style="color: #B5724C;"><span class="neo-sr-only">Luxury Shade Match: </span>Fenty Glow</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/fat_dissolving_hero_1785906253996.png" alt="Aqualyx Fat Dissolving (Inspired by Fenty Glow)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Fat Dissolving</h3>
+                  <p class="rb-clinic-card__desc">Targeted contouring</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
               </a>
-            </li>
-            <li class="neo-grid-item" style="list-style: none;">
-              <a href="/services/chemical-peel-stockport/" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                <img src="/wp-content/uploads/2026/08/chemical_peel_hero_1785906188642.png" alt="Chemical Peel" style="width:100%; border-radius: var(--neo-radius-md); aspect-ratio: 16/9; object-fit: cover; margin-bottom: 12px; box-shadow: var(--neo-shadow-raised);">
-                <h3 class="neo-h4" style="text-align: center; margin-bottom: 4px;">Chemical Peel</h3>
-                <p class="neo-body rb-muted" style="text-align: center; font-size: 0.9rem;">Deep exfoliation & renewal</p>
+              <a href="services/chemical-peel-stockport.html" class="rb-clinic-card" title="Chemical Peel - Inspired by Peachy NARS" style="--shade-color: #D96B43;">
+                <span class="rb-clinic-card__shade-tag" style="color: #D96B43;"><span class="neo-sr-only">Luxury Shade Match: </span>Peachy NARS</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/chemical_peel_hero_1785906188642.png" alt="Chemical Peel (Inspired by Peachy NARS)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Chemical Peel</h3>
+                  <p class="rb-clinic-card__desc">Deep exfoliation &amp; renewal</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
               </a>
-            </li>
-            <li class="neo-grid-item" style="list-style: none;">
-              <a href="/services/dermaplaning-stockport/" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                <img src="/wp-content/uploads/2026/08/dermaplaning_hero_1785906246303.png" alt="Dermaplaning" style="width:100%; border-radius: var(--neo-radius-md); aspect-ratio: 16/9; object-fit: cover; margin-bottom: 12px; box-shadow: var(--neo-shadow-raised);">
-                <h3 class="neo-h4" style="text-align: center; margin-bottom: 4px;">Dermaplaning</h3>
-                <p class="neo-body rb-muted" style="text-align: center; font-size: 0.9rem;">Smooth, glowing skin</p>
+              <a href="services/dermaplaning-stockport.html" class="rb-clinic-card" title="Dermaplaning - Inspired by Hermès Rouge" style="--shade-color: #D94E34;">
+                <span class="rb-clinic-card__shade-tag" style="color: #D94E34;"><span class="neo-sr-only">Luxury Shade Match: </span>Hermès Rouge</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/dermaplaning_hero_1785906246303.png" alt="Dermaplaning (Inspired by Hermès Rouge)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Dermaplaning</h3>
+                  <p class="rb-clinic-card__desc">Smooth, glowing skin</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
               </a>
-            </li>
-            <li class="neo-grid-item" style="list-style: none;">
-              <a href="/services/cosmetic-injectables-and-treatments-stockport/" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease;">
-                <img src="/wp-content/uploads/2026/08/injectables_package_hero_1785906228571.png" alt="Injectables Package" style="width:100%; border-radius: var(--neo-radius-md); aspect-ratio: 16/9; object-fit: cover; margin-bottom: 12px; box-shadow: var(--neo-shadow-raised);">
-                <h3 class="neo-h4" style="text-align: center; margin-bottom: 4px;">Injectables Package</h3>
-                <p class="neo-body rb-muted" style="text-align: center; font-size: 0.9rem;">Comprehensive treatment</p>
+              <a href="services/cosmetic-injectables-and-treatments-stockport.html" class="rb-clinic-card" title="Injectables Package - Inspired by Gucci Goldie" style="--shade-color: #C5A059;">
+                <span class="rb-clinic-card__shade-tag" style="color: #C5A059;"><span class="neo-sr-only">Luxury Shade Match: </span>Gucci Goldie</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/injectables_package_hero_1785906228571.png" alt="Injectables Package (Inspired by Gucci Goldie)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Injectables Package</h3>
+                  <p class="rb-clinic-card__desc">Comprehensive treatment</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
               </a>
-            </li>
-          </ul>
+            </div>
+
+            <!-- Group 2 (Duplicate for Infinite Marquee Loop) -->
+            <div class="rb-clinic-marquee-group" aria-hidden="true">
+              <a href="services/aesthetic-clinic-consultation-stockport.html" class="rb-clinic-card" title="Aesthetic Clinic Consultation - Inspired by Pillow Talk Rose" tabindex="-1" style="--shade-color: #D48C95;">
+                <span class="rb-clinic-card__shade-tag" style="color: #D48C95;"><span class="neo-sr-only">Luxury Shade Match: </span>Pillow Talk Rose</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/consultation_hero_1785906262133.png" alt="Aesthetic Clinic Consultation (Inspired by Pillow Talk Rose)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Clinic Consultation</h3>
+                  <p class="rb-clinic-card__desc">Discuss your goals and suitability</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
+              </a>
+              <a href="services/cosmetic-injectables-stockport.html" class="rb-clinic-card" title="Cosmetic Injectables - Inspired by Dior 999 Red" tabindex="-1" style="--shade-color: #C82333;">
+                <span class="rb-clinic-card__shade-tag" style="color: #C82333;"><span class="neo-sr-only">Luxury Shade Match: </span>Dior 999 Red</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/injectables_hero_1785862416413.png" alt="Cosmetic Injectables (Inspired by Dior 999 Red)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Cosmetic Injectables</h3>
+                  <p class="rb-clinic-card__desc">Targeted volume and smoothness</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
+              </a>
+              <a href="services/prp-vampire-facial-stockport.html" class="rb-clinic-card" title="PRP Vampire Facial - Inspired by Velvet Cherry" tabindex="-1" style="--shade-color: #8B1E3F;">
+                <span class="rb-clinic-card__shade-tag" style="color: #8B1E3F;"><span class="neo-sr-only">Luxury Shade Match: </span>Velvet Cherry</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/vampire_facial_hero_1785906212658.png" alt="PRP Vampire Facial (Inspired by Velvet Cherry)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">PRP Vampire Facial</h3>
+                  <p class="rb-clinic-card__desc">Natural collagen stimulation</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
+              </a>
+              <a href="services/vampire-face-lift-stockport.html" class="rb-clinic-card" title="Vampire Face Lift - Inspired by Rouge Noir" tabindex="-1" style="--shade-color: #5C1525;">
+                <span class="rb-clinic-card__shade-tag" style="color: #5C1525;"><span class="neo-sr-only">Luxury Shade Match: </span>Rouge Noir</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/vampire_facelift_hero_1785906269162.png" alt="Vampire Face Lift (Inspired by Rouge Noir)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Vampire Face Lift</h3>
+                  <p class="rb-clinic-card__desc">Advanced rejuvenation</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
+              </a>
+              <a href="services/plasma-pen-stockport.html" class="rb-clinic-card" title="Plasma Pen - Inspired by Nude Bronze" tabindex="-1" style="--shade-color: #B87333;">
+                <span class="rb-clinic-card__shade-tag" style="color: #B87333;"><span class="neo-sr-only">Luxury Shade Match: </span>Nude Bronze</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/plasma_pen_hero_1785862425813.png" alt="Plasma Pen (Inspired by Nude Bronze)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Plasma Pen</h3>
+                  <p class="rb-clinic-card__desc">Fibroblast skin tightening</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
+              </a>
+              <a href="services/microneedling-stockport.html" class="rb-clinic-card" title="Microneedling - Inspired by Ruby Woo" tabindex="-1" style="--shade-color: #A6192E;">
+                <span class="rb-clinic-card__shade-tag" style="color: #A6192E;"><span class="neo-sr-only">Luxury Shade Match: </span>Ruby Woo</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/microneedling_hero_1785906196548.png" alt="Microneedling (Inspired by Ruby Woo)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Microneedling</h3>
+                  <p class="rb-clinic-card__desc">Skin texture &amp; tone</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
+              </a>
+              <a href="services/jalupro-stockport.html" class="rb-clinic-card" title="Jalupro - Inspired by Pearl Coral" tabindex="-1" style="--shade-color: #E88E8A;">
+                <span class="rb-clinic-card__shade-tag" style="color: #E88E8A;"><span class="neo-sr-only">Luxury Shade Match: </span>Pearl Coral</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/jalupro_hero_1785906205941.png" alt="Jalupro (Inspired by Pearl Coral)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Jalupro</h3>
+                  <p class="rb-clinic-card__desc">Amino acid skin boosting</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
+              </a>
+              <a href="services/sunekos-stockport.html" class="rb-clinic-card" title="Sunekos - Inspired by Ballet Slipper" tabindex="-1" style="--shade-color: #D98299;">
+                <span class="rb-clinic-card__shade-tag" style="color: #D98299;"><span class="neo-sr-only">Luxury Shade Match: </span>Ballet Slipper</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/sunekos_hero_1785906236540.png" alt="Sunekos (Inspired by Ballet Slipper)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Sunekos</h3>
+                  <p class="rb-clinic-card__desc">Restore elasticity &amp; hydration</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
+              </a>
+              <a href="services/aqualyx-fat-dissolving-stockport.html" class="rb-clinic-card" title="Aqualyx Fat Dissolving - Inspired by Fenty Glow" tabindex="-1" style="--shade-color: #B5724C;">
+                <span class="rb-clinic-card__shade-tag" style="color: #B5724C;"><span class="neo-sr-only">Luxury Shade Match: </span>Fenty Glow</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/fat_dissolving_hero_1785906253996.png" alt="Aqualyx Fat Dissolving (Inspired by Fenty Glow)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Fat Dissolving</h3>
+                  <p class="rb-clinic-card__desc">Targeted contouring</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
+              </a>
+              <a href="services/chemical-peel-stockport.html" class="rb-clinic-card" title="Chemical Peel - Inspired by Peachy NARS" tabindex="-1" style="--shade-color: #D96B43;">
+                <span class="rb-clinic-card__shade-tag" style="color: #D96B43;"><span class="neo-sr-only">Luxury Shade Match: </span>Peachy NARS</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/chemical_peel_hero_1785906188642.png" alt="Chemical Peel (Inspired by Peachy NARS)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Chemical Peel</h3>
+                  <p class="rb-clinic-card__desc">Deep exfoliation &amp; renewal</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
+              </a>
+              <a href="services/dermaplaning-stockport.html" class="rb-clinic-card" title="Dermaplaning - Inspired by Hermès Rouge" tabindex="-1" style="--shade-color: #D94E34;">
+                <span class="rb-clinic-card__shade-tag" style="color: #D94E34;"><span class="neo-sr-only">Luxury Shade Match: </span>Hermès Rouge</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/dermaplaning_hero_1785906246303.png" alt="Dermaplaning (Inspired by Hermès Rouge)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Dermaplaning</h3>
+                  <p class="rb-clinic-card__desc">Smooth, glowing skin</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
+              </a>
+              <a href="services/cosmetic-injectables-and-treatments-stockport.html" class="rb-clinic-card" title="Injectables Package - Inspired by Gucci Goldie" tabindex="-1" style="--shade-color: #C5A059;">
+                <span class="rb-clinic-card__shade-tag" style="color: #C5A059;"><span class="neo-sr-only">Luxury Shade Match: </span>Gucci Goldie</span>
+                <div class="rb-clinic-card__img-box">
+                  <img src="images/injectables_package_hero_1785906228571.png" alt="Injectables Package (Inspired by Gucci Goldie)" class="rb-clinic-card__img" loading="lazy" decoding="async">
+                </div>
+                <div class="rb-clinic-card__body">
+                  <h3 class="rb-clinic-card__title">Injectables Package</h3>
+                  <p class="rb-clinic-card__desc">Comprehensive treatment</p>
+                  <span class="rb-clinic-card__cta">Book &amp; Info &rarr;</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
         </div>
       </section>
 

@@ -1,0 +1,81 @@
+    <main id="neo-main" class="neo-page__main" tabindex="-1">
+      <nav aria-label="Breadcrumb" class="neo-breadcrumbs-wrap">
+        <ol class="neo-breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li aria-current="page">Cart</li>
+        </ol>
+      </nav>
+      <div class="neo-container rb-page-hero">
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 3rem;">
+          <div>
+            <p class="rb-eyebrow" style="color: var(--neo-accent);">Standard issue</p>
+            <h1 class="neo-h1 rb-page-hero__title" style="margin-top: 0.75rem;">Your cart</h1>
+            <p class="neo-body rb-muted rb-page-hero__lead" style="max-width: 600px; margin-top: 0.75rem;">At checkout you will provide shipping address, telephone, delivery method, and an optional promo code.</p>
+          </div>
+          <a href="shop.html" style="font-size: var(--neo-text-sm); font-weight: 600; color: var(--neo-text-primary); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+            Continue shopping
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 2.5rem;">
+          <style>
+            @media (min-width: 1024px) {
+              .neo-cart-layout { grid-template-columns: 2fr 1fr !important; }
+            }
+          </style>
+          <div class="neo-cart-layout" style="display: grid; grid-template-columns: 1fr; gap: 2.5rem;">
+            <!-- Cart Items -->
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              
+              <!-- Item 1 -->
+              <article class="neo-card neo-surface-raised" style="display: flex; gap: 1.5rem; border-radius: var(--neo-radius-2xl);">
+                <a href="product.html" style="flex-shrink: 0; width: 6rem; aspect-ratio: 4/5; border-radius: var(--neo-radius-xl); overflow: hidden; background: var(--neo-bg-inset); padding: 0.5rem; border: var(--neo-border-1) solid var(--neo-border-subtle);">
+                  <img src="images/logo1.png" alt="Radiance Beauty Serum" style="width: 100%; height: 100%; object-fit: contain;">
+                </a>
+                <div style="flex: 1; display: flex; flex-direction: column; min-width: 0;">
+                  <div style="display: flex; justify-content: space-between; gap: 1rem;">
+                    <div style="min-width: 0;">
+                      <a href="product.html" class="neo-body" style="font-weight: 600; color: var(--neo-text-primary); text-decoration: none;">Radiance Beauty Serum</a>
+                      <p class="neo-body rb-muted" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.25rem;">Skincare &middot; 50ml</p>
+                    </div>
+                    <button type="button" aria-label="Remove item" style="flex-shrink: 0; padding: 0.5rem; background: transparent; border: none; color: var(--neo-text-muted); cursor: pointer;">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                    </button>
+                  </div>
+                  <div style="margin-top: auto; padding-top: 1rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;">
+                    <div style="display: inline-flex; align-items: center; border-radius: var(--neo-radius-full); border: var(--neo-border-1) solid var(--neo-border-subtle); background: var(--neo-bg-base);">
+                      <button type="button" style="padding: 0.625rem; background: transparent; border: none; color: var(--neo-text-primary); cursor: pointer; border-radius: 9999px 0 0 9999px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                      <span style="width: 2.5rem; text-align: center; font-size: var(--neo-text-sm); font-weight: 600;">1</span>
+                      <button type="button" style="padding: 0.625rem; background: transparent; border: none; color: var(--neo-text-primary); cursor: pointer; border-radius: 0 9999px 9999px 0;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                    </div>
+                    <p class="neo-body" style="font-weight: 700; font-size: var(--neo-text-lg); margin: 0;">&pound;45.00</p>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+
+            <!-- Order Summary Sidebar -->
+            <aside>
+              <div class="neo-glass-panel" style="position: sticky; top: 7rem; padding: 2rem;">
+                <h2 style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; color: var(--neo-text-muted); margin-bottom: 1.5rem; margin-top: 0;">Order summary</h2>
+                <div style="border-bottom: var(--neo-border-1) solid var(--neo-border-subtle); padding-bottom: 1.5rem; margin-bottom: 1.5rem;">
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+                    <span class="neo-body rb-muted">Subtotal</span>
+                    <span class="neo-body" style="font-weight: 600;">&pound;45.00</span>
+                  </div>
+                  <p class="neo-body" style="font-size: 0.75rem; color: var(--neo-text-muted);">Delivery calculated at checkout. One discount per order: promo codes here.</p>
+                </div>
+                <button type="button" class="neo-btn neo-btn--primary" style="width: 100%; justify-content: center; padding: 1rem; margin-bottom: 1rem; border-radius: var(--neo-radius-full);" onclick="window.location.href='checkout.html'">Proceed to checkout</button>
+                <a href="shop.html" class="neo-btn neo-btn--secondary" style="width: 100%; justify-content: center; padding: 1rem; border-radius: var(--neo-radius-full);">
+                  Continue shopping
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.5rem;"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                </a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </main>

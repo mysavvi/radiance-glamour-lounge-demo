@@ -327,11 +327,21 @@
   <script src="neo/cookie-consent.js" defer></script>
   <script>
     document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Simulate login by setting a dummy user in localStorage
+      localStorage.setItem('currentUser', JSON.stringify({ 
+        name: "Jane Doe", 
+        email: document.getElementById('email').value,
+        points: 500 
+      }));
+
       const urlParams = new URLSearchParams(window.location.search);
       const redirect = urlParams.get('redirect');
       if (redirect) {
-        e.preventDefault();
         window.location.href = redirect;
+      } else {
+        window.location.href = 'index.html';
       }
     });
 
